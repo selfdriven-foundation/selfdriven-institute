@@ -12,6 +12,7 @@ We explore new frameworks that help communities, organizations, and networks bec
 Our work blends governance design, social innovation, and digital trust — shaping the foundations for an emerging society that values participation, transparency, and the freedom to grow together.
 
 - [About](/about/)
+- [Research](/research/)
 
 ### Supported By
 - [selfdriven.university](https://selfdriven.university)
