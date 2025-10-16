@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Exploring Governance & Policy for an New Emerging Society
+## Exploring Governance & Policy for a New Emerging Society
 
 **The selfdriven Institute is a gathering place for those reimagining how society governs itself — not through control, but through care, curiosity, and shared purpose.**
 
