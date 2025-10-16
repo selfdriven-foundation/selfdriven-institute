@@ -5,8 +5,6 @@ permalink: /about/
 description: "selfdriven Institute — governance frameworks for an emerging society."
 ---
 
-### *Governance for a New Emerging Society*
-
 **The selfdriven Institute is a gathering place for people reimagining how society governs itself — not through control, but through care, curiosity, and shared purpose.**
 
 We explore new frameworks that help communities, organizations, and networks become **self-driven**: capable of acting with integrity, coordinating without hierarchy, and evolving through learning.
