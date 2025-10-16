@@ -16,7 +16,7 @@ Our work blends governance design, social innovation, and digital trust — shap
 
 ## Our Purpose
 
-We exist to explore how humans can govern themselves better — as individuals, communities, and connected societies.  
+We exist to explore how a poeple can govern themselves better — as individuals, communities, and connected societies.  
 Governance is more than rules; it’s relationships: how people share trust, responsibility, and purpose in a changing world.
 
 We cultivate the principles, tools, and stories that make self-governance possible — helping communities and organizations evolve beyond compliance, toward consciousness.
@@ -42,7 +42,7 @@ We conduct research, convene dialogues, and co-create governance experiments tha
 
 ## Who We Are
 
-As part of the broader selfdriven ecosystem, the Institute brings together researchers, technologists, educators, policy designers, and community builders.  
+We are an initiative of the [selfdriven Foundation](https://selfdriven.foundation) and made up of members of the broader selfdriven ecosystem, the Institute brings together researchers, technologists, educators, policy designers, and community builders.  
 
 We align learning, governance, and digital trust to empower people to care for themselves, each other, and the planet.
 
@@ -54,8 +54,9 @@ Our approach is grounded in experimentation, reflection, and open collaboration 
 The future of governance will not be invented — it will be **learned together**.  
 Join the conversation, share your work, and explore how we can co-create institutions that serve life, not the other way around.
 
-- [Start a Conversation](https://selfdriven.foundation/contact)  
+- [Contact Us](https://selfdriven.foundation/contact)  
+
 
 ---
 
-> *“We are learning how to govern ourselves — with technology as a mirror, and care as the compass.”*
+*“We are learning how to govern ourselves — with technology as a mirror, and care as the compass.”*
