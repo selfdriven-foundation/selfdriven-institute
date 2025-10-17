@@ -5,7 +5,7 @@ permalink: /research/
 description: "selfdriven Institute — research into governance frameworks for an emerging society."
 ---
 
-### Resources
+## Resources
 
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - **selfdriven.fyi:**
@@ -17,7 +17,9 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [dsociety.io](https://dsociety.io)
 - [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
 
+## Frameworks
 
+- [selfdriven.community](https://www.selfdriven.community)
 
 
     

@@ -30,6 +30,8 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 - [selfdriven.ai](https://selfdriven.ai)
 - [selfdriven.insure](https://selfdriven.insure)
 - [selfdriven.finance](https://selfdriven.finance)
+- [selfdriven.space](https://selfdriven.space)
+- [selfdriven.health](https://selfdriven.health)
 
 ---
 
