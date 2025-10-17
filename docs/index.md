@@ -16,6 +16,10 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 - [About](/about/)
 - [Research](/research/)
 
+### Focused On
+- Helping sovereign state institutions deal with a new emerging society
+- New emerging self-driven communities self-actuate. 
+
 ### Informed By
 - [selfdriven.foundation](https://selfdriven.foundation)
 - [selfdriven.community](https://selfdriven.community)
@@ -24,7 +28,6 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 - [selfdriven.ai](https://selfdriven.ai)
 - [selfdriven.insure](https://selfdriven.insure)
 - [selfdriven.finance](https://selfdriven.finance)
-
 
 ---
 
