@@ -13,6 +13,8 @@ Our work blends governance design, social innovation, and digital trust — shap
 
 Our work covers the impact of emergent in-organic intelligence on our society and associated ecomonomies - incorporating research & development work at [selfdriven.ai](https://selfdriven.ai).
 
+*Ideas, frameworks & services for now and the future (also now.)*
+
 - [About](/about/)
 - [Research](/research/)
 
