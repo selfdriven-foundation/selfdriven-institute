@@ -7,6 +7,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 ## Resources
 
+- [selfdriven Research](https://selfdriven.fyi/research)
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - **selfdriven.fyi:**
     - [Society](https://selfdriven.fyi/society)
@@ -21,5 +22,6 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 - [selfdriven.community](https://www.selfdriven.community)
 
+## Areas of Research Focus
 
-    
+- [Finance - e.g. What is money?](/research/finance/)   

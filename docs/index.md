@@ -25,13 +25,20 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 ### Informed By
 - [selfdriven.foundation](https://selfdriven.foundation)
 - [selfdriven.community](https://selfdriven.community)
-- [selfdriven.university](https://selfdriven.university)
 - [selfdriven.education](https://selfdriven.education)
+    - [selfdriven.university](https://selfdriven.university)
+        - [Community of Practice](https://www.selfdriven.university/community-of-practice.html)
 - [selfdriven.ai](https://selfdriven.ai)
 - [selfdriven.insure](https://selfdriven.insure)
 - [selfdriven.finance](https://selfdriven.finance)
+- [selfdriven.exchange](https://selfdriven.exchange)
+    - [octomics](https://octomics.io)
 - [selfdriven.space](https://selfdriven.space)
 - [selfdriven.health](https://selfdriven.health)
+- [selfdriven.services](https://selfdriven.services)
+    - [selfdriven.clinic](https://selfdriven.clinic)
+    - [selfdriven.business](https://selfdriven.business)
+    - [selfdriven.tel](https://selfdriven.tel)
 
 ---
 
