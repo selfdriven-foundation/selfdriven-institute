@@ -9,7 +9,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 - [selfdriven Research](https://selfdriven.fyi/research)
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
-- **selfdriven.fyi:**
+- selfdriven.fyi:
     - [Society](https://selfdriven.fyi/society)
     - [Identity](https://selfdriven.fyi/identity)
     - [Trust](https://selfdriven.fyi/trust)
