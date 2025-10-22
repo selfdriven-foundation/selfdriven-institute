@@ -21,6 +21,8 @@ description: "selfdriven Institute — research into governance frameworks for a
 ## Frameworks
 
 - [selfdriven.community](https://www.selfdriven.community)
+- [Situational Awareness Framework for Organisations](https://www.selfdriven.ai/situational-awareness-framework/organisations/)
+- [selfdriven AI Impact on Mind Framework](https://www.selfdriven.ai/impact-on-mind-framework/)
 
 ## Areas of Research Focus
 
