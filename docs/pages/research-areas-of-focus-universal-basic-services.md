@@ -5,9 +5,9 @@ permalink: /research/areas-of-focus/universal-basic-services/
 description: "selfdriven Institute — research into Universal Basic Services."
 ---
 
-## Area of Focus
+## Area of Focus - Universal Basic Services for self-driven communities
 
-### Universal Basic Services for self-driven communities, covering:
+### Scope
 
 - **Spaces**
     - 1st, 2nd & 3rd
