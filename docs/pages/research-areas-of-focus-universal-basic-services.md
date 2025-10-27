@@ -7,13 +7,18 @@ description: "selfdriven Institute — research into Universal Basic Services."
 
 ## Area of Focus
 
-**Universal Basic Services for self-driven communities:**
+### Universal Basic Services for self-driven communities, covering:
 
-- Food 
-- Water
-- Housing
-- Internet
-- Electricity 
+- Energy:
+    - Organic
+        - Food 
+        - Water
+    - In-Organic
+        - Electricity (Power)
+- Spaces
+    - 1st, 2nd & 3rd
+        - Housing (Shelter)
+- Connectivity (Internet)
 
 ### Related
 
