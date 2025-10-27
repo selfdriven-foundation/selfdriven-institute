@@ -9,11 +9,11 @@ description: "selfdriven Institute — research into Universal Basic Services."
 
 ### Universal Basic Services for self-driven communities, covering:
 
-- Spaces
+- **Spaces**
     - 1st, 2nd & 3rd
         - **Buildings** (Housing, Shelter)
 
-- Energy:
+- **Energy**
     - Organic
         - **Food**
         - **Water**
