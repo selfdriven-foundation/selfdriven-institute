@@ -21,9 +21,20 @@ description: "selfdriven Institute — research into Universal Basic Services."
         - **Power** (Electricity)
         - **Connectivity** (Internet)
 
-*Energy & Spaces; Buildings, Food, Water, Power & Connectivity*
+*Spaces & Energy; Buildings, Food, Water, Power & Connectivity*
 
-### Related
+### Next 3
+
+- Map *Spaces & Energy* to *selfdriven Network Interfaces*
+- Paper on Universal Basic Services
+- Engagement with communities, funding opportunties etc
+
+### References
 
 - [actuate.selfdriven.community](https://actuate.selfdriven.community)
+- [selfdriven.network](https://selfdriven.network) - services delivery & organisational system
+    - Interfaces; Human, Social, SSI, AI, Entity, Attachment, OnChain & Infra
+- [selfdriven.foundation](https://selfdriven.foundation)
+
+### Related
 - [XPRISE - Learning + Society](https://www.xprize.org/focus-areas/learning-society)
