@@ -21,9 +21,9 @@ description: "selfdriven Institute — research into Universal Basic Services."
         - **Power** (Electricity)
         - **Connectivity** (Internet)
 
-*Energy & Spaces*
-*Buildings, Food, Water, Power & Connectivity*
+*Energy & Spaces; Buildings, Food, Water, Power & Connectivity*
 
 ### Related
 
+- [actuate.selfdriven.community](https://actuate.selfdriven.community)
 - [XPRISE - Learning + Society](https://www.xprize.org/focus-areas/learning-society)
