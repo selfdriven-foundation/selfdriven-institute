@@ -18,6 +18,3 @@ description: "selfdriven Institute — research into Universal Basic Services."
 ### Related
 
 - [XPRISE - Learning + Society](https://www.xprize.org/focus-areas/learning-society)
-
-
-    
