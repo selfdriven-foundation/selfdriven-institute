@@ -24,6 +24,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Situational Awareness Framework for Organisations](https://www.selfdriven.ai/situational-awareness-framework/organisations/)
 - [selfdriven AI Impact on Mind Framework](https://www.selfdriven.ai/impact-on-mind-framework/)
 
-## Areas of Research Focus
+## Areas of Focus
 
-- [Finance - e.g. What is money?](/research/finance/)   
+- [Universal Basic Services](/research/areas-of-focus/universal-basic-services/)
+- [Finance - e.g. What is money?](/research/areas-of-focus/finance/)    

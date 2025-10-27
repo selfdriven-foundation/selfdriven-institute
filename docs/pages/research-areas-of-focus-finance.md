@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Research Finance - selfdriven Institute
-permalink: /research/finance/
+title: Finance - Areas of Focus - Research - selfdriven Institute
+permalink: /research/areas-of-focus/finance/
 description: "selfdriven Institute — research into finance frameworks for an emerging society."
 ---
 
-## Topics
+## Area of Focus
 
 - What is money?
 - New forms of value exchange.
