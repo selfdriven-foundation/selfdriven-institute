@@ -32,6 +32,7 @@ description: "selfdriven Institute — research into Universal Basic Services."
 ### References
 
 - [actuate.selfdriven.community](https://actuate.selfdriven.community)
+    - [Use Cases](https://actuate.selfdriven.community/use-cases/)
 - [selfdriven.network](https://selfdriven.network) - services delivery & organisational system
     - Interfaces; Human, Social, SSI, AI, Entity, Attachment, OnChain & Infra
 - [selfdriven.foundation](https://selfdriven.foundation)
