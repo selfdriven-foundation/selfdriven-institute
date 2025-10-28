@@ -5,18 +5,19 @@ permalink: /research/areas-of-focus/universal-basic-services/exploratory-paper/
 description: "selfdriven Institute — research into Universal Basic Services."
 ---
 
-# Enabling Universal Basic Services through Self-Driven Network Interfaces
+# Enabling Universal Basic Services using the selfdriven Network Interfaces
 
 ## 1. Introduction
 
 Universal Basic Services (UBS) — covering foundational services such as shelter, energy, food, water, power, connectivity and spaces — are increasingly seen as a pillar for resilient, equitable communities.  
+
 According to the [selfdriven Institute](https://www.selfdriven.institute/research/areas-of-focus/universal-basic-services/), UBS includes:
 
-> “Spaces • Buildings (Housing, Shelter), Energy, Organic Food, Water, In-Organic Power (Electricity), Connectivity (Internet).”
+“Spaces; Buildings (Housing, Shelter), Energy; Organic Food, Water, In-Organic Power (Electricity), Connectivity (Internet).”
 
-Meanwhile, the [selfdriven Network](https://www.selfdriven.network/) offers a suite of **Interfaces** — *built for self-driven communities and organisations* — including Human & Social, SSI, AI, Entity & Attachment, On-Chain and Infra.
+Meanwhile, the [selfdriven Network](https://www.selfdriven.network/) offers a suite of **Interfaces** — *built for self-driven communities and organisations* — including Human, Social, SSI, AI, Entity, Attachment, On-Chain and Infra.
 
-This paper argues that these Interfaces provide an architectural and operational substrate through which UBS can be more effectively organised, governed, delivered and scaled in community contexts.
+This paper explores the idea that these Interfaces provide an architectural and operational substrate through which UBS can be more effectively organised, governed, delivered and scaled in community contexts.
 
 ---
 
@@ -159,6 +160,6 @@ By combining SSI-based identity, decentralised trust, AI-driven insight, and par
 
 The alignment between the Institute’s UBS focus and the Network’s modular interfaces offers a pathway to **operationalise equitable access to housing, energy, food, water, and connectivity** — anchored in community agency and digital trust.
 
-Future work includes pilot implementations, governance frameworks, and open-source reference models connecting UBS and SDN for real-world deployment.
+Future work includes pilot implementations, governance frameworks, and open-source reference models connecting UBS and the selfdriven Network for real-world deployment.
 
 ---
