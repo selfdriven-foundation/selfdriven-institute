@@ -13,7 +13,7 @@ description: "selfdriven Institute — research into selfdriven Sovereign Gov Ki
 
 The **selfdriven Gov Kit** empowers any organisation, community, or region to **govern with AI** — not by replacing humans, but by **training intelligence systems around verified community intent**.
 
-It mirrors the mission of AI-powered policy simulation and sovereign decision systems but focuses on **progressive self-governance**, **SSI sovereignty**, and **educational participation**.
+It mirrors the mission of AI-powered policy simulation and sovereign decision systems but focuses on **progressive self-governance**, **SSI sovereignty**, and **participation**.
 
 ## Core Outcomes
 
