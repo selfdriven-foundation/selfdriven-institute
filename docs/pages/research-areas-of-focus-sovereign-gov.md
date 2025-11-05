@@ -1,4 +1,4 @@
-#---
+---
 layout: default
 title: Finance - Areas of Focus - Research - selfdriven Institute
 permalink: /research/areas-of-focus/gov/sovereign/
