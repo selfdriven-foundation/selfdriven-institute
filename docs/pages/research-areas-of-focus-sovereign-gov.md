@@ -17,7 +17,7 @@ It mirrors the mission of AI-powered policy simulation and sovereign decision sy
 
 ## Core Outcomes
 
-|  Outcome | selfdriven Gov Kit Equivalent |
+|  Outcome | selfdriven Gov Kit |
 |---------------|-------------------------------|
 | **AI-powered policy forecasting** | AI-assisted *reflection & projection engine* that models the social, economic, and environmental outcomes of community actions |
 | **Sovereign compute infrastructure** | *EntityOS-based data sovereignty layer* using Verifiable Credentials (VCs) and Cardano root-of-trust |
