@@ -1,4 +1,4 @@
----
+#---
 layout: default
 title: Finance - Areas of Focus - Research - selfdriven Institute
 permalink: /research/areas-of-focus/gov/sovereign/
@@ -62,23 +62,10 @@ It mirrors the mission of AI-powered policy simulation and sovereign decision sy
 - *Federated Model Exchange* — share trained governance models (LLMs, decision trees, causal graphs)  
 - *Inter-Community Governance Dialogues* — cross-community reflection sessions via multilingual co-pilots  
 
-
-## Governance Flow
-
-```mermaid
-flowchart TD
-    A[Community Intent] --> B[Reflection Engine]
-    B --> C[Policy Simulation + Forecast]
-    C --> D[Outcome Verification]
-    D --> E[Learning Report + VC Proof]
-    E --> F[Shared to Governance Network (LGN)]
-    F --> A
-```
-
 ### References
 
-- [selfdriven.finance][https://selfdriven.finance]
-- [selfdriven.exchange][https://selfdriven.exchange]
+- [selfdriven.finance](https://selfdriven.finance)
+- [selfdriven.exchange](https://selfdriven.exchange)
 
 
     
