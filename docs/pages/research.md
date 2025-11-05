@@ -26,5 +26,6 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 ## Areas of Focus
 
+- [Open Framework for Community Self-Driven, AI-Assisted Sovereign Governance](/research/areas-of-focus/gov/sovereign/)   
 - [Universal Basic Services](/research/areas-of-focus/universal-basic-services/)
 - [Finance - e.g. What is money?](/research/areas-of-focus/finance/)    
