@@ -7,7 +7,7 @@ description: "selfdriven Institute — research into selfdriven Sovereign Gov Ki
 
 ## Area of Focus: selfdriven Sovereign Gov Kit, an Open Framework for Community-Driven, AI-Assisted Governance
 
-> “Governance is not a platform for control — it’s a system for collective self-actuation.”
+“Governance is not a platform for control — it’s a system for collective self-actuation.”
 
 ## Purpose
 
