@@ -21,7 +21,7 @@ It mirrors the mission of AI-powered policy simulation and sovereign decision sy
 |---------------|-------------------------------|
 | **AI-powered policy forecasting** | AI-assisted *reflection & projection engine* that models the social, economic, and environmental outcomes of community actions |
 | **Sovereign compute infrastructure** | *selfdriven.network based data sovereignty layer* using Verifiable Credentials (VCs) and Cardano root-of-trust |
-| **Governance App Store** | *selfdriven Interface Hub* — modular governance “skills” for policy, learning, health, environment, and finance |
+| **Governance Shared Octology** | *Use octology.io* for modular governance “skills” for policy, learning, health, environment, and finance |
 | **Multilingual governance co-pilots** | *Community AI Assistants* that speak local dialects, reference local law/policy, and surface verified institutional data |
 | **Open international collaboration** | *Network of selfdriven Institutes* forming a federated *Learning Governance Network (LGN)* linking research to policy |
 
