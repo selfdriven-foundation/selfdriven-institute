@@ -7,23 +7,23 @@ description: "selfdriven Institute — research into selfdriven Sovereign Gov Ki
 
 ## Area of Focus: selfdriven Sovereign Gov Kit, an Open Framework for Community-Driven, AI-Assisted Governance
 
-> “Governance is not a platform for control — it’s a system for collective self-actuation.”
+“Governance is not a platform for control — it’s a system for collective self-actuation.”
 
 ## Purpose
 
 The **selfdriven Gov Kit** empowers any organisation, community, or region to **govern with AI** — not by replacing humans, but by **training intelligence systems around verified community intent**.
 
-It mirrors the mission of AI-powered policy simulation and sovereign decision systems but focuses on **progressive self-governance**, **SSI sovereignty**, and **educational participation**.
+It mirrors the mission of AI-powered policy simulation and sovereign decision systems but focuses on **progressive self-governance**, **SSI sovereignty**, and **participation**.
 
 ## Core Outcomes
 
-|  Outcome | selfdriven Gov Kit Equivalent |
+|  Outcome | selfdriven Gov Kit |
 |---------------|-------------------------------|
 | **AI-powered policy forecasting** | AI-assisted *reflection & projection engine* that models the social, economic, and environmental outcomes of community actions |
-| **Sovereign compute infrastructure** | *EntityOS-based data sovereignty layer* using Verifiable Credentials (VCs) and Cardano root-of-trust |
-| **Governance App Store** | *selfdriven Interface Hub* — modular governance “skills” for policy, learning, health, environment, and finance |
+| **Sovereign compute infrastructure** | *selfdriven.network based data sovereignty layer* using Verifiable Credentials (VCs) and Cardano root-of-trust |
+| **Governance Shared Octology** | *Use octology.io* for modular governance “skills” for policy, learning, health, environment, and finance |
 | **Multilingual governance co-pilots** | *Community AI Assistants* that speak local dialects, reference local law/policy, and surface verified institutional data |
-| **Open international collaboration** | *Network of selfdriven Institutes* forming a federated *Learning Governance Network (LGN)* linking research to policy |
+| **Open international collaboration** | *Network of selfdriven Institutes* forming a federated *Governance Network (SDIGN)* linking research to policy |
 
 ## System Architecture
 
@@ -62,23 +62,10 @@ It mirrors the mission of AI-powered policy simulation and sovereign decision sy
 - *Federated Model Exchange* — share trained governance models (LLMs, decision trees, causal graphs)  
 - *Inter-Community Governance Dialogues* — cross-community reflection sessions via multilingual co-pilots  
 
-
-## Governance Flow
-
-```mermaid
-flowchart TD
-    A[Community Intent] --> B[Reflection Engine]
-    B --> C[Policy Simulation + Forecast]
-    C --> D[Outcome Verification]
-    D --> E[Learning Report + VC Proof]
-    E --> F[Shared to Governance Network (LGN)]
-    F --> A
-```
-
 ### References
 
-- [selfdriven.finance][https://selfdriven.finance]
-- [selfdriven.exchange][https://selfdriven.exchange]
+- [selfdriven.finance](https://selfdriven.finance)
+- [selfdriven.exchange](https://selfdriven.exchange)
 
 
     
