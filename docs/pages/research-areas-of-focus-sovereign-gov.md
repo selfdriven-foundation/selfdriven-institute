@@ -2,7 +2,7 @@
 layout: default
 title: Finance - Areas of Focus - Research - selfdriven Institute
 permalink: /research/areas-of-focus/gov/sovereign/
-description: "selfdriven Institute — research into selfdriven Sovereign Gov Kit, an Open Framework for Community-Driven, AI-Assisted Governance."
+description: "selfdriven Institute — research into selfdriven Sovereign Gov Kit, an Open Framework for Community Self-Driven, AI-Assisted Governance."
 ---
 
 ## Area of Focus: selfdriven Sovereign Gov Kit, an Open Framework for Community-Driven, AI-Assisted Governance
