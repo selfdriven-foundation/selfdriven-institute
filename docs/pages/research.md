@@ -17,6 +17,7 @@ description: "selfdriven Institute — research into governance frameworks for a
     - [Governance](https://selfdriven.fyi/governance)
 - [dsociety.io](https://dsociety.io)
 - [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
+- [Digital Trust Infrastructure Paper, Cardano Foundation & BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
 
 ## Frameworks
 
