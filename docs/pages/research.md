@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research - selfdriven Institute
-permalink: /research/
+permalink: /research
 description: "selfdriven Institute — research into governance frameworks for an emerging society."
 ---
 
