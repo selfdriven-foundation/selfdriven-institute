@@ -9,7 +9,10 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Videos
 
-### [Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee](https://youtu.be/7R1T80zv27Q)
+### [Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee]
+
+- [Video Recording](https://youtu.be/7R1T80zv27Q) - 30min
+- [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/summary-uk-parliament-hearing-on-ai-risks-Impact-and-regulation)
 
 **Podcast, AI Superintelligence Warnings to UK Parliament**
 <audio controls>
