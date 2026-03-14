@@ -9,19 +9,22 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 
 ## Resources
 
-- [Watch Video Recording](https://youtu.be/7R1T80zv27Q) - 30minv
-
-<div style="font-weight:bold; margin-bottom:10px;">Podcast, AI Superintelligence Warnings to UK Parliament</div>
-<audio controls>
-	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
-	Your browser does not support the audio element.
-</audio>
-
-<div style="font-weight:bold; margin-bottom:10px; margin-top:20px;">Podcast, Tsunami or Rising Tide</div>
-<audio controls>
-	<source src="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" type="audio/mp4">
-	Your browser does not support the audio element.
-</audio>
+<ul>
+  <li><a href="https://youtu.be/7R1T80zv27Q">Watch Video Recording</a> - 30min</li>
+  <li><div style=" margin-bottom:10px;">Podcast, AI Superintelligence Warnings to UK Parliament</div>
+		<audio controls>
+			<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
+			Your browser does not support the audio element.
+		</audio>
+	</li>
+	<li>
+		<div style="margin-bottom:10px; margin-top:20px;">Podcast, Tsunami or Rising Tide</div>
+		<audio controls>
+			<source src="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" type="audio/mp4">
+			Your browser does not support the audio element.
+		</audio>
+	</li>
+</ul>
 
 ## Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation
 
