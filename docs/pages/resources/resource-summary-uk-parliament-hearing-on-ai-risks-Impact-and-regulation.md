@@ -28,8 +28,6 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 	</li>
 </ul>
 
-## Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation
-
 ## 1. Introduction and Witness Profiles
 
 The UK Parliament Joint Committee on Human Rights convened this hearing to evaluate the escalating implications of artificial intelligence (AI) on fundamental human rights and the future of human biological primacy. The proceedings explored the tension between the "gigantic benefits" of cognitive automation and the "apocalyptic apprehension" regarding doomsday scenarios, including the loss of human control over superintelligent systems and the creation of novel biological pathogens.
