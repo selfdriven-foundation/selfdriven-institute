@@ -24,6 +24,7 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 - New emerging self-driven communities self-actuate. 
 
 ### Informed By
+- [Situational Awareness Framework for Organisations](/situational-awareness-framework/organisations/)
 - [selfdriven.foundation](https://selfdriven.foundation)
 - [selfdriven.community](https://selfdriven.community)
     - [actuate.selfdriven.community](https://actuate.selfdriven.community)

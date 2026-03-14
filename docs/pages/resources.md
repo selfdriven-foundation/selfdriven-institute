@@ -11,13 +11,13 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 
 ## Related
+- [Situational Awareness Framework for Organisations](/situational-awareness-framework/organisations/)
+- [System Leverage](https://selfdriven.ai/research/system-leverage)
 - [The Rising Tank](https://selfdriven.ai/research/the-rising-tank)
 - [It’s all so quiet — the busy-ness has gone.](https://www.selfdriven.business)
 - [The Quiet Life Initiative](https://www.selfdriven.business/initiatives/the-quiet-life) - Helping People Self-Actuate Beyond “Work Busyness”
 - [Increasing Human Degrees of Freedom in the Age of Artificial Intelligence](https://selfdriven.ai/research/increasing-human-degrees-of-freedom)
 - [Societal Collapse in the Age of Deflationary Technology](https://selfdriven.ai/research/societal-collapse-deflationary-technology)
-- [System Leverage](https://selfdriven.ai/research/system-leverage)
-- [The PRD is Dead](https://selfdriven.ai/research/the-prd-is-dead)
 - [Constructive Preparation](https://selfdriven.ai/research/constructive-preparation)
 - [*More videos, topics & resources @ selfdriven.ai/research*](https://www.selfdriven.ai/research)
 
