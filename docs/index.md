@@ -16,7 +16,8 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 *Ideas, frameworks & services for now and the future (also now).*
 
 - [About](/about/) 
-- [Research](/research/) - Resources, Frameworks.
+- [Research](/research) - Resources, Frameworks.
+- [Resources](/resources)
 
 ### Focused On
 - Helping sovereign state institutions deal with a new emerging society
