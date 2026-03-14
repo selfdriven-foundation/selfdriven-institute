@@ -5,24 +5,10 @@ permalink: /resources
 description: "selfdriven Institute — resources for governance frameworks for an emerging society."
 ---
 
-# Resources
+## Resources
 
-## Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee
-
-- [Watch Video Recording](https://youtu.be/7R1T80zv27Q) - 30min
 - [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/summary-uk-parliament-hearing-on-ai-risks-Impact-and-regulation)
 
-<div style="font-weight:bold; margin-bottom:10px;">Podcast, AI Superintelligence Warnings to UK Parliament</div>
-<audio controls>
-	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
-	Your browser does not support the audio element.
-</audio>
-
-<div style="font-weight:bold; margin-bottom:10px; margin-top:20px;">Podcast, Tsunami or Rising Tide</div>
-<audio controls>
-	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
-	Your browser does not support the audio element.
-</audio>
 
 ## Related
 - [The Rising Tank](https://selfdriven.ai/research/the-rising-tank)
@@ -37,7 +23,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
-  <h3 class="sd-share-title">AI Superintelligence Warnings to UK Parliament</h3>
+  <h3 class="sd-share-title">Exploring Governance & Policy for a New Emerging Society</h3>
   <p class="sd-share-subtitle">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</p>
 
   <!-- URL pill + copy button -->

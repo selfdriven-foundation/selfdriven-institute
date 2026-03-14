@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: selfdriven
 title: Finance - Areas of Focus - Research - selfdriven Institute
 permalink: /research/areas-of-focus/finance/
 description: "selfdriven Institute — research into finance frameworks for an emerging society."

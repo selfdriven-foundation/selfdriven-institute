@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: selfdriven
 title: Universal Basic Services - Areas of Focus - Research - selfdriven Institute
 permalink: /research/areas-of-focus/universal-basic-services/
 description: "selfdriven Institute — research into Universal Basic Services."

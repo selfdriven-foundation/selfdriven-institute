@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: selfdriven
 title: About
 permalink: /about/
 description: "selfdriven Institute — governance frameworks for an emerging society."
