@@ -7,8 +7,6 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 
 # Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee
 
-## Resources
-
 <ul>
   <li><a href="https://youtu.be/7R1T80zv27Q">Watch Video Recording</a> - 30min</li>
   <li><div style=" margin-bottom:10px;"><a href="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" target="_blank">
