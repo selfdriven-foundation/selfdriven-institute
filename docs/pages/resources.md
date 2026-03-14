@@ -25,9 +25,8 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
-  <h3 class="sd-share-title">Resources for governance frameworks for an emerging society.</h3>
-  <p class="sd-share-subtitle">Exploring Governance & Policy for a New Emerging Society.</p>
-
+  <p class="sd-share-title">Resources for governance frameworks for an emerging society.</p>
+  
   <!-- URL pill + copy button -->
   <div class="sd-share-url-row">
     <span class="sd-share-url-text" id="sd-url-display">selfdriven.institute/resources</span>

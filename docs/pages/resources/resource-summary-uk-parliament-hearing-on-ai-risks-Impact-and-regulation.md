@@ -102,7 +102,7 @@ The hearing concluded with a recognition of the "average concern level of 8" reg
 
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
-  <h3 class="sd-share-title">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</h3>
+  <p class="sd-share-title">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</p>
   <p class="sd-share-subtitle">UK Parliament Hearing on AI Risks, Impact, and Regulation</p>
 
   <!-- URL pill + copy button -->
