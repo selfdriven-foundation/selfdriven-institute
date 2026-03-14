@@ -75,7 +75,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 <div class="sd-toast" id="sd-toast">🔗 Link copied to clipboard</div>
 
 <script>
-  const SD_URL = 'https://www.selfdriven.ai/research/the-rising-tank';
+  const SD_URL = 'https://www.selfdriven.institute/resources';
 
   function sdCopyLink() {
     const btn   = document.getElementById('sd-copy-btn');
