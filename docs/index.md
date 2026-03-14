@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Home
+layout: selfdriven
+title: selfdriven Institute
 ---
 
 ## Exploring Governance & Policy for a New Emerging Society
