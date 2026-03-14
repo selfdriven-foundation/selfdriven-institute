@@ -3,7 +3,7 @@ layout: selfdriven
 title: selfdriven Institute
 ---
 
-## Exploring Governance & Policy for a New Emerging Society
+# Exploring Governance & Policy for a New Emerging Society
 
 **The selfdriven Institute is a gathering place for those reimagining how society governs itself — not through control, but through care, curiosity, and shared purpose.**
 
@@ -19,11 +19,11 @@ Our work covers the impact of emergent in-organic intelligence on our society an
 - [Research](/research) - Resources, Frameworks.
 - [Resources](/resources)
 
-### Focused On
+## Focused On
 - Helping sovereign state institutions deal with a new emerging society
 - New emerging self-driven communities self-actuate. 
 
-### Informed By
+## Informed By
 - [Situational Awareness Framework for Organisations](/situational-awareness-framework/organisations/)
 - [selfdriven.foundation](https://selfdriven.foundation)
 - [selfdriven.community](https://selfdriven.community)
