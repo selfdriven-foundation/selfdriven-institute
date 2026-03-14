@@ -12,16 +12,16 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 <ul>
   <li><a href="https://youtu.be/7R1T80zv27Q">Watch Video Recording</a> - 30min</li>
   <li><div style=" margin-bottom:10px;"><a href="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" target="_blank">
-  		Podcast, AI Superintelligence Warnings to UK Parliament</a></div>
+  		Podcast, AI Superintelligence Warnings to UK Parliament</a></div> - 20min
 		<audio controls>
 			<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
 	</li>
 	<li>
-		<div style="margin-bottom:10px; margin-top:20px;">
+		<div style="margin-bottom:10px;">
 			<a href="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" target="_blank">
-  				Podcast, Tsunami or Rising Tide</a>
+  				Podcast, Tsunami or Rising Tide</a> - 23min
 		</div>
 		<audio controls>
 			<source src="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" type="audio/mp4">
@@ -36,11 +36,12 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 
 The UK Parliament Joint Committee on Human Rights convened this hearing to evaluate the escalating implications of artificial intelligence (AI) on fundamental human rights and the future of human biological primacy. The proceedings explored the tension between the "gigantic benefits" of cognitive automation and the "apocalyptic apprehension" regarding doomsday scenarios, including the loss of human control over superintelligent systems and the creation of novel biological pathogens.
 
-## Expert Witnesses
+### Expert Witnesses
 
-Name,Background & Research Focus  
-Professor Roman Yampolskiy,"Tenure Associate Professor  at the University of Louisville and Director of the Cybersecurity Lab. He is a specialist in AI safety, cybersecurity, and behavioral biometrics, focusing on the existential risks and control challenges of superintelligence."  
-Professor Ethan Mollick,"Professor  at the Wharton School (University of Pennsylvania) and  Rowan Fellow . His research centers on the practical effects of AI on the economy, entrepreneurship, and education, emphasizing near-term societal disruption."
+| Name | Background & Research Focus |
+|-----|-----|
+| Professor Roman Yampolskiy | Tenured Associate Professor at the University of Louisville and Director of the Cybersecurity Lab. He specializes in AI safety, cybersecurity, and behavioral biometrics, focusing on the existential risks and control challenges of superintelligence. |
+| Professor Ethan Mollick | Professor at the Wharton School (University of Pennsylvania) and Rowan Fellow. His research focuses on the practical effects of AI on the economy, entrepreneurship, and education, with emphasis on near-term societal disruption. |
 
 ## 2. The Assessment of Existential Risk
 
