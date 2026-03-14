@@ -19,7 +19,7 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 
 <div style="font-weight:bold; margin-bottom:10px; margin-top:20px;">Podcast, Tsunami or Rising Tide</div>
 <audio controls>
-	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
+	<source src="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
 
