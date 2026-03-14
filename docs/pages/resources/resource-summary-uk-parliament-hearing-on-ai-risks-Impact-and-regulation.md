@@ -182,8 +182,6 @@ The hearing concluded with a recognition of the "average concern level of 8" reg
   }
 </script>
 
----
-
 ## More Topics
 - [Situational Awareness Framework for Organisations](https://selfdriven.ai/situational-awareness-framework/organisations/)
 - [System Leverage](https://selfdriven.ai/research/system-leverage)
