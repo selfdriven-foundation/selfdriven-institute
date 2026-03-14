@@ -92,6 +92,8 @@ The witnesses provided specific, directive policy recommendations for the UK Gov
 
 The hearing concluded with a recognition of the "average concern level of 8" regarding AI's trajectory. The committee observed a critical parallel between AI regulation and the  **Chemical Weapons Convention** , noting that international cooperation is achievable when a technology is recognized as being in no one's self-interest to unleash.The final policy mandate is one of  **"ambidexterity"** : the UK must move to  **mitigate bad and embrace good**  simultaneously. This requires treating general superintelligence as a potential existential threat while aggressively deploying narrow, controlled AI to solve global challenges in health, science, and education.  
 
+---
+
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
   <h3 class="sd-share-title">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</h3>
