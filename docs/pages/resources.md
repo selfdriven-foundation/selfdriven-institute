@@ -14,13 +14,13 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [Video Recording](https://youtu.be/7R1T80zv27Q) - 30min
 - [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/summary-uk-parliament-hearing-on-ai-risks-Impact-and-regulation)
 
-<div>Podcast, AI Superintelligence Warnings to UK Parliament<div>
+<div style="font-weight:bold; margin-bottom:10px;">Podcast, AI Superintelligence Warnings to UK Parliament</div>
 <audio controls>
 	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
 
-<div>Podcast, Tsunami or Rising Tide</div>
+<div style="font-weight:bold; margin-bottom:10px;">Podcast, Tsunami or Rising Tide</div>
 <audio controls>
 	<source src="/assets/audio/selfdriven-institute-ai-superintelligence-warnings-to-UK-parliament.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
