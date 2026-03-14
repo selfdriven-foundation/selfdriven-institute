@@ -7,7 +7,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Resources
 
-- [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/uk-parliament-hearing-on-ai-risks-impact-and-regulation)
+- [UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/uk-parliament-hearing-on-ai-risks-impact-and-regulation)
 
 
 ## Related
