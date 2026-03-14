@@ -11,7 +11,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 
 ## Related
-- [Situational Awareness Framework for Organisations](/situational-awareness-framework/organisations/)
+- [Situational Awareness Framework for Organisations](https://selfdriven.ai/situational-awareness-framework/organisations/)
 - [System Leverage](https://selfdriven.ai/research/system-leverage)
 - [The Rising Tank](https://selfdriven.ai/research/the-rising-tank)
 - [It’s all so quiet — the busy-ness has gone.](https://www.selfdriven.business)
