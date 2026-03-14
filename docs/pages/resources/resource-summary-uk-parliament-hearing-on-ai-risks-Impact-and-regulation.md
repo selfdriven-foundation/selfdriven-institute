@@ -1,7 +1,7 @@
 ---
 layout: selfdriven
-title: Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation
-permalink: /resources/summary-uk-parliament-hearing-on-ai-risks-Impact-and-regulation
+title: Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee
+permalink: /resources/uk-parliament-hearing-on-ai-risks-impact-and-regulation
 description: "The UK Parliament Joint Committee on Human Rights convened this hearing to evaluate the escalating implications of artificial intelligence (AI) on fundamental human rights and the future of human biological primacy"
 ---
 
@@ -94,8 +94,8 @@ The hearing concluded with a recognition of the "average concern level of 8" reg
 
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
-  <h3 class="sd-share-title">Exploring Governance & Policy for a New Emerging Society</h3>
-  <p class="sd-share-subtitle">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</p>
+  <h3 class="sd-share-title">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</h3>
+  <p class="sd-share-subtitle">UK Parliament Hearing on AI Risks, Impact, and Regulation</p>
 
   <!-- URL pill + copy button -->
   <div class="sd-share-url-row">

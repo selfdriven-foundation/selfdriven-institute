@@ -7,7 +7,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Resources
 
-- [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/summary-uk-parliament-hearing-on-ai-risks-Impact-and-regulation)
+- [Summary: UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/uk-parliament-hearing-on-ai-risks-impact-and-regulation)
 
 
 ## Related
@@ -21,10 +21,12 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [Constructive Preparation](https://selfdriven.ai/research/constructive-preparation)
 - [*More videos, topics & resources @ selfdriven.ai/research*](https://www.selfdriven.ai/research)
 
+---
+
 <div class="sd-share-card" id="sd-share">
   <p class="sd-share-eyebrow">selfdriven.institute Resources</p>
-  <h3 class="sd-share-title">Exploring Governance & Policy for a New Emerging Society</h3>
-  <p class="sd-share-subtitle">Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee</p>
+  <h3 class="sd-share-title">Resources for governance frameworks for an emerging society.</h3>
+  <p class="sd-share-subtitle">Exploring Governance & Policy for a New Emerging Society.</p>
 
   <!-- URL pill + copy button -->
   <div class="sd-share-url-row">
