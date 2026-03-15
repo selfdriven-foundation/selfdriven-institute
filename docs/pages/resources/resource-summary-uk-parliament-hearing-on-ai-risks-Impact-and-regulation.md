@@ -12,7 +12,7 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
   <li>
 	<div style="margin-bottom:10px;">
 		<a href="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" target="_blank">
-			Podcast #1, Tsunami or Rising Tide</a> - 23min
+			Podcast #1, Tsunami or Rising Tide?</a> - 23min
 	</div>
 	<audio controls>
 		<source src="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" type="audio/mp4">
