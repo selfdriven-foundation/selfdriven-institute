@@ -8,7 +8,7 @@ description: "The UK Parliament Joint Committee on Human Rights convened this he
 # Roman Yampolskiy & Ethan Mollick Testifying for UK Parliament/Human Rights Committee
 
 <ul>
-  <li><a href="https://youtu.be/7R1T80zv27Q">Watch Video Recording of the Joint Committee on Human Rights Session</a> - 30min</li>
+  <li><a href="https://youtu.be/7R1T80zv27Q">Watch Video Recording of the Joint Committee on Human Rights Session</a> - 35min</li>
   <li>
 	<div style="margin-bottom:10px;">
 		<a href="/assets/audio/selfdriven-institute-ai-tsunami-or-rising-tide.m4a" target="_blank">
