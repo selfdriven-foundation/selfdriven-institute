@@ -5,7 +5,7 @@ permalink: /research
 description: "selfdriven Institute — research into governance frameworks for an emerging society."
 ---
 
-## Resources
+## Topics
 
 - [selfdriven Research](https://research.selfdriven.foundation)
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
@@ -18,8 +18,6 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [dsociety.io](https://dsociety.io)
 - [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
 - [Digital Trust Infrastructure Paper, Cardano Foundation & BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
-
-## Frameworks
 
 - [selfdriven.community](https://www.selfdriven.community)
 - [Situational Awareness Framework for Organisations](https://www.selfdriven.ai/situational-awareness-framework/organisations/)
