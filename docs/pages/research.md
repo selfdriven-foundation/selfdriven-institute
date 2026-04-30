@@ -29,3 +29,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Universal Basic Services](/research/areas-of-focus/universal-basic-services/)
 - [Finance - e.g. What is money?](/research/areas-of-focus/finance/)
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
+
+## Emerging Risks
+
+- [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/research/regulatory-risk-of-not-adoptin-available-risk-reduction-services)
