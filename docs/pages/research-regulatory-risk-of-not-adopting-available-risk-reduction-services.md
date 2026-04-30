@@ -1,7 +1,7 @@
 ---
 layout: selfdriven
 title: Regulatory Risk of Not Adopting Available Risk-Reduction Services
-permalink: /research/regulatory-risk-of-not-adoptin-available-risk-reduction-services
+permalink: /research/regulatory-risk-of-not-adopting-available-risk-reduction-services
 description: "This paper considers whether the Board has a regulatory, compliance, governance and competitive risk exposure if the organisation does not adopt an available risk-reduction service that is: 1. demonstrably effective; 2. unique or materially differentiated in the open market; 3. already being adopted by competitors or comparable organisations; and 4. relevant to known operational, compliance, security, conduct or resilience risks."
 ---
 
@@ -30,7 +30,7 @@ The board-level question becomes:
 
 Modern regulators increasingly expect boards to demonstrate active oversight of material and emerging risks, not merely passive compliance.
 
-In Australia, APRA’s CPS 220 places ultimate responsibility on the board for an appropriate risk management framework, while CPS 230 requires regulated entities to manage operational risk, critical operations, disruptions and service-provider risk. ASIC also states that risk identification and management, including emerging risks from technological and market change, are core director responsibilities.  [oai_citation:0‡APRA](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-220-Risk-Management-%28July-2017%29.pdf?utm_source=chatgpt.com)
+In Australia, APRA’s CPS 220 places ultimate responsibility on the board for an appropriate risk management framework, while CPS 230 requires regulated entities to manage operational risk, critical operations, disruptions and service-provider risk. ASIC also states that risk identification and management, including emerging risks from technological and market change, are core director responsibilities. [APRA CPS220](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-220-Risk-Management-%28July-2017%29.pdf?utm_source=chatgpt.com)
 
 This means that once a risk-reduction mechanism is known, available and used in-market, the burden shifts. The organisation must be able to show why its alternative approach is equivalent, better, or consciously accepted within risk appetite.
 

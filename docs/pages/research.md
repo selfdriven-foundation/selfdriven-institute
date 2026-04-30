@@ -32,4 +32,4 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 ## Emerging Risks
 
-- [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/research/regulatory-risk-of-not-adoptin-available-risk-reduction-services)
+- [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/research/regulatory-risk-of-not-adopting-available-risk-reduction-services)
