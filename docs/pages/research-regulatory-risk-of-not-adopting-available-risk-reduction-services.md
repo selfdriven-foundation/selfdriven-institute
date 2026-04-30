@@ -5,7 +5,7 @@ permalink: /research/regulatory-risk-of-not-adopting-available-risk-reduction-se
 description: "This paper considers whether the Board has a regulatory, compliance, governance and competitive risk exposure if the organisation does not adopt an available risk-reduction service that is: 1. demonstrably effective; 2. unique or materially differentiated in the open market; 3. already being adopted by competitors or comparable organisations; and 4. relevant to known operational, compliance, security, conduct or resilience risks."
 ---
 
-# Board Paper: Regulatory Risk of Not Adopting Available Risk-Reduction Services
+# Research Paper: Regulatory Risk of Not Adopting Available Risk-Reduction Services
 
 ## 1. Purpose
 
