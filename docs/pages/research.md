@@ -5,6 +5,11 @@ permalink: /research
 description: "selfdriven Institute — research into governance frameworks for an emerging society."
 ---
 
+## Papers
+
+- [Money as a Token of Scarcity](/paper/rmoney-as-a-token-of-scarcity)
+- [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/paper/regulatory-risk-of-not-adopting-available-risk-reduction-services)
+
 ## Topics
 
 - [selfdriven Research](https://research.selfdriven.foundation)
@@ -30,6 +35,3 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Finance - e.g. What is money?](/research/areas-of-focus/finance/)
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
 
-## Emerging Risks
-
-- [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/research/regulatory-risk-of-not-adopting-available-risk-reduction-services)
