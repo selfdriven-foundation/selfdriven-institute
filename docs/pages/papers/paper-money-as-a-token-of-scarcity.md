@@ -234,8 +234,6 @@ In a world where scarcity is reduced or precisely managed:
 
 > **Money = Token(Claim on Scarce Resources)**
 
----
-
 ## Podcasts
 
 ### Money Is Just A Scarcity Token
