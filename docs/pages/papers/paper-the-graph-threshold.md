@@ -473,8 +473,6 @@ But rather:
 
 > “How do humans remain meaningful participants inside exponentially scaling intelligence graphs?”
 
-
-
 ## Podcasts
 
 ### Why Human Nodes Lose Economic Value
@@ -483,3 +481,7 @@ But rather:
 	<source src="/assets/audio/selfdriven-institute-why-human-nodes-lose-economic-value.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
+
+---
+
+- [Human Spirit in the age of the Intelligent Graph](/paper/the-graph-threshold-human-spirit)
