@@ -384,3 +384,12 @@ The future is not discovered first.
 It is declared first.
 
 And declarations are made in language.
+
+## Podcasts
+
+### Language Is Your Reality
+
+<audio controls>
+	<source src="/assets/audio/selfdriven-institute-language-as-your-reality.m4a" type="audio/mp4">
+	Your browser does not support the audio element.
+</audio>
