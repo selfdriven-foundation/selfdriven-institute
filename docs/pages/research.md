@@ -10,6 +10,8 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [The Graph Threshold](/paper/the-graph-threshold)
 - [Money as a Token of Scarcity](/paper/money-as-a-token-of-scarcity)
 - [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/paper/regulatory-risk-of-not-adopting-available-risk-reduction-services)
+- [The Path to Discover Everything](/paper/the-path-to-discover-everything)
+- [Everything Is Defined in Language](/paper/everything-is-defined-in-language)
 
 ## Topics
 
