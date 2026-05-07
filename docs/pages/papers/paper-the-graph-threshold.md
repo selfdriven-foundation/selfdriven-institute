@@ -30,7 +30,9 @@ The paper proposes that April 2026 may represent an early symbolic marker of thi
 
 ## 1. The Core Diagram
 
-The whiteboard diagram describes two trajectories:
+<img src="/assets/img/selfdriven-institute-graph-1.png">
+
+The diagram describes two trajectories:
 
 - Human Society (red)
 - AI (blue)
