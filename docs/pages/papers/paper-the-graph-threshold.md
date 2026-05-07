@@ -28,7 +28,7 @@ The paper proposes that April 2026 may represent an early symbolic marker of thi
 
 
 
-## 1. The Core Diagram
+## 1. The Diagram
 
 <img src="/assets/img/selfdriven-institute-graph-1.png" style="width: 100%; max-width: 100%; height: auto; border-radius: 24px; display: block; object-fit: cover;">
 
