@@ -367,7 +367,7 @@ Disconnected individuals may struggle economically even while basic abundance in
 
 ## 12. Implications for Institutions
 
-## Governments
+### Governments
 
 Need new models for:
 - taxation,
