@@ -12,6 +12,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/paper/regulatory-risk-of-not-adopting-available-risk-reduction-services)
 - [The Path to Discover Everything](/paper/the-path-to-discover-everything)
 - [Everything Is Defined in Language](/paper/everything-is-defined-in-language)
+- [Self-Regulation as a Function of Self-Sovereignty](/paper/self-regulation-self-sovereignty)
 
 ## Topics
 
