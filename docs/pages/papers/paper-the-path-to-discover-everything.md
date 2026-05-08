@@ -32,9 +32,7 @@ The bottleneck to discovery may no longer be intelligence itself, but instead:
 - incentives,
 - and human meaning.
 
-
-
-# 1. Discovery as Compression
+## 1. Discovery as Compression
 
 Discovery is fundamentally the compression of reality into useful models.
 
@@ -57,7 +55,7 @@ The greater the intelligence, the larger the searchable space of possible compre
 
 
 
-# 2. Human Discovery Was Previously Bandwidth Limited
+## 2. Human Discovery Was Previously Bandwidth Limited
 
 Human civilisation evolved under severe constraints:
 
@@ -82,7 +80,7 @@ Knowledge accumulation was linear because intelligence production was linear.
 
 
 
-# 3. AI Changes the Discovery Equation
+## 3. AI Changes the Discovery Equation
 
 AI changes the equation because intelligence becomes:
 
@@ -109,7 +107,7 @@ Just as machines amplified physical labour, AI amplifies:
 
 
 
-# 4. The Discovery Graph
+## 4. The Discovery Graph
 
 Reality may be understood as a massive interconnected graph of discoverable relationships.
 
@@ -139,7 +137,7 @@ The difference in scale is difficult to comprehend.
 
 
 
-# 5. AI as a Universal Search Function
+## 5. AI as a Universal Search Function
 
 At its core, AI acts as a universal search mechanism over possibility space.
 
@@ -168,7 +166,7 @@ This recursive loop is the engine of accelerated discovery.
 
 
 
-# 6. From Tools to Autonomous Discovery Systems
+## 6. From Tools to Autonomous Discovery Systems
 
 Early computing assisted humans.
 
@@ -192,7 +190,7 @@ They increasingly:
 
 
 
-# 7. The Discovery Horizon Expands Exponentially
+## 7. The Discovery Horizon Expands Exponentially
 
 The size of searchable reality expands as intelligence expands.
 
@@ -217,7 +215,7 @@ AI dramatically increases traversal speed.
 
 
 
-# 8. The Bottleneck Moves to Verification
+## 8. The Bottleneck Moves to Verification
 
 As intelligence scales, generation becomes cheap.
 
@@ -249,7 +247,7 @@ This elevates the importance of:
 
 
 
-# 9. Intelligence Becomes Infrastructure
+## 9. Intelligence Becomes Infrastructure
 
 Historically:
 - roads moved goods,
@@ -276,7 +274,7 @@ This is why future advantage may depend less on hierarchy and more on:
 
 
 
-# 10. The Human Question
+## 10. The Human Question
 
 If AI can discover almost everything discoverable:
 what remains uniquely human?
@@ -298,7 +296,7 @@ It may transform.
 
 
 
-# 11. Discovery Is Not Equal to Wisdom
+## 11. Discovery Is Not Equal to Wisdom
 
 A civilisation capable of discovering everything is not automatically wise.
 
@@ -319,7 +317,7 @@ The issue is whether civilisation can remain coherent while it does.
 
 
 
-# 12. The Path to Discover Everything
+## 12. The Path to Discover Everything
 
 The path appears to follow several stages:
 
@@ -339,7 +337,7 @@ At advanced stages:
 
 
 
-# 13. The Final Constraint
+## 13. The Final Constraint
 
 If intelligence becomes effectively unbounded, the remaining constraints may be:
 
@@ -360,7 +358,7 @@ It may instead be constrained by:
 
 
 
-# 14. Conclusion
+## 14. Conclusion
 
 AI may represent the transition from:
 - isolated biological intelligence,

@@ -21,7 +21,7 @@ This paper explores the relationship between language, mindset, perception, and 
 
 
 
-# 1. Reality Exists Through Language
+## 1. Reality Exists Through Language
 
 Before anything becomes physical, it becomes linguistic.
 
@@ -60,7 +60,7 @@ They are unconsciously replaying inherited language.
 
 
 
-# 2. The Default Future
+## 2. The Default Future
 
 A “default future” is the trajectory a person unconsciously moves toward based on their current identity, habits, emotional patterns, assumptions, and language structures.
 
@@ -88,11 +88,11 @@ But the underlying mechanism is linguistic.
 
 
 
-# 3. The Three Laws of Performance
+## 3. The Three Laws of Performance
 
 The work of *The Three Laws of Performance* articulates a powerful framework for understanding how language shapes human capability and outcomes.
 
-## Law 1 — How People Perform Correlates to How Situations Occur to Them
+### Law 1 — How People Perform Correlates to How Situations Occur to Them
 
 People do not respond directly to objective reality.
 
@@ -116,7 +116,7 @@ Performance follows occurrence.
 
 
 
-## Law 2 — How a Situation Occurs Arises in Language
+### Law 2 — How a Situation Occurs Arises in Language
 
 Situations occur through linguistic interpretation.
 
@@ -149,7 +149,7 @@ In this sense, language functions as a perceptual operating system.
 
 
 
-## Law 3 — Future-Based Language Transforms How Situations Occur
+### Law 3 — Future-Based Language Transforms How Situations Occur
 
 Language is not only descriptive.
 
@@ -179,7 +179,7 @@ The future arrives linguistically before it arrives materially.
 
 
 
-# 4. Mind-Filters and Constructed Reality
+## 4. Mind-Filters and Constructed Reality
 
 Human beings do not perceive the world objectively.
 
@@ -218,7 +218,7 @@ The language interpretation differs.
 
 
 
-# 5. selfdriven and the Rewriting of Futures
+## 5. selfdriven and the Rewriting of Futures
 
 The selfdriven ecosystem is fundamentally about conscious participation in human development.
 
@@ -245,7 +245,7 @@ The goal is conscious self-authorship.
 
 
 
-# 6. From Reactive Language to Generative Language
+## 6. From Reactive Language to Generative Language
 
 Many people operate primarily in reactive language:
 
@@ -275,7 +275,7 @@ It changes what actions become imaginable.
 
 
 
-# 7. Language as Human Infrastructure
+## 7. Language as Human Infrastructure
 
 Modern civilisation itself is built from shared linguistic constructs.
 
@@ -303,7 +303,7 @@ Language is the invisible infrastructure of civilisation.
 
 
 
-# 8. AI and the Amplification of Language
+## 8. AI and the Amplification of Language
 
 Artificial Intelligence introduces a new dimension.
 
@@ -327,7 +327,7 @@ The future may increasingly depend on humanity’s ability to consciously govern
 
 
 
-# 9. Purposeful Action
+## 9. Purposeful Action
 
 Mindset without action becomes fantasy.
 
@@ -357,7 +357,7 @@ People become what they repeatedly articulate, perceive, and enact.
 
 
 
-# 10. Conclusion
+## 10. Conclusion
 
 Everything meaningful in human civilisation exists first in language.
 
@@ -393,3 +393,7 @@ And declarations are made in language.
 	<source src="/assets/audio/selfdriven-institute-language-as-your-reality.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
+
+---
+
+- [threelawsofperformance.com](https://threelawsofperformance.com)
