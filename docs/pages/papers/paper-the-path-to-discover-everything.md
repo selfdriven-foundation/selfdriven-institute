@@ -85,7 +85,7 @@ Knowledge accumulation was linear because intelligence production was linear.
 AI changes the equation because intelligence becomes:
 
 | Old World | AI World |
-|||
+|--|--|
 | scarce | abundant |
 | localised | networked |
 | biological | synthetic |
