@@ -17,7 +17,7 @@ The implication is profound:
 
 If language defines perception, and perception defines action, then changing language changes futures.
 
-This paper explores the relationship between language, mindset, perception, and action through the lens of *The Three Laws of Performance*, and positions the selfdriven ecosystem and the Level Up app as practical systems for helping individuals consciously rewrite their “default future.”
+This paper explores the relationship between language, mindset, perception, and action through the lens of [*The Three Laws of Performance*](https://threelawsofperformance.com), and positions the selfdriven ecosystem and the Level Up app as practical systems for helping individuals consciously rewrite their “default future.”
 
 
 
