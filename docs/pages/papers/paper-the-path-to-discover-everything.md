@@ -322,7 +322,7 @@ The issue is whether civilisation can remain coherent while it does.
 The path appears to follow several stages:
 
 | Stage | Description |
-|||
+|--|--|
 | Tool Intelligence | AI assists humans |
 | Agent Intelligence | AI performs bounded tasks |
 | Network Intelligence | AI systems coordinate |
