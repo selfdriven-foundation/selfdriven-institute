@@ -9,7 +9,7 @@ permalink: /research/financial-systems/swift
 
 **Financial Stability Risks in the Age of Machine-Speed Adversaries**
 
-The recent IMF warning regarding artificial intelligence and financial stability risks is not merely a cybersecurity concern.
+The recent [IMF warning](https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks) regarding artificial intelligence and financial stability risks is not merely a cybersecurity concern.
 
 It is a warning about the possible collapse of trust within the coordination layer of the global financial system.
 
