@@ -13,9 +13,11 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [The Path to Discover Everything](/paper/the-path-to-discover-everything)
 - [Everything Is Defined in Language](/paper/everything-is-defined-in-language)
 - [Self-Regulation as a Function of Self-Sovereignty](/paper/self-regulation-self-sovereignty)
+- [Self-Sovereignty as a Function of Self-Regulation](/paper/self-sovereignty-self-regulation)
 
 ## Topics
 
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems-imf)
 - [selfdriven Research](https://research.selfdriven.foundation)
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - selfdriven.fyi:
