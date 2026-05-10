@@ -344,8 +344,7 @@ It challenges the foundations of institutional trust itself.
 
 ## References
 
-- [International Monetary Fund (IMF) — Financial Stability Risks Mount as Artificial Intelligence Fuels Cyberattacks]
-  (https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks)
+- [International Monetary Fund (IMF) — Financial Stability Risks Mount as Artificial Intelligence Fuels Cyberattacks](https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks)
 
 ## Podcasts
 
