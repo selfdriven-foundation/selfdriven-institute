@@ -7,7 +7,7 @@ permalink: /research/financial-systems-imf/fix
 
 # How Long Will It Take to Fix the AI vs Financial System Risk?
 
-**The Short Answer**
+## The Short Answer
 
 Potentially decades.
 
