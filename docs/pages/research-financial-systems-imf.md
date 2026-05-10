@@ -36,7 +36,7 @@ It is the emergence of systemic trust instability.
 
 
 
-# The SWIFT Network Was Designed for Human-Era Finance
+## The SWIFT Network Was Designed for Human-Era Finance
 
 SWIFT was created to solve a major coordination problem:
 
@@ -66,7 +66,7 @@ They become dangerous in an AI-enabled world.
 
 
 
-# AI Removes the Human Bottleneck
+## AI Removes the Human Bottleneck
 
 Historically:
 - attacks required human coordination,
@@ -96,7 +96,7 @@ The bottleneck becomes compute and access.
 
 
 
-# The Real Risk Is Correlated Failure
+## The Real Risk Is Correlated Failure
 
 Traditional cybersecurity thinking assumes:
 - local failures,
@@ -130,7 +130,7 @@ That is a fundamentally different category of risk.
 
 
 
-# SWIFT’s Weakest Layer Is Trust
+## SWIFT’s Weakest Layer Is Trust
 
 SWIFT fundamentally depends on trusted institutional signaling.
 
@@ -168,7 +168,7 @@ The moment participants lose confidence in the shared informational state, insta
 
 
 
-# Human Verification No Longer Scales
+## Human Verification No Longer Scales
 
 Historically, suspicious activity could be escalated to humans.
 
@@ -200,7 +200,7 @@ At that point:
 
 
 
-# The Next Financial Crisis May Be Informational
+## The Next Financial Crisis May Be Informational
 
 Historically, financial crises were often:
 - liquidity crises,
@@ -231,7 +231,7 @@ The issue becomes:
 
 
 
-# Legacy Infrastructure Contains Embedded Assumptions
+## Legacy Infrastructure Contains Embedded Assumptions
 
 The age of SWIFT matters because old systems embed old assumptions.
 
@@ -252,7 +252,7 @@ The problem is that:
 
 
 
-# The Shift From Institutional Trust to Cryptographic Trust
+## The Shift From Institutional Trust to Cryptographic Trust
 
 The AI era increasingly pushes financial systems toward:
 - cryptographic verification,
@@ -281,7 +281,7 @@ Systems increasingly require:
 
 
 
-# The Strategic Question
+## The Strategic Question
 
 The critical question is no longer:
 > “Can banks stop hackers?”
@@ -303,7 +303,7 @@ Artificial intelligence introduces the possibility that:
 
 
 
-# Conclusion
+## Conclusion
 
 The IMF warning should not be interpreted narrowly as:
 - “AI increases cyber risk.”
@@ -342,7 +342,7 @@ It challenges the foundations of institutional trust itself.
 
 
 
-# References
+## References
 
 - International Monetary Fund (IMF) — Financial Stability Risks Mount as Artificial Intelligence Fuels Cyberattacks  
   https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks

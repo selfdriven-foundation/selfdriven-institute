@@ -7,7 +7,7 @@ permalink: /research/financial-systems-imf/fix
 
 # How Long Will It Take to Fix the AI vs Financial System Risk?
 
-## The Short Answer
+**The Short Answer**
 
 Potentially decades.
 
@@ -29,9 +29,9 @@ Financial systems optimise for:
 
 Not rapid innovation.
 
----
 
-# The Core Problem
+
+## The Core Problem
 
 Artificial Intelligence capability is compounding exponentially.
 
@@ -46,9 +46,9 @@ Financial adaptation   = bureaucratic/incremental
 
 The danger zone is the expanding gap between those two curves.
 
----
 
-# The Next 3–5 Years: The Most Dangerous Period
+
+## The Next 3–5 Years: The Most Dangerous Period
 
 This is likely the highest-risk phase.
 
@@ -75,9 +75,9 @@ The initial industry response will likely be:
 
 But these are mostly defensive layers added onto old trust models.
 
----
 
-# The Real Fix Requires Rebuilding the Trust Layer
+
+## The Real Fix Requires Rebuilding the Trust Layer
 
 The deeper problem is not merely cybersecurity.
 
@@ -104,11 +104,11 @@ This is not a patch.
 
 It is a redesign of financial coordination infrastructure.
 
----
 
-# Why This Takes So Long
 
-## 1. Global Compatibility Constraints
+## Why This Takes So Long
+
+### 1. Global Compatibility Constraints
 
 Finance is interconnected.
 
@@ -130,9 +130,9 @@ must continue interoperating.
 
 This creates enormous inertia.
 
----
 
-# 2. Regulation Moves Slowly
+
+### 2. Regulation Moves Slowly
 
 Regulators are still adapting to:
 - cloud infrastructure
@@ -147,9 +147,9 @@ Regulators must avoid destabilising the system while modernising it.
 
 Therefore they move cautiously.
 
----
 
-# 3. Institutions Resist Core Infrastructure Change
+
+### 3. Institutions Resist Core Infrastructure Change
 
 Large institutions generally:
 - layer new controls onto old systems
@@ -170,9 +170,9 @@ This results in:
 around
 - legacy trust assumptions
 
----
 
-# 4. Human Governance Is the Bottleneck
+
+### 4. Human Governance Is the Bottleneck
 
 Ironically, the largest scalability problem is human coordination itself.
 
@@ -187,18 +187,18 @@ Examples:
 
 Machine-speed adversaries are colliding with quarter-by-quarter governance systems.
 
----
 
-# The Likely Evolution Path
+
+## The Likely Evolution Path
 
 The future probably does not look like:
 - one giant replacement event
 
 Instead, it likely evolves in layers.
 
----
 
-# Phase 1 — AI Defensive Arms Race (Now)
+
+###  Phase 1 — AI Defensive Arms Race (Now)
 
 Current focus:
 - AI vs AI cybersecurity
@@ -210,9 +210,9 @@ Current focus:
 
 This phase attempts to defend existing systems.
 
----
 
-# Phase 2 — Cryptographic Hardening
+
+### Phase 2 — Cryptographic Hardening
 
 Likely developments:
 - hardware-backed signing
@@ -224,9 +224,9 @@ Likely developments:
 
 This phase strengthens trust boundaries.
 
----
 
-# Phase 3 — Verifiable Financial Coordination
+
+### Phase 3 — Verifiable Financial Coordination
 
 Possible developments:
 - cryptographically provable settlement
@@ -238,9 +238,9 @@ Possible developments:
 
 This phase changes how trust itself is represented.
 
----
 
-# Phase 4 — Machine-Native Financial Systems
+
+### Phase 4 — Machine-Native Financial Systems
 
 Potential future:
 - autonomous treasury systems
@@ -255,9 +255,9 @@ This phase could take:
 
 Possibly longer globally.
 
----
 
-# The Deep Structural Issue
+
+## The Deep Structural Issue
 
 The issue is not merely:
 > “old software.”
@@ -284,9 +284,9 @@ must gradually evolve toward:
 - machine-verifiable truth
 - deterministic trust systems
 
----
 
-# The Most Important Insight
+
+## The Most Important Insight
 
 The next major transformation in finance is probably not:
 - digital banking
@@ -304,5 +304,7 @@ That transition may become one of the largest infrastructure migrations in finan
 And the most dangerous period is likely not after the transition.
 
 It is during the transition itself.
+
+---
 
 - [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems-imf)
