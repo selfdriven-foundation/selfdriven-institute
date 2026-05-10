@@ -29,7 +29,7 @@ Financial systems optimise for:
 
 Not rapid innovation.
 
-
+<img src="/assets/img/selfdriven-institute-imf-swift-1.png" style="width: 100%; max-width: 100%; height: auto; border-radius: 24px; display: block; object-fit: cover;">
 
 ## The Core Problem
 
