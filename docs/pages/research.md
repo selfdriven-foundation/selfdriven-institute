@@ -17,7 +17,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 ## Topics
 
-- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/swift)
 - [selfdriven Research](https://research.selfdriven.foundation)
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - selfdriven.fyi:
