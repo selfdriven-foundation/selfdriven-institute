@@ -2,7 +2,7 @@
 layout: selfdriven
 title: Bitcoin, Cardano and Midnight - IMF SWIFT Fix - selfdriven Institute
 subtitle: How Bitcoin, Cardano and Midnight Could Help Fix the Financial Trust Problem
-permalink: /research/financial-systems/imf/fix/blockchain
+permalink: /research/financial-systems/swift/fix/blockchain
 ---
 
 # How Bitcoin, Cardano and Midnight Could Help Fix the Financial Trust Problem
@@ -307,6 +307,6 @@ They become:
 
 ---
 
-- [What is SWIFT](/research/financial-systems/swift)
-- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)
-- [The Fix](/research/financial-systems/imf/fix)
+- [What is SWIFT](/research/financial-systems/swift/about)
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/swift)
+- [The Fix](/research/financial-systems/swift/fix)

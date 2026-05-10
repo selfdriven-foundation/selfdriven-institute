@@ -2,7 +2,7 @@
 layout: selfdriven
 title: IMF SWIFT Fix - selfdriven Institute
 subtitle: Financial Stability Risks in the Age of Machine-Speed Adversaries
-permalink: /research/financial-systems/imf/fix
+permalink: /research/financial-systems/swift/fix
 ---
 
 # How Long Will It Take to Fix the AI vs Financial System Risk?
@@ -29,7 +29,7 @@ Financial systems optimise for:
 
 Not rapid innovation.
 
-<img src="/assets/img/selfdriven-institute-imf-swift-1.png" style="width: 80%; max-width: 80%; height: auto; border-radius: 24px; display: block; object-fit: cover;">
+<img src="/assets/img/selfdriven-institute-swift-1.png" style="width: 80%; max-width: 80%; height: auto; border-radius: 24px; display: block; object-fit: cover;">
 
 ## The Core Problem
 
@@ -312,6 +312,6 @@ It is during the transition itself.
 
 ---
 
-- [What is SWIFT](/research/financial-systems/swift)
-- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)
-- [The Fix & Blockchain](/research/financial-systems/imf/fix/blockchain)
+- [What is SWIFT](/research/financial-systems/swift/about)
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/swift)
+- [The Fix & Blockchain](/research/financial-systems/swift/fix/blockchain)
