@@ -1,8 +1,8 @@
 ---
 layout: selfdriven
-title: IMF Fix - entityOS.io
+title: IMF SWIFT Fix - selfdriven Institute
 subtitle: Financial Stability Risks in the Age of Machine-Speed Adversaries
-permalink: /research/financial-systems-imf/fix
+permalink: /research/financial-systems/imf/fix
 ---
 
 # How Long Will It Take to Fix the AI vs Financial System Risk?
@@ -305,6 +305,12 @@ And the most dangerous period is likely not after the transition.
 
 It is during the transition itself.
 
+## References
+
+- SWIFT Overview  
+  https://www.swift.com
+
 ---
 
-- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems-imf)
+- [What is SWIFT](/research/financial-systems/swift)
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)

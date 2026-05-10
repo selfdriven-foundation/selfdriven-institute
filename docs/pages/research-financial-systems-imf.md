@@ -2,7 +2,7 @@
 layout: selfdriven
 title: AI, SWIFT & The Coming Trust Crisis - selfdriven Institute
 subtitle: Financial Stability Risks in the Age of Machine-Speed Adversaries
-permalink: /research/financial-systems-imf
+permalink: /research/financial-systems/imf
 ---
 
 # AI, SWIFT & The Coming Trust Crisis
@@ -344,15 +344,18 @@ It challenges the foundations of institutional trust itself.
 
 ## References
 
-- International Monetary Fund (IMF) — Financial Stability Risks Mount as Artificial Intelligence Fuels Cyberattacks  
-  https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks
+- [International Monetary Fund (IMF) — Financial Stability Risks Mount as Artificial Intelligence Fuels Cyberattacks]
+  (https://www.imf.org/en/blogs/articles/2026/05/07/financial-stability-risks-mount-as-artificial-intelligence-fuels-cyberattacks)
 
-- Financial Times — AI-driven cyber risk and financial system stability discussions  
-  https://www.ft.com
+## Podcasts
 
-- SWIFT Overview  
-  https://www.swift.com
+### When Banks Can No Longer Trust Reality
 
+<audio controls>
+	<source src="/assets/audio/selfdriven-institure-when-banks-can-no-longer-trust-reality.m4a" type="audio/mp4">
+	Your browser does not support the audio element.
+</audio>
 
+---
 
-- [The Fix](/research/financial-systems-imf/fix)
+- [The Fix](/research/financial-systems/imf/fix)
