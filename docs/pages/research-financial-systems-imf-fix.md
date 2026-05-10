@@ -314,3 +314,4 @@ It is during the transition itself.
 
 - [What is SWIFT](/research/financial-systems/swift)
 - [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)
+- [The Fix & Blockchain](/research/financial-systems/imf/fix/blockchain)

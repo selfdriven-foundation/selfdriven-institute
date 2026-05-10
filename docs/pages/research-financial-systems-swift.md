@@ -291,4 +291,4 @@ That transition may become one of the largest infrastructure migrations in finan
 
 ---
 
-- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems-imf)
+- [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/imf)
