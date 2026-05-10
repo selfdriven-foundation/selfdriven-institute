@@ -1,6 +1,6 @@
 ---
 layout: selfdriven
-title: IMF SWIFT Fix - selfdriven Institute
+title: SWIFT Fix - selfdriven Institute
 subtitle: Financial Stability Risks in the Age of Machine-Speed Adversaries
 permalink: /research/financial-systems/swift/fix
 ---
