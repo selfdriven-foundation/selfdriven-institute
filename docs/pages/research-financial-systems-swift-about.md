@@ -24,11 +24,11 @@ The key distinction is:
 SWIFT is effectively:
 > the messaging backbone for global banking trust coordination.
 
----
 
-# The Scale Is Enormous
 
-## Current SWIFT Reach
+## The Scale Is Enormous
+
+### Current SWIFT Reach
 
 SWIFT connects approximately:
 - 11,000+ financial institutions
@@ -51,15 +51,15 @@ SWIFT is deeply embedded into:
 - trade finance
 - institutional liquidity coordination
 
----
 
-# What Actually Depends on SWIFT?
+
+## What Actually Depends on SWIFT?
 
 A very large portion of traditional international finance.
 
----
 
-# Cross-Border Bank Transfers
+
+### Cross-Border Bank Transfers
 
 When one bank sends money internationally to another bank:
 - SWIFT messaging is commonly involved
@@ -70,9 +70,9 @@ Especially for:
 - international corporate payments
 - interbank settlements
 
----
 
-# Correspondent Banking
+
+### Correspondent Banking
 
 This is one of the most important layers.
 
@@ -90,9 +90,9 @@ SWIFT coordinates:
 Without SWIFT:
 - correspondent banking becomes dramatically slower and riskier.
 
----
 
-# Foreign Exchange Markets
+
+### Foreign Exchange Markets
 
 FX markets depend heavily on:
 - confirmation messaging
@@ -104,9 +104,9 @@ SWIFT is heavily used for:
 - confirmations
 - treasury coordination
 
----
 
-# Securities & Capital Markets
+
+### Securities & Capital Markets
 
 SWIFT messaging is widely used for:
 - securities settlement
@@ -115,9 +115,9 @@ SWIFT messaging is widely used for:
 - corporate actions
 - institutional asset transfers
 
----
 
-# Trade Finance
+
+### Trade Finance
 
 Global trade relies heavily on:
 - letters of credit
@@ -126,15 +126,15 @@ Global trade relies heavily on:
 
 SWIFT is deeply integrated into this ecosystem.
 
----
 
-# How Dependent Is the World Really?
+
+## How Dependent Is the World Really?
 
 The answer is nuanced.
 
----
 
-# Retail Payments?
+
+### Retail Payments?
 
 Less dependent than before.
 
@@ -148,9 +148,9 @@ Examples:
 
 These are domestic or regional rails.
 
----
 
-# International Institutional Coordination?
+
+### International Institutional Coordination?
 
 Still heavily dependent.
 
@@ -160,9 +160,9 @@ Especially:
 - correspondent banking
 - cross-border liquidity management
 
----
 
-# Why SWIFT Is So Powerful
+
+## Why SWIFT Is So Powerful
 
 Because it became:
 - the trusted neutral coordination standard
@@ -179,9 +179,9 @@ SWIFT represents:
 
 That is extremely difficult to replace.
 
----
 
-# Important Clarification
+
+## Important Clarification
 
 People often think:
 
@@ -207,9 +207,9 @@ The problem becomes:
 SWIFT is essentially:
 > a synchronization layer for institutional trust.
 
----
 
-# The Real Systemic Risk
+
+## The Real Systemic Risk
 
 The danger is not merely:
 - a SWIFT outage
@@ -232,9 +232,9 @@ then settlement activity slows or halts.
 
 That is where systemic crises emerge.
 
----
 
-# Why AI Changes the Equation
+
+## Why AI Changes the Equation
 
 Historically:
 - attacking trust coordination at global scale was extremely difficult
@@ -249,9 +249,9 @@ This means:
 - the weakest part of global finance may no longer be money itself
 - but the coordination layer that tells institutions what is true
 
----
 
-# The Bigger Historical Perspective
+
+## The Bigger Historical Perspective
 
 SWIFT was designed for:
 - a human-speed world
@@ -269,9 +269,9 @@ This creates tension between:
 and
 - machine-era adversaries
 
----
 
-# The Likely Direction of Evolution
+
+## The Likely Direction of Evolution
 
 The future likely trends toward:
 - cryptographically verifiable coordination

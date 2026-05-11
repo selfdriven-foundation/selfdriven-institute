@@ -34,7 +34,7 @@ The result is not merely an increase in cyber risk.
 
 It is the emergence of systemic trust instability.
 
-
+<img src="/assets/img/selfdriven-institute-swift-1.png" style="width: 70%; max-width: 70%; height: auto; border-radius: 24px; display: block; object-fit: cover;">
 
 ## The SWIFT Network Was Designed for Human-Era Finance
 
