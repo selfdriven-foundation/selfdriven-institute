@@ -14,6 +14,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Everything Is Defined in Language](/paper/everything-is-defined-in-language)
 - [Self-Regulation as a Function of Self-Sovereignty](/paper/self-regulation-self-sovereignty)
 - [Self-Sovereignty as a Function of Self-Regulation](/paper/self-sovereignty-self-regulation)
+- [Service as Software](/research/service-as-software)
 
 ## Topics
 
