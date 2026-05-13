@@ -43,7 +43,7 @@ the transition from human-operated organisations to machine-executable capabilit
 
 
 
-# 1. The Historical Model of Service
+## 1. The Historical Model of Service
 
 Historically, services scale poorly because humans scale poorly.
 
@@ -79,7 +79,7 @@ The organisation becomes a coordination engine rather than a value engine.
 
 
 
-# 2. Software Changed Products First
+## 2. Software Changed Products First
 
 Software first transformed products.
 
@@ -98,7 +98,7 @@ The same transition is now happening to services.
 
 
 
-# 3. The Difference Between Tools and Services
+## 3. The Difference Between Tools and Services
 
 A key distinction exists between:
 - software *tools*,
@@ -128,7 +128,7 @@ The service layer itself becomes executable.
 
 
 
-# 4. AI Changes the Economics of Services
+## 4. AI Changes the Economics of Services
 
 The critical shift introduced by AI is not merely intelligence.
 
@@ -156,11 +156,11 @@ The economics of services begin resembling software platforms rather than human 
 
 
 
-# 5. The Stack of Service as Software
+##  5. The Stack of Service as Software
 
 The emerging service stack contains multiple layers.
 
-## Layer 1 — Infrastructure
+### Layer 1 — Infrastructure
 
 The compute substrate:
 - cloud,
@@ -174,7 +174,7 @@ This becomes the operational fabric.
 
 
 
-## Layer 2 — Intelligence
+### Layer 2 — Intelligence
 
 The reasoning layer:
 - LLMs,
@@ -188,7 +188,7 @@ This becomes the cognitive engine.
 
 
 
-## Layer 3 — Orchestration
+### Layer 3 — Orchestration
 
 The coordination layer:
 - workflows,
@@ -202,7 +202,7 @@ This becomes the executive function.
 
 
 
-## Layer 4 — Verification
+### Layer 4 — Verification
 
 The trust layer:
 - cryptographic proofs,
@@ -217,7 +217,7 @@ This becomes the accountability engine.
 
 
 
-## Layer 5 — Experience
+### Layer 5 — Experience
 
 The human interaction layer:
 - conversational systems,
@@ -230,7 +230,7 @@ This becomes the service surface.
 
 
 
-# 6. Organisations Become Runtime Environments
+## 6. Organisations Become Runtime Environments
 
 In the industrial era:
 organisations managed people.
@@ -254,7 +254,7 @@ Execution shifts to software systems.
 
 
 
-# 7. Trust Becomes the Core Product
+## 7. Trust Becomes the Core Product
 
 As services become software, trust becomes the primary differentiator.
 
@@ -280,7 +280,7 @@ This creates the importance of:
 The service economy becomes increasingly proof-based rather than reputation-based.
 
 This represents a shift from:
-## Pixels → Proofs
+**Pixels to Proofs**
 
 Human interpretation becomes insufficient at machine speed.
 
@@ -288,7 +288,7 @@ Trust must become executable.
 
 
 
-# 8. Service Firms Become Protocols
+## 8. Service Firms Become Protocols
 
 One of the most important implications is that many service firms will eventually resemble protocols more than companies.
 
@@ -315,7 +315,7 @@ The institution becomes software-defined.
 
 
 
-# 9. The Human Role Does Not Disappear
+## 9. The Human Role Does Not Disappear
 
 Service as Software does not eliminate humans.
 
@@ -345,7 +345,7 @@ It is civilisational.
 
 
 
-# 10. The Risk of Invisible Infrastructure
+## 10. The Risk of Invisible Infrastructure
 
 The greatest risk is not AI becoming visible.
 
@@ -372,10 +372,10 @@ software services become unaccountable power systems.
 
 
 
-# 11. The Emergence of Selfdriven Systems
+## 11. The Emergence of Selfdriven Systems
 
 A new category of organisation is emerging:
-## selfdriven systems.
+**selfdriven systems.**
 
 These systems:
 - continuously orchestrate themselves,
@@ -400,7 +400,7 @@ Not management hierarchies.
 
 
 
-# 12. The Future
+## 12. The Future
 
 The next decade will likely see:
 - services becoming APIs,
@@ -433,7 +433,7 @@ but rather:
 
 
 
-# Conclusion
+## Conclusion
 
 Service as Software represents one of the most important economic transitions since industrialisation.
 
@@ -465,3 +465,4 @@ They will redesign themselves as:
 The future service organisation is not simply a company using software.
 
 It is software behaving as an organisation.
+
