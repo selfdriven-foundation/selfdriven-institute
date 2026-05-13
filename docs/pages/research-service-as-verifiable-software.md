@@ -466,3 +466,11 @@ The future service organisation is not simply a company using software.
 
 It is software behaving as an organisation.
 
+## Podcasts
+
+### When Banks Can No Longer Trust Reality
+
+<audio controls>
+	<source src="/assets/audio/selfdriven-institure-replacing-human-organisations-with-software-protocols.m4a" type="audio/mp4">
+	Your browser does not support the audio element.
+</audio>
