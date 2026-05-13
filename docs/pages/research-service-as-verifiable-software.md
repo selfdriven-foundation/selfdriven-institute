@@ -34,7 +34,7 @@ A service is increasingly becoming:
 - adaptive workflows,
 - and programmable capability.
 
-The service industry is becoming software.
+The service industry is becoming verifiable software.
 
 Not merely “software-enabled services” — but services themselves becoming executable systems.
 
@@ -365,7 +365,7 @@ This creates new forms of systemic risk:
 
 Therefore:
 Service as Software must also become:
-## Service as Verifiable Software
+**Service as Verifiable Software**
 
 Without verification:
 software services become unaccountable power systems.
