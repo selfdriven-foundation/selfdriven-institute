@@ -14,26 +14,25 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Everything Is Defined in Language](/paper/everything-is-defined-in-language)
 - [Self-Regulation as a Function of Self-Sovereignty](/paper/self-regulation-self-sovereignty)
 - [Self-Sovereignty as a Function of Self-Regulation](/paper/self-sovereignty-self-regulation)
-- [Service as Verifiable Software](/research/service-as-verifiable-software)
+- [Formal Verification and the Future of selfdriven Systems](/paper/formal-verification-and-the-future-of-selfdriven-systems)
 
 ## Topics
 
+- [Service as Verifiable Software](/research/service-as-verifiable-software)
 - [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/swift)
-- [selfdriven Research](https://research.selfdriven.foundation)
-- [selfdriven.community/insights](https://www.selfdriven.community/insights)
-- selfdriven.fyi:
-    - [Society](https://selfdriven.fyi/society)
-    - [Identity](https://selfdriven.fyi/identity)
-    - [Trust](https://selfdriven.fyi/trust)
-    - [Intelligence](https://selfdriven.fyi/intelligence)
-    - [Governance](https://selfdriven.fyi/governance)
-- [dsociety.io](https://dsociety.io)
-- [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
-- [Digital Trust Infrastructure Paper, Cardano Foundation & BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
 
-- [selfdriven.community](https://www.selfdriven.community)
+## selfdriven.ai
+
 - [Situational Awareness Framework for Organisations](https://www.selfdriven.ai/situational-awareness-framework/organisations/)
 - [selfdriven AI Impact on Mind Framework](https://www.selfdriven.ai/impact-on-mind-framework/)
+
+## selfdriven.fyi
+
+- [Society](https://selfdriven.fyi/society)
+- [Identity](https://selfdriven.fyi/identity)
+- [Trust](https://selfdriven.fyi/trust)
+- [Intelligence](https://selfdriven.fyi/intelligence)
+- [Governance](https://selfdriven.fyi/governance)
 
 ## Areas of Focus
 
@@ -42,3 +41,10 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Finance - e.g. What is money?](/research/areas-of-focus/finance/)
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
 
+## Related
+
+- [selfdriven Research](https://research.selfdriven.foundation)
+- [selfdriven.community/insights](https://www.selfdriven.community/insights)
+- [dsociety.io](https://dsociety.io)
+- [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
+- [Digital Trust Infrastructure Paper, Cardano Foundation & BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
