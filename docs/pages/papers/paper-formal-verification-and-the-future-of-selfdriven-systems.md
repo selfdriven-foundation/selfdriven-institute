@@ -31,7 +31,7 @@ A formally verified system can say:
 This is not philosophy.  
 It is mathematics.
 
-For the selfdriven ecosystem — particularly across identity, governance, orchestration, AI coordination, insurance, and trust infrastructure — formal verification represents one of the most important architectural shifts of the intelligence era.
+For the selfdriven ecosystem — particularly across identity, governance, orchestration, AI coordination, and trust infrastructure — formal verification represents one of the most important architectural shifts of the intelligence era.
 
 
 
@@ -180,7 +180,7 @@ In many ways, the selfdriven architecture already points toward:
 The progression becomes:
 
 | Era | Human Role | Machine Role |
-||||
+|--|--|--|
 | Industrial Era | Labour | Mechanical execution |
 | Information Era | Coding | Computation |
 | Intelligence Era | Specification | Autonomous implementation |
