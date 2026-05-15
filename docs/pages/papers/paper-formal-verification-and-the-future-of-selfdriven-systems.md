@@ -418,7 +418,7 @@ And trust becomes provable.
 
 ---
 
-# Appendix A: Comparison of Formal Verification Languages
+## Appendix A: Comparison of Formal Verification Languages
 
 As formally verified systems become increasingly important in the intelligence era, several major ecosystems are emerging around proof-oriented programming and machine-verifiable mathematics.
 
