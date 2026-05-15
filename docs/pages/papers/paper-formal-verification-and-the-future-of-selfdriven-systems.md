@@ -523,7 +523,7 @@ It may become one of the key languages of the “very coding” era.
 
 ## Coq
 
-## Philosophy
+### Philosophy
 
 Coq is one of the oldest and most respected formal proof systems.
 
