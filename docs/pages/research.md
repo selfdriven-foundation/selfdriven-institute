@@ -7,6 +7,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 
 ## Papers
 
+- [Computational-Based Reality](/paper/paper-computational-based-reality)
 - [The Graph Threshold](/paper/the-graph-threshold)
 - [Money as a Token of Scarcity](/paper/money-as-a-token-of-scarcity)
 - [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/paper/regulatory-risk-of-not-adopting-available-risk-reduction-services)
@@ -15,6 +16,7 @@ description: "selfdriven Institute — research into governance frameworks for a
 - [Self-Regulation as a Function of Self-Sovereignty](/paper/self-regulation-self-sovereignty)
 - [Self-Sovereignty as a Function of Self-Regulation](/paper/self-sovereignty-self-regulation)
 - [Formal Verification and the Future of selfdriven Systems](/paper/formal-verification-and-the-future-of-selfdriven-systems)
+- [Out-of-Band Human Trust Establishment in the Age of Synthetic Reality](/paper/out-of-band-human-trust-establishment)
 
 ## Topics
 
