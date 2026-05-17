@@ -492,3 +492,7 @@ The question may no longer be:
 But instead:
 
 > “What kind of computational reality are we becoming capable of creating ourselves?”
+
+---
+
+- [Compute-Based Reality (CBR) and Gravity as Arbitrage Between Realities](/paper/computational-based-reality-gravitational-arbitrage)
