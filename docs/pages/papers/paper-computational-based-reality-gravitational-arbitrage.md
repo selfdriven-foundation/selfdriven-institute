@@ -431,3 +431,4 @@ The long arc of civilization may ultimately reveal:
 ---
 
 - [Computer Based Reality](/paper/paper-computational-based-reality)
+- [Toward a Scientific Program for Compute-Based Reality (CBR)](/paper/computational-based-reality-toward-scientific-program)

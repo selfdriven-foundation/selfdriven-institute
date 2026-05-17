@@ -496,3 +496,4 @@ But instead:
 ---
 
 - [Compute-Based Reality (CBR) and Gravity as Arbitrage Between Realities](/paper/computational-based-reality-gravitational-arbitrage)
+- [Toward a Scientific Program for Compute-Based Reality (CBR)](/paper/computational-based-reality-toward-scientific-program)
