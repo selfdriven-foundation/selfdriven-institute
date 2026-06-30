@@ -53,7 +53,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - [dsociety.io](https://dsociety.io)
 - [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
-- [Digital Trust Infrastructure Paper, Cardano Foundation & BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
+- [Digital Trust Infrastructure Paper Cardano Foundation / BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
 ---
 
 <div class="sd-share-card" id="sd-share">
