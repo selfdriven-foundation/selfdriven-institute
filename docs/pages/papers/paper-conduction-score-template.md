@@ -7,17 +7,16 @@ description: "A Conducting Score Template."
 
 # Conducting Score Template
 
-
-**Project Name:**  
-**Conducting Area:**  
-**Version:**  
-**Status:** Draft / Active / Completed / Archived  
-**Score Owner (Human Conductor):**  
-**AI Steward:**  
-**Project Sponsor:**  
-**Date Created:**  
-**Last Updated:**  
-
+|**Project Name**||
+|----------|---------|
+|**Conducting Area**| |  
+|**Version**| |
+|**Status**|Draft / Active / Completed / Archived|   
+|**Score Conductor (Human))**  | |
+|**AI Agent**| |
+|**Project Sponsor**| |
+|**Date Created**| |
+|**Last Updated**| |
 
 
 ## 1. Purpose
