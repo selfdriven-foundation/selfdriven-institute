@@ -378,3 +378,7 @@ A Conducting Score is therefore more than a plan—it is the living score from w
 > **Definition**
 >
 > **Conducting Score (noun):** *The authoritative operational specification that orchestrates the coordinated actions of people, AI agents, systems, and processes within a Conducting Area. A Conducting Score translates strategic intent into adaptive, measurable, and continuously improvable execution while providing the foundation for governance, assurance, and organisational learning.*
+
+---
+
+- [Template](/paper/conducting-scores/template)
