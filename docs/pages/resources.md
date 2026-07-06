@@ -7,8 +7,9 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Papers
 
+- [Conducting Scores](/paper/conducting-scores)
 - [Computational-Based Reality (CBR) and Gravity as Arbitrage Between Realities](/paper/computational-based-reality-gravitational-arbitrage)
-- [Computational-Based Reality](/paper/paper-computational-based-reality)
+- [Computational-Based Reality](/paper/computational-based-reality)
 - [The Graph Threshold](/paper/the-graph-threshold)
 - [Money as a Token of Scarcity](/paper/money-as-a-token-of-scarcity)
 - [Regulatory Risk of Not Adopting Available Risk-Reduction Services](/paper/regulatory-risk-of-not-adopting-available-risk-reduction-services)

@@ -1,7 +1,7 @@
 ---
 layout: selfdriven
 title: Computational-Based Reality - selfdriven Institute
-permalink: /paper/paper-computational-based-reality
+permalink: /paper/computational-based-reality
 description: "Simulation Theory, Computation, and the Nature of Existence."
 ---
 
