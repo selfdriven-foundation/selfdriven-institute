@@ -99,7 +99,7 @@ Instead, it establishes the structure within which expert performers make inform
 
 ## 4. From Musical Scores to Conducting Scores
 
-The Institute generalises this concept beyond music.
+The 8 Areas-of-Focus framework generalises this concept beyond music.
 
 A **Conducting Score** is defined as:
 
@@ -137,7 +137,7 @@ This distinction becomes even more important when AI systems participate alongsi
 
 ## 6. Human Conductors
 
-Within the Institute model, humans remain accountable for organisational outcomes.
+Within the 8 Areas-of-focus framework, humans remain accountable for organisational outcomes.
 
 AI may assist.
 
