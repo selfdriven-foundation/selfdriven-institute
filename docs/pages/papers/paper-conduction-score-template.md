@@ -12,8 +12,9 @@ description: "A Conducting Score Template."
 |**Conducting Area**| |  
 |**Version**| |
 |**Status**|Draft / Active / Completed / Archived|   
-|**Conductor (Human)**  | |
-|**AI Agent**| |
+|**Primary Conductor (Human)**  | |
+|**Supporting Conductors (Human)**  | |
+|**AI Agents**| |
 |**Project Sponsor**| |
 |**Date Created**| |
 |**Last Updated**| |
