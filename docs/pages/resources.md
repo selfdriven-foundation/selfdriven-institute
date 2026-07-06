@@ -26,6 +26,8 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [selfdriven AI Impact on Mind Framework](https://www.selfdriven.ai/impact-on-mind-framework/)
 - [Open Framework for Community Self-Driven, AI-Assisted Sovereign Governance](/research/areas-of-focus/gov/sovereign/)   
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
+- [Assurance Framework](/resource/assurance-framework)
+
 
 ## Topics
 
