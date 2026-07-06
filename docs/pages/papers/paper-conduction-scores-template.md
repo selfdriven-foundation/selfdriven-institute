@@ -1,9 +1,9 @@
-
+---
 layout: selfdriven
 title: Template - Conducting Scores - selfdriven Institute
 permalink: /paper/conducting-scores/template
 description: "A Conducting Score Template."
-
+---
 
 # Conducting Score
 ## Project Conducting Score
