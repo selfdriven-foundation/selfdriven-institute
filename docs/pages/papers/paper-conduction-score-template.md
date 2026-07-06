@@ -1,7 +1,7 @@
 ---
 layout: selfdriven
 title: Template - Conducting Scores - selfdriven Institute
-permalink: /paper/conducting-scores/template
+permalink: /paper/conducting-score/template
 description: "A Conducting Score Template."
 ---
 
