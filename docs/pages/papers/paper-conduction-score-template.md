@@ -5,8 +5,8 @@ permalink: /paper/conducting-score/template
 description: "A Conducting Score Template."
 ---
 
-# Conducting Score
-## Project Conducting Score
+# Conducting Score Template
+
 
 **Project Name:**  
 **Conducting Area:**  
@@ -26,11 +26,11 @@ description: "A Conducting Score Template."
 
 Describe the purpose of the project and how it contributes to the broader mission of the organisation.
 
-> *Every project should contribute to one or more Conducting Areas and ultimately advance the Institute's purpose.*
+> *Every project should contribute to one or more Conducting Areas and ultimately advance the direction/purpose.*
 
 
 
-# 2. Desired Outcomes
+## 2. Desired Outcomes
 
 Describe the outcomes that define success.
 
