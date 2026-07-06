@@ -18,7 +18,7 @@ This paper introduces the concept of the **Conducting Score**: an AI-native orga
 ## Podcast
 
 <audio controls preload="metadata">
-	<source src="/assets/audio/sOrchestrating_humans_and_AI_with_conducting_scores.m4a" type="audio/mp4">
+	<source src="/assets/audio/Orchestrating_humans_and_AI_with_conducting_scores.m4a" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
 
