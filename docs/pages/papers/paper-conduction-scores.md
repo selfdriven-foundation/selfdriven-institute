@@ -30,7 +30,7 @@ Most organisations produce documents such as:
 Each answers a different question.
 
 | Document | Primary Question |
-|--||
+|--|--|
 | Strategy | Where are we going? |
 | Policy | What is permitted? |
 | Standard | What must be true? |
@@ -382,3 +382,5 @@ A Conducting Score is therefore more than a plan—it is the living score from w
 ---
 
 - [Template](/paper/conducting-scores/template)
+- [Specification](/paper/conducting-scores/specification)
+- [Conducting Scores AI Native Starter Kit](/assets/zip/selfdriven-conducting-scores-ai-native-starter-kit.zip)

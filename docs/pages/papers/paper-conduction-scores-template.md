@@ -1,9 +1,9 @@
----
+
 layout: selfdriven
 title: Template - Conducting Scores - selfdriven Institute
 permalink: /paper/conducting-scores/template
 description: "A Conducting Score Template."
----
+
 
 # Conducting Score
 ## Project Conducting Score
@@ -18,7 +18,7 @@ description: "A Conducting Score Template."
 **Date Created:**  
 **Last Updated:**  
 
----
+
 
 # 1. Purpose
 
@@ -28,7 +28,7 @@ Describe the purpose of the project and how it contributes to the broader missio
 
 > *Every project should contribute to one or more Conducting Areas and ultimately advance the Institute's purpose.*
 
----
+
 
 # 2. Desired Outcomes
 
@@ -47,7 +47,7 @@ Describe the outcomes that define success.
 | | | |
 | | | |
 
----
+
 
 # 3. Strategic Alignment
 
@@ -55,7 +55,7 @@ Describe the outcomes that define success.
 
 How does this project support the organisational mission?
 
----
+
 
 ## Conducting Areas
 
@@ -70,7 +70,7 @@ Select the primary areas supported.
 - ☐ Accountability
 - ☐ Organisational
 
----
+
 
 ## Related Strategies
 
@@ -78,7 +78,7 @@ Select the primary areas supported.
 - Program
 - Initiative
 
----
+
 
 # 4. Principles
 
@@ -94,7 +94,7 @@ Example:
 - Open standards
 - Continuous improvement
 
----
+
 
 # 5. Scope
 
@@ -114,7 +114,7 @@ Example:
 
 -
 
----
+
 
 # 6. Participants
 
@@ -128,7 +128,7 @@ Example:
 | Technical Lead | |
 | Subject Matter Experts | |
 
----
+
 
 ## AI Participants
 
@@ -140,7 +140,7 @@ Example:
 | Testing Agent | |
 | Quality Agent | |
 
----
+
 
 ## External Participants
 
@@ -149,7 +149,7 @@ Example:
 | | |
 | | |
 
----
+
 
 # 7. Decision Authority
 
@@ -161,7 +161,7 @@ Example:
 | Release | |
 | Risk Acceptance | |
 
----
+
 
 ## Escalation Path
 
@@ -175,7 +175,7 @@ Human Conductor
 Executive Sponsor
 ```
 
----
+
 
 # 8. Deliverables
 
@@ -184,7 +184,7 @@ Executive Sponsor
 | | | | |
 | | | | |
 
----
+
 
 # 9. Milestones
 
@@ -193,7 +193,7 @@ Executive Sponsor
 | | | |
 | | | |
 
----
+
 
 # 10. Coordination
 
@@ -205,7 +205,7 @@ Executive Sponsor
 | Weekly Review | |
 | Monthly Governance | |
 
----
+
 
 ## Communication Channels
 
@@ -215,7 +215,7 @@ Executive Sponsor
 - GitHub
 - Issue Tracker
 
----
+
 
 # 11. Risks
 
@@ -223,7 +223,7 @@ Executive Sponsor
 |------|------------|--------|-------|--------|
 | | | | | |
 
----
+
 
 ## AI Risk Review
 
@@ -235,7 +235,7 @@ How could AI introduce or reduce risk?
 
 -
 
----
+
 
 # 12. Dependencies
 
@@ -251,7 +251,7 @@ External
 
 -
 
----
+
 
 # 13. Controls
 
@@ -270,7 +270,7 @@ Additional controls:
 
 -
 
----
+
 
 # 14. Policies
 
@@ -283,7 +283,7 @@ Applicable organisational policies.
 - Change Management
 - Risk Management
 
----
+
 
 # 15. Quality
 
@@ -299,7 +299,7 @@ Applicable organisational policies.
 
 Describe how quality will be assessed.
 
----
+
 
 # 16. Security
 
@@ -311,7 +311,7 @@ Security considerations.
 
 -
 
----
+
 
 # 17. AI Governance
 
@@ -321,13 +321,13 @@ Security considerations.
 |--------|---------|
 | | |
 
----
+
 
 ## Human Oversight
 
 Describe required human review.
 
----
+
 
 ## AI Decision Boundaries
 
@@ -335,7 +335,7 @@ What decisions may AI make autonomously?
 
 What decisions require human approval?
 
----
+
 
 # 18. Metrics
 
@@ -346,7 +346,7 @@ What decisions require human approval?
 | | |
 | | |
 
----
+
 
 ## Outcome Indicators
 
@@ -355,7 +355,7 @@ What decisions require human approval?
 | | |
 | | |
 
----
+
 
 # 19. Evidence
 
@@ -373,7 +373,7 @@ Examples:
 - Risk reviews
 - Audit logs
 
----
+
 
 # 20. Continuous Improvement
 
@@ -384,7 +384,7 @@ Lessons learned during execution.
 | | |
 | | |
 
----
+
 
 # 21. Completion Criteria
 
@@ -398,21 +398,21 @@ The project is complete when:
 - ☐ Lessons captured
 - ☐ Operational ownership transferred
 
----
+
 
 # 22. Performance Review
 
 ## What worked well?
 
----
+
 
 ## What should change?
 
----
+
 
 ## Recommendations
 
----
+
 
 # 23. Score Summary
 
@@ -430,7 +430,7 @@ The project is complete when:
 | Evidence | |
 | Readiness | |
 
----
+
 
 # Human Conductor Approval
 
@@ -442,7 +442,7 @@ Signature:
 
 Date:
 
----
+
 
 # AI Steward Review
 
@@ -454,7 +454,7 @@ Review Date:
 
 Summary:
 
----
+
 
 # Executive Sponsor Approval
 
@@ -464,7 +464,7 @@ Role:
 
 Date:
 
----
+
 
 > **Conducting Score Definition**
 >
