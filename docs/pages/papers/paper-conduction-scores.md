@@ -13,6 +13,14 @@ Traditional organisations operate through a collection of disconnected artefacts
 
 This paper introduces the concept of the **Conducting Score**: an AI-native organisational construct derived from the principles of orchestral conducting. A Conducting Score is the authoritative operational specification that translates strategic intent into coordinated execution. Rather than prescribing every action, it provides the shared structure through which humans and intelligent systems synchronise their activities while retaining the flexibility to adapt to changing conditions.
 
+<p><img src="/assets/img/Orchestrating_the_AI-Native_Organisation.png" style="border-radius: 12px; width:100%; max-width: 800px;"></p>
+
+## Podcast
+
+<audio controls preload="metadata">
+	<source src="/assets/audio/sOrchestrating_humans_and_AI_with_conducting_scores.m4a" type="audio/mp4">
+	Your browser does not support the audio element.
+</audio>
 
 ## 1. The Problem with Traditional Plans
 
