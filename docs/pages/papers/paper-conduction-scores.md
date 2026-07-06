@@ -14,8 +14,7 @@ Traditional organisations operate through a collection of disconnected artefacts
 This paper introduces the concept of the **Conducting Score**: an AI-native organisational construct derived from the principles of orchestral conducting. A Conducting Score is the authoritative operational specification that translates strategic intent into coordinated execution. Rather than prescribing every action, it provides the shared structure through which humans and intelligent systems synchronise their activities while retaining the flexibility to adapt to changing conditions.
 
 
-
-# 1. The Problem with Traditional Plans
+## 1. The Problem with Traditional Plans
 
 Most organisations produce documents such as:
 
@@ -46,7 +45,7 @@ This gap becomes increasingly significant in organisations where execution is sh
 
 
 
-# 2. Learning from the Orchestra
+## 2. Learning from the Orchestra
 
 The concept of the Conducting Score originates from orchestral performance.
 
@@ -76,7 +75,7 @@ Neither is sufficient without the other.
 
 
 
-# 3. What is a Score?
+## 3. What is a Score?
 
 A musical score is commonly defined as:
 
@@ -98,7 +97,7 @@ Instead, it establishes the structure within which expert performers make inform
 
 
 
-# 4. From Musical Scores to Conducting Scores
+## 4. From Musical Scores to Conducting Scores
 
 The Institute generalises this concept beyond music.
 
@@ -110,7 +109,7 @@ Rather than describing isolated activities, a Conducting Score defines the coord
 
 
 
-# 5. Why "Conducting" Rather than "Operating"?
+## 5. Why "Conducting" Rather than "Operating"?
 
 Traditional management language often assumes command-and-control.
 
@@ -136,7 +135,7 @@ This distinction becomes even more important when AI systems participate alongsi
 
 
 
-# 6. Human Conductors
+## 6. Human Conductors
 
 Within the Institute model, humans remain accountable for organisational outcomes.
 
@@ -162,27 +161,27 @@ The Conducting Score provides the framework through which that judgement is exer
 
 
 
-# 7. Anatomy of a Conducting Score
+## 7. Anatomy of a Conducting Score
 
 Each Conducting Score describes a complete organisational capability.
 
-## Purpose
+### Purpose
 
 Why this capability exists.
 
-## Desired Outcomes
+### Desired Outcomes
 
 The long-term outcomes being pursued.
 
-## Principles
+### Principles
 
 Guiding behaviours and constraints.
 
-## Objectives
+### Objectives
 
 Specific measurable goals.
 
-## Participants
+### Participants
 
 Including:
 
@@ -191,7 +190,7 @@ Including:
 - External organisations
 - Automated systems
 
-## Decision Authority
+### Decision Authority
 
 Who may decide what.
 
@@ -199,11 +198,11 @@ Delegation boundaries.
 
 Escalation paths.
 
-## Coordination
+### Coordination
 
 How participants communicate and synchronise.
 
-## Controls
+### Controls
 
 Governance requirements.
 
@@ -213,7 +212,7 @@ Standards.
 
 Compliance obligations.
 
-## Metrics
+### Metrics
 
 Success indicators.
 
@@ -221,17 +220,17 @@ Health indicators.
 
 Leading indicators.
 
-## Evidence
+### Evidence
 
 Operational evidence produced continuously during execution.
 
-## Continuous Improvement
+### Continuous Improvement
 
 Mechanisms for learning and adaptation.
 
 
 
-# 8. Relationship to Existing Governance
+## 8. Relationship to Existing Governance
 
 A Conducting Score does not replace existing governance documents.
 
@@ -258,7 +257,7 @@ The Conducting Score becomes the organising structure through which these artefa
 
 
 
-# 9. AI-Native by Design
+## 9. AI-Native by Design
 
 Traditional organisational manuals assume that humans perform most work.
 
@@ -285,7 +284,7 @@ The Conducting Score defines how these participants interact safely and effectiv
 
 
 
-# 10. Continuous Assurance
+## 10. Continuous Assurance
 
 Unlike static operational plans, Conducting Scores are living operational specifications.
 
@@ -314,7 +313,7 @@ without requiring separate compliance documentation.
 
 
 
-# 11. Why "Score" Matters
+## 11. Why "Score" Matters
 
 The choice of the word *Score* is deliberate.
 
@@ -333,7 +332,7 @@ The score defines *what must be coordinated*; the conductor determines *how it i
 
 
 
-# 12. A New Organisational Primitive
+## 12. A New Organisational Primitive
 
 Historically, organisations have been built from a hierarchy of documents:
 
@@ -354,7 +353,7 @@ As standards increasingly become machine-readable and organisations increasingly
 
 
 
-# Conclusion
+## Conclusion
 
 The Conducting Score extends a centuries-old concept from orchestral performance into organisational governance for the Intelligence Age.
 

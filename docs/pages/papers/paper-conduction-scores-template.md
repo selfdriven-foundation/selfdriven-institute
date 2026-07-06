@@ -20,9 +20,9 @@ description: "A Conducting Score Template."
 
 
 
-# 1. Purpose
+## 1. Purpose
 
-## Why does this project exist?
+### Why does this project exist?
 
 Describe the purpose of the project and how it contributes to the broader mission of the organisation.
 
@@ -49,15 +49,15 @@ Describe the outcomes that define success.
 
 
 
-# 3. Strategic Alignment
+## 3. Strategic Alignment
 
-## Organisational Mission
+### Organisational Mission
 
 How does this project support the organisational mission?
 
 
 
-## Conducting Areas
+### Conducting Areas
 
 Select the primary areas supported.
 
@@ -72,7 +72,7 @@ Select the primary areas supported.
 
 
 
-## Related Strategies
+### Related Strategies
 
 - Strategy
 - Program
@@ -80,7 +80,7 @@ Select the primary areas supported.
 
 
 
-# 4. Principles
+## 4. Principles
 
 List the principles guiding all decisions throughout the project.
 
@@ -96,17 +96,9 @@ Example:
 
 
 
-# 5. Scope
+## 5. Scope
 
-## Included
-
--
-
--
-
--
-
-## Excluded
+### Included
 
 -
 
@@ -114,11 +106,19 @@ Example:
 
 -
 
+### Excluded
+
+-
+
+-
+
+-
 
 
-# 6. Participants
 
-## Human Roles
+## 6. Participants
+
+### Human Roles
 
 | Role | Responsibility |
 |------|----------------|
@@ -130,7 +130,7 @@ Example:
 
 
 
-## AI Participants
+### AI Participants
 
 | AI Agent | Responsibility |
 |----------|----------------|
@@ -142,7 +142,7 @@ Example:
 
 
 
-## External Participants
+### External Participants
 
 | Organisation | Role |
 |--------------|------|
@@ -151,7 +151,7 @@ Example:
 
 
 
-# 7. Decision Authority
+## 7. Decision Authority
 
 | Decision | Authority |
 |-----------|-----------|
@@ -163,7 +163,7 @@ Example:
 
 
 
-## Escalation Path
+### Escalation Path
 
 ```text
 Team
@@ -177,7 +177,7 @@ Executive Sponsor
 
 
 
-# 8. Deliverables
+## 8. Deliverables
 
 | Deliverable | Owner | Due | Status |
 |-------------|-------|-----|--------|
@@ -186,7 +186,7 @@ Executive Sponsor
 
 
 
-# 9. Milestones
+## 9. Milestones
 
 | Milestone | Target Date | Complete |
 |------------|-------------|----------|
@@ -195,9 +195,9 @@ Executive Sponsor
 
 
 
-# 10. Coordination
+## 10. Coordination
 
-## Meeting Cadence
+### Meeting Cadence
 
 | Meeting | Frequency |
 |----------|-----------|
@@ -207,7 +207,7 @@ Executive Sponsor
 
 
 
-## Communication Channels
+### Communication Channels
 
 - Teams
 - Slack
@@ -217,7 +217,7 @@ Executive Sponsor
 
 
 
-# 11. Risks
+## 11. Risks
 
 | Risk | Likelihood | Impact | Owner | Status |
 |------|------------|--------|-------|--------|
@@ -225,7 +225,7 @@ Executive Sponsor
 
 
 
-## AI Risk Review
+### AI Risk Review
 
 How could AI introduce or reduce risk?
 
@@ -237,7 +237,7 @@ How could AI introduce or reduce risk?
 
 
 
-# 12. Dependencies
+## 12. Dependencies
 
 Internal
 
@@ -253,7 +253,7 @@ External
 
 
 
-# 13. Controls
+## 13. Controls
 
 Applicable standards and governance.
 
@@ -272,7 +272,7 @@ Additional controls:
 
 
 
-# 14. Policies
+## 14. Policies
 
 Applicable organisational policies.
 
@@ -285,23 +285,23 @@ Applicable organisational policies.
 
 
 
-# 15. Quality
+## 15. Quality
 
-## Acceptance Criteria
-
--
+### Acceptance Criteria
 
 -
 
 -
 
-## Review Process
+-
+
+### Review Process
 
 Describe how quality will be assessed.
 
 
 
-# 16. Security
+## 16. Security
 
 Security considerations.
 
@@ -313,9 +313,9 @@ Security considerations.
 
 
 
-# 17. AI Governance
+## 17. AI Governance
 
-## AI Models Used
+### AI Models Used
 
 | Model | Purpose |
 |--------|---------|
@@ -323,13 +323,13 @@ Security considerations.
 
 
 
-## Human Oversight
+### Human Oversight
 
 Describe required human review.
 
 
 
-## AI Decision Boundaries
+### AI Decision Boundaries
 
 What decisions may AI make autonomously?
 
@@ -337,18 +337,9 @@ What decisions require human approval?
 
 
 
-# 18. Metrics
+## 18. Metrics
 
-## Leading Indicators
-
-| Metric | Target |
-|---------|--------|
-| | |
-| | |
-
-
-
-## Outcome Indicators
+### Leading Indicators
 
 | Metric | Target |
 |---------|--------|
@@ -357,7 +348,16 @@ What decisions require human approval?
 
 
 
-# 19. Evidence
+### Outcome Indicators
+
+| Metric | Target |
+|---------|--------|
+| | |
+| | |
+
+
+
+## 19. Evidence
 
 Evidence generated during execution.
 
@@ -375,7 +375,7 @@ Examples:
 
 
 
-# 20. Continuous Improvement
+## 20. Continuous Improvement
 
 Lessons learned during execution.
 
@@ -386,7 +386,7 @@ Lessons learned during execution.
 
 
 
-# 21. Completion Criteria
+## 21. Completion Criteria
 
 The project is complete when:
 
@@ -400,21 +400,21 @@ The project is complete when:
 
 
 
-# 22. Performance Review
+## 22. Performance Review
 
-## What worked well?
-
-
-
-## What should change?
+### What worked well?
 
 
 
-## Recommendations
+### What should change?
 
 
 
-# 23. Score Summary
+### Recommendations
+
+
+
+## 23. Score Summary
 
 | Item | Status |
 |------|--------|
@@ -432,7 +432,7 @@ The project is complete when:
 
 
 
-# Human Conductor Approval
+## Human Conductor Approval
 
 Name:
 
@@ -444,7 +444,7 @@ Date:
 
 
 
-# AI Steward Review
+## AI Steward Review
 
 AI System:
 
@@ -456,7 +456,7 @@ Summary:
 
 
 
-# Executive Sponsor Approval
+## Executive Sponsor Approval
 
 Name:
 

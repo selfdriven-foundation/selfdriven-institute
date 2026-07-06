@@ -15,7 +15,7 @@ Copyright © Selfdriven Institute
 
 
 
-# Abstract
+## Abstract
 
 The Conducting Score Specification (CSS) defines an open, machine-readable and human-readable format for describing how people, AI agents, systems and organisations coordinate their activities to achieve shared outcomes.
 
@@ -27,7 +27,7 @@ A Conducting Score is therefore the primary operational object of an AI-native o
 
 
 
-# 1. Goals
+## 1. Goals
 
 CSS is designed to be:
 
@@ -41,45 +41,45 @@ CSS is designed to be:
 
 
 
-# 2. Design Principles
+## 2. Design Principles
 
-## Human Conducted
+### Human Conducted
 
 Humans remain accountable.
 
 
 
-## AI Assisted
+### AI Assisted
 
 AI augments rather than replaces judgement.
 
 
 
-## Evidence Native
+### Evidence Native
 
 Execution automatically generates evidence.
 
 
 
-## Event Driven
+### Event Driven
 
 Organisations respond continuously to events.
 
 
 
-## Adaptive
+### Adaptive
 
 Scores evolve while preserving governance.
 
 
 
-## Declarative
+### Declarative
 
 Scores describe desired behaviour rather than implementation.
 
 
 
-# 3. Core Model
+## 3. Core Model
 
 ```text
 Conducting Score
@@ -102,7 +102,7 @@ Conducting Score
 
 
 
-# 4. Identity
+## 4. Identity
 
 Every Score SHALL contain
 
@@ -131,7 +131,7 @@ identity:
 
 
 
-# 5. Purpose
+## 5. Purpose
 
 Describes why the capability exists.
 
@@ -142,7 +142,7 @@ Required
 
 
 
-# 6. Outcomes
+## 6. Outcomes
 
 Defines success.
 
@@ -160,7 +160,7 @@ target:
 
 
 
-# 7. Principles
+## 7. Principles
 
 Principles constrain behaviour.
 
@@ -174,7 +174,7 @@ Examples
 
 
 
-# 8. Participants
+## 8. Participants
 
 Participants MAY include
 
@@ -202,7 +202,7 @@ Capabilities
 
 
 
-# 9. Decisions
+## 9. Decisions
 
 Every decision SHALL define
 
@@ -216,7 +216,7 @@ Evidence
 
 
 
-# 10. Activities
+## 10. Activities
 
 Activities represent coordinated work.
 
@@ -244,7 +244,7 @@ success:
 
 
 
-# 11. Events
+## 11. Events
 
 Everything happens because something occurred.
 
@@ -268,7 +268,7 @@ Events MAY trigger activities.
 
 
 
-# 12. Runtime
+## 12. Runtime
 
 The runtime evaluates
 
@@ -286,7 +286,7 @@ Health
 
 
 
-# 13. Risks
+## 13. Risks
 
 Each risk SHALL define
 
@@ -302,7 +302,7 @@ Review Frequency
 
 
 
-# 14. Controls
+## 14. Controls
 
 Controls link Scores to governance.
 
@@ -322,7 +322,7 @@ NIST
 
 
 
-# 15. Evidence
+## 15. Evidence
 
 Evidence SHALL be immutable.
 
@@ -342,7 +342,7 @@ type:
 
 
 
-# 16. Metrics
+## 16. Metrics
 
 Metrics define health.
 
@@ -364,7 +364,7 @@ Customer Satisfaction
 
 
 
-# 17. Learning
+## 17. Learning
 
 Every execution SHOULD improve future execution.
 
@@ -380,7 +380,7 @@ Anti-patterns
 
 
 
-# 18. Views
+## 18. Views
 
 The same Score may generate
 
@@ -406,7 +406,7 @@ AI Briefing
 
 
 
-# 19. Execution Model
+## 19. Execution Model
 
 ```
 Event
@@ -446,7 +446,7 @@ Improve
 
 
 
-# 20. Human Accountability
+## 20. Human Accountability
 
 Humans remain accountable for
 
@@ -466,7 +466,7 @@ AI may never own accountability.
 
 
 
-# 21. Compliance
+## 21. Compliance
 
 CSS is designed to support
 
@@ -486,7 +486,7 @@ without duplication.
 
 
 
-# 22. Extensibility
+## 22. Extensibility
 
 Additional modules MAY extend CSS.
 
@@ -512,7 +512,7 @@ CSS-GOVERNMENT
 
 
 
-# 23. Reference Runtime
+## 23. Reference Runtime
 
 A Conducting Engine SHALL
 
@@ -536,7 +536,7 @@ Maintain Audit History
 
 
 
-# 24. Future Direction
+## 24. Future Direction
 
 The Conducting Score Specification aims to become an open organisational standard for the Intelligence Age.
 
