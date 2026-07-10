@@ -1,7 +1,7 @@
 ---
 layout: selfdriven
 title: Conducting Language - selfdriven Institute
-permalink: /paper/conducting-langauge
+permalink: /paper/conducting-language
 description: "This paper introduces **The Language of Conducting**—a domain-specific language inspired by orchestral notation."
 ---
 
