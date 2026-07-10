@@ -362,3 +362,11 @@ It becomes the shared language through which humans and machines coordinate, ada
 In this model, organisations no longer issue instructions.
 
 They perform.
+
+---
+
+<a href="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/slides/Conducting_Intelligence.pdf"
+   target="_blank"
+   rel="noopener noreferrer">
+  📄 Conducting Intelligence (PDF)
+</a>
