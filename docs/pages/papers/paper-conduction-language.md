@@ -17,6 +17,7 @@ This paper introduces **The Language of Conducting**—a domain-specific languag
 
 Borrowing centuries of refinement from orchestral performance, the language separates strategic intent from operational execution, allowing Conducting Scores to become executable specifications for intelligent organisations.
 
+<p><img src="/assets/img/Orchestrating_AI_and_Human_Intelligence.png" style="border-radius: 12px; width:100%; max-width: 800px;"></p>
 
 
 ## From Prompt Engineering to Conducting
