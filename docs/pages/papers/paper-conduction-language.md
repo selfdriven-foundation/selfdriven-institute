@@ -19,6 +19,14 @@ Borrowing centuries of refinement from orchestral performance, the language sepa
 
 <p><img src="/assets/img/Orchestrating_AI_and_Human_Intelligence.png" style="border-radius: 12px; width:100%; max-width: 800px;"></p>
 
+## Podcast
+
+<audio controls preload="metadata">
+  <source
+    src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/d5943446e1a0e5385a7aaf93eb43a2f9d5287540/resources/podcasts/Conducting_AI_agents_like_a_symphony.m4a"
+    type="audio/mp4">
+  Your browser does not support the audio element.
+</audio>
 
 ## From Prompt Engineering to Conducting
 
