@@ -13,7 +13,7 @@ Companion Paper to [Conducting Scores](/paper/conducting-scores)
 
 As organisations transition from managing people to coordinating networks of humans and artificial intelligence, traditional forms of instruction are becoming inadequate. Checklists, procedures, prompts, workflows and playbooks each describe fragments of organisational behaviour, but none provide a complete language for expressing coordinated intelligence.
 
-This paper introduces **The Language of Conducting**—a domain-specific language inspired by orchestral notation. Rather than treating AI interactions as isolated prompts, this language describes the coordinated performance of many specialised agents, each contributing to a larger organisational outcome.
+This paper introduces **The Language of Conducting**—a domain-specific language inspired by orchestral notation. Rather than treating AI interactions as isolated prompts, this language describes the coordinated performance of agents, contributing to a larger organisational outcome.
 
 Borrowing centuries of refinement from orchestral performance, the language separates strategic intent from operational execution, allowing Conducting Scores to become executable specifications for intelligent organisations.
 
