@@ -202,35 +202,27 @@ Music is organised into measures.
 
 Organisations also operate rhythmically.
 
-Daily reviews.
-
-Weekly planning.
-
-Quarterly strategy.
-
-Annual governance.
+- Daily reviews.
+- Weekly planning.
+- Quarterly strategy.
+- Annual governance.
 
 Conducting Scores formalise these rhythms.
 
-For example:
+**For example:**
 
 4/4 might represent:
 
-Observe
-
-Plan
-
-Act
-
-Reflect
+- Observe
+- Plan
+- Act
+- Reflect
 
 while another organisation may naturally operate within a three-phase rhythm:
 
-Observe
-
-Act
-
-Learn
+- Observe
+- Act
+- Learn
 
 The rhythm becomes part of organisational identity.
 
