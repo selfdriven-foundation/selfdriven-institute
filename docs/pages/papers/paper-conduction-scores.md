@@ -391,3 +391,4 @@ A Conducting Score is therefore more than a plan—it is the living score from w
 - [Template](/paper/conducting-score/template)
 - [Specification](/paper/conducting-scores/specification)
 - [Conducting Scores AI Native Starter Kit](/assets/zip/selfdriven-conducting-scores-ai-native-starter-kit.zip)
+- [Conducting Language](/paper/conducting-language)
