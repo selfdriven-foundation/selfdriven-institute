@@ -23,7 +23,7 @@ Borrowing centuries of refinement from orchestral performance, the language sepa
 
 <audio controls preload="metadata">
   <source
-    src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/d5943446e1a0e5385a7aaf93eb43a2f9d5287540/resources/podcasts/Conducting_AI_agents_like_a_symphony.m4a"
+    src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main//resources/podcasts/Conducting_AI_agents_like_a_symphony.m4a"
     type="audio/mp4">
   Your browser does not support the audio element.
 </audio>
