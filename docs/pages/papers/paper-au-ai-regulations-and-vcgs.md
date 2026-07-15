@@ -1,8 +1,8 @@
 ---
 layout: selfdriven
-title: From Zero to One Proof - selfdriven Institute
-permalink: /paper/au/ai-regulations-and-vcgs
-description: "How the First Product Proof Point Changes Everything."
+title: Australia’s AI Social Licence - selfdriven Institute
+permalink: /secure/bzehdn1pikngghbaxr/au/ai-regulations-and-vcgs
+description: "Verifiable Context Graphs as Sovereign Infrastructure for the Intelligence Age."
 ---
 
 # Australia’s AI Social Licence
