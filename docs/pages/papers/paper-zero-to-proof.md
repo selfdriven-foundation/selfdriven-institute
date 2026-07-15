@@ -732,8 +732,7 @@ It only needs to establish that it is real.
 
 From there, one proof can become many.
 
-
-
+---
 
 <a href="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/slides/Zero_to_One_Proof.pdf"
    target="_blank"
