@@ -7,7 +7,7 @@ description: "A Weekly Relevance Rhythm for the Generative AI Era."
 
 # The Eight-Whiteboard Organisational Framework
 
-## A Weekly Relevance Rhythm for the Generative AI Era
+**A Weekly Relevance Rhythm for the Generative AI Era**
 
 <p><img src="/assets/img/The_8-Whiteboard_Rhythm_Process.png" style="border-radius: 12px; width:100%; max-width: 800px;"></p>
 
@@ -19,10 +19,6 @@ description: "A Weekly Relevance Rhythm for the Generative AI Era."
     type="audio/mp4">
   Your browser does not support the audio element.
 </audio>
-
-# The Eight-Whiteboard Organisational Framework
-
-## A Weekly Relevance Rhythm for the Generative AI Era
 
 ## 1. Framework Purpose
 
@@ -52,23 +48,23 @@ The framework prevents Generative AI from being treated as a separate technology
 
 
 
-# 2. The Weekly Rhythm
+## 2. The Weekly Rhythm
 
-## Monday
+### Monday
 
-### Morning: Direction
+#### Morning: Direction
 
 > What now matters?
 
-### Afternoon: Engagement
+#### Afternoon: Engagement
 
 > Who do we need to understand, involve or serve differently?
 
 
 
-## Tuesday
+### Tuesday
 
-### Morning: Enablement
+#### Morning: Enablement
 
 > What new capability do people and agents need?
 
@@ -78,31 +74,31 @@ The framework prevents Generative AI from being treated as a separate technology
 
 
 
-## Wednesday
+### Wednesday
 
-### Morning: Sustainability
+#### Morning: Sustainability
 
 > What will keep this valuable and viable?
 
-### Afternoon: Processes
+#### Afternoon: Processes
 
 > How should the work now operate?
 
 
 
-## Thursday
+### Thursday
 
-### Morning: Accountability
+#### Morning: Accountability
 
 > How will we know, verify and take responsibility?
 
-### Afternoon: Organisational
+#### Afternoon: Organisational
 
 > How should roles, decisions and coordination change?
 
 
 
-## Friday: Integration and Proof
+### Friday: Integration and Proof
 
 Friday does not require another whiteboard.
 
@@ -123,11 +119,11 @@ The rhythm becomes:
 
 
 
-# 3. The Common Whiteboard Method
+## 3. The Common Whiteboard Method
 
 Every Area of Focus uses the same three movements.
 
-## Sense
+### Sense
 
 > What has changed?
 
@@ -143,7 +139,7 @@ The team identifies:
 
 
 
-## Reframe
+### Reframe
 
 > What is now possible?
 
@@ -158,7 +154,7 @@ The team considers:
 
 
 
-## Act
+### Act
 
 > What will we change now?
 
@@ -179,19 +175,19 @@ The organisation does not need three separate sessions for these movements. They
 
 
 
-# 4. Whiteboard One: Direction
+## 4. Whiteboard One: Direction
 
-## Core Question
+### Core Question
 
 > What now matters?
 
-## Purpose
+### Purpose
 
 The Direction Whiteboard keeps organisational purpose, priorities and action aligned with current reality.
 
 It examines whether the organisation is still directing its intelligence, resources and attention toward the outcomes that matter most.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -213,7 +209,7 @@ Ask:
 * Where should human attention be concentrated?
 * What is the most important organisational proof point?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -224,7 +220,7 @@ Possible outputs include:
 * a changed allocation of attention,
 * or an updated statement of what matters this week.
 
-## Primary Output
+### Primary Output
 
 A current organisational direction:
 
@@ -232,13 +228,13 @@ A current organisational direction:
 
 
 
-# 5. Whiteboard Two: Engagement
+## 5. Whiteboard Two: Engagement
 
-## Core Question
+### Core Question
 
 > Who do we need to understand, involve or serve differently?
 
-## Purpose
+### Purpose
 
 The Engagement Whiteboard considers the organisation’s relationships with:
 
@@ -253,7 +249,7 @@ The Engagement Whiteboard considers the organisation’s relationships with:
 
 It ensures that AI-enabled change remains connected to real people and trusted relationships.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -265,7 +261,7 @@ Ask:
 * Where is trust increasing or declining?
 * Which relationships now require more attention?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -277,7 +273,7 @@ Ask:
 * Are we designing with people or merely for them?
 * What relationship could be strengthened through one small proof?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -288,19 +284,19 @@ Possible outputs include:
 * a revised communication approach,
 * or a partnership action.
 
-## Primary Output
+### Primary Output
 
 A more current understanding of who matters and how the organisation should relate to them.
 
 
 
-# 6. Whiteboard Three: Enablement
+## 6. Whiteboard Three: Enablement
 
-## Core Question
+### Core Question
 
 > What new capability do people and agents need?
 
-## Purpose
+### Purpose
 
 The Enablement Whiteboard ensures that people, teams and AI agents have the capability, context and tools required to contribute effectively.
 
@@ -315,7 +311,7 @@ Enablement includes:
 * support,
 * and authority.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -327,7 +323,7 @@ Ask:
 * Where do people need greater AI literacy?
 * Which agents lack the context required to act well?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -339,7 +335,7 @@ Ask:
 * What capability would unlock several other improvements?
 * What should humans become better at as AI handles more volume?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -351,19 +347,19 @@ Possible outputs include:
 * delegated authority,
 * or a new support mechanism.
 
-## Primary Output
+### Primary Output
 
 One practical improvement to organisational capability.
 
 
 
-# 7. Whiteboard Four: Protocols
+## 7. Whiteboard Four: Protocols
 
-## Core Question
+### Core Question
 
 > What rules, standards and trust mechanisms need to change?
 
-## Purpose
+### Purpose
 
 The Protocols Whiteboard examines the formal and informal rules through which the organisation coordinates trusted activity.
 
@@ -381,7 +377,7 @@ Protocols may include:
 * agent constraints,
 * and escalation conditions.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -393,7 +389,7 @@ Ask:
 * Where could AI act without sufficient boundaries?
 * Which protocols exist only because systems cannot currently communicate?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -405,7 +401,7 @@ Ask:
 * What must always require human approval?
 * Which rule could be replaced with a clearer decision boundary?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -417,19 +413,19 @@ Possible outputs include:
 * a verification requirement,
 * or removal of an unnecessary approval step.
 
-## Primary Output
+### Primary Output
 
 A clearer and more trusted way for people, systems and agents to coordinate.
 
 
 
-# 8. Whiteboard Five: Sustainability
+## 8. Whiteboard Five: Sustainability
 
-## Core Question
+### Core Question
 
 > What will keep this valuable and viable?
 
-## Purpose
+### Purpose
 
 The Sustainability Whiteboard considers whether organisational activity can continue to create value over time.
 
@@ -443,7 +439,7 @@ It includes:
 * operational continuity,
 * and long-term community value.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -455,7 +451,7 @@ Ask:
 * Where are people becoming overloaded?
 * What is currently viable only because its full cost is hidden?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -467,7 +463,7 @@ Ask:
 * Can resilience be increased through distributed capability?
 * What should be sustained, and what should be allowed to end?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -478,25 +474,25 @@ Possible outputs include:
 * retirement of unsustainable work,
 * or investment in a shared capability.
 
-## Primary Output
+### Primary Output
 
 A concrete action that improves long-term viability or resilience.
 
 
 
-# 9. Whiteboard Six: Processes
+## 9. Whiteboard Six: Processes
 
-## Core Question
+### Core Question
 
 > How should the work now operate?
 
-## Purpose
+### Purpose
 
 The Processes Whiteboard examines how value moves through the organisation.
 
 It challenges teams to redesign work rather than simply automate existing steps.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -508,7 +504,7 @@ Ask:
 * Where are people working around the official process?
 * Which tasks can now be assisted or performed by AI?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -520,7 +516,7 @@ Ask:
 * What must remain under human control?
 * Would this process exist in its current form if designed today?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -532,19 +528,19 @@ Possible outputs include:
 * a revised instruction,
 * or retirement of a report or meeting.
 
-## Primary Output
+### Primary Output
 
 A smaller, clearer or more effective way of working.
 
 
 
-# 10. Whiteboard Seven: Accountability
+## 10. Whiteboard Seven: Accountability
 
-## Core Question
+### Core Question
 
 > How will we know, verify and take responsibility?
 
-## Purpose
+### Purpose
 
 The Accountability Whiteboard ensures that actions and AI-enabled decisions remain visible, explainable and connected to responsible people.
 
@@ -559,7 +555,7 @@ Accountability includes:
 * quality,
 * and decision responsibility.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -571,7 +567,7 @@ Ask:
 * Which risks have no active owner?
 * Are we measuring activity rather than value?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -583,7 +579,7 @@ Ask:
 * What should be logged?
 * Who must remain responsible even when an agent performs the work?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -595,19 +591,19 @@ Possible outputs include:
 * a decision record,
 * or a human verification requirement.
 
-## Primary Output
+### Primary Output
 
 Clear ownership supported by sufficient evidence.
 
 
 
-# 11. Whiteboard Eight: Organisational
+## 11. Whiteboard Eight: Organisational
 
-## Core Question
+### Core Question
 
 > How should roles, decisions and coordination change?
 
-## Purpose
+### Purpose
 
 The Organisational Whiteboard considers how the organisation itself should be arranged in response to new capabilities and changing conditions.
 
@@ -622,7 +618,7 @@ It examines:
 * agent participation,
 * and organisational boundaries.
 
-## Sense
+### Sense
 
 Ask:
 
@@ -634,7 +630,7 @@ Ask:
 * What work is falling between roles?
 * Where are people waiting for permission unnecessarily?
 
-## Reframe
+### Reframe
 
 Ask:
 
@@ -646,7 +642,7 @@ Ask:
 * Can teams become more self-directed?
 * What organisational structure would we create if starting today?
 
-## Act
+### Act
 
 Possible outputs include:
 
@@ -658,17 +654,17 @@ Possible outputs include:
 * changed human-agent responsibilities,
 * or removal of an organisational bottleneck.
 
-## Primary Output
+### Primary Output
 
 A clearer arrangement of people, agents, roles and decisions.
 
 
 
-# 12. Session Structure
+## 12. Session Structure
 
 Each whiteboard session should take approximately 20 to 30 minutes.
 
-## Opening Context — 5 Minutes
+### Opening Context — 5 Minutes
 
 The Context Steward presents:
 
@@ -678,15 +674,15 @@ The Context Steward presents:
 * current evidence,
 * and changes since the last session.
 
-## Sense — 5 Minutes
+### Sense — 5 Minutes
 
 The group identifies what has materially changed within the Area of Focus.
 
-## Reframe — 10 Minutes
+### Reframe — 10 Minutes
 
 The group explores what could now be done differently.
 
-## Act — 5 Minutes
+### Act — 5 Minutes
 
 The group selects:
 
@@ -695,7 +691,7 @@ The group selects:
 * one proof point,
 * or one item of work to stop.
 
-## Close — 5 Minutes
+### Close — 5 Minutes
 
 Record:
 
@@ -708,7 +704,7 @@ Record:
 
 
 
-# 13. The One-Action Rule
+## 13. The One-Action Rule
 
 Every whiteboard should produce at least one meaningful organisational action.
 
@@ -736,9 +732,9 @@ The whiteboards should create movement where movement is needed, not change for 
 
 
 
-# 14. Friday Integration
+## 14. Friday Integration
 
-## Core Question
+### Core Question
 
 > What did the eight whiteboards collectively teach us?
 
@@ -755,7 +751,7 @@ The organisation reviews:
 * unresolved risks,
 * and proof points created.
 
-## Integration Questions
+### Integration Questions
 
 * Does a change in one area require changes elsewhere?
 * Are any actions in conflict?
@@ -766,7 +762,7 @@ The organisation reviews:
 * What needs formal governance?
 * What context must carry into next week?
 
-## Friday Outputs
+### Friday Outputs
 
 * weekly organisational learning summary,
 * verified proof points,
@@ -777,7 +773,7 @@ The organisation reviews:
 
 
 
-# 15. Weekly Operating Board
+## 15. Weekly Operating Board
 
 A single weekly board can show all eight areas.
 
@@ -796,7 +792,7 @@ This creates a visible map of how the organisation is learning and changing each
 
 
 
-# 16. Participation Model
+## 16. Participation Model
 
 Not everyone needs to attend every whiteboard.
 
@@ -825,7 +821,7 @@ The framework distributes organisational thinking rather than concentrating all 
 
 
 
-# 17. AI’s Role in the Framework
+## 17. AI’s Role in the Framework
 
 AI can support each whiteboard by:
 
@@ -858,67 +854,67 @@ The operating relationship is:
 
 
 
-# 18. Framework Measures
+## 18. Framework Measures
 
 The framework should be assessed through organisational outcomes rather than meeting volume.
 
 Useful measures include:
 
-## Context Currency
+### Context Currency
 
 How quickly does meaningful new information enter a relevant whiteboard?
 
-## Decision Latency
+### Decision Latency
 
 How quickly does evidence result in an appropriate decision?
 
-## Learning Velocity
+### Learning Velocity
 
 How quickly does the organisation move from question to proof?
 
-## Work Removal
+### Work Removal
 
 How much obsolete, duplicated or low-value work is stopped?
 
-## Proof Production
+### Proof Production
 
 How many useful proof points are created and verified?
 
-## Cross-Area Coherence
+### Cross-Area Coherence
 
 How effectively are changes coordinated across the eight Areas of Focus?
 
-## Relevance
+### Relevance
 
 Is the organisation creating more value for the people and communities it serves?
 
 
 
-# 19. Framework Summary
+## 19. Framework Summary
 
 The Eight-Whiteboard Organisational Framework creates a weekly cycle of organisational reconsideration.
 
-## Monday
+### Monday
 
 * Direction
 * Engagement
 
-## Tuesday
+### Tuesday
 
 * Enablement
 * Protocols
 
-## Wednesday
+### Wednesday
 
 * Sustainability
 * Processes
 
-## Thursday
+### Thursday
 
 * Accountability
 * Organisational
 
-## Friday
+### Friday
 
 * integration,
 * proof,
