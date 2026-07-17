@@ -28,6 +28,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [Open Framework for Community Self-Driven, AI-Assisted Sovereign Governance](/research/areas-of-focus/gov/sovereign/)   
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
 - [Assurance Framework](/resource/assurance-framework)
+- [The Eight-Whiteboard Organisational Framework](/resource/the-eight-whiteboard-organisational-framework)
 
 
 ## Topics
