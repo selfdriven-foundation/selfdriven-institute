@@ -29,6 +29,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [Sovereign State Gov Frameworks & selfdriven AI](https://selfdriven.ai/research/governance/)
 - [Assurance Framework](/resource/assurance-framework)
 - [The Eight-Whiteboard Organisational Framework](/resource/the-eight-whiteboard-organisational-framework)
+- [Actuation Frameworks e.g. ELP](https://actuate.selfdriven.community/)
 
 
 ## Topics
@@ -58,7 +59,8 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [selfdriven.community/insights](https://www.selfdriven.community/insights)
 - [dsociety.io](https://dsociety.io)
 - [Edinburgh Decentralised Index](https://informatics.ed.ac.uk/blockchain/edi)
-- [Digital Trust Infrastructure Paper Cardano Foundation / BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
+- [Digital Trust Infrastructure Paper Cardano Foundation BRI](https://cardanofoundation.org/digital-trust-infrastructure-report.pdf)
+
 ---
 
 <div class="sd-share-card" id="sd-share">
