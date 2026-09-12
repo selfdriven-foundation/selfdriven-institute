@@ -1,0 +1,919 @@
+---
+layout: selfdriven
+title:  5Cs - Collaborative Framework - selfdriven Actuate
+permalink: /framework/the-collaborative-5cs
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>selfdriven 5Cs Collaborative Framework</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f2ed;
+  --surface: #edeae3;
+  --surface2: #e5e1d8;
+  --border: #ddd8ce;
+  --text: #1a1410;
+  --muted: #6b5f52;
+  --muted2: #9e9085;
+  --accent: #c8442f;
+  --accent-dim: rgba(200, 68, 47, 0.10);
+  --accent-strong: rgba(200, 68, 47, 0.18);
+  --card-radius: 20px;
+  --shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --text: #f0ede8;
+    --muted: #b0a89e;
+    --muted2: #7a7268;
+    --accent: #e85d4a;
+    --accent-dim: rgba(232, 93, 74, 0.12);
+    --accent-strong: rgba(232, 93, 74, 0.20);
+    --shadow: 0 2px 16px rgba(0,0,0,0.4);
+  }
+  .dark-section {
+    background: #141414 !important;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+nav.scrolled {
+  background: rgba(245, 242, 237, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+@media (prefers-color-scheme: dark) {
+  nav.scrolled {
+    background: rgba(10, 10, 10, 0.85);
+  }
+}
+.nav-brand {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--text); font-weight: 500; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+.hero h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  margin-bottom: 28px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.7s ease 0.15s forwards;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+.hero-sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease 0.3s forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-full {
+  padding: 100px 40px;
+}
+.section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.section h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+.section-lead {
+  font-size: 17px;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+/* 5C FLOW STRIP */
+.flow-strip {
+  display: flex;
+  gap: 0;
+  margin: 32px 0;
+  align-items: stretch;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+.flow-step {
+  flex: 1;
+  background: var(--surface);
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--border);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.flow-step:first-child {
+  border-radius: var(--card-radius) 0 0 var(--card-radius);
+}
+.flow-step:last-child {
+  border-radius: 0 var(--card-radius) var(--card-radius) 0;
+}
+.flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  z-index: 2;
+}
+.flow-step .step-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: 0.06em;
+}
+.flow-step .step-label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.flow-step .step-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.flow-step::after {
+  content: '→';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 700;
+  z-index: 3;
+}
+.flow-step:last-child::after { display: none; }
+
+/* ZONE CARDS */
+.zone-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+.zone-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 48px 44px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.zone-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s;
+}
+.zone-card:hover {
+  box-shadow: var(--shadow);
+}
+.zone-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+.zone-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.zone-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+.zone-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.zone-subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+.zone-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 24px;
+}
+.zone-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.zone-col p, .zone-col li {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.zone-col ul {
+  list-style: none;
+  padding: 0;
+}
+.zone-col ul li {
+  padding: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+.zone-col ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.5;
+}
+.zone-purpose {
+  grid-column: 1 / -1;
+  background: var(--accent-dim);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 8px;
+}
+.zone-purpose p {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.zone-purpose strong {
+  color: var(--accent);
+}
+
+/* DARK SECTION */
+.dark-section {
+  background: var(--text);
+  color: var(--bg);
+  padding: 100px 40px;
+}
+.dark-section .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.dark-section h2 {
+  color: #f0ede8;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.dark-section h2 em { font-style: normal; color: var(--accent); }
+.dark-section .section-lead {
+  color: #b0a89e;
+}
+
+/* SCHEDULE TABLE */
+.schedule {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-top: 40px;
+}
+.schedule th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 8px 16px;
+}
+.schedule td {
+  padding: 18px 16px;
+  background: var(--surface);
+  font-size: 14px;
+  color: var(--text);
+}
+.schedule tr td:first-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  border-radius: var(--card-radius) 0 0 var(--card-radius);
+  white-space: nowrap;
+}
+.schedule tr td:last-child {
+  border-radius: 0 var(--card-radius) var(--card-radius) 0;
+  color: var(--muted);
+}
+.schedule .zone-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* PRINCIPLES */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+.principle-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--card-radius);
+  padding: 28px 22px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.principle-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+.principle-card .p-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.principle-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f0ede8;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.principle-card p {
+  font-size: 12px;
+  color: #b0a89e;
+  line-height: 1.6;
+}
+
+/* ARC */
+.arc-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 48px 0;
+  flex-wrap: wrap;
+}
+.arc-item {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0ede8;
+  letter-spacing: -0.01em;
+}
+.arc-arrow {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+footer a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+footer p {
+  font-size: 12px;
+  color: var(--muted2);
+  margin-top: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .flow-strip { flex-direction: column; gap: 8px; padding: 0 20px; }
+  .flow-step { border-radius: var(--card-radius) !important; }
+  .flow-step::after { display: none; }
+  .zone-body { grid-template-columns: 1fr; }
+  .principles-grid { grid-template-columns: 1fr 1fr; }
+  .hero, .section, .section-full { padding-left: 20px; padding-right: 20px; }
+  nav { padding: 16px 20px; }
+  .nav-links { gap: 16px; }
+}
+@media (max-width: 600px) {
+  .principles-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="https://actuate.selfdriven.community" class="nav-brand"><img src="data:image/png;base64,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" alt="actuate" style="height:36px;display:block;"></a>
+  <div class="nav-links">
+    <a href="https://selfdriven.foundation">Foundation</a>
+    <a href="https://selfdriven.community">Community</a>
+    <a href="https://selfdriven.services">Services</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">Framework</div>
+  <h1>The Collaborative 5Cs</h1>
+  <p class="hero-sub">
+    A collaborative-session is structured around five shared modes of attention:
+    <strong>Check-In</strong>, <strong>Curious</strong>, <strong>Caring</strong>, <strong>Constructive</strong>, and <strong>Check-Out</strong>.
+    Rather than expecting people to operate in the same mental mode all session/day, the collaborative-session moves through five intentional zones — bookended by moments of arrival and departure.
+  </p>
+</section>
+
+<!-- FLOW STRIP -->
+<div class="flow-strip">
+  <div class="flow-step">
+    <div class="step-num">C1</div>
+    <div class="step-label">Check-In</div>
+    <div class="step-desc">Arrive &amp; orient</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-num">C2</div>
+    <div class="step-label">Curious</div>
+    <div class="step-desc">Explore &amp; learn</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-num">C3</div>
+    <div class="step-label">Caring</div>
+    <div class="step-desc">Align &amp; connect</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-num">C4</div>
+    <div class="step-label">Constructive</div>
+    <div class="step-desc">Build &amp; deliver</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-num">C5</div>
+    <div class="step-label">Check-Out</div>
+    <div class="step-desc">Reflect &amp; close</div>
+  </div>
+</div>
+
+<!-- ZONES INTRO -->
+<section class="section" style="padding-top: 40px; padding-bottom: 0;">
+  <h2>Session <em>Zones</em></h2>
+  <p class="section-lead" style="margin-bottom: 0;">
+    A collaborative-session flows through five primary zones, creating a shared rhythm so that everyone understands what kind of energy the environment is optimised for at each point in the session. The purpose is to synchronise attention across the community while still allowing individuals to move fluidly between modes when needed.
+  </p>
+</section>
+
+<!-- ZONE CARDS -->
+<section class="section" style="padding-top: 32px;">
+  <div class="zone-grid">
+
+    <!-- C1: CHECK-IN -->
+    <div class="zone-card" data-delay="0">
+      <div class="zone-header">
+        <span class="zone-num">C1</span>
+        <div>
+          <div class="zone-title">Check-In</div>
+          <div class="zone-subtitle">Arrival, presence, and orientation</div>
+        </div>
+      </div>
+      <div class="zone-body">
+        <div class="zone-col">
+          <h4>Typical Activities</h4>
+          <ul>
+            <li>Personal arrival — marking presence for the session</li>
+            <li>Sharing current state: energy, focus, intentions</li>
+            <li>Surfacing blockers or carry-overs from the previous session</li>
+            <li>Setting personal and shared intentions for the session</li>
+            <li>Quick pulse on wellbeing and capacity</li>
+          </ul>
+        </div>
+        <div class="zone-col">
+          <h4>Characteristics</h4>
+          <ul>
+            <li>Grounding and transition into collaborative mode</li>
+            <li>Brief, structured, and inclusive</li>
+            <li>No problem-solving — just orientation</li>
+            <li>Psychological safety and openness</li>
+          </ul>
+        </div>
+        <div class="zone-purpose">
+          <p><strong>Purpose:</strong> To create a shared moment of arrival that transitions people from individual mode into collaborative mode. Everyone starts the session seen, heard, and oriented.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C2: CURIOUS -->
+    <div class="zone-card" data-delay="100">
+      <div class="zone-header">
+        <span class="zone-num">C2</span>
+        <div>
+          <div class="zone-title">Curious</div>
+          <div class="zone-subtitle">Exploration, questions, discovery</div>
+        </div>
+      </div>
+      <div class="zone-body">
+        <div class="zone-col">
+          <h4>Typical Activities</h4>
+          <ul>
+            <li>Research sharing</li>
+            <li>Asking questions</li>
+            <li>Reviewing new ideas</li>
+            <li>Early-stage brainstorming</li>
+            <li>Exploring emerging technologies or concepts</li>
+          </ul>
+        </div>
+        <div class="zone-col">
+          <h4>Characteristics</h4>
+          <ul>
+            <li>Open conversation</li>
+            <li>Intellectual exploration</li>
+            <li>Low pressure</li>
+            <li>Unfinished ideas welcome</li>
+          </ul>
+        </div>
+        <div class="zone-purpose">
+          <p><strong>Purpose:</strong> To expand the group's understanding and surface opportunities before committing to action.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C3: CARING -->
+    <div class="zone-card" data-delay="200">
+      <div class="zone-header">
+        <span class="zone-num">C3</span>
+        <div>
+          <div class="zone-title">Caring</div>
+          <div class="zone-subtitle">Human alignment and coordination</div>
+        </div>
+      </div>
+      <div class="zone-body">
+        <div class="zone-col">
+          <h4>Typical Activities</h4>
+          <ul>
+            <li>Mentoring</li>
+            <li>Coordination discussions</li>
+            <li>Resolving blockers</li>
+            <li>Supporting community members</li>
+            <li>Celebrating progress</li>
+          </ul>
+        </div>
+        <div class="zone-col">
+          <h4>Characteristics</h4>
+          <ul>
+            <li>Empathy and listening</li>
+            <li>Shared awareness</li>
+            <li>Psychological safety</li>
+            <li>Trust-building</li>
+          </ul>
+        </div>
+        <div class="zone-purpose">
+          <p><strong>Purpose:</strong> To ensure people are aligned and supported before entering deeper execution work.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C4: CONSTRUCTIVE -->
+    <div class="zone-card" data-delay="300">
+      <div class="zone-header">
+        <span class="zone-num">C4</span>
+        <div>
+          <div class="zone-title">Constructive</div>
+          <div class="zone-subtitle">Focused building and delivery</div>
+        </div>
+      </div>
+      <div class="zone-body">
+        <div class="zone-col">
+          <h4>Typical Activities</h4>
+          <ul>
+            <li>Development, creation, crafting</li>
+            <li>Project execution</li>
+            <li>Writing or documentation</li>
+            <li>Design and production</li>
+            <li>Testing, verification, reflection</li>
+          </ul>
+        </div>
+        <div class="zone-col">
+          <h4>Characteristics</h4>
+          <ul>
+            <li>Focused attention</li>
+            <li>Minimal interruptions</li>
+            <li>Progress toward outcomes</li>
+            <li>Accountability for delivery</li>
+          </ul>
+        </div>
+        <div class="zone-purpose">
+          <p><strong>Purpose:</strong> To transform curiosity and alignment into tangible results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C5: CHECK-OUT -->
+    <div class="zone-card" data-delay="400">
+      <div class="zone-header">
+        <span class="zone-num">C5</span>
+        <div>
+          <div class="zone-title">Check-Out</div>
+          <div class="zone-subtitle">Reflection, closure, and departure</div>
+        </div>
+      </div>
+      <div class="zone-body">
+        <div class="zone-col">
+          <h4>Typical Activities</h4>
+          <ul>
+            <li>Sharing progress and lessons learned</li>
+            <li>Acknowledging contributions</li>
+            <li>Flagging items for tomorrow</li>
+            <li>Reflecting on what worked and what didn't</li>
+            <li>Intentional closing — marking the end of the collaborative-session</li>
+          </ul>
+        </div>
+        <div class="zone-col">
+          <h4>Characteristics</h4>
+          <ul>
+            <li>Gratitude and recognition</li>
+            <li>Honest reflection</li>
+            <li>Clean handover to the next session</li>
+            <li>Transition out of collaborative mode</li>
+          </ul>
+        </div>
+        <div class="zone-purpose">
+          <p><strong>Purpose:</strong> To create a shared moment of closure that honours the session's work, captures learning, and allows people to consciously depart. No one leaves mid-sentence.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DARK SECTION: CULTURAL PRINCIPLES -->
+<section class="dark-section">
+  <div class="section-inner">
+    <h2>The <em>5Cs</em> Arc</h2>
+    <p class="section-lead">The collaborative-session creates a natural arc that opens and closes with intention, with exploration, alignment, and building in between.</p>
+
+    <div class="arc-visual">
+      <span class="arc-item">Arrive</span>
+      <span class="arc-arrow">→</span>
+      <span class="arc-item">Explore</span>
+      <span class="arc-arrow">→</span>
+      <span class="arc-item">Align</span>
+      <span class="arc-arrow">→</span>
+      <span class="arc-item">Build</span>
+      <span class="arc-arrow">→</span>
+      <span class="arc-item">Depart</span>
+    </div>
+
+    <div class="principles-grid">
+      <div class="principle-card">
+        <div class="p-icon">◎</div>
+        <h4>Be Present</h4>
+        <p>Arrive intentionally. Mark your presence and orient to the session ahead.</p>
+      </div>
+      <div class="principle-card">
+        <div class="p-icon">◇</div>
+        <h4>Be Curious</h4>
+        <p>Explore ideas and ask questions. Welcome unfinished thinking.</p>
+      </div>
+      <div class="principle-card">
+        <div class="p-icon">○</div>
+        <h4>Be Caring</h4>
+        <p>Support the people around you. Protect alignment and connection.</p>
+      </div>
+      <div class="principle-card">
+        <div class="p-icon">△</div>
+        <h4>Be Constructive</h4>
+        <p>Build things that make the community stronger.</p>
+      </div>
+      <div class="principle-card">
+        <div class="p-icon">◉</div>
+        <h4>Be Reflective</h4>
+        <p>Close with honesty. Honour the session's work before departing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section">
+  <h2>Example <em>Day Session Schedule</em></h2>
+  <p class="section-lead">An adaptable structure for any organisation or community. Timing is flexible — the sequence matters more than the clock.</p>
+
+  <table class="schedule">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Zone</th>
+        <th>Focus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08:45 – 09:00</td>
+        <td><span class="zone-tag">C1</span> Check-In</td>
+        <td>Arrival, presence, intentions, capacity pulse</td>
+      </tr>
+      <tr>
+        <td>09:00 – 10:00</td>
+        <td><span class="zone-tag">C2</span> Curious</td>
+        <td>Learning, ideas, research sharing, exploration</td>
+      </tr>
+      <tr>
+        <td>10:00 – 11:00</td>
+        <td><span class="zone-tag">C3</span> Caring</td>
+        <td>Mentoring, alignment, coordination, blocker resolution</td>
+      </tr>
+      <tr>
+        <td>11:00 – 15:00</td>
+        <td><span class="zone-tag">C4</span> Constructive</td>
+        <td>Deep work, project delivery, building, and creation</td>
+      </tr>
+      <tr>
+        <td>15:00 – 15:30</td>
+        <td><span class="zone-tag">C5</span> Check-Out</td>
+        <td>Progress sharing, reflection, acknowledgement, clean close</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SHARED UNDERSTANDING -->
+<section class="section">
+  <h2>Shared <em>Understanding</em></h2>
+  <p class="section-lead">The key value of this model is synchronisation of expectations. When everyone understands which zone the collaborative-session is currently in:</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 8px;">
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 24px; border-top: 3px solid var(--accent);">
+      <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">Arrival is honoured — people don't start the session invisible</p>
+    </div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 24px; border-top: 3px solid var(--accent);">
+      <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">Curiosity is encouraged at the right time</p>
+    </div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 24px; border-top: 3px solid var(--accent);">
+      <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">Care and alignment are protected</p>
+    </div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 24px; border-top: 3px solid var(--accent);">
+      <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">Deep constructive work is not constantly interrupted</p>
+    </div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 24px; border-top: 3px solid var(--accent);">
+      <p style="font-size: 14px; color: var(--muted); line-height: 1.7;">Departure is intentional — no one drifts away mid-flow</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="section" style="padding-bottom: 60px;">
+  <h2><em>Outcome</em></h2>
+  <p class="section-lead" style="max-width: 720px;">
+    A collaborative-session structured around the <strong>5Cs</strong> — Check-In, Curious, Caring, Constructive, Check-Out — creates a healthier rhythm for communities and teams. It recognises that meaningful work requires five things: intentional arrival, exploration, human connection, focused creation, and reflective closure. When these modes are intentionally sequenced, collaboration becomes calmer, clearer, and more productive.
+  </p>
+</section>
+
+<!-- RELATED -->
+<section class="section" style="padding-top: 0; padding-bottom: 80px; border-top: 1px solid var(--border); margin-top: 0;">
+  <div style="padding-top: 40px;">
+    <h4 style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px;">Related</h4>
+	<div><a href="/framework/the-collaborative-day" style="font-size: 14px; color: var(--text); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--border); padding-bottom: 2px;">The Collaborative Day Framework →</a></div>
+    <div><a href="https://actuate.selfdriven.community/framework/areas-of-focus" style="font-size: 14px; color: var(--text); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--border); padding-bottom: 2px;">The 8 Areas of Focus Framework →</a></div>
+  </div>
+</section>
+
+<script>
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Scroll reveal for zone cards
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, parseInt(delay));
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.zone-card').forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
