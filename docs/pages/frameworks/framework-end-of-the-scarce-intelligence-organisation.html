@@ -1,0 +1,573 @@
+---
+layout: null
+title: The End of the Scarce-Intelligence Organisation - selfdriven Actuate
+permalink: /framework/end-of-the-scarce-intelligence-organisation
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png">
+<link rel="apple-touch-icon" href="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png" />
+<title>The End of the Scarce-Intelligence Organisation — selfdriven Actuate</title>
+<meta name="description" content="Up to 2026, organisations were built to ration scarce intelligence. When intelligence becomes abundant, the reason the organisation exists changes — and the 8 Areas of Focus change with it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2ed;--surface:#edeae3;--surface2:#e5e1d8;--border:#ddd8ce;
+  --text:#1a1410;--muted:#6b5f52;--muted2:#9e9085;
+  --accent:#c8442f;--accent-dim:rgba(200,68,47,.10);--accent-strong:rgba(200,68,47,.18);
+  --card-radius:20px;--shadow:0 2px 16px rgba(0,0,0,.07);
+  --dark-bg:#1a1410;--dark-surface:#2a221c;--dark-border:#3a302a;--dark-text:#f0ede8;--dark-muted:#c9bfb4;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0a0a0a;--surface:#161616;--surface2:#1e1e1e;--border:#2a2a2a;
+    --text:#f0ede8;--muted:#b0a89e;--muted2:#7a7268;
+    --accent:#e85d4a;--accent-dim:rgba(232,93,74,.12);--accent-strong:rgba(232,93,74,.20);
+    --shadow:0 2px 16px rgba(0,0,0,.4);
+    --dark-bg:#141414;--dark-surface:#1e1e1e;--dark-border:#2e2e2e;--dark-text:#f0ede8;--dark-muted:#b0a89e;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:'JetBrains Mono',monospace}
+.eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h1,h2,h3{font-weight:800;letter-spacing:-.04em;line-height:1.1}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:16px}
+h3{font-size:19px;letter-spacing:-.02em;margin-bottom:8px}
+.lead{font-size:18px;color:var(--muted);max-width:720px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:600;font-size:14px;transition:all .2s;border:1.5px solid transparent}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 6px 20px var(--accent-strong)}
+.btn-outline{border-color:var(--border);color:var(--text)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.ico{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:all .3s}
+nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:12px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.03em;font-size:17px}
+.nav-logo img{width:32px;height:32px;border-radius:9px;overflow:hidden}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+.nav-links a.btn-primary,.nav-links a.btn-primary:hover{color:#fff;padding:9px 18px}
+@media (max-width:820px){.nav-links a:not(.nav-cta){display:none}}
+
+/* hero */
+.hero{padding:160px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 20%,var(--accent-dim),transparent 70%);pointer-events:none}
+.hero h1{font-size:clamp(38px,6vw,72px);max-width:880px;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{margin-bottom:34px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.fade-up{opacity:0;transform:translateY(18px);animation:fadeUp .7s ease forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* stats */
+.stats{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 24px;border-right:1px solid var(--border)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:30px;font-weight:800;letter-spacing:-.04em;color:var(--accent);line-height:1}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:10px;line-height:1.5}
+@media (max-width:820px){.stats-grid{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat{border-bottom:1px solid var(--border)}.stat:nth-child(n+3){border-bottom:0}}
+
+/* sections */
+.block{padding:96px 0}
+.block.alt{background:var(--surface)}
+.block.dark{background:var(--dark-bg);color:var(--dark-text)}
+.block.dark .lead,.block.dark p{color:var(--dark-muted)}
+.block.dark h2,.block.dark h3{color:var(--dark-text)}
+.section-head{max-width:720px;margin-bottom:48px}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.card{position:relative;background:var(--bg);border:1px solid var(--border);border-radius:var(--card-radius);padding:28px;overflow:hidden;transition:box-shadow .25s,transform .25s}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.card:hover::before{transform:scaleX(1)}
+.card p{font-size:14.5px;color:var(--muted)}
+.block.alt .card{background:var(--bg)}
+.block:not(.alt) .card{background:var(--surface)}
+.block.dark .card{background:var(--dark-surface);border-color:var(--dark-border)}
+.block.dark .card p{color:var(--dark-muted)}
+
+/* scarce vs abundant compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:700px){.compare{grid-template-columns:1fr}}
+.compare .card ul{list-style:none;margin-top:14px}
+.compare .card li{padding:9px 0;border-top:1px solid var(--border);font-size:15px;font-weight:500}
+.block.dark .compare .card li{border-color:var(--dark-border)}
+.compare .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:var(--accent-dim);color:var(--accent);margin-bottom:10px}
+.compare .card.old .tag{background:var(--surface2);color:var(--muted)}
+.block.dark .compare .card.old .tag{background:var(--dark-border);color:var(--dark-muted)}
+
+/* flow diagrams */
+.flow{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:14px}
+.flow .node{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:12px 22px;font-weight:600;font-size:14px;text-align:center;min-width:240px}
+.block.dark .flow .node{background:var(--dark-surface);border-color:var(--dark-border)}
+.flow .node.hi{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
+.flow .arrow{color:var(--accent);font-size:18px;line-height:1.3;font-weight:700}
+
+/* scarcity list */
+.mech{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+@media (max-width:700px){.mech{grid-template-columns:1fr}}
+.mech div{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--border)}
+.mech b{font-weight:700;white-space:nowrap;min-width:130px}
+.mech span{color:var(--muted);font-size:14.5px}
+
+/* areas of focus */
+.aof{position:relative;background:var(--bg);border:1px solid var(--border);border-radius:var(--card-radius);padding:26px 24px;overflow:hidden;display:flex;flex-direction:column;gap:12px}
+.aof::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
+.aof .num{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.06em}
+.aof h3{font-size:20px;margin:0}
+.aof .was{font-size:12.5px;color:var(--muted2);font-weight:500;line-height:1.5}
+.aof .was b{color:var(--muted);font-weight:600}
+.aof p{font-size:14px;color:var(--muted);line-height:1.6}
+.aof .q{margin-top:auto;padding-top:12px;border-top:1px solid var(--border);font-size:13.5px;font-weight:600;color:var(--text)}
+.block.alt .aof{background:var(--bg)}
+
+/* code-ish policy block */
+.policy{background:var(--dark-surface);border:1px solid var(--dark-border);border-radius:16px;padding:22px 24px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.75;color:var(--dark-text);white-space:pre;overflow-x:auto}
+.policy .k{color:var(--accent)}
+.policy .c{color:var(--dark-muted)}
+
+/* refactor */
+.refactor{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:var(--card-radius);overflow:hidden;background:var(--bg)}
+@media (max-width:820px){.refactor{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.refactor{grid-template-columns:1fr}}
+.refactor div{padding:24px;border-right:1px solid var(--border)}
+.refactor div:last-child{border-right:0}
+@media (max-width:820px){.refactor div{border-bottom:1px solid var(--border)}}
+.refactor small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.refactor p{font-size:14.5px;color:var(--muted)}
+
+/* principles */
+.principles{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+@media (max-width:700px){.principles{grid-template-columns:1fr}}
+.principles div{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--dark-border)}
+.principles i{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);padding-top:4px;min-width:26px}
+.principles b{display:block;font-weight:700;margin-bottom:2px}
+.principles span{font-size:14px;color:var(--dark-muted)}
+
+/* companion */
+.ev-card{display:flex;flex-direction:column;gap:10px;background:var(--bg);border:1px solid var(--border);border-radius:var(--card-radius);padding:26px;position:relative;overflow:hidden;transition:box-shadow .25s,transform .25s}
+.ev-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.ev-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.ev-card:hover::before{transform:scaleX(1)}
+.ev-card .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--accent-dim);color:var(--accent)}
+.ev-card h3{color:var(--text)}
+.ev-card p{font-size:14px;color:var(--muted)}
+.ev-card .more{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--accent)}
+
+/* cta */
+.cta-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--card-radius);padding:56px 40px;text-align:center;overflow:hidden}
+.cta-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
+.cta-card p{max-width:600px;margin:0 auto 28px;color:var(--muted)}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* footer */
+footer{border-top:1px solid var(--border);padding:56px 0 32px;background:var(--surface)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+@media (max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-col h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.foot-col a{display:block;font-size:14px;color:var(--muted);padding:4px 0}
+.foot-col a:hover{color:var(--accent)}
+.foot-col p{font-size:14px;color:var(--muted);max-width:320px}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid var(--border);font-size:13px;color:var(--muted2)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png" alt="selfdriven">
+      selfdriven <span>actuate</span>
+    </a>
+    <div class="nav-links">
+      <a href="/framework">Framework</a>
+      <a href="#scarcity">Scarcity</a>
+      <a href="#shift">The shift</a>
+      <a href="#areas">8 Areas of Focus</a>
+      <a href="#refactor">Refactoring</a>
+      <a class="btn btn-primary nav-cta" href="/framework/areas-of-focus">Areas of Focus</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow fade-up">Framework · Organisational · 2026</span>
+    <h1 class="fade-up" style="animation-delay:.08s">The end of the <em>scarce-intelligence</em> organisation.</h1>
+    <p class="lead fade-up" style="animation-delay:.16s">Up to 2026, organisations were built around one constraint: usable, coordinated intelligence was rare and expensive. Hierarchy allocated it, management coordinated it, reports compressed it. When intelligence becomes abundant, the organisation doesn't disappear — the reason it exists changes.</p>
+    <div class="hero-cta fade-up" style="animation-delay:.24s">
+      <a class="btn btn-primary" href="#areas">See the 8 Areas of Focus <svg class="ico" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a class="btn btn-outline" href="#refactor">The refactoring question</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><b>Scarce</b><span>Intelligence — the constraint every pre-2026 structure was built to conserve.</span></div>
+    <div class="stat reveal"><b>Abundant</b><span>Persistent, inexpensive, machine-speed cognition available to any group.</span></div>
+    <div class="stat reveal"><b>Purpose</b><span>The resource that becomes scarce once intelligence is not.</span></div>
+    <div class="stat reveal"><b>Redesign</b><span>Everything built around the old constraint becomes open to question.</span></div>
+  </div>
+</div>
+
+<!-- scarcity -->
+<section class="block" id="scarcity">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The scarcity assumption</span>
+      <h2>The organisation was an intelligence allocation machine.</h2>
+      <p class="lead">Executives, managers, analysts, lawyers, engineers, coordinators — at one level they do different things. At another, they perform the same function: apply scarce human intelligence to information to produce decisions and actions. Most organisational mechanisms quietly contain the same rule — <em>intelligence is expensive, therefore minimise its use.</em></p>
+    </div>
+    <div class="mech reveal">
+      <div><b>Meetings</b><span>exist because getting the right people together is difficult.</span></div>
+      <div><b>Reports</b><span>exist because senior people cannot inspect raw organisational reality.</span></div>
+      <div><b>Departments</b><span>exist because knowledge must be concentrated into specialists.</span></div>
+      <div><b>Approval chains</b><span>exist because only certain people are trusted with judgement.</span></div>
+      <div><b>Consultancies</b><span>exist because no one can employ every form of expertise.</span></div>
+      <div><b>Training</b><span>exists because intelligence transfers slowly, mind to mind.</span></div>
+      <div><b>Interfaces</b><span>simplify systems because users can't hold the full complexity.</span></div>
+      <div><b>Documentation</b><span>compresses institutional knowledge because individuals leave.</span></div>
+      <div><b>Search</b><span>exists because humans can't remember everything the organisation knows.</span></div>
+      <div><b>Hierarchy</b><span>is a compression architecture — thousands of events become a handful of decisions.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- the shift -->
+<section class="block dark" id="shift">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The shift</span>
+      <h2>Intelligence stops being a scarce organisational resource.</h2>
+      <p class="lead">The important transition is not that AI gets better at tasks. It is that the fundamental optimisation problem changes — from <em>how do we allocate our limited intelligence?</em> to <em>what should abundant intelligence be directed toward?</em></p>
+    </div>
+    <div class="compare reveal">
+      <div class="card old">
+        <span class="tag">Up to 2026</span>
+        <h3>Scarce intelligence</h3>
+        <ul>
+          <li>Many problems</li>
+          <li>Few capable minds</li>
+          <li>Limited time</li>
+          <li>High coordination cost</li>
+          <li>Slow communication</li>
+          <li>Expensive expertise</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Emerging</span>
+        <h3>Abundant intelligence</h3>
+        <ul>
+          <li>Many problems</li>
+          <li>Effectively unlimited cognitive processes</li>
+          <li>Persistent availability</li>
+          <li>Near-zero replication cost</li>
+          <li>Machine-speed coordination</li>
+          <li>Broad expert capability</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:20px">
+      <div class="card reveal">
+        <span class="eyebrow">Previous computing model</span>
+        <div class="flow">
+          <div class="node">Human</div><div class="arrow">↓</div>
+          <div class="node">Software</div><div class="arrow">↓</div>
+          <div class="node">Database</div>
+        </div>
+        <p style="margin-top:18px">The human supplied the intelligence. Software supplied the mechanism. Data supplied the memory.</p>
+      </div>
+      <div class="card reveal">
+        <span class="eyebrow">Emerging model</span>
+        <div class="flow">
+          <div class="node hi">Human Purpose</div><div class="arrow">↓</div>
+          <div class="node">Intelligent Systems</div><div class="arrow">↓</div>
+          <div class="node">Verified Organisational Context</div><div class="arrow">↓</div>
+          <div class="node">Autonomous / Human Action</div>
+        </div>
+        <p style="margin-top:18px">Software becomes an active participant. The organisation becomes computational.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- new scarce resources -->
+<section class="block alt" id="scarce">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The new scarce resources</span>
+      <h2>Intelligence may become abundant. Other things do not.</h2>
+      <p class="lead">The organisation moves from an intelligence allocation system toward a purpose and coordination system. The scarce resource moves.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card reveal"><h3>Purpose</h3><p>What should the organisation actually try to accomplish?</p></div>
+      <div class="card reveal"><h3>Trust</h3><p>Which people, systems, information and actions should be believed?</p></div>
+      <div class="card reveal"><h3>Authority</h3><p>Who is permitted to act?</p></div>
+      <div class="card reveal"><h3>Values</h3><p>What outcomes are desirable?</p></div>
+      <div class="card reveal"><h3>Attention</h3><p>What deserves human awareness?</p></div>
+      <div class="card reveal"><h3>Legitimacy</h3><p>Why should others accept the organisation's actions?</p></div>
+      <div class="card reveal"><h3>Energy &amp; matter</h3><p>Intelligence cannot manufacture matter from nothing.</p></div>
+      <div class="card reveal"><h3>Responsibility</h3><p>Someone must ultimately be accountable for consequences.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 areas of focus -->
+<section class="block" id="areas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The 8 Areas of Focus</span>
+      <h2>What each area becomes when intelligence is abundant.</h2>
+      <p class="lead">The Areas of Focus don't change. What they were compensating for does. Each card names the scarcity that shaped the area, what the area becomes now, and the question its human conductor should be asking.</p>
+    </div>
+    <div class="grid-4">
+      <div class="aof reveal">
+        <span class="num">01</span>
+        <h3>Direction</h3>
+        <span class="was"><b>Was:</b> pick five initiatives because the organisation can't absorb fifty.</span>
+        <p>Strategy becomes a possibility-search engine. Thinking, modelling and simulating are cheap; building, deploying and committing capital are not. Exploration becomes massive. Commitment stays scarce.</p>
+        <span class="q">Which thousands of ideas should intelligence explore — and which few deserve physical commitment?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">02</span>
+        <h3>Engagement</h3>
+        <span class="was"><b>Was:</b> relationships mediated by scarce people with scarce time.</span>
+        <p>Trust, legitimacy and human relationships are among the resources that stay scarce. Machines consume information; humans should receive meaning. Engagement becomes the protection of human attention, not its consumption.</p>
+        <span class="q">Why should others accept what we do — and who do we need to trust to do it?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">03</span>
+        <h3>Enablement</h3>
+        <span class="was"><b>Was:</b> slow transfer of knowledge from one mind to another.</span>
+        <p>Human work moves up the stack — choosing purpose, creating meaning, exercising judgement, accepting responsibility. Enablement shifts from teaching people to hold cognition to equipping them to direct it.</p>
+        <span class="q">What does a person need to direct abundant intelligence well?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">04</span>
+        <h3>Protocols</h3>
+        <span class="was"><b>Was:</b> policies as documents, read and interpreted by humans.</span>
+        <p>Policy becomes executable. Authority is explicit, evidence is traceable, and every agent operates under scoped, delegated identity. The policy becomes part of the execution environment.</p>
+        <span class="q">Does the intelligent system know exactly what it is permitted to do, and can it prove it?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">05</span>
+        <h3>Sustainability</h3>
+        <span class="was"><b>Was:</b> scale advantage — only large institutions could afford expertise.</span>
+        <p>The link between organisational size and capability breaks. A ten-person organisation can hold cognitive capacity that once required thousands. What remains expensive is energy, physical resources and human attention.</p>
+        <span class="q">Where does our real cost now sit — and what can a small core sustain?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">06</span>
+        <h3>Processes</h3>
+        <span class="was"><b>Was:</b> step 1, step 2, approval, step 5 — because people need instructions.</span>
+        <p>Workflows become goals. The organisation describes outcomes, constraints, authority, evidence and success conditions; the intelligent system determines the path. Workflow management becomes goal orchestration.</p>
+        <span class="q">Have we described the space within which action is legitimate, rather than every action?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">07</span>
+        <h3>Accountability</h3>
+        <span class="was"><b>Was:</b> reports compressing reality for people who couldn't observe it.</span>
+        <p>Responsibility stays scarce and stays human. Claims connect to sources. Thresholds that require a human are explicit. Continuous observation replaces the weekly report — but a person still answers for the consequence.</p>
+        <span class="q">Can every claim be traced, and is it clear who is accountable for each outcome?</span>
+      </div>
+      <div class="aof reveal">
+        <span class="num">08</span>
+        <h3>Organisational</h3>
+        <span class="was"><b>Was:</b> a hierarchy — person, manager, director, executive.</span>
+        <p>A living context graph of people, roles, agreements, evidence, decisions and commitments. Small at the centre — purpose, values, judgement, legitimacy — with a large computational ecosystem around it. Less machine, more organism.</p>
+        <span class="q">Does the organisation continuously know what it knows — or keep rediscovering its own context?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- executable policy -->
+<section class="block dark" id="policy">
+  <div class="wrap">
+    <div class="grid-2" style="align-items:center">
+      <div class="reveal">
+        <span class="eyebrow">Governance moves closer to computation</span>
+        <h2>From workflows to goals. From policy to constraint.</h2>
+        <p class="lead">Traditional organisations describe work procedurally because people need detailed instructions. Autonomous intelligence lets the organisation describe the outcome and the boundary instead — and the policy stops being a document someone might misread.</p>
+      </div>
+      <div class="reveal">
+        <div class="policy"><span class="k">Goal:</span>
+  Pay supplier invoice.
+
+<span class="k">Constraints:</span>
+  - Supplier identity must be verified.
+  - Invoice must match authorised purchase.
+  - Amount &gt; $50,000 requires human approval.
+  - Payment destination cannot change
+    without secondary verification.
+
+<span class="c">// The policy is part of the execution environment.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- refactoring -->
+<section class="block alt" id="refactor">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The great organisational refactoring</span>
+      <h2>Don't bolt AI onto a structure built for scarcity.</h2>
+      <p class="lead">Adding AI to an existing organisation is like installing electric motors in a factory designed around steam shafts. The deeper opportunity is architectural. For every mechanism — meetings, approvals, departments, dashboards, reports, job descriptions, committees, planning cycles — ask two questions.</p>
+    </div>
+    <div class="refactor reveal">
+      <div><small>Structure</small><p>Weekly management report.</p></div>
+      <div><small>Original constraint</small><p>Executives cannot continuously analyse operational data.</p></div>
+      <div><small>Abundant-intelligence environment</small><p>Intelligence continuously understands operational state.</p></div>
+      <div><small>Question</small><p>Is the weekly report still necessary?</p></div>
+    </div>
+    <div class="grid-2" style="margin-top:20px">
+      <div class="card reveal"><h3>What scarcity caused this structure to exist?</h3><p>Every mechanism was rational once. Name the constraint it was solving.</p></div>
+      <div class="card reveal"><h3>Does that scarcity still exist?</h3><p>Many mechanisms will remain useful. They should remain because they create value — not because history placed them there.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- principles -->
+<section class="block dark" id="principles">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The post-scarcity intelligence organisation</span>
+      <h2>Ten operating principles.</h2>
+    </div>
+    <div class="principles reveal">
+      <div><i>01</i><div><b>Intelligence is assumed abundant.</b><span>Do not ration cognition unnecessarily.</span></div></div>
+      <div><i>02</i><div><b>Context is persistent.</b><span>The organisation continuously knows what it knows.</span></div></div>
+      <div><i>03</i><div><b>Authority is explicit.</b><span>Intelligence must understand what it is permitted to do.</span></div></div>
+      <div><i>04</i><div><b>Evidence is traceable.</b><span>Claims connect to their sources.</span></div></div>
+      <div><i>05</i><div><b>Goals replace rigid workflows.</b><span>Describe desired outcomes and constraints.</span></div></div>
+      <div><i>06</i><div><b>Humans define purpose.</b><span>Machines optimise within boundaries humans establish.</span></div></div>
+      <div><i>07</i><div><b>Governance is executable.</b><span>Rules operate directly within computational systems.</span></div></div>
+      <div><i>08</i><div><b>Learning is continuous.</b><span>Every action updates organisational understanding.</span></div></div>
+      <div><i>09</i><div><b>Exploration is massive.</b><span>Thousands of possibilities investigated continuously.</span></div></div>
+      <div><i>10</i><div><b>Human attention is protected.</b><span>Machines consume information. Humans receive meaning.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- conclusion + cta -->
+<section class="block" id="conclusion">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The 2026 boundary</span>
+      <h2>Not primarily an intelligence system. A purpose system.</h2>
+      <p class="lead">Once intelligence is abundant, organisations can generate more ideas, strategies, designs and analyses than humans could ever consume. The scarce resource becomes direction. What matters? What deserves action? What kind of future should be created?</p>
+    </div>
+    <div class="cta-card reveal">
+      <span class="eyebrow">Put it to work</span>
+      <h2>Redesign around the 8 Areas of Focus.</h2>
+      <p>Each area has a human conductor holding purpose, judgement and accountability — orchestrating agents that hold volume, consistency and monitoring. Start with the refactoring question, one area at a time.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/framework/areas-of-focus">The 8 Areas of Focus <svg class="ico" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-outline" href="/framework/organisation-for-speed-agentic-ai">Organising for the speed of agentic AI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- companion frameworks -->
+<section class="block alt" id="companion">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Companion frameworks</span>
+      <h2>Read alongside.</h2>
+    </div>
+    <div class="grid-3">
+      <a class="ev-card reveal" href="/framework/areas-of-focus">
+        <span class="tag">Organisational</span>
+        <h3>The 8 Areas of Focus</h3>
+        <p>Direction, Engagement, Enablement, Protocols, Sustainability, Processes, Accountability and Organisational — the structure that distributes responsibility across a decentralised organisation.</p>
+        <span class="more">Explore the framework <svg class="ico" style="width:15px;height:15px" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="ev-card reveal" href="/framework/organisation-for-speed-agentic-ai">
+        <span class="tag">Organisational</span>
+        <h3>Organising for the Speed of Agentic AI</h3>
+        <p>The Areas of Focus reinterpreted as continuous actuation layers — an AI-native operating model where direction, protocols, agents and accountability synchronise at machine speed.</p>
+        <span class="more">Read the framework <svg class="ico" style="width:15px;height:15px" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="ev-card reveal" href="/framework/ai-assisted-actuation">
+        <span class="tag">Community</span>
+        <h3>AI-Assisted Trusted Community Self-Actuation</h3>
+        <p>Community memory, trusted compute "in my image", and dynamic cultural interfaces — how a community stays sovereign in the age of abundant intelligence.</p>
+        <span class="more">Read the framework <svg class="ico" style="width:15px;height:15px" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a class="nav-logo" href="/" style="margin-bottom:12px"><img src="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png" alt="selfdriven">selfdriven <span>actuate</span></a>
+        <p>Progressive self-actuation for communities and organisations in the age of abundant intelligence.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Framework</h4>
+        <a href="/framework">Overview</a>
+        <a href="/framework/areas-of-focus">8 Areas of Focus</a>
+        <a href="/framework/organisation-for-speed-agentic-ai">Speed of Agentic AI</a>
+        <a href="/framework/end-of-the-scarce-intelligence-organisation">Scarce-Intelligence Organisation</a>
+      </div>
+      <div class="foot-col">
+        <h4>Collaborate</h4>
+        <a href="/framework/the-collaborative-day">The Collaborative Day</a>
+        <a href="/framework/the-collaborative-5cs">The Collaborative 5Cs</a>
+        <a href="/framework/engagement-lab-production">Engagement Lab Production</a>
+        <a href="/framework/areas-of-focus/services-agreement">Services Agreement</a>
+      </div>
+      <div class="foot-col">
+        <h4>Ecosystem</h4>
+        <a href="https://selfdriven.foundation">selfdriven.foundation</a>
+        <a href="https://www.selfdriven.institute/framework/areas-of-focus">selfdriven.institute</a>
+        <a href="https://selfdriven.community">selfdriven.community</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 selfdriven Foundation</span>
+      <span>Framework · The End of the Scarce-Intelligence Organisation</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>24);
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=((i%4)*70)+'ms';io.observe(el)});
+</script>
+</body>
+</html>
