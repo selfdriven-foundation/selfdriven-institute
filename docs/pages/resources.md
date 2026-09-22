@@ -7,6 +7,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Papers
 
+- [From generating answers to making decisions ](/paper/decision-ai-from-generation-to-action)
 - [From Zero to One Proof](/paper/zero-to-proof)
 - [Conducting Scores](/paper/conducting-scores)
 - [Computational-Based Reality (CBR) and Gravity as Arbitrage Between Realities](/paper/computational-based-reality-gravitational-arbitrage)
