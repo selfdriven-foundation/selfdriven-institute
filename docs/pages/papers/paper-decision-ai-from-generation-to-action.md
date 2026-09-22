@@ -6,7 +6,7 @@ permalink: /paper/decision-ai-from-generation-to-action
 
 # Decision AI
 
-## From generating answers to making decisions.
+### From generating answers to making decisions.
 
 The first wave of modern AI has been dominated by **Generative AI**.
 
@@ -22,7 +22,7 @@ But autonomous systems need something different.
 
 They need to **decide**.
 
-# Generative AI → Decision AI
+## Generative AI → Decision AI
 
 Generative AI asks:
 
@@ -44,7 +44,7 @@ And perhaps more importantly:
 
 **How confident should we actually be?**
 
-# What is Decision AI?
+## What is Decision AI?
 
 **Decision AI** is AI designed around selecting between defined possibilities rather than simply generating an unconstrained response.
 
@@ -67,7 +67,7 @@ It is a **decision state**.
 
 That state can be evaluated, verified, combined with policy and ultimately acted upon.
 
-# Calibration matters
+## Calibration matters
 
 A probability is useful only if it means something.
 
@@ -89,11 +89,11 @@ the model sounds very confident
 
 With calibration, probability begins to become an operational signal.
 
-# RLCD
+## RLCD
 
 One emerging approach is:
 
-## Reinforcement Learning for Calibrated Decisions
+### Reinforcement Learning for Calibrated Decisions
 
 **RLCD**
 
@@ -108,7 +108,7 @@ RLCD is one emerging implementation of this idea.
 
 Decision AI is the broader concept.
 
-# Generation is not decision
+## Generation is not decision
 
 Consider an autonomous system deciding whether a software deployment should proceed.
 
@@ -142,11 +142,11 @@ For example:
 
 The probabilities become part of the system architecture.
 
-# A new AI stack
+## A new AI stack
 
 We can think about increasingly autonomous intelligence as four layers.
 
-## 1. Generative AI
+### 1. Generative AI
 
 **Creates possibilities.**
 
@@ -159,7 +159,7 @@ Hypotheses
 
 ↓
 
-## 2. Decision AI
+### 2. Decision AI
 
 **Chooses between possibilities.**
 
@@ -170,7 +170,7 @@ Selects actions
 
 ↓
 
-## 3. Autonomous AI
+### 3. Autonomous AI
 
 **Acts on decisions.**
 
@@ -183,7 +183,7 @@ Operates continuously
 
 ↓
 
-## 4. Governed AI
+### 4. Governed AI
 
 **Constrains how autonomous action occurs.**
 
@@ -198,7 +198,7 @@ Human escalation
 
 
 
-# Generate → Decide → Act → Govern
+## Generate → Decide → Act → Govern
 
 This gives us a simple model for the emerging AI environment:
 
@@ -223,7 +223,7 @@ Each layer requires different engineering.
 
 
 
-# Why this matters
+## Why this matters
 
 With Generative AI, an incorrect answer can be inconvenient.
 
@@ -243,7 +243,7 @@ As the distance between **decision and action** approaches zero, understanding u
 
 
 
-# Confidence should affect authority
+## Confidence should affect authority
 
 A useful principle for autonomous systems is:
 
@@ -283,7 +283,7 @@ before execution occurs.
 
 
 
-# Decision AI + verification
+## Decision AI + verification
 
 Calibration tells us something important:
 
@@ -315,7 +315,7 @@ This turns AI output into something closer to a **verifiable decision process**.
 
 
 
-# Humans work this way too
+## Humans work this way too
 
 Humans rarely have perfect information.
 
@@ -344,7 +344,7 @@ and improve.
 
 
 
-# System One and System Two
+## System One and System Two
 
 Decision AI also points toward an interesting separation of machine intelligence.
 
@@ -386,7 +386,7 @@ Higher consequence can trigger stronger verification.
 
 
 
-# Intelligence becomes composable
+## Intelligence becomes composable
 
 Once decisions are represented as structured probabilities rather than prose, they can become inputs into other systems.
 
@@ -408,7 +408,7 @@ This enables architectures based on:
 
 
 
-# From chatbots to participants
+## From chatbots to participants
 
 Generative AI largely gave us systems we could **talk to**.
 
@@ -428,7 +428,7 @@ It becomes:
 
 
 
-# The selfdriven view
+## The selfdriven view
 
 At **selfdriven.ai**, we see intelligence becoming increasingly:
 
@@ -466,7 +466,7 @@ and
 
 
 
-# From plausible to accountable
+## From plausible to accountable
 
 Generative AI taught machines to create increasingly plausible outputs.
 
@@ -486,7 +486,7 @@ And it may become one of the critical foundations for autonomous systems we can 
 
 
 
-## Generate. Decide. Act. Govern.
+### Generate. Decide. Act. Govern.
 
 **selfdriven.ai**
 
