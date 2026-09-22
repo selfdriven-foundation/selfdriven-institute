@@ -3,18 +3,17 @@ layout: selfdriven
 title: From generating answers to making decisions - Research - selfdrivenAI
 permalink: /paper/decision-ai-from-generation-to-action
 ---
-
 # Decision AI
 
-### From generating answers to making decisions.
+**From generating answers to making decisions.**
 
 The first wave of modern AI has been dominated by **Generative AI**.
 
-Ask a question.  
-Generate some text.  
-Create an image.  
-Write some code.  
-Suggest some possibilities.
+- Ask a question.  
+- Generate some text.  
+- Create an image.  
+- Write some code.  
+- Suggest some possibilities.
 
 This is extraordinarily useful.
 
