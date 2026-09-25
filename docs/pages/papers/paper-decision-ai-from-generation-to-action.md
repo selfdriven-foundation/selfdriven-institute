@@ -4,7 +4,7 @@ title: From generating answers to making decisions - Research - selfdrivenAI
 permalink: /paper/decision-ai-from-generation-to-action
 ---
 
-# Decision AI
+# Decision AI - From Generation to Action
 
 **From generating answers to making decisions.**
 
@@ -503,3 +503,4 @@ And it may become one of the critical foundations for autonomous systems we can 
 ---
 
 - [The Context Packet Protocol](/paper/decision-ai-context-packet-protocol)
+- [octonomous.io/decision-ai](https://octonomous.io/decision-ai)

@@ -3018,3 +3018,8 @@ Distribute openly.
 Trust locally.  
 Decide sovereignly.  
 Return evidence.**
+
+---
+
+- [Decision AI - From Generation to Action](/paper/decision-ai-from-generation-to-action)
+- [octonomous.io/decision-ai](https://octonomous.io/decision-ai)
