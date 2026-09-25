@@ -499,3 +499,7 @@ And it may become one of the critical foundations for autonomous systems we can 
 **selfdriven.ai**
 
 *Intelligence for self-actuating systems.*
+
+---
+
+- [The Context Packet Protocol](/paper/decision-ai-context-packet-protocol)
