@@ -63,7 +63,7 @@ The central design principle is:
 [Slides: The Context Packet (PDF)](https://github.com/selfdriven-foundation/selfdriven-institute/blob/main/resources/slides/The_Context_Packet.pdf)
 
 
-# 1. Design Goals
+## 1. Design Goals
 
 Context Packet Protocol v0.1 has nine primary goals.
 
@@ -92,7 +92,7 @@ The protocol describes the object exchanged between these systems.
 
 
 
-# 2. Core Model
+## 2. Core Model
 
 A Context Packet can be thought of as:
 
@@ -140,7 +140,7 @@ Context Packet
 
 
 
-# 3. Protocol Namespace
+## 3. Protocol Namespace
 
 A v0.1 packet SHOULD identify the protocol using:
 
@@ -165,7 +165,7 @@ selfdriven:context:1
 
 
 
-# 4. Basic Packet
+## 4. Basic Packet
 
 A minimal Context Packet:
 
@@ -200,7 +200,7 @@ A minimal Context Packet:
 
 
 
-# 5. Required Fields
+## 5. Required Fields
 
 A conforming v0.1 packet SHOULD contain:
 
@@ -224,7 +224,7 @@ proof
 
 
 
-# 6. Packet Types
+## 6. Packet Types
 
 Initial packet types are:
 
@@ -245,7 +245,7 @@ Additional types MAY be registered later.
 
 
 
-# 7. Decision Packet
+## 7. Decision Packet
 
 The most important v0.1 type is:
 
@@ -274,7 +274,7 @@ It contains the context within which that decision should be made.
 
 
 
-# 8. Context Graph Representation
+## 8. Context Graph Representation
 
 Graph relationships SHOULD be explicit.
 
@@ -312,7 +312,7 @@ pump-p204
 
 
 
-# 9. Assertions
+## 9. Assertions
 
 Assertions SHOULD be independently identifiable.
 
@@ -352,7 +352,7 @@ Example:
 
 
 
-# 10. Separate Generation From Verification
+## 10. Separate Generation From Verification
 
 The protocol MUST NOT assume that AI-generated content is verified.
 
@@ -394,7 +394,7 @@ VERIFIED
 
 
 
-# 11. Evidence
+## 11. Evidence
 
 Evidence can be embedded:
 
@@ -430,7 +430,7 @@ Or referenced:
 
 
 
-# 12. Evidence Relationships
+## 12. Evidence Relationships
 
 Assertions SHOULD identify the evidence supporting them.
 
@@ -457,7 +457,7 @@ Assertion
 
 
 
-# 13. Purpose
+## 13. Purpose
 
 Purpose SHOULD be explicit.
 
@@ -488,7 +488,7 @@ Purpose allows the graph compiler to answer:
 
 
 
-# 14. Subject
+## 14. Subject
 
 Every packet SHOULD identify its primary subject.
 
@@ -512,7 +512,7 @@ Multiple subjects MAY be represented:
 
 
 
-# 15. Issuer
+## 15. Issuer
 
 The issuer identifies the party responsible for producing the packet.
 
@@ -537,7 +537,7 @@ VCG
 
 
 
-# 16. Recipient
+## 16. Recipient
 
 A packet MAY identify an intended recipient.
 
@@ -562,7 +562,7 @@ Recipients may also be resolved through routing rules.
 
 
 
-# 17. Validity
+## 17. Validity
 
 Time-bound validity:
 
@@ -594,7 +594,7 @@ Context-dependent validity MAY also exist.
 
 
 
-# 18. State-Bound Packets
+## 18. State-Bound Packets
 
 Packets SHOULD optionally identify the state against which they were generated.
 
@@ -617,7 +617,7 @@ This prevents a valid but stale packet from being applied to a changed environme
 
 
 
-# 19. Constraints
+## 19. Constraints
 
 Constraints represent boundaries on reasoning or action.
 
@@ -650,7 +650,7 @@ Or:
 
 
 
-# 20. Capabilities
+## 20. Capabilities
 
 A packet MAY carry an explicit capability.
 
@@ -676,7 +676,7 @@ It does not mean:
 
 
 
-# 21. Delegation
+## 21. Delegation
 
 Authority SHOULD be delegable.
 
@@ -703,7 +703,7 @@ Authority SHOULD be delegable.
 
 
 
-# 22. Delegation Chains
+## 22. Delegation Chains
 
 Delegation may form a chain:
 
@@ -731,7 +731,7 @@ Each link SHOULD be independently verifiable.
 
 
 
-# 23. Revocation
+## 23. Revocation
 
 A packet MAY identify a revocation source.
 
@@ -755,7 +755,7 @@ unknown
 
 
 
-# 24. Supersession
+## 24. Supersession
 
 Context generally SHOULD be replaced rather than mutated retrospectively.
 
@@ -777,7 +777,7 @@ This preserves historical decision context.
 
 
 
-# 25. Content Addressing
+## 25. Content Addressing
 
 Context Packets SHOULD support content-derived identifiers.
 
@@ -803,7 +803,7 @@ The exact multibase/multihash representation can be standardised separately.
 
 
 
-# 26. Canonical JSON
+## 26. Canonical JSON
 
 JSON packets need deterministic serialisation before hashing or signing.
 
@@ -833,7 +833,7 @@ RFC 8785
 
 
 
-# 27. Binary Encoding
+## 27. Binary Encoding
 
 High-throughput implementations MAY use CBOR.
 
@@ -859,7 +859,7 @@ Both MUST represent the same logical graph.
 
 
 
-# 28. Packet Digest
+## 28. Packet Digest
 
 A digest SHOULD be calculated over the canonical packet excluding its proof.
 
@@ -884,7 +884,7 @@ packet.id = encode(digest)
 
 
 
-# 29. Signature
+## 29. Signature
 
 A simple proof form:
 
@@ -904,7 +904,7 @@ Implementations SHOULD support algorithm agility.
 
 
 
-# 30. COSE Profile
+## 30. COSE Profile
 
 CBOR deployments SHOULD consider COSE.
 
@@ -931,7 +931,7 @@ This profile could be particularly suitable for:
 
 
 
-# 31. Encryption
+## 31. Encryption
 
 Signing provides authenticity and integrity.
 
@@ -971,11 +971,11 @@ The base protocol does not mandate one mechanism.
 
 
 
-# 32. Identity Profiles
+## 32. Identity Profiles
 
 Context Packet Protocol should permit several identity profiles.
 
-## Profile A — Public-Key Identity
+### Profile A — Public-Key Identity
 
 ```text
 key:ed25519:...
@@ -983,7 +983,7 @@ key:ed25519:...
 
 Simplest deployment.
 
-## Profile B — DID
+### Profile B — DID
 
 ```text
 did:web:...
@@ -991,7 +991,7 @@ did:key:...
 did:webs:...
 ```
 
-## Profile C — KERI
+### Profile C — KERI
 
 ```text
 KERI AID
@@ -1001,7 +1001,7 @@ KERI can provide self-certifying identifiers and cryptographically verifiable ke
 
 
 
-# 33. Why KERI Fits Well
+## 33. Why KERI Fits Well
 
 KERI is particularly interesting for Context Packets because identity remains stable while control keys can rotate.
 
@@ -1027,7 +1027,7 @@ but:
 
 
 
-# 34. ACDC Profile
+## 34. ACDC Profile
 
 Authentic Chained Data Containers are an especially close conceptual fit.
 
@@ -1063,7 +1063,7 @@ This should be explored rather than creating unnecessary competing cryptographic
 
 
 
-# 35. ACDC/KERI Optional Profile
+## 35. ACDC/KERI Optional Profile
 
 The protocol should remain layered.
 
@@ -1081,7 +1081,7 @@ This allows simple systems to begin easily while highly assured systems adopt st
 
 
 
-# 36. Context Packet ID
+## 36. Context Packet ID
 
 A possible URI form:
 
@@ -1108,7 +1108,7 @@ The ID itself SHOULD remain independent of storage location.
 
 
 
-# 37. Graph References
+## 37. Graph References
 
 A packet can reference external graph objects.
 
@@ -1139,7 +1139,7 @@ remain distinct.
 
 
 
-# 38. Immutable and Mutable References
+## 38. Immutable and Mutable References
 
 The protocol SHOULD distinguish:
 
@@ -1167,7 +1167,7 @@ Consequential Decision Packets SHOULD normally bind to immutable versions.
 
 
 
-# 39. Context Compiler
+## 39. Context Compiler
 
 A Context Compiler produces Decision VCGs and Context Packets.
 
@@ -1213,7 +1213,7 @@ Context Packet
 
 
 
-# 40. Context Minimisation
+## 40. Context Minimisation
 
 The compiler SHOULD follow:
 
@@ -1234,7 +1234,7 @@ A packet SHOULD link outward where embedding the entire supporting context is un
 
 
 
-# 41. Privacy
+## 41. Privacy
 
 A packet may intentionally contain:
 
@@ -1258,7 +1258,7 @@ Decision VCGs therefore provide an opportunity for **semantic minimisation**, no
 
 
 
-# 42. Disclosure Levels
+## 42. Disclosure Levels
 
 Evidence MAY support selective disclosure.
 
@@ -1293,7 +1293,7 @@ This may later integrate with:
 
 
 
-# 43. Replay Resistance
+## 43. Replay Resistance
 
 A valid old packet MUST NOT necessarily remain executable.
 
@@ -1321,7 +1321,7 @@ Example:
 
 
 
-# 44. Sequence
+## 44. Sequence
 
 Continuous streams MAY use:
 
@@ -1350,7 +1350,7 @@ forks
 
 
 
-# 45. Context Chains
+## 45. Context Chains
 
 Packets MAY form chains.
 
@@ -1368,7 +1368,7 @@ This makes contextual changes explicit.
 
 
 
-# 46. Context DAGs
+## 46. Context DAGs
 
 More complex processes may form DAGs rather than chains.
 
@@ -1396,7 +1396,7 @@ This is useful when multiple authorities contribute context.
 
 
 
-# 47. Context Receipts
+## 47. Context Receipts
 
 An action resulting from a Context Packet SHOULD be capable of producing a Context Receipt.
 
@@ -1425,7 +1425,7 @@ An action resulting from a Context Packet SHOULD be capable of producing a Conte
 
 
 
-# 48. Outcome Evidence
+## 48. Outcome Evidence
 
 Receipts may include observations.
 
@@ -1457,7 +1457,7 @@ VCG
 
 
 
-# 49. Queries
+## 49. Queries
 
 A node can request context using a Query Packet.
 
@@ -1483,7 +1483,7 @@ A node can request context using a Query Packet.
 
 
 
-# 50. Responses
+## 50. Responses
 
 The response may simply reference a Decision Packet.
 
@@ -1499,7 +1499,7 @@ The response may simply reference a Decision Packet.
 
 
 
-# 51. Insufficient Context
+## 51. Insufficient Context
 
 A node SHOULD be able to explicitly state:
 
@@ -1526,7 +1526,7 @@ This is preferable to fabricating missing information.
 
 
 
-# 52. Conflict
+## 52. Conflict
 
 The protocol MUST permit contradictory assertions.
 
@@ -1552,7 +1552,7 @@ Decision policy determines how disagreement is resolved.
 
 
 
-# 53. Confidence
+## 53. Confidence
 
 Model confidence MAY be included:
 
@@ -1576,7 +1576,7 @@ truth
 
 
 
-# 54. Trust Policy
+## 54. Trust Policy
 
 A recipient MAY maintain a local Trust Policy.
 
@@ -1599,7 +1599,7 @@ Thus trust remains locally controlled.
 
 
 
-# 55. Verification Pipeline
+## 55. Verification Pipeline
 
 A receiver SHOULD process a packet approximately as follows:
 
@@ -1635,7 +1635,7 @@ ACCEPT CONTEXT
 
 
 
-# 56. Context Firewall
+## 56. Context Firewall
 
 This verification pipeline can form a **Context Firewall**.
 
@@ -1663,7 +1663,7 @@ The AI generating the packet is therefore outside the final trust boundary.
 
 
 
-# 57. Local Decision Principle
+## 57. Local Decision Principle
 
 A strong security principle for the protocol is:
 
@@ -1675,7 +1675,7 @@ It still does not receive automatic authority.
 
 
 
-# 58. Transport Independence
+## 58. Transport Independence
 
 Context Packets can move over:
 
@@ -1700,7 +1700,7 @@ Transport is intentionally separate from packet semantics.
 
 
 
-# 59. HTTP Profile
+## 59. HTTP Profile
 
 A simple HTTP API could use:
 
@@ -1723,7 +1723,7 @@ POST /context/query
 
 
 
-# 60. Pub/Sub Profile
+## 60. Pub/Sub Profile
 
 The network SHOULD support pub/sub.
 
@@ -1743,7 +1743,7 @@ Subscribers receive packets relevant to their responsibilities.
 
 
 
-# 61. Topic Scope
+## 61. Topic Scope
 
 Topics SHOULD broadly describe context domains rather than specific recipients.
 
@@ -1758,7 +1758,7 @@ Access control determines who can receive their contents.
 
 
 
-# 62. Discovery
+## 62. Discovery
 
 A node may advertise:
 
@@ -1792,7 +1792,7 @@ Example:
 
 
 
-# 63. selfdriven.network Role
+## 63. selfdriven.network Role
 
 Within this architecture, selfdriven.network does not need to become the central source of truth.
 
@@ -1813,7 +1813,7 @@ Thus a node can receive a packet from an untrusted transport while still verifyi
 
 
 
-# 64. selfdriven.nexus Role
+## 64. selfdriven.nexus Role
 
 selfdriven.nexus provides the broader VCG environment.
 
@@ -1841,7 +1841,7 @@ Distribution
 
 
 
-# 65. Reference Architecture
+## 65. Reference Architecture
 
 ```text
 ┌───────────────────────────────────┐
@@ -1891,7 +1891,7 @@ Distribution
 
 
 
-# 66. Node.js Reference Implementation
+## 66. Node.js Reference Implementation
 
 A minimal implementation can use Node's built-in cryptography.
 
@@ -1912,7 +1912,7 @@ const privateKey = keys.privateKey;
 
 
 
-# 67. Canonicalisation
+## 67. Canonicalisation
 
 A production implementation should use a fully compliant RFC 8785 implementation.
 
@@ -1956,7 +1956,7 @@ For interoperability this should ultimately be replaced by strict RFC 8785 JCS.
 
 
 
-# 68. SHA-256 Digest
+## 68. SHA-256 Digest
 
 ```javascript
 function digest(value)
@@ -1973,7 +1973,7 @@ function digest(value)
 
 
 
-# 69. Remove Proof
+## 69. Remove Proof
 
 The proof MUST NOT recursively sign itself.
 
@@ -1993,7 +1993,7 @@ function unsigned(packet)
 
 
 
-# 70. Packet ID
+## 70. Packet ID
 
 ```javascript
 function setID(packet)
@@ -2012,7 +2012,7 @@ function setID(packet)
 
 
 
-# 71. Sign Packet
+## 71. Sign Packet
 
 ```javascript
 function sign(packet, privateKey)
@@ -2044,7 +2044,7 @@ function sign(packet, privateKey)
 
 
 
-# 72. Verify Packet
+## 72. Verify Packet
 
 ```javascript
 function verify(packet, publicKey)
@@ -2081,7 +2081,7 @@ function verify(packet, publicKey)
 
 
 
-# 73. Create Packet
+## 73. Create Packet
 
 Using Promise chaining:
 
@@ -2161,7 +2161,7 @@ function createPacket()
 
 
 
-# 74. Consume Packet
+## 74. Consume Packet
 
 ```javascript
 createPacket()
@@ -2190,7 +2190,7 @@ createPacket()
 
 
 
-# 75. Context Policy Engine
+## 75. Context Policy Engine
 
 Signature validation alone is insufficient.
 
@@ -2237,7 +2237,7 @@ local governance
 
 
 
-# 76. Full Verification
+## 76. Full Verification
 
 Conceptually:
 
@@ -2279,7 +2279,7 @@ Cryptographic validity is only the first layer.
 
 
 
-# 77. Example Complete Packet
+## 77. Example Complete Packet
 
 ```json
 {
@@ -2363,7 +2363,7 @@ Cryptographic validity is only the first layer.
 
 
 
-# 78. Security Properties
+## 78. Security Properties
 
 A production Context Packet implementation should seek:
 
@@ -2385,7 +2385,7 @@ No single signature provides all of these.
 
 
 
-# 79. Threat Model
+## 79. Threat Model
 
 The protocol should assume hostile conditions including:
 
@@ -2411,7 +2411,7 @@ The protocol therefore assumes:
 
 
 
-# 80. Context Stripping
+## 80. Context Stripping
 
 An attacker might remove inconvenient context.
 
@@ -2440,7 +2440,7 @@ not merely the primary assertion.
 
 
 
-# 81. Context Injection
+## 81. Context Injection
 
 An attacker might attempt to add context after signing.
 
@@ -2458,7 +2458,7 @@ Verification fails.
 
 
 
-# 82. Model Independence
+## 82. Model Independence
 
 The protocol intentionally does not identify a required AI architecture.
 
@@ -2480,7 +2480,7 @@ The receiving node evaluates the packet, not the model's reputation alone.
 
 
 
-# 83. Decision Engine Independence
+## 83. Decision Engine Independence
 
 The recipient may use:
 
@@ -2507,7 +2507,7 @@ Multiple possible intelligences
 
 
 
-# 84. Protocol Principle
+## 84. Protocol Principle
 
 The most important design separation is:
 
@@ -2523,7 +2523,7 @@ Context Packets provide an interface between these roles.
 
 
 
-# 85. Generative and Decision AI Separation
+## 85. Generative and Decision AI Separation
 
 ```text
 GENERATIVE AI
@@ -2554,7 +2554,7 @@ The packet is the boundary.
 
 
 
-# 86. Context as Capability Boundary
+## 86. Context as Capability Boundary
 
 A Decision AI should ideally have authority only within its current Context Packet.
 
@@ -2574,7 +2574,7 @@ This drastically reduces ambient authority.
 
 
 
-# 87. Human Inspection
+## 87. Human Inspection
 
 A Context Packet should have a human rendering.
 
@@ -2615,7 +2615,7 @@ Both views represent the same graph.
 
 
 
-# 88. Debugging
+## 88. Debugging
 
 A developer tool should eventually support:
 
@@ -2664,7 +2664,7 @@ ACCEPTABLE
 
 
 
-# 89. CLI Concept
+## 89. CLI Concept
 
 Potential commands:
 
@@ -2685,7 +2685,7 @@ These could form the initial developer toolkit.
 
 
 
-# 90. HTTP API Concept
+## 90. HTTP API Concept
 
 ```text
 POST /context/compile
@@ -2700,7 +2700,7 @@ GET  /context/:id/status
 
 
 
-# 91. Context Compiler API
+## 91. Context Compiler API
 
 Request:
 
@@ -2726,7 +2726,7 @@ Response:
 
 
 
-# 92. Minimum Viable Protocol
+## 92. Minimum Viable Protocol
 
 A practical MVP need only implement:
 
@@ -2750,7 +2750,7 @@ That is sufficient to test the central proposition.
 
 
 
-# 93. Phase 2
+## 93. Phase 2
 
 Then add:
 
@@ -2770,7 +2770,7 @@ Context Firewall
 
 
 
-# 94. Phase 3
+## 94. Phase 3
 
 Later:
 
@@ -2788,7 +2788,7 @@ hardware roots of trust
 
 
 
-# 95. Core Data Flow
+## 95. Core Data Flow
 
 The complete flow can be reduced to:
 
@@ -2824,7 +2824,7 @@ GRAPH
 
 
 
-# 96. Protocol Invariant
+## 96. Protocol Invariant
 
 The key invariant should be:
 
@@ -2832,7 +2832,7 @@ The key invariant should be:
 
 
 
-# 97. The Larger Architectural Consequence
+## 97. The Larger Architectural Consequence
 
 Today, sophisticated AI systems are commonly designed around:
 
@@ -2864,7 +2864,7 @@ The packet becomes the transferable unit.
 
 
 
-# 98. Internet Analogy
+## 98. Internet Analogy
 
 The packet abstraction enabled:
 
@@ -2891,7 +2891,7 @@ interoperating without requiring one central intelligence.
 
 
 
-# 99. Context Packet Principle
+## 99. Context Packet Principle
 
 The underlying principle can be expressed in one line:
 
@@ -2899,7 +2899,7 @@ The underlying principle can be expressed in one line:
 
 
 
-# 100. Conclusion
+## 100. Conclusion
 
 Large generative systems will increasingly be capable of operating across knowledge environments far larger than any individual person, organisation or edge device can consume directly.
 
@@ -2954,7 +2954,7 @@ It is a network of **sovereign intelligences exchanging verifiable context**.
 
 
 
-# Core Architecture
+## Core Architecture
 
 ```text
 selfdriven.nexus
@@ -2980,11 +2980,11 @@ Context Receipt
 selfdriven.nexus
 ```
 
-# Core Proposition
+## Core Proposition
 
 > **The Context Packet should become the smallest portable unit of verified decision intelligence: a content-addressed, signed, purpose-bound subgraph containing the minimum trustworthy context required for a sovereign human or artificial intelligence to make a decision.**
 
-# Protocol Summary
+## Protocol Summary
 
 ```text
 PACKET
