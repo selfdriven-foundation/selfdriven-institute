@@ -498,7 +498,7 @@ And it may become one of the critical foundations for autonomous systems we can 
 
 **selfdriven.ai**
 
-*Intelligence for self-actuating systems.*
+*Intelligence for self-actuating systems*
 
 ---
 

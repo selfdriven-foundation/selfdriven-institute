@@ -3010,14 +3010,16 @@ VALIDITY
 CRYPTOGRAPHIC PROOF
 ```
 
-**Generate globally.  
+**
+Generate globally.  
 Verify structurally.  
 Compile minimally.  
 Sign cryptographically.  
 Distribute openly.  
 Trust locally.  
 Decide sovereignly.  
-Return evidence.**
+Return evidence.
+**
 
 ---
 
