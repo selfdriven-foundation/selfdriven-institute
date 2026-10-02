@@ -1,214 +1,41 @@
-# From Micromanagement to Conducting
+# Part I — The Organisation We Inherited
 
-## The Organisational Shift of Our Time
+# Chapter 1
 
-### How organisations move from controlling tasks to conducting coherent agency in an age of abundant intelligence
+## The Task Machine
 
----
+Most organisations possess an invisible machine.
 
-# Contents
+Its input is intention.
 
-**Preface — The Organisation Has Changed, Management Hasn't**
+Its output is tasks.
 
-## Part I — The Organisation We Inherited
+Leadership decides that customer experience must improve.
 
-1. The Management Machine  
-2. The Industrial Logic of Control  
-3. From Knowledge Work to Abundant Intelligence  
-4. Why Micromanagement Persists  
-5. Management Debt  
+The intention becomes an initiative.
 
-**Case Study 1 — The Founder Who Became the Operating System**
+The initiative becomes a program.
 
-6. The New Constraint Is Coherence  
+The program becomes projects.
 
-## Part II — Conducting
+Projects acquire milestones.
 
-7. Moving Up an Abstraction Layer  
-8. Coherent Agency  
-9. The Eight Areas of Focus  
-10. Direction  
-11. Engagement  
-12. Enablement  
-13. Protocols  
+Milestones become work packages.
 
-**Case Study 2 — A Government Service Without a Human Router**
+Work packages become tasks.
 
-14. Sustainability  
-15. Processes  
+Tasks are assigned.
 
-**Case Study 3 — The Factory That Stopped Inspecting Quality Into the Product**
+Progress is measured.
 
-16. Accountability  
+Status travels upwards.
 
-**Case Study 4 — The Insurer and the Catastrophe**
+Management intervenes when actual activity diverges from planned activity.
 
-17. Organisational  
-
-**Case Study 5 — The Hospital Discharge Problem**
-
-## Part III — Releasing Agency
-
-18. From Delegation to Agency  
-
-**Case Study 6 — The School That Stopped Managing Teachers by Task**
-
-19. Accountability Without Surveillance  
-20. Protocols Instead of Permission  
-21. The Manager as Conductor  
-22. Attention as Organisational Capital  
-23. Trust as an Architectural Property  
-
-## Part IV — Abundant Intelligence
-
-24. When Intelligence Stops Being Scarce  
-25. The Agentic Organisation  
-26. AI Should Not Become the Ultimate Micromanager  
-27. Human Direction and Machine-Speed Action  
-
-**Case Study 7 — The Organisation With 200 People and 5,000 Agents**
-
-28. Evidence at Machine Speed  
-29. Organising Humans and Agents Together  
-
-## Part V — Making the Shift
-
-30. Stop Starting with Tasks  
-31. Diagnosing Management Dependency  
-
-**Case Study 8 — The Software Company Where Every Customer Problem Became a Meeting**
-
-32. A Practical Transformation Pattern  
-33. The First Ninety Days  
-34. The Conducting Meeting  
-35. Measuring What Matters  
-36. The Conducting Maturity Model  
-
-## Part VI — The Organisation Ahead
-
-37. Beyond the Organisational Chart  
-38. Organisations as Context Networks  
-39. Leadership After Management  
-40. The Organisational Shift of Our Time  
-
-**Appendix A — The Eight Areas of Focus**  
-**Appendix B — The Conductor's Field Guide**  
-**Appendix C — Diagnostic Questions**  
-**Appendix D — The Conducting Canvas**  
-**Appendix E — A 90-Day Transition Playbook**
-
----
-
-# A Note on the Case Studies
-
-The case studies in this book are illustrative composites.
-
-They combine organisational patterns that can appear across companies, government, education, healthcare, insurance, manufacturing and technology.
-
-They are not descriptions of particular organisations.
-
-Their purpose is to make the conducting model tangible.
-
-Each begins with a familiar organisational problem.
-
-Too many approvals.
-
-A founder becoming a bottleneck.
-
-Excessive inspection.
-
-Claims surges.
-
-Meetings replacing coordination.
-
-Teachers being managed through task completion.
-
-AI agents operating without shared context.
-
-The interesting question in each case is not:
-
-> What task should management add?
-
-It is:
-
-> **What organisational condition is making management intervention necessary?**
-
-That is the question conducting teaches us to ask.
-
----
-
-# Preface
-
-## The Organisation Has Changed, Management Hasn't
-
-There is a strange contradiction at the centre of the modern organisation.
-
-We have never had more information.
-
-We have never had more computing power.
-
-We have never had more ways to communicate.
-
-We have never had greater ability to automate routine activity.
-
-And we have never had easier access to intelligence.
-
-Yet many organisations have responded by increasing the amount of management.
-
-More project management.
-
-More reporting.
-
-More dashboards.
-
-More meetings.
-
-More approvals.
-
-More performance indicators.
-
-More planning.
-
-More status updates.
-
-More oversight.
-
-More software that watches work.
-
-More systems that break work into smaller pieces and distribute those pieces to people.
-
-Technology has accelerated.
-
-The underlying management architecture often has not.
-
-At the top sits intention.
-
-Below intention sits management.
-
-Management translates intention into plans.
-
-Plans become projects.
-
-Projects become workstreams.
-
-Workstreams become tasks.
-
-Tasks are allocated to people.
-
-People perform them.
-
-Progress is reported upward.
-
-Management compares progress with the plan.
-
-Corrections are issued.
-
-And the cycle repeats.
+Then the cycle begins again.
 
 ```text
 Intent
-   ↓
-Management
    ↓
 Plans
    ↓
@@ -218,252 +45,53 @@ Tasks
    ↓
 People
    ↓
-Reporting
+Status
+   ↓
+Management
    ↺
 ```
 
-This architecture is so familiar that it can appear inevitable.
+There is nothing inherently wrong with this.
 
-It isn't.
+Complex work often needs decomposition.
 
-It emerged from particular historical conditions.
+Tasks help people coordinate.
 
-Information was expensive.
+Plans create shared expectations.
 
-Communication was slow.
+Projects give temporary work structure.
 
-Expertise was concentrated.
+The problem begins when this mechanism becomes the organisation's primary means of maintaining coherence.
 
-Organisations were difficult to coordinate.
+Once that happens, whatever cannot easily be turned into a task becomes harder for the organisation to see.
 
-Most people had access to only a small part of the information available to those above them.
+Learning.
 
-The ability to observe, interpret and decide was scarce.
+Judgement.
 
-Hierarchy was therefore not merely an authority structure.
+Relationships.
 
-It was an information-processing system.
+Emerging opportunity.
 
-Information travelled upward.
+Changing assumptions.
 
-Management interpreted it.
+Shared meaning.
 
-Instructions travelled downward.
+Context.
 
-For more than a century, this mechanism helped humans coordinate at scales that would otherwise have been impossible.
+These things are difficult to put on a task board.
 
-It built factories.
+Tasks are easy.
 
-It ran railways.
-
-It administered governments.
-
-It organised banks.
-
-It coordinated hospitals.
-
-It built global corporations.
-
-The management organisation was one of the great coordination technologies of the industrial age.
-
-But every organisational architecture contains assumptions about the world in which it operates.
-
-And those assumptions are changing.
-
-Information is becoming abundant.
-
-Analysis is becoming inexpensive.
-
-Knowledge can travel almost instantly.
-
-Processes can be made machine-readable.
-
-Evidence can be captured automatically.
-
-Organisational history can be searchable.
-
-Systems can observe operations continuously.
-
-Artificial intelligence can interpret information, identify patterns, generate options and increasingly perform actions.
-
-We are moving from an environment in which useful intelligence was scarce towards one in which useful intelligence can increasingly be abundant.
-
-That changes the central organisational problem.
-
-The question is no longer simply:
-
-> How do we get people to execute the tasks required by the plan?
-
-It becomes:
-
-> **How do we enable growing numbers of intelligent actors to exercise agency while remaining part of a coherent whole?**
-
-That is a different problem.
-
-It requires a different organisational response.
-
-This book calls that response **conducting**.
-
-Conducting does not mean abandoning management discipline.
-
-It does not mean removing structure.
-
-It does not mean eliminating managers.
-
-It does not mean telling everyone to do whatever they want.
-
-And it does not mean giving autonomous AI systems unlimited freedom.
-
-Conducting means moving leadership **up an abstraction layer**.
-
-Instead of continuously directing movements, we establish and maintain the conditions through which useful movement can emerge.
-
-Instead of prescribing every action, we maintain Direction.
-
-Instead of repeatedly explaining individual instructions, we strengthen Engagement.
-
-Instead of confusing activity with outcomes, we focus on Enablement.
-
-Instead of routing routine decisions through managers, we establish Protocols.
-
-Instead of consuming people until they become bottlenecks, we protect Sustainability.
-
-Instead of managing every recurring action, we improve Processes.
-
-Instead of equating observation with responsibility, we establish Accountability.
-
-Instead of coordinating every movement individually, we maintain Organisational synchronisation.
-
-The central leadership question changes from:
-
-> What should everyone be doing?
-
-to:
-
-> **What needs our attention now?**
-
-The organisational objective becomes:
-
-> **coherent agency without continuous central instruction.**
-
-The model used throughout this book is organised around eight persistent Areas of Focus:
-
-**Direction.  
-Engagement.  
-Enablement.  
-Protocols.  
-Sustainability.  
-Processes.  
-Accountability.  
-Organisational.**
-
-They are not departments.
-
-They are not a hierarchy.
-
-They are not another way of categorising tasks.
-
-They are interconnected organisational conditions.
-
-Tasks remain useful.
-
-Projects remain useful.
-
-Plans remain useful.
-
-But none should be mistaken for the organisation itself.
-
-The task is a local expression of organisational context.
-
-The organisation is the system that allows many local actions to remain meaningfully connected.
-
-That distinction lies at the heart of the organisational shift of our time.
-
----
-
-# Part I
-
-# The Organisation We Inherited
-
----
-
-# Chapter 1
-
-## The Management Machine
-
-Most organisations possess an invisible machine.
-
-Its inputs are intentions.
-
-Its outputs are tasks.
-
-Leadership decides that customer experience must improve.
-
-Someone creates an initiative.
-
-The initiative becomes a program.
-
-A program manager is appointed.
-
-Meetings begin.
-
-The program becomes projects.
-
-Projects acquire owners.
-
-Milestones are established.
-
-Milestones become work packages.
-
-Work packages become tasks.
-
-Tasks enter a tracking system.
-
-People receive assignments.
-
-Managers monitor completion.
-
-Reports aggregate the results.
-
-Eventually leadership receives a dashboard showing whether the original intention is red, amber or green.
-
-The organisation has converted purpose into administrable units.
-
-This is useful.
-
-Complex work must often be decomposed.
-
-Coordination requires representation.
-
-Progress sometimes needs to be visible.
-
-The problem arises when this translation mechanism becomes the **primary mechanism of organisational coherence**.
-
-Anything difficult to represent as a task begins disappearing.
-
-Learning is difficult to represent.
-
-Relationships are difficult to represent.
-
-Judgement is difficult to represent.
-
-Emerging opportunity is difficult to represent.
-
-Context is difficult to represent.
-
-Meaning is difficult to represent.
-
-But tasks are wonderfully representable.
-
-They can be counted.
-
-Assigned.
-
-Prioritised.
+They can be assigned.
 
 Estimated.
 
+Prioritised.
+
 Scheduled.
+
+Counted.
 
 Completed.
 
@@ -471,55 +99,115 @@ Reopened.
 
 Reported.
 
-And therefore organisations begin managing what their systems can see.
+And so a subtle inversion occurs.
 
-### When the representation becomes the reality
+The organisation starts managing what its systems can represent rather than representing what the organisation actually needs to manage.
 
-Imagine an organisation with a customer problem.
+### When the task becomes the purpose
 
-Complaints are rising.
+Imagine a company facing rising customer complaints.
 
-Leadership creates a customer-improvement project.
+Leadership responds by creating a customer-improvement project.
 
-Twenty tasks are created.
+Twenty actions are identified.
 
 Nineteen are completed.
 
-The dashboard shows:
+The project dashboard reads:
 
 **95% complete.**
 
-Customers remain unhappy.
+Customer complaints continue rising.
 
 Has the organisation succeeded?
 
-Obviously not.
+Clearly not.
 
-Yet task-centric systems make this mistake surprisingly easy.
+Yet its management system is telling a success story.
 
-They confuse implementation activity with useful Enablement.
+The problem is not dishonesty.
 
-They measure what has been completed rather than what has become possible.
+It is abstraction.
 
-A conducting organisation keeps returning to the underlying condition.
+The original purpose has travelled through so many layers of translation that completion of the representation has become confused with achievement of the purpose.
 
-What are we actually trying to enable?
+The project existed to improve the customer experience.
 
-What changed?
+The organisation gradually began behaving as though the customer-improvement project existed to complete the customer-improvement project.
 
-What outcome exists in the world?
+This happens everywhere.
 
-What have we learned?
+A meeting exists to improve coordination.
 
-Tasks are implementation artefacts.
+Soon attendance becomes the requirement.
 
-They are not organisational truth.
+A report exists to improve understanding.
 
-The underlying conducting framework makes this distinction explicit: tasks remain, but they are local implementation artefacts rather than the primary mechanism of organisational control.
+Soon production of the report becomes the requirement.
 
-Once tasks stop being the control surface of the organisation, leadership needs another mechanism for coherence.
+A policy exists to manage a risk.
 
-That mechanism is conducting.
+Soon compliance with the wording becomes more important than whether the risk is actually controlled.
+
+A task is created to enable an outcome.
+
+Soon completing the task becomes evidence of the outcome.
+
+### Tasks are not the problem
+
+Conducting is not anti-task.
+
+Tasks remain essential.
+
+The distinction is more important:
+
+> **Tasks are implementation artefacts, not the operating model of the organisation.**
+
+That is explicit in the framework underlying this book: tasks still exist, but they are local implementation artefacts rather than the primary mechanism of organisational control.
+
+A mature organisation can use tasks without becoming task-centric.
+
+The task answers:
+
+**What local action should happen?**
+
+It cannot, by itself, answer:
+
+Why does this matter?
+
+Has the environment changed?
+
+Does this still support our Direction?
+
+Who should have authority?
+
+What does good judgement look like?
+
+What evidence matters?
+
+What should happen when the unexpected occurs?
+
+How does this activity remain coherent with everything else?
+
+Those are organisational questions.
+
+When tasks are asked to carry them, managers must continually fill the gaps.
+
+And that is where the task machine begins turning into a management machine.
+
+### Conducting Question
+
+> **Where has completing the representation of work become more important than achieving the purpose of the work?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**Are the tasks complete?**
+
+ask:
+
+**What has actually become possible because of the work?**
 
 ---
 
@@ -527,251 +215,475 @@ That mechanism is conducting.
 
 ## The Industrial Logic of Control
 
-The modern management organisation emerged from a formidable coordination challenge.
+The task machine did not appear accidentally.
 
-Industrial production required large numbers of people to perform interdependent work.
+It solved a real historical problem.
 
-Materials had to arrive at the correct time.
+Industrial organisations needed to coordinate large numbers of people performing interdependent physical work.
+
+Materials had to arrive.
 
 Machines had to operate in sequence.
 
-Quality had to remain predictable.
-
-Costs had to fall.
+Activities had to be repeatable.
 
 Variation had to be controlled.
 
-Breaking work into defined activities became extraordinarily powerful.
+Quality had to be predictable.
 
-The logic was understandable.
+Output had to increase.
 
-If the organisation could determine the correct method, train people in the method, observe execution and correct variation, productivity could improve dramatically.
+The organisation therefore benefited enormously from separating work into defined activities.
 
-The deeper organisational architecture looked like this:
+A broad operating logic emerged:
 
 ```text
-Thinking
+Think
    ↓
-Planning
+Plan
    ↓
-Instruction
+Instruct
    ↓
-Execution
+Execute
    ↓
-Inspection
+Inspect
 ```
 
-The architecture separated the people deciding how work should happen from those performing much of the work.
+Someone determines how the work should be performed.
 
-That separation made sense in many industrial environments.
+Others perform it.
 
-The problem is not that this organisational logic once existed.
+Performance is observed.
 
-The problem is that its conceptual descendants remain deeply embedded in places where the original assumptions no longer apply.
+Deviation is corrected.
 
-The stopwatch became the productivity dashboard.
+In many industrial settings this was an extraordinary improvement over inconsistent, informal practice.
 
-The foreman became the workflow platform.
+The mistake is not that organisations adopted this architecture.
 
-The paper instruction became the ticket.
+The mistake is assuming that an architecture created for one set of constraints remains appropriate when those constraints change.
 
-The manual inspection became digital surveillance.
+### The separation of thinking and doing
 
-The assembly line became the queue.
+The deeper characteristic of the model is not the factory.
 
-The mechanism evolved.
+It is the separation between **thinking** and **execution**.
 
-The assumption often remained:
+Thinking is concentrated.
 
-> Someone elsewhere should determine what good activity looks like and ensure that the person here performs it.
+Execution is distributed.
 
-That assumption becomes increasingly difficult as work becomes knowledge-intensive.
+The person performing an activity does not necessarily need to understand the larger system.
 
-And it becomes deeply problematic when intelligence itself begins becoming distributed.
+They need to perform the activity correctly.
+
+Information therefore moves vertically.
+
+Reality travels upwards as reports.
+
+Interpretation happens somewhere above.
+
+Instructions travel downwards.
+
+Hierarchy is not merely an authority system.
+
+It becomes an **information-processing architecture**.
+
+That architecture survives in remarkably modern settings.
+
+The factory foreman disappears.
+
+The workflow engine appears.
+
+The stopwatch disappears.
+
+The activity dashboard appears.
+
+The paper instruction disappears.
+
+The ticket appears.
+
+The physical inspection line disappears.
+
+The digital approval queue appears.
+
+The mechanisms modernise.
+
+The assumption underneath them can remain unchanged:
+
+> Someone elsewhere should decide what good work looks like, and the organisation should ensure that people here perform it.
+
+### Control feels safe
+
+This architecture is persistent because it creates a strong feeling of organisational control.
+
+A manager can see the plan.
+
+See the tasks.
+
+See the owners.
+
+See the deadlines.
+
+See the exceptions.
+
+The organisation becomes legible from above.
+
+But legibility can be deceptive.
+
+A system can be highly visible while becoming less adaptive.
+
+A team can be perfectly compliant with a plan that no longer makes sense.
+
+A worker can hit every activity target while damaging the customer outcome.
+
+A project can report green while an important assumption collapses.
+
+Control of execution is not the same as control of outcome.
+
+This distinction becomes increasingly important as work depends more heavily on judgement.
+
+### When the edge becomes intelligent
+
+The industrial model works best when the centre knows significantly more about how work should be performed than the edge.
+
+That assumption weakens as the work becomes specialised.
+
+The person nearest the problem may know more than the person above them.
+
+The environment may change faster than instructions can travel.
+
+Unexpected conditions may become normal.
+
+The organisation begins facing a new problem.
+
+Its management architecture was designed to distribute execution.
+
+But now intelligence itself is becoming distributed.
+
+The next question is unavoidable:
+
+**What happens when the people doing the work also need to think?**
+
+### Conducting Question
+
+> **Where does our organisation still separate thinking from doing even though the people closest to the work possess important knowledge?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**How do we make execution conform more closely to the plan?**
+
+ask:
+
+**Where should judgement be able to occur?**
 
 ---
 
 # Chapter 3
 
-## From Knowledge Work to Abundant Intelligence
+## When the Worker Became a Thinker
 
-The rise of knowledge work weakened the industrial separation between thinking and doing.
+Knowledge work weakened one of the central assumptions of industrial management.
 
-The software engineer often knows more about a technical problem than their manager.
+The person doing the work increasingly knew things management did not.
 
-The clinician sees something the administrator cannot.
+A software engineer encounters technical complexity their manager cannot fully anticipate.
 
-The teacher interprets a classroom in real time.
+A clinician interprets an individual patient.
 
-The field engineer encounters conditions headquarters did not anticipate.
+A teacher reads a classroom in real time.
 
-The designer recognises emerging patterns.
+A designer notices behaviour no research plan predicted.
 
-The researcher discovers information that did not exist when the project began.
+A lawyer recognises a subtle interaction between facts and obligations.
 
-The person performing the work increasingly becomes part of the thinking system.
+A field engineer encounters physical conditions nobody at headquarters has seen.
 
-Organisations responded.
+The edge of the organisation becomes intelligent.
 
-Teams became more collaborative.
+This creates a structural problem.
+
+Detailed central instruction becomes less useful precisely as local expertise becomes more important.
+
+### The rise of autonomy
+
+Organisations adapted.
+
+Teams gained greater discretion.
+
+Professional roles expanded.
 
 Decision-making moved closer to expertise.
 
 Agile methods shortened planning cycles.
 
-Product teams gained autonomy.
+Product teams received greater ownership.
 
-Lean thinking emphasised flow and systems.
+Continuous improvement encouraged people performing work to improve the work itself.
 
-Modern organisational theory increasingly acknowledged uncertainty.
+The language of management changed.
 
-But the task machine survived.
+Empowerment.
 
-Many organisations simply surrounded knowledge workers with better task-management software.
+Ownership.
 
-The industrial foreman disappeared.
+Autonomy.
 
-The digital task board arrived.
+Self-management.
 
-### The next transition is bigger
+Yet an old tension remained.
 
-Artificial intelligence introduces another shift.
+The organisation wanted local intelligence.
 
-The knowledge worker challenged the idea that intelligence belonged mainly to management.
+But it still wanted central control.
 
-AI challenges the idea that useful cognitive work belongs exclusively to humans.
+Employees were encouraged to "take ownership" while requiring approval.
 
-Analysis can increasingly be generated anywhere.
+Teams were described as autonomous while operating against centrally allocated task backlogs.
+
+Professionals were expected to exercise judgement while being measured primarily through standardised activity.
+
+The result was often **delegated execution**, not genuine agency.
+
+### Better task management did not solve the problem
+
+Digital tools improved dramatically.
+
+Organisations became able to coordinate enormous amounts of work.
+
+Projects could be decomposed into thousands of tickets.
+
+Progress became visible in real time.
+
+Distributed teams could work from the same systems.
+
+These were useful advances.
+
+But better task management did not answer the deeper question:
+
+> What allows a capable actor to recognise useful action without waiting for someone else to define it?
+
+That question requires context.
+
+Direction.
+
+Authority.
+
+Meaning.
+
+Evidence.
+
+Boundaries.
+
+Relationships.
+
+Tasks can communicate an instruction.
+
+They cannot carry the full organisational context that makes independent judgement possible.
+
+### Then intelligence began leaving the human
+
+The shift from industrial work to knowledge work distributed intelligence across people.
+
+Artificial intelligence creates a further transition.
+
+Useful cognitive capability can increasingly exist in systems as well.
 
 Software can interpret information.
 
-Agents can monitor events.
+Models can generate analysis.
 
-Systems can make bounded decisions.
+Agents can monitor environments.
 
-Machine participants can act.
+Systems can increasingly take bounded actions.
 
-This does not mean intelligence becomes perfect.
+The organisation is therefore moving towards a condition in which intelligence is not simply distributed across the workforce.
 
-It means it becomes easier to distribute.
+It may be distributed across thousands of human and machine actors.
 
-Once intelligence becomes broadly available, the constraint moves elsewhere.
+The old question was:
 
-Not:
+**How do managers direct execution?**
 
-Who can think?
+The knowledge-work question became:
 
-But:
+**How do we give experts enough autonomy?**
 
-What should all this intelligence be trying to accomplish?
+The emerging question is larger:
 
-How does one intelligent actor coordinate with another?
+> **How does an organisation maintain coherence when intelligence and agency can exist almost anywhere?**
 
-How is authority determined?
+That is no longer primarily a delegation problem.
 
-Which actions are legitimate?
+It is an organisational design problem.
 
-What evidence must exist?
+### Conducting Question
 
-What happens when intelligent actors disagree?
+> **Where are capable people still waiting for someone with less local context to tell them what to do?**
 
-What prevents locally sensible actions from producing globally destructive outcomes?
+### Move Up a Level
 
-The management challenge begins becoming a conducting challenge.
+Instead of asking:
+
+**How do we delegate more decisions?**
+
+ask:
+
+**What context would allow appropriate decisions to emerge locally?**
 
 ---
 
 # Chapter 4
 
-## Why Micromanagement Persists
+## Micromanagement Is Often a System Symptom
 
-Micromanagement is commonly presented as a personality problem.
+Micromanagement is usually described as a problem with managers.
 
 The insecure boss.
 
-The controlling executive.
+The perfectionist.
 
 The founder who cannot let go.
 
-Sometimes this diagnosis is correct.
+The executive who wants to control everything.
 
-But it misses the system.
+These people exist.
 
-Consider a manager who insists on reviewing every customer communication.
+But explaining micromanagement primarily through personality misses something more useful.
 
-Why?
+Micromanagement often performs an organisational function.
 
-Perhaps the organisation has poorly defined customer commitments.
+Consider a manager who insists on reviewing every significant customer response.
 
-Perhaps regulatory boundaries are unclear.
+The obvious interpretation is:
 
-Perhaps previous mistakes caused damage.
+**They don't trust their people.**
 
-Perhaps staff do not know what authority they possess.
+Perhaps.
 
-Perhaps no reliable record is maintained.
+But look at the organisation beneath the behaviour.
 
-Perhaps escalation criteria exist only as organisational folklore.
+Maybe customer commitments are unclear.
 
-The manager therefore fills multiple gaps.
+Maybe legal boundaries are poorly understood.
 
-They become:
+Maybe different teams interpret policy differently.
 
-the policy interpreter;
+Maybe previous mistakes created expensive consequences.
 
-the protocol;
+Maybe employees cannot establish how much authority they possess.
 
-the quality system;
+Maybe unusual situations are frequent but escalation rules are informal.
 
-the escalation mechanism;
+Maybe evidence is poor.
 
-the risk control;
+Maybe the manager carries years of undocumented customer history.
 
-the evidence checker;
+Under those conditions, manager review may be annoying.
 
-the organisational memory.
+It may also be holding the system together.
 
-Remove the approval tomorrow and you may not get healthy autonomy.
+### The manager as missing infrastructure
 
-You may expose missing organisational infrastructure.
+The manager may actually be functioning as:
 
-This gives us one of the central principles of conducting:
+a Protocol;
 
-> **You cannot sustainably remove micromanagement without replacing the organisational functions that micromanagement was performing.**
+a context store;
 
-This is why advice such as:
+a policy interpreter;
 
-> Trust your people.
+an escalation mechanism;
 
-is insufficient.
+a quality system;
 
-Trust matters.
+a decision boundary;
 
-But trust is not an operating model.
+an Accountability layer;
 
-A pilot possesses significant agency.
+organisational memory.
 
-That agency does not require the removal of aviation protocols.
+Remove the approval and those functions do not magically disappear.
 
-It depends partly on them.
+They simply become missing.
 
-High-agency systems frequently possess **stronger shared structure**, not weaker structure.
+This explains why many attempts to create autonomy fail.
 
-The important distinction is:
+Leadership decides:
 
-**structure that enables action**
+> We need to empower people.
 
-versus:
+Approvals are removed.
 
-**structure that repeatedly interrupts action.**
+Decision-making moves outward.
 
-A clear Protocol enables.
+Errors appear.
 
-A routine approval interrupts.
+Different teams behave inconsistently.
 
-Shared Direction enables.
+Leadership becomes nervous.
 
-Constantly changing instructions interrupt.
+Approvals return.
+
+The organisation concludes:
+
+> They weren't ready for autonomy.
+
+But another conclusion is possible.
+
+> **The organisation wasn't ready for agency.**
+
+### Trust is necessary but insufficient
+
+"Trust your people" is good advice.
+
+It is not an operating model.
+
+Consider highly autonomous professional systems.
+
+Pilots possess significant agency.
+
+Doctors exercise judgement.
+
+Engineers make consequential decisions.
+
+Their autonomy does not depend on the absence of structure.
+
+It is supported by structure.
+
+Standards.
+
+Professional knowledge.
+
+Shared terminology.
+
+Clear authority.
+
+Escalation mechanisms.
+
+Evidence.
+
+Protocols.
+
+Accountability.
+
+High agency often requires **stronger organisational conditions**, not weaker ones.
+
+The question is what the structure does.
+
+Does it enable independent action?
+
+Or does it require continual intervention?
+
+A Protocol enables.
+
+A repeated approval interrupts.
+
+Clear Direction enables.
+
+Constant instructions interrupt.
 
 Explicit authority enables.
 
@@ -779,15 +691,35 @@ Ambiguous responsibility interrupts.
 
 Automatic evidence enables.
 
-Repeated manual reporting interrupts.
+Repeated status reconstruction interrupts.
 
-A well-designed Process enables.
+Good Process enables.
 
 Bureaucracy interrupts.
 
-Conducting therefore does not move from structure to freedom.
+### The principle
 
-It moves from **intervention-dependent structure to agency-enabling structure**.
+This gives us one of the core principles of conducting:
+
+> **You cannot sustainably remove micromanagement without replacing the organisational functions that micromanagement was performing.**
+
+Conducting does not attack the manager first.
+
+It asks what made the manager necessary.
+
+### Conducting Question
+
+> **What organisational function is this manager repeatedly performing that the system itself does not yet provide?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**How do we stop this manager interfering?**
+
+ask:
+
+**What would need to become true so the intervention was no longer necessary?**
 
 ---
 
@@ -795,381 +727,561 @@ It moves from **intervention-dependent structure to agency-enabling structure**.
 
 ## Management Debt
 
-Software teams talk about technical debt.
+Technology teams understand technical debt.
 
-A quick implementation solves today's problem but creates hidden future costs.
+A shortcut solves today's problem but creates future cost.
 
-Organisations accumulate something similar.
+The system still works.
+
+But every future change becomes slightly harder.
+
+Organisations accumulate a similar liability.
 
 Call it **management debt**.
 
-Management debt arises when recurring organisational ambiguity is solved through repeated human intervention instead of changing the conditions that make the intervention necessary.
+Management debt occurs when recurring ambiguity is solved through human intervention rather than improvement of the underlying organisational conditions.
 
-A founder personally approves every proposal.
-
-It works.
-
-Then there are ten proposals.
-
-Then fifty.
-
-A senior engineer answers every security question.
+A founder approves every unusual customer request.
 
 It works.
 
-Then every project depends on them.
-
-An executive resolves every unusual customer issue.
+A senior engineer resolves every complex technical question.
 
 It works.
 
-Until unusual issues become normal.
-
-A project manager manually consolidates status from twelve systems.
+A compliance specialist interprets every ambiguous case.
 
 It works.
 
-Then the organisation launches twenty more projects.
+A project manager manually reconstructs status from multiple teams.
 
-Each intervention solves today's problem.
+It works.
 
-But the organisation learns nothing.
+The effectiveness of the intervention is precisely why the debt accumulates.
 
-### Management debt charges interest
+The problem disappears today.
 
-The interest is paid in attention.
+So the organisation does not redesign tomorrow.
+
+### Interest is paid in attention
+
+Management debt has an unusual form of interest.
+
+It is paid in human attention.
 
 Every routine approval is an interest payment.
 
-Every meeting required because systems cannot share state is an interest payment.
+Every status meeting required because organisational state cannot otherwise be established is an interest payment.
 
-Every status report manually reconstructed from information that already exists is an interest payment.
+Every recurring question answered by the same experienced person is an interest payment.
 
-Every repeated question is an interest payment.
+Every manual reconciliation between systems is an interest payment.
 
 Every escalation caused by unclear authority is an interest payment.
 
-Every senior leader whose calendar becomes an organisational routing table is paying interest.
+Every senior leader whose diary has become an organisational routing table is paying interest on management debt.
 
-Organisations can carry management debt for years.
+This debt is often invisible financially.
 
-They hire more managers.
+The people are already employed.
 
-More coordinators.
+The meeting room costs nothing extra.
 
-More project officers.
+The approval takes only five minutes.
 
-More administrators.
+The question takes only a message.
 
-More reporting functions.
+But multiply five minutes by hundreds of interactions across years and the cost becomes enormous.
 
-The organisation becomes better at servicing the debt.
+More importantly, the organisation is spending some of its most valuable attention on repeated coordination rather than:
 
-But servicing debt is not reducing it.
+learning;
 
-Conducting asks:
+Direction;
 
-> **What would need to become true so this intervention is no longer routinely necessary?**
+relationships;
 
-That question moves the organisation from activity to architecture.
+design;
 
----
+novel problems;
 
-# Case Study 1
+reflection.
 
-## The Founder Who Became the Operating System
+### Organisations often scale the servicing layer
 
-### The situation
+When management debt becomes painful, organisations frequently do not remove it.
 
-Consider **LumenWorks**, a fictional thirty-person technology company.
+They add capacity to service it.
 
-Its founder, Maya, knows almost everything.
+Another manager.
 
-She understands the product.
+Another coordinator.
 
-She knows the largest customers.
+Another PMO role.
 
-She remembers why technical decisions were made.
+Another reporting system.
 
-She knows which commercial commitments are negotiable.
+Another committee.
 
-She knows which suppliers can be trusted.
+Another dashboard.
 
-She understands the history behind exceptions.
+The organisation becomes more capable of processing its own coordination overhead.
 
-When LumenWorks had six people, this was an extraordinary advantage.
-
-Someone asked:
-
-"Can we do this?"
-
-Maya answered.
-
-A customer wanted something unusual.
-
-Maya decided.
-
-An engineer faced a trade-off.
-
-Maya provided context.
-
-The organisation moved quickly because Maya carried the organisation in her head.
-
-At thirty people the same pattern became a constraint.
-
-Engineers waited for architecture decisions.
-
-Sales waited for pricing exceptions.
-
-Support waited before promising customers anything unusual.
-
-Managers waited for hiring approval.
-
-Maya worked twelve-hour days.
-
-Everyone agreed that she needed to "delegate more".
-
-### The obvious solution
-
-Maya attempted delegation.
-
-Managers received larger spending limits.
-
-Senior engineers received technical authority.
-
-Salespeople received discount thresholds.
-
-Yet questions kept returning.
-
-Why?
-
-Because the real dependency had not been authority.
-
-It was **context**.
-
-Managers knew that Maya had information they did not.
-
-Her decisions incorporated customer history, risk, technical debt, cash flow, organisational relationships and years of tacit knowledge.
-
-Delegating the decision did not delegate the context required to make it confidently.
-
-### Mapping the problem
-
-**Direction**
-
-The company's broad mission was understood, but current priorities shifted frequently inside Maya's head.
-
-**Engagement**
-
-Values were strong socially but poorly articulated.
-
-New employees learned by watching founders.
-
-**Enablement**
-
-The product was good, but enormous internal attention was required to keep delivery coherent.
-
-**Protocols**
-
-Exception rules were mostly informal.
-
-"What Maya normally allows" was effectively a protocol.
-
-**Sustainability**
-
-Maya had become the organisation's scarcest resource.
-
-**Processes**
-
-Normal processes regularly terminated in "ask Maya".
-
-**Accountability**
-
-Decisions were often good, but their reasoning was rarely preserved.
-
-**Organisational**
-
-Cross-team synchronisation occurred largely through Maya.
-
-### The conducting intervention
-
-The objective was not:
-
-> Get Maya to stop interfering.
-
-The objective was:
-
-> Remove organisational conditions that required Maya to be the operating system.
-
-The company began documenting current Direction monthly rather than allowing it to remain implicit.
-
-Commercial exception patterns were examined and converted into decision Protocols.
-
-Architecture decisions recorded both outcomes and reasoning.
-
-Customer commitments were linked to explicit authority.
-
-Recurring questions were collected.
-
-If the same class of question reached Maya three times, the default response became:
-
-> What is missing from the organisation that keeps sending this question here?
-
-Gradually the question flow changed.
-
-Maya still made important decisions.
-
-But the decisions reaching her became more consequential.
-
-Novel commercial risk.
-
-Strategic changes.
-
-Major partnerships.
-
-Irreversible architecture choices.
-
-Leadership attention shifted from routine mediation toward Direction and reflection.
-
-### The lesson
-
-Founder dependency is often described as reluctance to delegate.
+This can look like maturity.
 
 Sometimes it is.
 
-But sometimes the founder is carrying organisational context that has never become infrastructure.
+But it can also be an organisation industrialising its workarounds.
 
-The conducting move is not simply to remove the founder.
+### Paying down the debt
 
-It is to make more of the organisation independently intelligible.
+The useful question is not:
+
+**How do we handle more approvals?**
+
+It is:
+
+**Why does this class of decision still require approval?**
+
+Not:
+
+**How do we improve the status meeting?**
+
+But:
+
+**Why does organisational state need to be manually reconstructed?**
+
+Not:
+
+**How do we give the founder fewer questions?**
+
+But:
+
+**What context remains trapped inside the founder?**
+
+The aim is not to remove all management intervention.
+
+Some situations deserve it.
+
+The aim is to distinguish intervention that creates genuine value from intervention required only because organisational infrastructure is incomplete.
+
+### Conducting Question
+
+> **Which recurring management activities are interest payments on problems the organisation has never structurally solved?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**How can we perform this intervention more efficiently?**
+
+ask:
+
+**How can we reduce the need for the intervention?**
+
+---
+
+# Case Study
+
+## The Founder Who Became the Operating System
+
+Consider a thirty-person technology company called LumenWorks.
+
+When the business had six employees, its founder Maya could answer almost every important question.
+
+Can we promise this feature?
+
+Maya knows.
+
+Can we discount this deal?
+
+Ask Maya.
+
+Can this customer receive an exception?
+
+Maya decides.
+
+Which technical compromise is acceptable?
+
+Maya remembers why the architecture was designed that way.
+
+The arrangement works brilliantly.
+
+Maya carries enormous organisational context.
+
+Growth turns the advantage into a dependency.
+
+At thirty people, engineers wait for technical judgement.
+
+Sales waits for commercial exceptions.
+
+Support waits before making unusual customer commitments.
+
+Managers wait for hiring decisions.
+
+Maya's calendar fills.
+
+Everyone reaches the same conclusion:
+
+**Maya needs to delegate.**
+
+She does.
+
+Spending authorities increase.
+
+Senior engineers receive more technical responsibility.
+
+Commercial teams gain pricing discretion.
+
+Yet the questions continue returning.
+
+Why?
+
+Because authority was not the only thing concentrated in Maya.
+
+Context was concentrated there too.
+
+She remembers customer history.
+
+Cash constraints.
+
+Past technical failures.
+
+Important relationships.
+
+Commercial promises.
+
+Previous exceptions.
+
+The organisation has delegated decisions without distributing enough of the environment in which those decisions make sense.
+
+### The conducting diagnosis
+
+**Direction** is understood broadly but current priorities often live in Maya's head.
+
+**Engagement** depends heavily on founder storytelling and informal culture.
+
+**Enablement** is strong, but internal coordination is expensive.
+
+**Protocols** exist largely as remembered precedents.
+
+**Sustainability** is weak because Maya's attention cannot scale.
+
+**Processes** repeatedly terminate in "ask Maya".
+
+**Accountability** preserves decisions inconsistently.
+
+**Organisational** synchronisation happens through the founder.
+
+The answer is not to remove Maya.
+
+It is to stop using Maya as organisational infrastructure.
+
+Current Direction becomes explicit.
+
+Commercial exceptions are examined for repeatable patterns.
+
+Architecture decisions preserve reasoning.
+
+Authority becomes clearer.
+
+Recurring questions become diagnostic signals.
+
+A simple rule emerges:
+
+> **If the same class of question reaches Maya three times, ask what the organisation is missing.**
+
+Gradually, fewer normal decisions reach her.
+
+The decisions that remain become more valuable.
+
+Major strategic shifts.
+
+Novel risk.
+
+Significant partnerships.
+
+Irreversible commitments.
+
+Her attention moves away from organisational routing and towards conducting.
+
+### Case Lesson
+
+> **Sometimes the indispensable leader is not failing to delegate. The organisation is failing to externalise context.**
 
 ---
 
 # Chapter 6
 
-## The New Constraint Is Coherence
+## When Intelligence Becomes Abundant, Coherence Becomes Scarce
 
-For much of organisational history, useful intelligence was scarce.
+Management developed partly in response to scarce intelligence.
 
-Specialist knowledge concentrated in particular people.
+Not intelligence in the abstract.
 
-Information gathering was expensive.
+Useful organisational intelligence.
 
-Analysis took time.
+Who understands the customer?
 
-Institutional memory was often inseparable from the people who possessed it.
+Who knows what is happening?
 
-Management concentrated cognitive capability.
+Who can interpret the numbers?
 
-Digital systems weakened these constraints.
+Who understands the regulation?
 
-Search improved access.
+Who knows the history?
 
-Cloud systems distributed information.
+Who can decide?
 
-Collaboration tools accelerated communication.
+Historically, the answers often pointed towards relatively few people.
 
-AI now lowers the cost of generating analysis, explanation, software, plans and other cognitive outputs.
+Those people became nodes.
 
-The organisational constraint begins moving.
+Information moved towards them.
 
-When intelligence becomes abundant, the challenge is no longer only creating enough intelligent action.
+Decision-making concentrated around them.
 
-It becomes keeping intelligent actions compatible.
+The organisational hierarchy partly reflected the economics of information.
 
-A sales team may intelligently maximise revenue while creating unsustainable delivery commitments.
+Those economics are changing.
 
-An operations team may intelligently minimise costs while damaging customer experience.
+Information can travel instantly.
 
-A risk function may intelligently reduce exposure while making useful activity nearly impossible.
+Specialist knowledge can be accessed widely.
 
-An AI system may intelligently optimise conversion while violating the organisation's deeper intent.
+Software can continuously observe operations.
 
-Every actor can be locally rational while the system becomes globally incoherent.
+Artificial intelligence can analyse, interpret, summarise and increasingly act.
 
-Local intelligence does not guarantee system intelligence.
+The emerging constraint is therefore different.
 
-This is the new constraint.
+It is not simply:
 
-**Coherence.**
+**Do we have enough intelligence?**
 
-The organisation of abundant intelligence therefore needs mechanisms that allow agency while protecting the whole.
+It is:
 
-That is the work of conducting.
+> **Can all this intelligence remain coherent?**
+
+### Local intelligence can create system failure
+
+Imagine a sales team optimising revenue.
+
+Its decisions may be entirely rational.
+
+Operations optimises utilisation.
+
+Also rational.
+
+Risk minimises exposure.
+
+Rational again.
+
+Product maximises adoption.
+
+Reasonable.
+
+Finance reduces cost.
+
+Also sensible.
+
+Yet together they may produce a terrible organisation.
+
+Sales creates commitments Operations cannot fulfil.
+
+Risk blocks valuable customers.
+
+Product generates demand infrastructure cannot support.
+
+Finance removes capacity required for resilience.
+
+Every actor is locally intelligent.
+
+The system is globally incoherent.
+
+Artificial intelligence can amplify this problem.
+
+A highly capable agent given a narrow objective may optimise it extraordinarily well.
+
+That does not mean the result supports the organisation.
+
+More intelligence does not automatically create more organisational intelligence.
+
+### The bottleneck moves upward
+
+As the cost of producing analysis falls, other things become more scarce.
+
+Attention.
+
+Meaning.
+
+Direction.
+
+Legitimacy.
+
+Shared context.
+
+Trust.
+
+Coherence.
+
+This is why merely adding AI to existing workflows may deliver less than expected.
+
+If every AI-generated action still waits for human approval, the approval layer becomes the bottleneck.
+
+If every team can generate strategies instantly, deciding which strategy belongs becomes the bottleneck.
+
+If everyone can build automation, interoperability becomes the bottleneck.
+
+If agents can act continuously, Accountability becomes the bottleneck.
+
+The constraint has moved.
+
+The organisational architecture must move with it.
+
+### The new problem
+
+The industrial problem was:
+
+**How do we coordinate large numbers of people performing work?**
+
+The knowledge-work problem was:
+
+**How do we give experts enough room to exercise judgement?**
+
+The abundant-intelligence problem is:
+
+> **How do we enable many intelligent actors to exercise agency without losing coherence?**
+
+That is the problem conducting is designed to address.
+
+### Conducting Question
+
+> **Where is our organisation still treating intelligence as scarce when the actual scarcity has moved to attention, context or coherence?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**How do we get more intelligence into the organisation?**
+
+ask:
+
+**What allows intelligence to act coherently?**
 
 ---
 
-# Part II
-
-# Conducting
-
----
+# Part II — Conducting
 
 # Chapter 7
 
-## Moving Up an Abstraction Layer
+## Move Up an Abstraction Layer
 
-The conductor metaphor changes where leadership acts.
+Conducting begins with a change in altitude.
 
-A conductor does not play every instrument.
+Traditional management frequently operates close to the activity itself.
 
-The conductor does not place every finger.
+Review this.
 
-The orchestra contains distributed capability.
+Approve that.
 
-Yet distributed capability does not create independent music.
+Change this.
 
-Musicians share:
+Send this.
+
+Finish that.
+
+Report back.
+
+The manager is entangled with execution.
+
+This can create the impression of strong leadership because management activity is highly visible.
+
+The manager is constantly doing something.
+
+Conducting asks whether leadership might create greater leverage by acting one level above the recurring movement.
+
+Consider a repeated approval.
+
+The task-level response is:
+
+**Approve it quickly.**
+
+The Process-level response is:
+
+**Improve the approval workflow.**
+
+The conducting response asks:
+
+> **Why does this class of decision require repeated approval at all?**
+
+Perhaps authority is unclear.
+
+Perhaps the risk boundary is poorly defined.
+
+Perhaps evidence is unavailable.
+
+Perhaps nobody trusts the Process.
+
+The recurring approval is the visible movement.
+
+The organisational condition beneath it is the actual opportunity.
+
+### The conductor metaphor
+
+An orchestra is useful because its musicians are not extensions of the conductor.
+
+They possess capability.
+
+They know their instruments.
+
+They continuously interpret.
+
+They adjust locally.
+
+Yet they do not produce independent music.
+
+They share:
+
+Direction;
 
 composition;
 
 timing;
 
-interpretation;
+Protocol;
 
-signals;
+awareness;
 
-protocols;
+interpretation.
 
-awareness.
+The conductor contributes by attending to the whole.
 
-A conductor focuses partly on the relationships across the system.
+They do not create coherence by physically controlling every movement.
 
-An organisation can operate similarly.
+They create conditions in which distributed capability can remain synchronised.
 
-The traditional manager might spend their day saying:
+The metaphor is imperfect.
 
-Review this document.
+Organisations are more complex than orchestras.
 
-Approve this expense.
+People influence Direction.
 
-Rewrite this email.
+Teams improvise.
 
-Check that task.
+Customers participate.
 
-Attend this meeting.
+Environments change.
 
-Update this spreadsheet.
+AI systems may act.
 
-Confirm that decision.
+But the essential shift holds.
 
-The conductor asks:
+Leadership moves from controlling movements to maintaining conditions.
 
-Why does this require approval?
+### The transformation
 
-Why is this information unavailable?
-
-What Protocol is missing?
-
-Which conflict in Direction produced these incompatible actions?
-
-Where is attention being consumed?
-
-What evidence could be generated automatically?
-
-What needs to become true before these people can act without me?
-
-The framework captures the transformation:
+The framework describes the transition directly:
 
 | Task-Based Management | Conducting |
 |---|---|
@@ -1186,23 +1298,73 @@ The framework captures the transformation:
 
 
 
-The conductor is not doing less leadership.
+The conductor moves **up an abstraction layer**.
 
-They are acting at a layer with greater leverage.
+This does not mean becoming vague.
 
-One Protocol may remove a thousand approvals.
+In fact, the conditions may need to become more precise.
 
-One improvement in Direction may prevent months of wasted work.
+Authority can be explicit.
 
-One Process redesign may eliminate hundreds of hand-offs.
+Protocols can be precise.
 
-One strong Accountability mechanism may make supervisory reporting unnecessary.
+Evidence can be rigorous.
 
-The unit of leadership changes.
+Processes can be observable.
 
-From intervention.
+The difference is that structure is applied where it has leverage.
 
-To conditions.
+### A different leadership reflex
+
+The manager encounters a problem and asks:
+
+**What should this person do?**
+
+The conductor encounters the same problem and first asks:
+
+**What condition allowed this problem to emerge?**
+
+The manager asks:
+
+**Who owns this task?**
+
+The conductor may ask:
+
+**Why is ownership unclear?**
+
+The manager asks:
+
+**Why didn't they follow the Process?**
+
+The conductor may ask:
+
+**Does the Process still match reality?**
+
+The manager asks:
+
+**How do I get better visibility?**
+
+The conductor asks:
+
+**What evidence should the system naturally produce?**
+
+This is not less practical.
+
+It is practical at a higher level.
+
+### Conducting Question
+
+> **Which recurring management intervention could be made unnecessary by improving the condition beneath it?**
+
+### Move Up a Level
+
+Instead of asking:
+
+**What action should I direct?**
+
+ask:
+
+**What condition should I conduct?**
 
 ---
 
@@ -1210,1290 +1372,111 @@ To conditions.
 
 ## Coherent Agency
 
-Agency and coherence are frequently treated as opposites.
+Conducting has an objective.
 
-Agency means the capacity to perceive, decide and act.
+It is not autonomy.
 
-Coherence means those actions remain meaningful parts of a larger whole.
+It is not control.
 
-Too little agency creates bureaucracy.
+It is **coherent agency**.
 
-Everybody waits.
+Agency is the capacity to perceive, decide and act.
 
-Everything escalates.
+Coherence means those actions continue to make sense as part of a larger system.
 
-Initiative collapses.
+Organisations often optimise for one at the expense of the other.
 
-People stop solving problems and begin reporting them.
+### High coherence, low agency
 
-Too little coherence produces fragmentation.
+Everything is controlled.
 
-Teams pursue incompatible goals.
+Decisions escalate.
 
-Standards diverge.
+Processes are rigid.
+
+Variation is discouraged.
+
+People wait for instruction.
+
+The organisation may remain consistent, but it becomes slow and dependent.
+
+This is bureaucracy.
+
+### High agency, low coherence
+
+Teams move quickly.
+
+Individuals make decisions.
+
+Local optimisation flourishes.
+
+But standards diverge.
 
 Promises conflict.
 
-Local optimisation damages system outcomes.
+Systems duplicate.
 
-The traditional solution has been to protect coherence by limiting agency.
+Risk becomes inconsistent.
 
-Centralise decisions.
+The organisation becomes fast but fragmented.
 
-Increase approvals.
+### Low agency, low coherence
 
-Standardise behaviour.
+The organisation has the worst of both worlds.
 
-Demand reporting.
+People lack freedom.
 
-Conducting aims for something more difficult:
+Yet the system is not aligned.
 
-> **high agency and high coherence simultaneously.**
+Activity becomes defensive and political.
 
-That requires strong shared conditions.
+### High agency, high coherence
 
-```text
-                  HIGH COHERENCE
-
-                     │
-     Bureaucracy     │      Conducting
-                     │
-       Low agency    │      High agency
-                     │
-─────────────────────┼─────────────────────
-                     │
-    Disconnection    │      Fragmentation
-                     │
-                     │
-                  LOW COHERENCE
-```
-
-The upper-right quadrant is the destination.
-
-Humans can act.
-
-Teams can adapt.
-
-Systems can act.
-
-AI agents can operate within boundaries.
-
-Yet activity remains connected to Direction, Protocols, evidence and the whole.
-
-The framework describes the goal as:
-
-> **coherent agency without continuous central instruction.**
-
----
-
-# Chapter 9
-
-## The Eight Areas of Focus
-
-Conducting maintains coherent agency through eight persistent Areas of Focus.
-
-They are:
-
-**Direction**  
-Overall direction, path, intent and design setting, including reflection.
-
-**Engagement**  
-Explainability of values, protocols and processes — the soul and the story.
-
-**Enablement**  
-The outputs and products of the organisation.
-
-**Protocols**  
-Standards, technologies, templates and interoperability frameworks.
-
-**Sustainability**  
-Long-term viability, including capital for sustained human attention and conductors.
-
-**Processes**  
-Operational processes that drive Enablement and organisational functioning.
-
-**Accountability**  
-Internal and external accountability, including sovereign-state regulatory obligations.
-
-**Organisational**  
-Coordination and synchronisation across Areas of Focus, including team alignment.
-
-These are the canonical definitions of the framework.
-
-They are not departments.
-
-Marketing is not Engagement.
-
-Technology is not Protocols.
-
-Finance is not Sustainability.
-
-Compliance is not Accountability.
-
-Each Area exists across the organisation.
-
-They are also not hierarchical.
-
-Their interactions matter more than any imagined order.
+This is the conducting organisation.
 
 ```text
-             Direction
-           ↗           ↘
- Engagement               Protocols
-      ↕                       ↕
- Enablement ←──────────→ Processes
-      ↕                       ↕
- Sustainability ←────→ Accountability
-           ↘           ↙
-           Organisational
+                         COHERENCE
+                            ↑
+                            │
+          Bureaucracy       │       Conducting
+                            │
+          Low agency        │       Coherent agency
+                            │
+────────────────────────────┼────────────────────→ AGENCY
+                            │
+          Stagnation        │       Fragmentation
+                            │
 ```
 
-When one Area weakens, others feel the effect.
+The objective is not simply to move right.
 
-Unclear Direction creates irrelevant Enablement.
+It is to move towards the upper-right.
 
-Weak Engagement makes sensible Protocols feel arbitrary.
+### Structure enables agency
 
-Poor Protocols generate management dependency.
+This explains an apparent paradox.
 
-Unsustainable Processes consume human attention.
+A highly autonomous organisation may need stronger shared structure.
 
-Weak Accountability damages trust.
+Not more instructions.
 
-Poor Organisational synchronisation creates conflict between otherwise capable actors.
+Better conditions.
 
-Conducting is therefore systemic.
+Direction must be understandable.
 
----
+Protocols must be clear enough to allow local coordination.
 
-# Chapter 10
+Processes must support action.
 
-## Direction
+Accountability must be strong enough that supervision can decrease.
 
-Direction is not simply a strategic plan.
+Sustainability must prevent the system from consuming itself.
 
-It is the living answer to:
+Organisational synchronisation must stop local intelligence from diverging.
 
-> **Where are we going, why, and what are we learning as we move?**
+Agency without these conditions is fragile.
 
-Reflection is part of the definition.
-
-Without reflection, Direction becomes doctrine.
-
-Purpose may remain stable.
-
-Path may not.
-
-Assumptions fail.
-
-Markets change.
-
-New evidence emerges.
-
-Technology changes what is possible.
-
-Direction contains several layers:
-
-**Purpose** — why do we exist?
-
-**Intent** — what are we trying to make possible?
-
-**Orientation** — what do we currently believe about our environment?
-
-**Priority** — where should attention concentrate?
-
-**Reflection** — what have we learned?
-
-Good Direction does not tell everyone exactly what to do.
-
-It helps them determine what makes sense when instructions do not exist.
-
-This is crucial for agency.
-
-It becomes even more important with autonomous systems.
-
-An AI agent instructed simply to "increase conversion" does not possess Direction.
-
-It possesses a narrow objective.
-
-Direction includes the wider field:
-
-customer commitments;
-
-risk boundaries;
-
-values;
-
-long-term consequences;
-
-regulatory obligations;
-
-trade-offs;
-
-conditions for escalation.
-
-Optimisation is not Direction.
-
-Direction gives optimisation meaning.
-
----
-
-# Chapter 11
-
-## Engagement
-
-Engagement is often confused with communication.
-
-Send the memo.
-
-Run the town hall.
-
-Publish the strategy.
-
-But information transmission is not shared understanding.
-
-The framework defines Engagement as:
-
-> **Explainability of values, protocols and processes — the soul and the story.**
-
-Every organisation has a formal organisation and a lived organisation.
-
-The formal value may be:
-
-"customer first".
-
-The lived rule may be:
-
-"never make a customer decision without manager approval."
-
-The formal value may be:
-
-"innovation".
-
-The lived lesson may be:
-
-"never be visibly wrong."
-
-People participate intelligently when they understand not merely what the organisation does but why the system has the shape it does.
-
-Why does the Process exist?
-
-Why is this Protocol necessary?
-
-Why does this boundary matter?
-
-What story connects this activity to the organisation's purpose?
-
-### Engagement in an AI environment
-
-Humans can absorb unwritten organisational context through years of participation.
-
-AI cannot safely be assumed to do so.
-
-As organisations use AI in more consequential activity, more context must become explainable.
-
-Definitions.
-
-Values.
-
-Policies.
-
-Decision principles.
-
-Examples.
-
-Constraints.
-
-Escalation conditions.
-
-AI may therefore expose a pre-existing organisational weakness:
-
-much of what the organisation believes has never been made explicit enough for anyone outside its informal culture to understand.
-
-That is an Engagement problem.
-
----
-
-# Chapter 12
-
-## Enablement
-
-What does the organisation actually make possible?
-
-That is the Enablement question.
-
-Every organisation contains activity.
-
-Activity is not the same as value.
-
-One team completes one thousand tasks.
-
-Another completes two hundred.
-
-Which is better?
-
-We cannot know.
-
-What changed because of the tasks?
-
-Who was enabled?
-
-What useful capability now exists?
-
-Enablement prevents internal activity from becoming self-justifying.
-
-A hospital does not exist to complete hospital tasks.
-
-A university does not exist to administer university processes.
-
-A software company does not exist to produce tickets.
-
-A regulator does not exist to generate regulatory paperwork.
-
-The internal activity serves something beyond itself.
-
-### AI increases the importance of Enablement
-
-Generative systems make output extremely cheap.
-
-Reports.
-
-Plans.
-
-Slides.
-
-Code.
-
-Documentation.
-
-Analysis.
-
-Emails.
-
-Images.
-
-An organisation can soon produce vastly more visible output without producing correspondingly more usefulness.
-
-In an age of abundant generated material, the distinction between:
-
-**output**
-
-and:
-
-**Enablement**
-
-becomes fundamental.
-
-The useful question is not:
-
-How much did we produce?
-
-It is:
-
-> **What useful thing became possible?**
-
----
-
-# Chapter 13
-
-## Protocols
-
-Protocols are reusable agreements that allow interaction without renegotiation each time.
-
-They can include:
-
-identity;
-
-authority;
-
-permissions;
-
-standards;
-
-templates;
-
-interfaces;
-
-credentials;
-
-decision rights;
-
-escalation boundaries;
-
-trust mechanisms.
-
-The framework asks:
-
-> **What shared rules or interfaces allow participants to coordinate without continuous manual intervention?**
-
-Repeated permission requests are often Protocol signals.
-
-"Who approves this?"
-
-"Can I send this?"
-
-"Can this customer receive a refund?"
-
-"Can this system access that data?"
-
-"Does legal need to review this?"
-
-If the same question repeatedly travels to the same person, the organisation may be using a human as a Protocol.
-
-Protocols do not eliminate judgement.
-
-They prevent scarce judgement from being repeatedly consumed by situations the organisation has effectively decided before.
-
-Good Protocols create freedom.
-
-Road rules constrain drivers.
-
-Those constraints allow millions of people to move independently.
-
-Internet protocols constrain software interaction.
-
-Those constraints enable enormous autonomy above them.
-
-A good organisational Protocol works similarly.
-
-It provides enough shared structure for local agency to become safe.
-
----
-
-# Case Study 2
-
-## A Government Service Without a Human Router
-
-### The situation
-
-Consider a fictional local government service, **CivicWorks**, responsible for small-business outdoor dining permits.
-
-The original Process appears straightforward.
-
-A business submits an application.
-
-A staff member checks documents.
-
-Planning reviews the location.
-
-Traffic reviews possible obstruction.
-
-Compliance checks insurance.
-
-A manager approves the permit.
-
-In practice, applications move through email.
-
-Different officers maintain personal checklists.
-
-Applicants call for updates.
-
-Missing information is discovered late.
-
-Simple applications can wait weeks because they enter the same coordination mechanism as unusual applications.
-
-Managers spend significant time asking:
-
-Where is this?
-
-Who has reviewed it?
-
-What are we waiting for?
-
-The organisation responds by adding a weekly status meeting.
-
-### The task-centric diagnosis
-
-The problem appears to be slow processing.
-
-Management considers:
-
-daily targets;
-
-more status reports;
-
-individual performance measures;
-
-a project to reduce processing time.
-
-### The conducting diagnosis
-
-The deeper issue is coordination.
-
-**Direction**
-
-Enable legitimate local economic activity while maintaining public safety and accessibility.
-
-**Engagement**
-
-Businesses need to understand why particular evidence is required.
-
-Staff need a shared explanation of the intent behind requirements.
-
-**Enablement**
-
-A compliant business should be able to obtain permission predictably.
-
-**Protocols**
-
-Common requirements can be standardised.
-
-Location data can be structured.
-
-Insurance requirements can be explicit.
-
-Standard site conditions can be machine-checkable.
-
-Decision rights can be clear.
-
-**Sustainability**
-
-Routine applications should not consume multiple specialists repeatedly.
-
-**Processes**
-
-Complete normal applications can move automatically between checks.
-
-Missing information should surface immediately.
-
-Only genuine exceptions should enter manual coordination.
-
-**Accountability**
-
-The organisation should be able to establish what evidence was supplied, which rules applied and who authorised exceptions.
-
-**Organisational**
-
-Planning, traffic and compliance do not need to coordinate every application manually.
-
-They need shared Protocols.
-
-### The redesign
-
-CivicWorks distinguishes standard applications from exceptions.
-
-Applicants receive understandable requirements before submission.
-
-The application validates completeness immediately.
-
-Standard location conditions are checked automatically.
-
-Professional review occurs only where relevant.
-
-Managers stop approving ordinary permits.
-
-They approve exceptions to Protocol.
-
-The weekly status meeting disappears.
-
-### The result
-
-No employee was told:
-
-> Work 30 per cent faster.
-
-The organisation changed the conditions.
-
-Less activity required coordination.
-
-Human attention moved towards cases that genuinely needed judgement.
-
-The service became faster because fewer things needed managing.
-
----
-
-# Chapter 14
-
-## Sustainability
-
-Organisations operate within limits.
-
-Money.
-
-Time.
-
-Energy.
-
-Attention.
-
-The conducting framework explicitly treats human attention as finite.
-
-This is easy to underestimate because attention often has no explicit invoice.
-
-Suppose a senior leader spends ten hours each week reviewing routine decisions.
-
-The organisation may describe the Process as inexpensive.
-
-No new employee was hired.
-
-No new software was purchased.
-
-Yet ten hours of some of the organisation's scarcest attention disappeared.
-
-Those hours were unavailable for:
-
-reflection;
-
-relationships;
-
-Direction;
-
-system design;
-
-learning;
-
-novel problems.
-
-A sustainable organisation protects attention.
-
-### Conductors can become bottlenecks too
-
-Conducting can fail if everyone waits for the conductor's interpretation.
-
-The organisation simply moves dependency up one level.
-
-Good conducting therefore distributes context.
-
-A conductor should not become the only person capable of seeing the system.
-
-### Machine attention is not infinitely useful
-
-AI appears to make attention cheap.
-
-A machine can inspect thousands of transactions.
-
-Analyse millions of records.
-
-Generate endless reports.
-
-But this can create human interpretation debt.
-
-Fifty thousand alerts do not create Accountability.
-
-They create noise.
-
-A hundred AI-generated recommendations may make decision-making harder.
-
-Sustainability therefore concerns the cognitive load of the whole human-machine system.
-
-The goal is not maximal observation.
-
-It is appropriate attention.
-
----
-
-# Chapter 15
-
-## Processes
-
-Processes answer:
-
-> **How does useful activity reliably happen?**
-
-A healthy Process reduces coordination cost.
-
-A poor Process becomes coordination.
-
-Consider an expense request:
-
-email manager;
-
-send receipt;
-
-wait;
-
-answer question;
-
-receive approval;
-
-forward to finance;
-
-enter data elsewhere;
-
-wait again.
-
-Much of this is not the useful activity.
-
-It is compensation for disconnected systems, unclear Protocols and fragmented evidence.
-
-A stronger Process may:
-
-apply standard limits;
-
-capture evidence automatically;
-
-route only exceptions;
-
-record authority;
-
-complete routine processing without management intervention.
-
-### Repeated exceptions are information
-
-If something unusual happens once, it may be an exception.
-
-If it happens every week, it is probably part of the Process.
-
-Conductors look for repeated exceptions because they reveal the boundary between designed Process and actual reality.
-
-The loop becomes:
-
-```text
-Act
- ↓
-Observe
- ↓
-Identify friction
- ↓
-Reflect
- ↓
-Improve Process
- ↓
-Act
- ↺
-```
-
-This transforms organisational friction into learning.
-
----
-
-# Case Study 3
-
-## The Factory That Stopped Inspecting Quality Into the Product
-
-### The situation
-
-Consider **PrecisionFab**, a fictional manufacturer of specialised components.
-
-Quality matters enormously.
-
-A defect can create expensive downstream failures.
-
-Management therefore builds a strong inspection regime.
-
-Operators perform work.
-
-Supervisors inspect it.
-
-Quality inspectors inspect again.
-
-Exceptions go to managers.
-
-Managers decide whether items should be reworked.
-
-Every failure receives attention.
-
-The company proudly describes itself as rigorous.
-
-But quality costs keep increasing.
-
-Why?
-
-Because the organisation is excellent at detecting defects **after creating them**.
-
-### The management response
-
-When defect rates increase, leadership adds inspection.
-
-More sampling.
-
-More forms.
-
-More approval.
-
-The quality team becomes larger.
-
-Operators become increasingly cautious.
-
-Managers spend more time investigating errors.
-
-### Conducting reframes the issue
-
-The central question becomes:
-
-> Why does the Process allow this defect to be created?
-
-**Direction**
-
-Produce reliable components, not merely inspected components.
-
-**Engagement**
-
-Operators need to understand why tolerances matter and how downstream customers experience failures.
-
-**Enablement**
-
-The output is reliable product.
-
-Inspection is not the product.
-
-**Protocols**
-
-Machine settings, material standards and measurement methods should be consistent.
-
-**Sustainability**
-
-A model requiring ever-growing inspection staff will not scale.
-
-**Processes**
-
-Quality signals need to appear during production, not at the end.
-
-**Accountability**
-
-Changes to settings, materials and exceptions need traceability.
-
-**Organisational**
-
-Engineering, production and quality must learn from the same evidence.
-
-### The shift
-
-PrecisionFab begins capturing process conditions directly.
-
-Operators receive immediate feedback.
-
-Recurring defects trigger Process redesign rather than permanent additional inspection.
-
-Quality specialists spend less time approving normal output and more time investigating systemic patterns.
-
-Managers stop being the final defence against ordinary Process variation.
-
-### The insight
-
-Inspection may be necessary.
-
-But inspection is often a downstream compensation mechanism.
-
-Conducting asks whether the organisation can improve the conditions that create quality in the first place.
-
-The same principle applies far beyond manufacturing.
-
-Do not inspect good behaviour into the system if good behaviour can be made more natural through architecture.
-
----
-
-# Chapter 16
-
-## Accountability
-
-Accountability is often confused with observation.
-
-If management can see everything, the organisation feels accountable.
-
-But visibility and Accountability are not identical.
-
-Suppose a manager observes every action.
-
-Six months later a dispute arises.
-
-Why was this decision made?
-
-Which information was used?
-
-Which authority applied?
-
-What policy version was current?
-
-The manager remembers some of it.
-
-The employee remembers something else.
-
-Little evidence exists.
-
-The organisation had supervision.
-
-It did not have strong Accountability.
-
-Now imagine another environment.
-
-The employee acts without real-time supervision.
-
-Authority is explicit.
-
-Important information has provenance.
-
-Applicable rules are identifiable.
-
-Material actions create evidence.
-
-Exceptions are recorded.
-
-Six months later the event can be reconstructed.
-
-That organisation possessed Accountability.
-
-The framework's central question is:
-
-> **Can we establish what happened, who or what acted, under what authority, and whether obligations were met?**
-
-The strongest Accountability is created as work happens.
-
-Not reconstructed months later.
-
-This becomes essential as autonomous systems begin acting at machine speed.
-
----
-
-# Case Study 4
-
-## The Insurer and the Catastrophe
-
-### The situation
-
-Consider fictional insurer **Harbour General**.
-
-Under normal conditions its claims operation performs reasonably well.
-
-Then a severe storm hits.
-
-Thousands of claims arrive in days.
-
-Customers submit:
-
-photos;
-
-repair quotes;
-
-emergency accommodation requests;
-
-damage descriptions;
-
-receipts;
-
-contractor information.
-
-Management responds to the surge by creating control.
-
-Large claims require senior approval.
-
-Unusual claims require specialist review.
-
-Customer messages are checked.
-
-Supplier appointments are confirmed manually.
-
-Leaders receive daily spreadsheets.
-
-The intention is sensible.
-
-The organisation must protect customers and control risk.
-
-Yet the result is congestion.
-
-### The catastrophe reveals the architecture
-
-Under normal volume, human attention had concealed weaknesses.
-
-The event exposes them.
-
-**Direction**
-
-Claims should restore legitimate customers fairly and efficiently while protecting the shared insurance pool.
-
-**Engagement**
-
-Customers need to understand what evidence is required and what happens next.
-
-Claims staff need understandable principles for handling uncertainty.
-
-**Enablement**
-
-The desired output is not a completed claim task.
-
-It is a fair, timely and supportable claims outcome.
-
-**Protocols**
-
-Evidence standards need to be explicit.
-
-Authority thresholds need to be clear.
-
-Supplier credentials need to be verifiable.
-
-Standard catastrophe concessions need defined boundaries.
-
-**Sustainability**
-
-The system cannot require senior manual review to grow proportionally with catastrophe volume.
-
-**Processes**
-
-Straightforward claims should move through defined paths.
-
-Complex or suspicious cases should receive scarce specialist attention.
-
-**Accountability**
-
-Every material claims decision should retain provenance.
-
-What evidence was supplied?
-
-Which policy provisions applied?
-
-Which authority approved exceptions?
-
-**Organisational**
-
-Claims, customer support, fraud, suppliers, finance and regulatory teams need shared situational awareness.
-
-### The conducting redesign
-
-Harbour General does not remove human claims professionals.
-
-It protects them.
-
-Routine evidence collection becomes structured.
-
-Standard decisions operate within defined Protocols.
-
-AI assists with document interpretation but does not silently become the authority.
-
-Uncertain cases surface.
-
-High-consequence exceptions escalate.
-
-Evidence remains linked to decisions.
-
-Leadership attention moves from manually chasing claim status to watching systemic signals:
-
-Where are customers becoming stranded?
-
-Which supplier capacity is failing?
-
-Which Process exceptions are recurring?
-
-Where is automation confidence dropping?
-
-Which commitments are at risk?
-
-### The key shift
-
-The catastrophe is no longer managed primarily as:
-
-> Thousands more tasks.
-
-It becomes:
-
-> A rapidly changing organisational condition requiring conducting attention.
-
-That distinction allows the organisation to scale response without attempting to scale micromanagement.
-
----
-
-# Chapter 17
-
-## Organisational
-
-An organisation can perform well in seven Areas and still fail if they are not synchronised.
-
-Direction can be clear.
-
-Engagement strong.
-
-Enablement useful.
-
-Protocols mature.
-
-Sustainability healthy.
-
-Processes efficient.
-
-Accountability excellent.
-
-Yet the organisation can still fragment because different parts operate from incompatible assumptions, timing or priorities.
-
-That is why the eighth Area is explicitly **Organisational**.
-
-It asks:
-
-> **How do the Areas of Focus remain coordinated as one system?**
-
-This is the primary conducting layer.
-
-Traditional management pays great attention to objects.
-
-Departments.
-
-Projects.
-
-Roles.
-
-Budgets.
-
-Tasks.
-
-Conducting pays more attention to relationships.
-
-Between Sales and Operations.
-
-Between Product and Risk.
-
-Between Direction and Process.
-
-Between a customer promise and the organisation's actual capacity.
-
-Between agent autonomy and human Accountability.
-
-Many important problems exist in the spaces between formal owners.
-
-That is precisely why no one resolves them.
-
-The conductor watches the whole.
-
-Not by knowing every detail.
-
-By paying attention to whether the parts still form one system.
-
----
-
-# Case Study 5
-
-## The Hospital Discharge Problem
-
-### The situation
-
-Consider fictional **MetroCare Hospital**.
-
-Senior leadership wants to reduce unnecessary delays in patient discharge.
-
-At first the problem looks operational.
-
-Doctors need to finalise discharge decisions.
-
-Pharmacy needs medication ready.
-
-Transport may need arranging.
-
-Families need information.
-
-Community care may require coordination.
-
-Documentation must be complete.
-
-Management creates a discharge-improvement project.
-
-Departments receive targets.
-
-Dashboards show average time to discharge.
-
-Yet delays persist.
-
-### Everyone is doing their job
-
-A surprising pattern emerges.
-
-No single group is obviously failing.
-
-Doctors make clinically appropriate decisions.
-
-Pharmacy follows safe dispensing Process.
-
-Nurses follow their responsibilities.
-
-Transport follows scheduling rules.
-
-Administration handles documentation.
-
-Each local system makes sense.
-
-The overall experience does not.
-
-This is an Organisational problem.
-
-### Mapping the Areas
-
-**Direction**
-
-Enable safe and timely transition from hospital care to the next appropriate care environment.
-
-**Engagement**
-
-Patients, families and staff need a shared understanding of what discharge requires.
-
-**Enablement**
-
-The output is a safe transition, not simply the completion of a discharge form.
-
-**Protocols**
-
-Responsibilities, information requirements and readiness criteria need to be shared.
-
-**Sustainability**
-
-Clinicians should not need to manually chase every dependency.
-
-**Processes**
-
-Activities can begin earlier rather than waiting for a sequential hand-off.
-
-**Accountability**
-
-Relevant clinical and operational decisions require clear evidence.
-
-**Organisational**
-
-The critical issue is synchronisation across multiple Areas and professions.
-
-### The conducting shift
-
-Instead of creating more pressure on individual departments, MetroCare begins surfacing readiness as a shared organisational state.
-
-Dependencies become visible earlier.
-
-Routine coordination occurs through Process and Protocol rather than repeated phone calls.
-
-Human escalation focuses on unusual cases.
-
-The hospital does not become "managerless".
-
-Clinical authority remains.
-
-Safety boundaries remain.
-
-Professional judgement remains.
-
-But the organisation reduces the amount of manual orchestration required to connect them.
-
-### The lesson
-
-Sometimes no individual needs to work harder.
-
-The relationships between activities need to work better.
-
-That is a classic conducting problem.
-
----
-
-# Part III
-
-# Releasing Agency
-
----
-
-# Chapter 18
-
-## From Delegation to Agency
-
-Delegation was an important improvement over central control.
-
-A manager recognises that they cannot perform everything.
-
-Responsibility moves outward.
-
-But delegation still begins at the centre.
-
-The manager decides the work.
-
-Defines the scope.
-
-Allocates responsibility.
-
-The employee acts.
-
-Agency is different.
-
-Agency exists when an actor can perceive context, recognise what needs attention, choose an appropriate response and act within legitimate boundaries.
+### From delegation to agency
 
 Delegation says:
 
@@ -2501,2716 +1484,253 @@ Delegation says:
 
 Agency says:
 
-> We share sufficient context for you to recognise useful action yourself.
+> We share sufficient context for you to recognise and perform appropriate action.
 
-### Organisations train people to wait
+The second scales differently.
 
-An employee encounters an unusual situation and acts.
+It does not require leadership to pre-identify every useful movement.
 
-The manager responds:
+This is increasingly important in environments that change faster than plans.
 
-"Why didn't you ask me first?"
+And it becomes essential in organisations containing autonomous systems.
 
-A lesson is learned.
+An AI agent cannot realistically ask a human about every micro-action while still operating at machine speed.
 
-Next time the employee asks.
+Either its agency must be severely constrained, or the organisation must establish conditions under which bounded independent action is legitimate.
 
-Months later the manager complains:
+That is the same fundamental problem.
 
-"Why does everyone wait for me?"
+Different actor.
 
-Because the organisation taught them to.
+Same organisational requirement.
 
-Agency does not emerge from slogans such as:
+### The goal
 
-**Take ownership.**
+The source framework states the target plainly:
 
-It emerges from repeated organisational experience.
+> **coherent agency without continuous central instruction.**
 
-Are boundaries clear?
+Everything else in this book follows from that objective.
 
-Is Direction available?
+### Conducting Question
 
-Is good-faith judgement supported?
+> **Where have we gained autonomy but lost coherence — or preserved coherence by suppressing agency?**
 
-Can people determine their own authority?
+### Move Up a Level
 
-Can they access relevant information?
+Instead of asking:
 
-Do they know when escalation is appropriate?
+**How much autonomy should we give people?**
 
-If these conditions are present, agency becomes rational.
+ask:
 
-### Agency is not abandonment
-
-Saying:
-
-> You're empowered. Figure it out.
-
-does not necessarily create agency.
-
-It may simply remove support.
-
-High agency generally requires strong context.
-
-Conducting is therefore not laissez-faire management.
-
-It is deliberate organisational design for responsible independence.
+**What conditions would allow greater agency without sacrificing coherence?**
 
 ---
 
-# Case Study 6
-
-## The School That Stopped Managing Teachers by Task
-
-### The situation
-
-Consider fictional **Riverbank College**, a secondary school.
-
-Its leadership genuinely wants teaching quality to improve.
-
-Over time the school introduces:
-
-lesson-plan templates;
-
-weekly curriculum reports;
-
-assessment calendars;
-
-professional-development logs;
-
-classroom observation forms;
-
-meeting attendance requirements;
-
-centralised resource approval.
-
-Every addition had a reason.
-
-Together they create a different problem.
-
-Teachers spend increasing amounts of time demonstrating that teaching is occurring.
-
-Experienced educators feel constrained.
-
-Newer teachers still struggle because compliance does not provide sufficient judgement.
-
-Leadership senses inconsistency and responds with more standardisation.
-
-### The hidden contradiction
-
-Teaching is inherently high-context work.
-
-A teacher must interpret:
-
-student understanding;
-
-classroom mood;
-
-individual needs;
-
-curriculum requirements;
-
-time;
-
-assessment;
-
-relationships.
-
-Trying to prescribe every movement reduces professional agency precisely where judgement matters.
-
-Yet simply removing structure would create its own problems.
-
-The school needs coherence.
-
-### Conducting the learning environment
-
-**Direction**
-
-What kind of learning and development is the school trying to enable?
-
-**Engagement**
-
-Do teachers, students and families understand the educational philosophy and expectations?
-
-**Enablement**
-
-The output is learning capability, not completed lesson-plan templates.
-
-**Protocols**
-
-Curriculum requirements, assessment standards, safeguarding boundaries and evidence expectations remain clear.
-
-**Sustainability**
-
-Teacher attention should be spent primarily on learning, not administrative proof of activity.
-
-**Processes**
-
-Common recurring activities can be simplified and shared.
-
-**Accountability**
-
-Evidence of learning and professional responsibility remains important.
-
-It need not require continuous supervision.
-
-**Organisational**
-
-Teachers coordinate around students, shared curriculum and dependencies without making every classroom identical.
-
-### What changes
-
-Riverbank removes several recurring reporting requirements.
-
-Teachers receive greater freedom in how learning activities are designed.
-
-Shared Protocols become clearer.
-
-Assessment evidence becomes more useful.
-
-Peer reflection increases.
-
-Leadership attention moves from:
-
-"Did you complete the required template?"
-
-towards:
-
-"What are students experiencing?"
-
-"What are we learning?"
-
-"Where are teachers encountering common friction?"
-
-"Which conditions need improvement?"
-
-### The lesson
-
-Professional agency does not mean absence of standards.
-
-It means standards are strong enough that professionals do not need continuous instruction.
-
-The manager of teaching becomes more like a conductor of learning conditions.
-
----
-
-# Chapter 19
-
-## Accountability Without Surveillance
-
-Digital environments make surveillance easy.
-
-Application usage.
-
-Email metadata.
-
-Response times.
-
-Keyboard activity.
-
-Ticket counts.
-
-Location.
-
-Screen captures.
-
-AI could analyse nearly all of it.
-
-This creates temptation.
-
-If more observation is possible, perhaps more Accountability will follow.
-
-But surveillance asks:
-
-> Can I see what you are doing?
-
-Accountability asks:
-
-> Can relevant actions, authority and obligations be established?
-
-These are different.
-
-### Surveillance can damage agency
-
-When people feel constantly observed, behaviour changes.
-
-They avoid visible risk.
-
-Optimise metrics.
-
-Perform activity for the system.
-
-Experiment less.
-
-AI-enabled surveillance could intensify this dramatically.
-
-An organisation might measure every movement and understand less about genuine value.
-
-Conducting seeks evidence proportional to consequence.
-
-Routine, low-risk actions may require minimal evidence.
-
-Material decisions may require strong provenance.
-
-The question is not:
-
-How much can we see?
-
-It is:
-
-> What must be verifiable?
-
-This is both more respectful and more rigorous.
-
----
-
-# Chapter 20
-
-## Protocols Instead of Permission
-
-Every repeated permission request should attract attention.
-
-"Can I refund this?"
-
-"Can I send this proposal?"
-
-"Can I use this supplier?"
-
-"Can this employee access that system?"
-
-"Can the agent execute this transaction?"
-
-If the answer repeatedly depends on the same conditions, the shape of a Protocol is emerging.
-
-Perhaps:
-
-refunds below a threshold can be handled locally;
-
-standard contracts do not need special legal review;
-
-approved suppliers carry verifiable credentials;
-
-system permissions derive from trusted role definitions;
-
-agents operate within transaction limits.
-
-The manager's role changes.
-
-Instead of repeatedly making the decision, they help create the conditions under which others can make it safely.
-
-The old measure of managerial importance was often:
-
-> How many decisions come through me?
-
-The conducting measure may increasingly become:
-
-> How many normal decisions no longer need to?
-
-Permission becomes exceptional.
-
-Novel risk.
-
-Material consequence.
-
-Value conflict.
-
-Irreversibility.
-
-Strategic change.
-
-These deserve human judgement.
-
-The organisation protects scarce attention by not spending it on decisions already answered in principle.
-
----
-
-# Chapter 21
-
-## The Manager as Conductor
-
-If teams gain agency and systems handle more routine coordination, what becomes of managers?
-
-Their work moves upward.
-
-The conductor has several recurring responsibilities.
-
-### Sense
-
-What is changing?
-
-Where is friction appearing?
-
-What is the formal reporting system missing?
-
-### Build context
-
-Is Direction understood?
-
-Does relevant information exist?
-
-Are assumptions visible?
-
-### Improve Protocols
-
-Which repeated interactions still depend on human interpretation?
-
-### Maintain boundaries
-
-Where should action remain constrained?
-
-What requires legitimacy?
-
-### Synchronise
-
-Where are teams, systems or Areas moving out of alignment?
-
-### Reflect
-
-What have we learned?
-
-What assumptions failed?
-
-### Allocate attention
-
-What needs attention now?
-
-The role becomes less like traffic control and more like system stewardship.
-
-### The psychological transition
-
-Managers are often rewarded for being needed.
-
-People come to them.
-
-Decisions depend on them.
-
-Their calendars are full.
-
-Information accumulates around them.
-
-Conducting asks leaders to make routine dependence on them smaller.
-
-This can feel uncomfortable.
-
-Meetings disappear.
-
-Questions stop arriving.
-
-Decisions happen elsewhere.
-
-The leader appears less busy.
-
-But reduced dependency is not reduced leadership.
-
-It is evidence of increased organisational capability.
-
----
-
-# Chapter 22
-
-## Attention as Organisational Capital
-
-Capital allocation is treated as a serious leadership responsibility.
-
-Attention allocation should be too.
-
-Executive attention does not increase automatically when the organisation grows.
-
-This creates a scaling problem.
-
-Traditional hierarchy solves it by adding layers.
-
-Conducting provides another mechanism:
-
-> Reduce the amount of human intervention required per unit of useful agency.
-
-Imagine creating an attention budget.
-
-Where does senior attention go?
-
-Routine approvals?
-
-Status collection?
-
-Correcting avoidable mistakes?
-
-Resolving ambiguity?
-
-Chasing evidence?
-
-Or:
-
-Direction?
-
-Reflection?
-
-Relationships?
-
-Novel judgement?
-
-Learning?
-
-System design?
-
-The first category often represents organisational friction.
-
-The second represents leadership leverage.
-
-A conducting organisation continually moves attention from the first toward the second.
-
-AI can help.
-
-But it can also generate infinite things that demand attention.
-
-The challenge is therefore not maximum visibility.
-
-It is **appropriate attention**.
-
----
-
-# Chapter 23
-
-## Trust as an Architectural Property
-
-Organisations frequently talk about culture and trust.
-
-"Trust your team."
-
-"Assume positive intent."
-
-These principles matter.
-
-But trust also has architecture.
-
-In one organisation:
-
-decision rights are unclear;
-
-records are weak;
-
-important rules live in people's heads;
-
-authority is informal;
-
-nobody can later establish what happened.
-
-Management asks for trust.
-
-In another:
-
-Direction is understandable;
-
-authority is explicit;
-
-information has provenance;
-
-material actions create evidence;
-
-Protocols define ordinary interaction;
-
-exceptions surface.
-
-Trust has structural support.
-
-### Trust and verification are not opposites
-
-Healthy verification can increase trust.
-
-Customers trust Processes when commitments can be established.
-
-Regulators trust organisations when evidence is reliable.
-
-Teams trust other teams when interfaces are explicit.
-
-Leaders can trust local agency when boundaries are understandable.
-
-Accountability infrastructure can therefore release agency.
-
-People do not need constant observation when consequences remain verifiable.
-
-Trust becomes less dependent on proximity.
-
-That is vital in distributed and agentic organisations.
-
----
-
-# Part IV
-
-# Abundant Intelligence
-
----
-
-# Chapter 24
-
-## When Intelligence Stops Being Scarce
-
-Management evolved partly because useful organisational intelligence was scarce.
-
-Who understands this?
-
-Who knows the customer?
-
-Who can analyse the situation?
-
-Who knows the regulation?
-
-Who can write the software?
-
-Who can make the decision?
-
-Historically, these questions often pointed to particular people.
-
-Those people became organisational nodes.
-
-AI changes the economics.
-
-The cost of generating competent cognitive output continues to decline.
-
-But abundant intelligence does not mean abundant wisdom.
-
-It does not automatically produce:
-
-purpose;
-
-legitimacy;
-
-values;
-
-good trade-offs;
-
-coherence.
-
-In fact, cheap intelligence may increase incoherence.
-
-Every team can generate a strategy.
-
-Every employee can produce software.
-
-Every business unit can automate itself.
-
-Every agent can propose action.
-
-When the cost of producing an initiative approaches zero, the scarce resource becomes choosing which initiatives deserve to exist.
-
-The constraint moves upward.
-
-From:
-
-**production of intelligence**
-
-towards:
-
-**Direction, attention, legitimacy and coherence.**
-
----
-
-# Chapter 25
-
-## The Agentic Organisation
-
-Early organisational AI mostly followed this pattern:
-
-```text
-Human request
-   ↓
-AI response
-   ↓
-Human judgement
-   ↓
-Human action
-```
-
-Agentic systems alter the loop.
-
-```text
-Observe
-   ↓
-Interpret
-   ↓
-Decide
-   ↓
-Act
-   ↓
-Observe
-   ↺
-```
-
-This introduces a new kind of organisational participant.
-
-Not merely a software tool.
-
-An actor.
-
-Potentially able to:
-
-monitor events;
-
-retrieve information;
-
-interpret conditions;
-
-select tools;
-
-perform actions;
-
-observe outcomes;
-
-continue towards an objective.
-
-The organisation may therefore increasingly contain:
-
-human actors;
-
-software systems;
-
-AI assistants;
-
-autonomous agents;
-
-external agents;
-
-partner systems.
-
-Agency creates coordination requirements regardless of implementation.
-
-The framework identifies the conditions needed before broad autonomous actuation:
-
-Direction;
-
-Engagement context;
-
-Protocols;
-
-Processes;
-
-Accountability;
-
-Sustainability boundaries;
-
-Organisational coordination.
-
-The more independently something can act, the more important these surrounding conditions become.
-
----
-
-# Chapter 26
-
-## AI Should Not Become the Ultimate Micromanager
-
-There is an obvious way to apply AI to management.
-
-Use it to watch everything.
-
-AI can:
-
-monitor messages;
-
-analyse productivity;
-
-assign work;
-
-track deadlines;
-
-score interactions;
-
-review documents;
-
-detect deviation;
-
-generate personalised instructions.
-
-Every worker could effectively receive an algorithmic supervisor.
-
-This would represent the industrial management model perfected.
-
-The stopwatch would become ubiquitous and invisible.
-
-But faster micromanagement remains micromanagement.
-
-If management dependency is the problem, automating the manager merely makes the dependency cheaper.
-
-The organisation remains task-centric.
-
-The better opportunity is almost opposite.
-
-Use AI to reduce management dependency.
-
-AI can help:
-
-sense drift from Direction;
-
-make context accessible;
-
-surface missing Protocols;
-
-identify Process exceptions;
-
-assemble Accountability evidence;
-
-detect unsustainable review loads;
-
-surface Organisational conflicts.
-
-The framework therefore positions AI as:
-
-sensor;
-
-interpreter;
-
-coordinator;
-
-verifier;
-
-reflector;
-
-conductor-assistant.
-
-Not automatically the boss.
-
----
-
-# Chapter 27
-
-## Human Direction and Machine-Speed Action
-
-Machines can act faster than human institutions deliberate.
-
-If humans approve every machine action, autonomy loses much of its value.
-
-If machines act without meaningful human Direction, legitimacy disappears.
-
-A conducted system operates at multiple speeds.
-
-### Human-speed work
-
-Purpose.
-
-Values.
-
-Legitimacy.
-
-High-consequence trade-offs.
-
-Rights.
-
-Acceptable risk.
-
-Fundamental Direction.
-
-### Machine-speed work
-
-Monitoring.
-
-Information retrieval.
-
-Routine interpretation.
-
-Standard transactions.
-
-Verification.
-
-Coordination.
-
-Bounded execution.
-
-### The escalation boundary
-
-The critical question becomes:
-
-When should fast machine activity stop and request slower human attention?
-
-Examples include:
-
-high consequence;
-
-uncertain values;
-
-novelty;
-
-irreversibility;
-
-conflicting obligations;
-
-unusual risk;
-
-low confidence.
-
-Mature agency includes the ability to recognise when **not** to act autonomously.
-
----
-
-# Case Study 7
-
-## The Organisation With 200 People and 5,000 Agents
-
-### The situation
-
-Consider fictional services company **NorthGrid** several years into widespread agent adoption.
-
-It employs 200 people.
-
-Its digital environment contains approximately 5,000 persistent and temporary agents.
-
-Some monitor customer environments.
-
-Some reconcile records.
-
-Some prepare proposals.
-
-Some check contractual obligations.
-
-Some generate software changes.
-
-Some coordinate appointments.
-
-Some monitor infrastructure.
-
-Humans are no longer the majority of active operational participants.
-
-Management initially tries to treat agents like very fast employees.
-
-Agent tasks are assigned centrally.
-
-Humans review large numbers of outputs.
-
-Approval queues grow.
-
-Employees spend much of their day supervising machines.
-
-AI adoption increases productivity in isolated tasks but also creates a new occupation:
-
-**AI babysitting.**
-
-### The first failure
-
-A commercial agent notices a customer whose usage is increasing.
-
-It generates an expansion proposal.
-
-A risk agent identifies the customer as financially uncertain.
-
-A retention agent notices the customer has recently complained about service.
-
-A pricing agent identifies an opportunity to improve margin.
-
-All four are individually rational.
-
-Together they generate contradictory actions.
-
-The problem is not inadequate intelligence.
-
-It is inadequate coherence.
-
-### Conducting the agent ecosystem
-
-**Direction**
-
-What outcomes should agents collectively support?
-
-Revenue is not sufficient Direction.
-
-Customer relationships, risk, long-term value and organisational commitments matter.
-
-**Engagement**
-
-The meaning of important values and policies must be explicit enough for agents and humans to interpret consistently.
-
-**Enablement**
-
-The objective is useful customer capability, not maximum agent activity.
-
-**Protocols**
-
-Agents need machine-readable authority boundaries, interaction protocols and escalation conditions.
-
-**Sustainability**
-
-Human review cannot increase in proportion to agent activity.
-
-**Processes**
-
-Common coordination should occur automatically.
-
-**Accountability**
-
-Agent identity, authority, inputs and material decisions must remain attributable.
-
-**Organisational**
-
-Conflicting local objectives need a mechanism for synchronisation.
-
-### A new architecture
-
-NorthGrid stops assigning humans as supervisors to every agent family.
-
-Instead it builds conducting layers.
-
-Agents can act independently within explicit bounds.
-
-Conflicts between objectives are surfaced.
-
-Only defined classes of events reach humans.
-
-Humans focus increasingly on:
-
-Direction;
-
-exception judgement;
-
-policy design;
-
-relationship consequences;
-
-novel conditions;
-
-reflection.
-
-The number of agent actions increases dramatically.
-
-The number of human approvals does not.
-
-### The lesson
-
-An agentic organisation cannot operate sustainably if every machine action creates a new human task.
-
-The architecture must support machine-speed agency while preserving human legitimacy.
-
-That requires conducting.
-
----
-
-# Chapter 28
-
-## Evidence at Machine Speed
-
-Traditional Accountability is often retrospective.
-
-Something happens.
-
-An audit starts.
-
-People search emails.
-
-Documents are assembled.
-
-Spreadsheets are reconciled.
-
-Memories are consulted.
-
-This already struggles at human speed.
-
-It becomes impossible at agent speed.
-
-If autonomous systems perform millions of actions, evidence must increasingly become a by-product of action.
-
-```text
-Action
-+
-Authority
-+
-Relevant Inputs
-+
-Context
-+
-Outcome
-=
-Evidence Event
-```
-
-Not every activity requires the same evidence.
-
-Proportionality matters.
-
-But consequential actions should leave sufficient provenance for later verification.
-
-Policies may become machine-readable.
-
-Authority may be represented explicitly.
-
-Data lineage may be preserved.
-
-Actions may be attributable.
-
-Exceptions may trigger real-time attention.
-
-Accountability begins moving from a reporting function toward a system property.
-
----
-
-# Chapter 29
-
-## Organising Humans and Agents Together
-
-The organisation of the future may not feel like an "AI organisation".
-
-Humans and machines may simply collaborate throughout normal work.
-
-A customer issue arrives.
-
-An agent categorises it.
-
-Another retrieves history.
-
-A human interprets a sensitive relationship.
-
-An agent checks obligations.
-
-A system prepares options.
-
-The human selects one.
-
-An agent executes routine downstream activity.
-
-Evidence is preserved.
-
-A conductor sees only an unusual signal.
-
-This is not primarily humans versus machines.
-
-It is orchestration.
-
-Humans remain especially important where work concerns:
-
-legitimacy;
-
-relationships;
-
-values;
-
-community consent;
-
-ambiguous trade-offs;
-
-social meaning;
-
-responsibility.
-
-Machines may excel at:
-
-scale;
-
-retrieval;
-
-pattern detection;
-
-routine coordination;
-
-continuous observation;
-
-rapid execution.
-
-Conducting asks neither side to imitate the other.
-
-It asks:
-
-Who or what should act?
-
-Under which Direction?
-
-Using which Protocols?
-
-Through what Process?
-
-Under whose authority?
-
-With what evidence?
-
-Within what Sustainability boundaries?
-
-How does the action remain connected to the whole?
-
-The Eight Areas provide a common language for coordinating agency regardless of implementation.
-
----
-
-# Part V
-
-# Making the Shift
-
----
-
-# Chapter 30
-
-## Stop Starting with Tasks
-
-Suppose an organisation decides:
-
-"We need more autonomy."
-
-The traditional response begins immediately.
-
-Create an autonomy initiative.
-
-Appoint a project manager.
-
-Create a roadmap.
-
-Assign tasks.
-
-Run workshops.
-
-Measure completion.
-
-The organisation has used task management to implement freedom from task management.
-
-A conducting transformation begins one level higher.
-
-The framework gives a useful sequence:
-
-1. State the Direction.
-2. Explain the Engagement context.
-3. Define the Enablement sought.
-4. Establish the Protocols.
-5. Check Sustainability.
-6. Design the Processes.
-7. Build in Accountability.
-8. Synchronise through Organisational conducting.
-9. Allow local actions and tasks to emerge.
-10. Reflect and adapt.
-
-
-
-Tasks appear ninth.
-
-Not because they are unimportant.
-
-Because they make sense only after context exists.
-
-Give a team twenty tasks and they can execute.
-
-Give them understandable Direction, boundaries, evidence requirements and organisational context and they can think.
-
-Tasks can then emerge locally.
-
-That is agency.
-
----
-
-# Chapter 31
-
-## Diagnosing Management Dependency
-
-Do not begin a conducting transition with a theoretical redesign.
-
-Begin where dependency is visible.
-
-Look for:
-
-too many approvals;
-
-slow decisions;
-
-recurring status meetings;
-
-duplicated reporting;
-
-managers checking routine work;
-
-people waiting for instruction;
-
-work blocked by unavailable individuals;
-
-senior people overwhelmed by exceptions;
-
-AI outputs requiring constant correction;
-
-cross-team conflict;
-
-manual evidence reconstruction.
-
-Then ask:
-
-> **Is the organisation trying to solve missing shared context with more task control?**
-
-The framework's diagnostic workflow maps the issue across all Eight Areas before intervention.
-
-The aim is to identify the system condition underneath the visible symptom.
-
----
-
-# Case Study 8
-
-## The Software Company Where Every Customer Problem Became a Meeting
-
-### The situation
-
-Consider fictional enterprise software company **Cloudline**.
-
-A major customer reports an issue.
-
-Support investigates.
-
-The issue may relate to Product.
-
-Or configuration.
-
-Or infrastructure.
-
-Or security.
-
-Support creates a ticket.
-
-An engineer asks Product for priority.
-
-Product asks Account Management about customer impact.
-
-Account Management asks Support for history.
-
-Security joins because the problem might involve access.
-
-A meeting is created.
-
-Five people attend.
-
-The immediate problem is eventually resolved.
-
-Two weeks later another issue produces almost the same meeting.
-
-Cloudline prides itself on collaboration.
-
-Its calendars suggest otherwise.
-
-### Meetings as organisational middleware
-
-The company initially tries to improve meetings.
-
-Better agendas.
-
-Shorter duration.
-
-Fewer attendees.
-
-But the meeting itself is not the primary problem.
-
-The meeting is compensating for missing organisational infrastructure.
-
-### Mapping the Areas
-
-**Direction**
-
-Teams agree that customer reliability matters, but priority decisions are inconsistent.
-
-**Engagement**
-
-Different groups interpret severity differently.
-
-**Enablement**
-
-The desired capability is rapid resolution and organisational learning.
-
-**Protocols**
-
-Severity definitions are inconsistent.
-
-Ownership boundaries are unclear.
-
-Escalation rules depend on personal judgement.
-
-**Sustainability**
-
-Senior engineers and product managers spend large amounts of attention repeatedly reconstructing context.
-
-**Processes**
-
-Information is handed between systems and teams manually.
-
-**Accountability**
-
-Evidence about previous incidents and decisions is fragmented.
-
-**Organisational**
-
-The meeting is the mechanism synchronising all other Areas.
-
-### The redesign
-
-Cloudline creates shared incident Protocols.
-
-Severity carries a common meaning.
-
-Customer impact becomes structured.
-
-Relevant technical and commercial context is assembled automatically.
-
-Normal ownership paths become explicit.
-
-Recurring classes of incident generate knowledge that becomes part of the Process.
-
-High-severity events still create human coordination.
-
-Routine issues do not.
-
-### What happens to the meeting?
-
-Some disappear.
-
-Others become much better.
-
-The remaining meetings concern genuinely cross-organisational judgement.
-
-Participants arrive with shared context.
-
-The meeting stops being the place where everyone discovers what is happening.
-
-It becomes the place where humans decide what cannot reasonably be decided elsewhere.
-
-### The lesson
-
-Meetings are often blamed for organisational dysfunction.
-
-But many meetings are symptoms.
-
-Before cancelling a meeting, ask:
-
-> **Which missing organisational condition is the meeting currently providing?**
-
-Then improve that condition.
-
----
-
-# Chapter 32
-
-## A Practical Transformation Pattern
-
-Consider a company where every customer report requires manager review.
-
-The obvious solution is:
-
-"Employees may now send reports without approval."
-
-That removes control.
-
-It does not replace its function.
-
-Conducting works differently.
-
-### Direction
-
-Why does reporting exist?
-
-To create useful shared understanding of customer reality.
-
-### Engagement
-
-What should participants understand?
-
-Reports exist to produce clarity, not satisfy ritual.
-
-### Enablement
-
-What should become possible?
-
-Customers and internal teams can make better decisions.
-
-### Protocols
-
-What common rules apply?
-
-Evidence sources.
-
-Definitions.
-
-Privacy requirements.
-
-Reporting structure.
-
-Materiality thresholds.
-
-Escalation criteria.
-
-### Sustainability
-
-Routine reporting should not consume significant senior attention.
-
-### Processes
-
-Signals are collected.
-
-Material changes are identified.
-
-Normal reports proceed.
-
-Exceptions surface.
-
-### Accountability
-
-Claims remain linked to evidence and authority.
-
-### Organisational
-
-Relevant customer, operational and product context remains synchronised.
-
-Only now should the approval be removed.
-
-The organisation has replaced the control mechanism with stronger conditions.
-
-The general rule is:
-
-> **Do not merely remove control. Replace it with context, Protocol and evidence.**
-
----
-
-# Chapter 33
-
-## The First Ninety Days
-
-Do not begin with a giant transformation program.
-
-Choose one recurring management dependency.
-
-An approval.
-
-A report.
-
-A meeting.
-
-A bottleneck.
-
-A recurring escalation.
-
-One person everyone depends upon.
-
-Then conduct the system around it.
-
-## Days 1–30 — Observe
-
-Watch the actual Process.
-
-Where do people wait?
-
-Which questions repeat?
-
-Which information is unavailable?
-
-Where is authority ambiguous?
-
-Which knowledge lives only in individuals?
-
-What evidence is reconstructed?
-
-How much attention is consumed?
-
-Map the situation across all Eight Areas.
-
-The objective is understanding.
-
-## Days 31–60 — Redesign conditions
-
-Clarify Direction.
-
-Strengthen Engagement.
-
-Define desired Enablement.
-
-Create or refine Protocols.
-
-Reduce unsustainable attention demand.
-
-Improve Processes.
-
-Build Accountability into the work.
-
-Synchronise dependencies.
-
-The objective is not yet:
-
-Remove the manager.
-
-The objective is:
-
-Make routine dependence on the manager unnecessary.
-
-## Days 61–90 — Release agency
-
-Reduce the intervention.
-
-Allow local actors to proceed.
-
-Observe.
-
-Does quality hold?
-
-Do new exceptions appear?
-
-Did attention actually fall?
-
-Did responsibility become clearer?
-
-Did the work simply move elsewhere?
-
-Then reflect.
-
-Adapt.
-
-The organisation learns conducting through practice.
-
----
-
-# Chapter 34
-
-## The Conducting Meeting
-
-A task-centric meeting commonly asks:
-
-What did you do?
-
-What will you do next?
-
-Is the task complete?
-
-Why is it late?
-
-A conducting meeting asks different questions.
-
-### Direction
-
-What changed?
-
-Are we drifting?
-
-### Engagement
-
-What is being misunderstood?
-
-### Enablement
-
-What useful outcome is or is not appearing?
-
-### Protocols
-
-Where are people repeatedly asking permission?
-
-### Sustainability
-
-Where is human attention being consumed?
-
-### Processes
-
-Which recurring friction needs redesign?
-
-### Accountability
-
-Where is evidence weak?
-
-### Organisational
-
-What is out of sync?
-
-Not every Area needs discussion every time.
-
-If Protocols are healthy, move on.
-
-If Sustainability is healthy, move on.
-
-Conducting is not an eight-part meeting bureaucracy.
-
-The purpose is to focus attention.
-
-The central question remains:
-
-> **What needs our attention now?**
-
----
-
-# Chapter 35
-
-## Measuring What Matters
-
-Success is not simply:
-
-fewer managers;
-
-more automation;
-
-more freedom.
-
-A poorly staffed organisation can have few managers.
-
-Automation can accelerate bureaucracy.
-
-Freedom without coherence can create fragmentation.
-
-The measurement target is coherent agency.
-
-Useful signals include:
-
-### Decision latency
-
-How long do normal decisions wait for permission?
-
-### Approval density
-
-What proportion of actions require human approval?
-
-### Clarification demand
-
-How often are previously answered questions asked again?
-
-### Management attention cost
-
-How much senior attention goes to routine coordination?
-
-### Evidence completeness
-
-Can material events be reconstructed without extraordinary effort?
-
-### Exception quality
-
-Do escalations represent genuinely unusual situations?
-
-### Directional coherence
-
-Do locally initiated activities remain connected to Direction?
-
-### Enablement
-
-Are useful outcomes improving?
-
-### Sustainability
-
-Can the organisation grow without equivalent growth in coordination overhead?
-
-### Learning velocity
-
-Does recurring friction cause the system to improve?
-
-The framework recommends similar reflection signals: fewer unnecessary approvals, reduced waiting, less repeated clarification, improved quality, better traceability, reduced human attention cost, stronger alignment and faster autonomous action within boundaries.
-
-These are not performance targets to optimise blindly.
-
-They are ways of noticing whether the organisation is becoming less dependent on central instruction.
-
----
-
-# Chapter 36
-
-## The Conducting Maturity Model
-
-Organisations do not move from micromanagement to mature conducting instantly.
-
-A useful model contains five broad states.
-
-## Stage 1 — Directed
-
-Work relies heavily on explicit instruction.
-
-Managers allocate tasks.
-
-Approvals are common.
-
-Context is concentrated.
-
-Evidence is often reconstructed.
-
-## Stage 2 — Delegated
-
-Teams receive greater responsibility.
-
-Decision rights broaden.
-
-Yet significant context still flows through managers.
-
-Agency exists primarily where authority has been explicitly delegated.
-
-## Stage 3 — Contextual
-
-Direction and principles become accessible.
-
-Protocols replace repeated permission.
-
-Processes improve.
-
-Teams can recognise useful action without continuous assignment.
-
-Accountability becomes stronger.
-
-## Stage 4 — Conducted
-
-The Eight Areas are actively maintained.
-
-Human attention concentrates on exceptions, reflection and synchronisation.
-
-Routine activity proceeds with far less central instruction.
-
-Managers increasingly act as conductors.
-
-## Stage 5 — Agentic
-
-Humans and autonomous systems both exercise bounded agency.
-
-Context is sufficiently explicit to support machine-speed activity.
-
-AI participates in sensing, interpretation, coordination and verification.
-
-Human attention concentrates on purpose, legitimacy, relationships, novel judgement and systemic reflection.
-
-### Maturity is contextual
-
-Stage 5 is not automatically appropriate everywhere.
-
-A dangerous activity may retain strict approval.
-
-A crisis may temporarily require centralised Direction.
-
-A new team may need stronger guidance.
-
-Conducting is not ideological decentralisation.
-
-The correct level of agency depends on:
-
-context;
-
-consequence;
-
-capability;
-
-evidence;
-
-uncertainty;
-
-coherence.
-
----
-
-# Part VI
-
-# The Organisation Ahead
-
----
-
-# Chapter 37
-
-## Beyond the Organisational Chart
-
-Ask someone to draw their organisation and they often draw a tree.
-
-Board.
-
-Chief executive.
-
-Executives.
-
-Managers.
-
-Teams.
-
-Employees.
-
-The lines represent reporting relationships.
-
-This is useful.
-
-But increasingly incomplete.
-
-Real work flows through:
-
-customers;
-
-contractors;
-
-partners;
-
-cloud services;
-
-suppliers;
-
-communities;
-
-regulators;
-
-APIs;
-
-automation;
-
-AI agents.
-
-The real organisation is closer to a network.
-
-Reporting relationships describe authority.
-
-They do not fully describe reality.
-
-A claims officer might simultaneously interact with:
-
-a customer;
-
-an AI assistant;
-
-a policy system;
-
-a repair supplier;
-
-fraud services;
-
-regulation;
-
-a manager;
-
-payment infrastructure;
-
-external data providers.
-
-Only one relationship appears on the organisation chart.
-
-Conducting needs a richer model.
-
-What context connects these actors?
-
-Which Protocols govern interaction?
-
-Where does authority originate?
-
-What evidence flows?
-
-Which dependencies exist?
-
-How does Direction propagate?
-
-The organisation begins to resemble a context graph.
-
----
-
-# Chapter 38
-
-## Organisations as Context Networks
-
-Imagine the organisation not as boxes containing people but as a network of actors connected by context.
-
-Each actor has:
-
-identity;
-
-capability;
-
-authority;
-
-relationships;
-
-information;
-
-constraints;
-
-commitments;
-
-history.
-
-Action emerges at their intersection.
-
-A person receives a customer request.
-
-Authority limits possible responses.
-
-Protocols shape interaction.
-
-Processes guide normal handling.
-
-Direction informs judgement.
-
-Engagement supplies meaning.
-
-Accountability preserves evidence.
-
-Sustainability constrains effort.
-
-Organisational conducting handles dependencies.
-
-The question is no longer merely:
-
-> Who reports to whom?
-
-It becomes:
-
-> **What does this actor need to act coherently?**
-
-### Context becomes infrastructure
-
-Conventional organisations transmit huge amounts of context socially.
-
-Ask Sarah.
-
-Check with Peter.
-
-Use the spreadsheet Priya keeps.
-
-James knows how this works.
-
-Do what the previous manager normally did.
-
-This informal model works surprisingly well at small scale.
-
-It becomes brittle in distributed and agentic systems.
-
-Context must increasingly become:
-
-accessible;
-
-understandable;
-
-structured where appropriate;
-
-verifiable where consequence requires it.
-
-Not everything can or should be formalised.
-
-Human organisations always contain tacit knowledge.
-
-But high agency cannot depend entirely on folklore.
-
-The more agency the organisation distributes, the more seriously it must take context infrastructure.
-
----
-
-# Chapter 39
-
-## Leadership After Management
-
-Leadership and management have long been intertwined.
-
-Conducting separates them.
-
-Traditional management asks:
-
-How do we organise work?
-
-How do we allocate resources?
-
-How do we control execution?
-
-How do we measure performance?
-
-Conducting leadership asks:
-
-What are we trying to make possible?
-
-Which conditions shape behaviour?
-
-Where is the system losing coherence?
-
-What needs our attention?
-
-Which structures enable agency?
-
-Where are humans becoming unnecessary routers?
-
-What should remain explicitly human?
-
-What are we learning?
-
-### Good leadership can look quiet
-
-The paradox of good conducting is that it can appear like less leadership.
-
-Fewer interventions.
-
-Fewer approvals.
-
-Fewer escalations.
-
-Fewer emergency meetings.
-
-Yet underneath that apparent quietness lies stronger architecture.
-
-Direction is clearer.
-
-Protocols work.
-
-Processes support action.
-
-Evidence exists.
-
-Teams understand one another.
-
-People possess agency.
-
-The leader's work becomes embedded in the conditions of the system.
-
-### The leader who can leave
-
-A useful test is:
-
-> What happens when the leader disappears for two weeks?
-
-Does routine activity stall?
-
-Do people wait?
-
-Do decisions accumulate?
-
-Does the organisation lose Direction?
-
-If so, the leader may still be functioning as infrastructure.
-
-A mature conductor builds an organisation that remains capable when they leave the room.
-
-Not because leadership is unnecessary.
-
-Because leadership has helped create capability beyond itself.
-
----
-
-# Chapter 40
-
-## The Organisational Shift of Our Time
-
-Every age creates organisational forms suited to its constraints.
-
-Industrialisation required humans to coordinate physical production at unprecedented scale.
-
-Management systems developed that separated planning from execution, standardised activity and used hierarchy to process information.
-
-The knowledge economy weakened the separation.
-
-Expertise moved towards the edge of the organisation.
-
-Technology distributed information.
-
-Teams became more adaptive.
-
-Now another constraint is changing.
-
-Intelligence itself is becoming inexpensive and distributed.
-
-Artificial intelligence can already perform cognitive work that previously required substantial human effort.
-
-Agentic systems increasingly move from producing answers toward performing actions.
-
-The deeper question facing organisations is therefore not merely:
-
-> How should we adopt AI?
-
-It is:
-
-> **What kind of organisation makes sense when intelligence is no longer as scarce as it once was?**
-
-The answer cannot simply be:
-
-more tasks produced faster;
-
-more workers observed more precisely;
-
-more decisions routed through automated supervisors;
-
-more output;
-
-more optimisation.
-
-That would use the technology of a new era to perfect the organisational architecture of the previous one.
-
-The opportunity is larger.
-
-We can build organisations in which:
-
-context is widely available;
-
-Direction is understandable;
-
-Engagement creates shared meaning;
-
-Enablement matters more than activity;
-
-Protocols replace recurring permission;
-
-Sustainability protects scarce attention;
-
-Processes reduce coordination rather than create it;
-
-Accountability is generated through action;
-
-Organisational synchronisation maintains coherence;
-
-humans and machines exercise bounded agency;
-
-reflection continuously improves the system.
-
-That is conducting.
-
-### The old model
-
-```text
-SCARCE INTELLIGENCE ORGANISATION
-
-Intent
-  ↓
-Managers
-  ↓
-Tasks
-  ↓
-Human Execution
-  ↓
-Reporting
-  ↺
-```
-
-### The emerging model
-
-```text
-ABUNDANT INTELLIGENCE ORGANISATION
-
-               Direction
-                  ↓
-            Shared Context
-                  ↓
-      ┌──────── Agency ────────┐
-      │                        │
-   Humans                  AI / Systems
-      │                        │
-      └──────── Action ────────┘
-                  ↓
-         Evidence + Outcomes
-                  ↓
-              Reflection
-                  ↓
-          Conducting Focus
-                  ↺
-```
-
-This reflects the reference mental model of the conducting framework.
-
-### The shift
-
-From tasks to context.
-
-From instructions to Direction.
-
-From communication to Engagement.
-
-From activity to Enablement.
-
-From permission to Protocols.
-
-From utilisation to Sustainability.
-
-From bureaucracy to Process.
-
-From surveillance to Accountability.
-
-From coordination overhead to Organisational synchronisation.
-
-From delegation to agency.
-
-From management intervention to conducting.
-
-None of this reduces the importance of people.
-
-It increases the value of human attention.
-
-The organisation stops spending people on coordination that Protocols, Processes or machines can perform.
-
-Human attention can concentrate on:
-
-purpose;
-
-care;
-
-relationships;
-
-curiosity;
-
-creativity;
-
-judgement;
-
-meaning;
-
-legitimacy;
-
-reflection.
-
-The industrial manager asks:
-
-> What should everyone be doing?
-
-The conductor asks:
-
-> **What needs our attention now?**
-
-That linguistic shift reveals a deeper organisational shift.
-
-The first assumes leadership should determine movement.
-
-The second assumes capable actors already exist and leadership must maintain the conditions through which their actions remain coherent.
-
-This is not the end of management.
-
-It is a maturation of organisational design.
-
-Not freedom from Accountability.
-
-Accountability strong enough to support freedom.
-
-Not decentralisation for its own sake.
-
-Agency with coherence.
-
-Not AI replacing people.
-
-Intelligence becoming part of an organisation capable of conducting intelligence well.
-
-The organisations that understand this will not merely perform today's work faster.
-
-They will possess a different capability.
-
-They will sense.
-
-Reflect.
-
-Orient.
-
-Focus attention.
-
-Enable action.
-
-Observe.
-
-Synchronise.
-
-Learn.
-
-And continue moving without waiting for continuous central instruction.
-
-That is the organisation after micromanagement.
-
-That is conducting.
-
----
-
-# Appendix A
+# Chapter 9
 
 ## The Eight Areas of Focus
 
-### Direction
+If conducting is about maintaining conditions rather than controlling movements, we need a way to see those conditions.
 
-**Definition:** Overall direction, path, intent and design setting, including the reflection process.
+The framework in this book uses eight persistent Areas of Focus:
 
-**Key question:**
+**Direction.  
+Engagement.  
+Enablement.  
+Protocols.  
+Sustainability.  
+Processes.  
+Accountability.  
+Organisational.**
 
-> Where are we going, why, and what are we learning as we move?
+Their canonical meanings are:
 
-### Engagement
+**Direction** — overall direction, path, intent, design setting and reflection.
 
-**Definition:** Explainability of values, protocols and processes — the soul and the story.
+**Engagement** — explainability of values, Protocols and Processes; the soul and the story.
 
-**Key question:**
+**Enablement** — the outputs and products of the organisation.
 
-> Can people understand the organisation's values, way of operating and story well enough to participate meaningfully?
+**Protocols** — standards, technologies, templates and interoperability frameworks.
 
-### Enablement
+**Sustainability** — long-term viability, including capital for sustained human attention and conductors.
 
-**Definition:** The outputs and products of the organisation.
+**Processes** — operational processes that drive Enablement and organisational functioning.
 
-**Key question:**
+**Accountability** — internal and external accountability, including sovereign-state regulatory obligations.
 
-> What useful things is the organisation actually enabling or producing?
+**Organisational** — coordination and synchronisation across Areas of Focus, including team alignment.
 
-### Protocols
+These definitions matter because the Areas are easy to misunderstand.
 
-**Definition:** Standards, technologies, templates and interoperability frameworks.
+### They are not departments
 
-**Key question:**
+Engagement does not mean Marketing.
 
-> What shared rules or interfaces allow participants to coordinate without continuous manual intervention?
+Enablement does not mean Product.
 
-### Sustainability
+Protocols does not mean IT.
 
-**Definition:** Long-term viability including capital for sustained human attention and conductors.
+Sustainability does not mean Finance.
 
-**Key question:**
+Accountability does not mean Compliance.
 
-> Can this continue without consuming the people, capital, attention or resources that make it possible?
+Organisational does not mean HR.
 
-### Processes
+Every part of an organisation can be examined through every Area.
 
-**Definition:** Operational processes that drive Enablement and the functioning of the organisation.
+A finance function has Direction.
 
-**Key question:**
+A technology system has Accountability.
 
-> How does useful activity reliably happen?
+A sales team operates through Protocols.
 
-### Accountability
+A regulatory function requires Engagement.
 
-**Definition:** Internal and external accountability, including sovereign-state regulatory obligations.
+An AI agent participates in Processes.
 
-**Key question:**
+A board has Sustainability constraints.
 
-> Can we establish what happened, who or what acted, under what authority, and whether obligations were met?
+The Areas describe organisational conditions, not organisational boxes.
 
-### Organisational
+### They are not stages
 
-**Definition:** Coordination and synchronisation across Areas of Focus, including team alignment.
+The organisation does not complete Direction and then move to Engagement.
 
-**Key question:**
+The Areas persist simultaneously.
 
-> How do the Areas of Focus remain coordinated as one system?
+Direction changes.
 
-The definitions above follow the framework's canonical summary.
+Engagement evolves.
 
----
+Enablement appears.
 
-# Appendix B
+Protocols mature.
 
-## The Conductor's Field Guide
+Processes adapt.
 
-When you feel the urge to intervene, ask first:
+Sustainability fluctuates.
 
-### Instead of assigning another task
+Accountability requirements change.
 
-What condition is missing?
+Organisational dependencies move.
 
-### Instead of requesting another status report
+The framework is therefore not a waterfall.
 
-Why is organisational state not already observable?
+Nor should it become another eight-column task board.
 
-### Instead of issuing another instruction
+### They are interconnected
 
-Is Direction or Engagement unclear?
+The source framework describes the Areas as distinct, persistent, interconnected, mutually reinforcing and non-hierarchical.
 
-### Instead of answering the same question again
+A useful mental model is:
 
-Should this become a Protocol?
+```text
+                 Direction
+               ↗           ↘
+      Engagement             Protocols
+           ↕                    ↕
+      Enablement ←────────→ Processes
+           ↕                    ↕
+      Sustainability ←────→ Accountability
+               ↘           ↙
+                Organisational
+```
 
-### Instead of adding another approval
+Weakness in one Area often appears somewhere else as a management problem.
 
-What risk is the approval controlling?
+Unclear Direction may create wasted work.
 
-Can the risk be controlled structurally?
+Weak Engagement can make reasonable policies feel arbitrary.
 
-### Instead of attending another recurring meeting
+Poor Protocols create repeated permission-seeking.
 
-Which coordination dependency makes the meeting necessary?
+Unsustainable Processes turn senior people into bottlenecks.
 
-### Instead of demanding greater visibility
+Weak Accountability produces demand for surveillance.
 
-What evidence is actually required?
+Poor Organisational synchronisation creates conflict between teams that are each acting rationally.
 
-### Instead of increasing utilisation
+This is why conducting must be systemic.
 
-What human attention should we protect?
+The visible problem is not necessarily located where the underlying condition is weak.
 
-### Instead of correcting another recurring Process exception
+### Persistent Areas, moving attention
 
-Has the exception become normal?
+All eight Areas matter.
 
-### Instead of resolving another cross-team conflict
+They do not all require equal leadership attention at every moment.
 
-Which Areas of Focus are out of sync?
+That distinction is central.
 
-### Instead of asking who is responsible
+A regulatory change may temporarily make Accountability the dominant concern.
 
-Can authority and Accountability be clearly established?
+Rapid growth may expose Sustainability.
 
-### Instead of asking what everyone is doing
+A strategic shift may demand Direction and Engagement.
 
-Ask:
+A new autonomous agent may expose Protocol and Accountability weaknesses.
+
+A merger may create Organisational tension.
+
+The Areas persist.
+
+**Attention moves.**
+
+This leads to the most important practical question in the model:
 
 > **What needs our attention now?**
 
----
+Not:
 
-# Appendix C
+Which Area is permanently most important?
 
-## Diagnostic Questions
+Not:
 
-### Direction
+Which Area belongs to me?
 
-What are we trying to make possible?
+Not:
 
-What has changed?
+Have we completed all eight?
 
-Which assumptions need reflection?
+The conductor observes the system and focuses scarce attention where coherence is currently under pressure.
 
-Are current activities consistent with intent?
+That is what makes the framework a conducting model rather than another management checklist.
 
-Are we optimising a task while losing sight of purpose?
+### What comes next
 
-### Engagement
+The following chapters examine each Area individually.
 
-Do participants understand why this matters?
+But they should never be read as isolated topics.
 
-Are values, Protocols and Processes explainable?
+Direction affects Protocols.
 
-Where is organisational meaning being lost?
+Protocols shape Processes.
 
-### Enablement
+Processes affect Sustainability.
 
-What useful outputs are actually being produced?
+Accountability affects Engagement.
 
-Who or what is being enabled?
+Enablement informs reflection.
 
-Are internal activities translating into usefulness?
+Organisational synchronisation connects all of them.
 
-### Protocols
+The purpose of separating the Areas is not to divide the organisation.
 
-Where are people repeatedly asking permission?
+It is to see the whole more clearly.
 
-What interactions depend on organisational folklore?
+### Conducting Question
 
-Could a standard, credential, template or interface replace manual mediation?
+> **Which Area of Focus is currently creating the greatest pressure on coherence — and where are its effects appearing elsewhere?**
 
-Which rules should become machine-readable?
+### Move Up a Level
 
-### Sustainability
+Instead of asking:
 
-Where is human attention being unnecessarily consumed?
+**Which department owns this problem?**
 
-What relies on one indispensable person?
+ask:
 
-Which activities cannot continue at their current cost?
-
-Are conductors becoming bottlenecks?
-
-### Processes
-
-Which recurring activities contain friction?
-
-Where are manual hand-offs unnecessary?
-
-Which exceptions occur frequently enough to become normal Process?
-
-### Accountability
-
-Can decisions be reconstructed?
-
-Can authority be verified?
-
-Is evidence created as work happens?
-
-Are we substituting supervision for verifiability?
-
-### Organisational
-
-Which Areas are out of sync?
-
-Where are teams acting on conflicting assumptions?
-
-What dependencies are causing delays?
-
-Where should attention be coordinated now?
-
-What needs a conductor rather than another manager?
-
-These questions closely follow the framework's conducting questions.
-
----
-
-# Appendix D
-
-## The Conducting Canvas
-
-For any significant organisational challenge, answer the following.
-
-### 1. Current tension
-
-What is happening?
-
-What is the visible symptom?
-
-Where is human intervention currently required?
-
-### 2. Direction
-
-What are we trying to make possible?
-
-What assumptions are relevant?
-
-What have we learned?
-
-### 3. Engagement
-
-Why does this matter?
-
-What must participants understand?
-
-Which principles guide judgement?
-
-### 4. Enablement
-
-What useful capability should exist?
-
-How will we recognise it?
-
-### 5. Protocols
-
-Which reusable rules, interfaces, standards or decision boundaries are required?
-
-Where can repeated permission disappear?
-
-### 6. Sustainability
-
-What resources are consumed?
-
-Where is human attention required?
-
-Can this model scale?
-
-### 7. Processes
-
-How should useful activity reliably happen?
-
-What is normal?
-
-What is genuinely exceptional?
-
-### 8. Accountability
-
-What evidence is required?
-
-What authority applies?
-
-What obligations must be demonstrated?
-
-### 9. Organisational
-
-Which actors must remain synchronised?
-
-What dependencies exist?
-
-Where does conducting attention belong?
-
-### 10. Agency
-
-Which decisions can occur locally?
-
-Which can be automated?
-
-Which remain explicitly human?
-
-Which require escalation?
-
-### 11. Reflection
-
-How will we know whether the system improved?
-
-Look for:
-
-less waiting;
-
-fewer unnecessary approvals;
-
-less repeated clarification;
-
-lower attention cost;
-
-stronger traceability;
-
-better Enablement;
-
-higher-quality escalation;
-
-greater local agency;
-
-continued coherence.
-
----
-
-# Appendix E
-
-## A 90-Day Transition Playbook
-
-### Week 1 — Find management dependency
-
-Identify one recurring intervention.
-
-Choose something observable.
-
-### Week 2 — Understand its function
-
-Why does it exist?
-
-What risk does it control?
-
-What knowledge does it supply?
-
-What would fail without it?
-
-### Week 3 — Map the Eight Areas
-
-Do not assume the visible symptom identifies the real problem.
-
-Map all eight.
-
-### Week 4 — Measure attention
-
-Estimate the time consumed across everyone involved.
-
-Include waiting.
-
-### Weeks 5–6 — Strengthen context
-
-Clarify Direction and Engagement.
-
-Make relevant information accessible.
-
-### Weeks 7–8 — Improve architecture
-
-Create or refine Protocols.
-
-Simplify Processes.
-
-Clarify authority.
-
-Improve evidence.
-
-### Week 9 — Test bounded agency
-
-Allow actors to proceed without the old intervention in defined situations.
-
-### Week 10 — Observe
-
-When something fails, do not immediately restore control.
-
-Ask why it failed.
-
-Direction?
-
-Engagement?
-
-Protocol?
-
-Process?
-
-Accountability?
-
-Capability?
-
-### Week 11 — Adapt
-
-Improve the organisational condition.
-
-Do not solve only the incident.
-
-### Week 12 — Expand
-
-Apply the approach to another management dependency.
-
-Over time, something fundamental changes.
-
-Managers stop being the glue holding every activity together.
-
-The organisation itself becomes more capable of coherence.
-
-Leadership moves towards the work only leadership can perform.
-
-Direction.
-
-Meaning.
-
-Reflection.
-
-Legitimacy.
-
-Attention.
-
-Synchronisation.
-
-Conducting.
-
----
-
-# Closing Principle
-
-> **Do not micromanage the movements. Conduct the conditions for coherent agency.**
-
-That is not simply a new management technique.
-
-It is a different idea of what an organisation can be.
+**Which organisational conditions need attention?**
