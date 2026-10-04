@@ -1,5 +1,5 @@
 ---
-layout: prose
+layout: selfdriven
 title: selfdriven | Framework for AI Assisted Actuation
 permalink: /framework/ai-assisted-actuation
 ---
