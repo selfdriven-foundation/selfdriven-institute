@@ -1,5 +1,5 @@
 ---
-layout: prose
+layout: selfdriven
 title: selfdriven | A Modern Organisational Framework for the Speed of Agentic AI
 permalink: /framework/organisation-for-speed-agentic-ai
 ---

@@ -1,5 +1,5 @@
 ---
-layout: prose
+layout: selfdriven
 title: Engagement Lab Production Framework
 permalink: /framework/engagement-lab-production
 ---
