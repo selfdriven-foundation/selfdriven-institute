@@ -14,30 +14,30 @@ permalink: /framework/end-of-the-scarce-intelligence-organisation
 <meta name="description" content="Up to 2026, organisations were built to ration scarce intelligence. When intelligence becomes abundant, the reason the organisation exists changes — and the 8 Areas of Focus change with it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f5f2ed;--surface:#edeae3;--surface2:#e5e1d8;--border:#ddd8ce;
-  --text:#1a1410;--muted:#6b5f52;--muted2:#9e9085;
-  --accent:#c8442f;--accent-dim:rgba(200,68,47,.10);--accent-strong:rgba(200,68,47,.18);
+  --bg:#ffffff;--surface:#f6f5f7;--surface2:#eeecef;--border:#e6e3e7;
+  --text:#24202a;--muted:#625c65;--muted2:#8d8690;
+  --accent:#de5a31;--accent-dim:rgba(222,90,49,.10);--accent-strong:rgba(222,90,49,.18);
   --card-radius:20px;--shadow:0 2px 16px rgba(0,0,0,.07);
-  --dark-bg:#1a1410;--dark-surface:#2a221c;--dark-border:#3a302a;--dark-text:#f0ede8;--dark-muted:#c9bfb4;
+  --dark-bg:#24202a;--dark-surface:#2b2830;--dark-border:#3a3640;--dark-text:#f1eef3;--dark-muted:#c4bec8;
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --bg:#0a0a0a;--surface:#161616;--surface2:#1e1e1e;--border:#2a2a2a;
-    --text:#f0ede8;--muted:#b0a89e;--muted2:#7a7268;
-    --accent:#e85d4a;--accent-dim:rgba(232,93,74,.12);--accent-strong:rgba(232,93,74,.20);
+    --bg:#141217;--surface:#1c1a20;--surface2:#24212a;--border:#2e2a33;
+    --text:#f1eef3;--muted:#b3acb7;--muted2:#7f7884;
+    --accent:#e8673f;--accent-dim:rgba(232,103,63,.12);--accent-strong:rgba(232,103,63,.20);
     --shadow:0 2px 16px rgba(0,0,0,.4);
-    --dark-bg:#141414;--dark-surface:#1e1e1e;--dark-border:#2e2e2e;--dark-text:#f0ede8;--dark-muted:#b0a89e;
+    --dark-bg:#1f1c23;--dark-surface:#24212a;--dark-border:#2e2e2e;--dark-text:#f1eef3;--dark-muted:#b3acb7;
   }
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.mono{font-family:'JetBrains Mono',monospace}
+.mono{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace}
 .eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
 h1,h2,h3{font-weight:800;letter-spacing:-.04em;line-height:1.1}
 h2{font-size:clamp(28px,4vw,42px);margin-bottom:16px}
@@ -133,7 +133,7 @@ nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-fi
 /* areas of focus */
 .aof{position:relative;background:var(--bg);border:1px solid var(--border);border-radius:var(--card-radius);padding:26px 24px;overflow:hidden;display:flex;flex-direction:column;gap:12px}
 .aof::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
-.aof .num{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.06em}
+.aof .num{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.06em}
 .aof h3{font-size:20px;margin:0}
 .aof .was{font-size:12.5px;color:var(--muted2);font-weight:500;line-height:1.5}
 .aof .was b{color:var(--muted);font-weight:600}
@@ -142,7 +142,7 @@ nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-fi
 .block.alt .aof{background:var(--bg)}
 
 /* code-ish policy block */
-.policy{background:var(--dark-surface);border:1px solid var(--dark-border);border-radius:16px;padding:22px 24px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.75;color:var(--dark-text);white-space:pre;overflow-x:auto}
+.policy{background:var(--dark-surface);border:1px solid var(--dark-border);border-radius:16px;padding:22px 24px;font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:13px;line-height:1.75;color:var(--dark-text);white-space:pre;overflow-x:auto}
 .policy .k{color:var(--accent)}
 .policy .c{color:var(--dark-muted)}
 
@@ -160,7 +160,7 @@ nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-fi
 .principles{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
 @media (max-width:700px){.principles{grid-template-columns:1fr}}
 .principles div{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--dark-border)}
-.principles i{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);padding-top:4px;min-width:26px}
+.principles i{font-style:normal;font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12px;color:var(--accent);padding-top:4px;min-width:26px}
 .principles b{display:block;font-weight:700;margin-bottom:2px}
 .principles span{font-size:14px;color:var(--dark-muted)}
 
@@ -194,6 +194,11 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;background:var(--s
 /* reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
+
+/* selfdriven.institute: shares the selfdriven.healthcare type and radius */
+:root{--card-radius:10px}
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif}
 </style>
 </head>
 <body>

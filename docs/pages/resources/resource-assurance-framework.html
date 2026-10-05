@@ -15,29 +15,29 @@ description: "Five international management standards, clipped together into a s
 <link rel="apple-touch-icon" href="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ---------- Design tokens ---------- */
 :root{
-  --bg:#f5f2ed; --surface:#edeae3; --surface2:#e5e1d8; --border:#ddd8ce;
-  --text:#1a1410; --muted:#6b5f52; --muted2:#9e9085;
-  --accent:#c8442f; --accent-dim:rgba(200,68,47,.10); --accent-strong:rgba(200,68,47,.18);
+  --bg:#ffffff; --surface:#f6f5f7; --surface2:#eeecef; --border:#e6e3e7;
+  --text:#24202a; --muted:#625c65; --muted2:#8d8690;
+  --accent:#de5a31; --accent-dim:rgba(222,90,49,.10); --accent-strong:rgba(222,90,49,.18);
   --card-radius:20px; --shadow:0 2px 16px rgba(0,0,0,.07);
-  --dark-panel:#141414;
+  --dark-panel:#1f1c23;
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --bg:#0a0a0a; --surface:#161616; --surface2:#1e1e1e; --border:#2a2a2a;
-    --text:#f0ede8; --muted:#b0a89e; --muted2:#7a7268;
-    --accent:#e85d4a; --accent-dim:rgba(232,93,74,.12); --accent-strong:rgba(232,93,74,.20);
+    --bg:#141217; --surface:#1c1a20; --surface2:#24212a; --border:#2e2a33;
+    --text:#f1eef3; --muted:#b3acb7; --muted2:#7f7884;
+    --accent:#e8673f; --accent-dim:rgba(232,103,63,.12); --accent-strong:rgba(232,103,63,.20);
     --shadow:0 2px 16px rgba(0,0,0,.4);
-    --dark-panel:#141414;
+    --dark-panel:#1f1c23;
   }
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);
+  font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);
   line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
@@ -45,7 +45,7 @@ body{
   font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   color:var(--accent);display:inline-block;
 }
-.mono{font-family:'JetBrains Mono',monospace}
+.mono{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace}
 a{color:inherit;text-decoration:none}
 
 /* ---------- Nav ---------- */
@@ -142,12 +142,12 @@ section{padding:80px 0}
 }
 .icon svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .badge{
-  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;
+  font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;font-weight:600;
   padding:5px 10px;border-radius:999px;letter-spacing:.02em;white-space:nowrap;
 }
 .badge.certifiable{background:var(--accent-dim);color:var(--accent)}
 .badge.guidance{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
-.card .std-id{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted2);font-weight:500}
+.card .std-id{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:13px;color:var(--muted2);font-weight:500}
 .card h3{font-size:1.42rem;font-weight:800;letter-spacing:-.03em;margin:2px 0 6px;line-height:1.15}
 .card .role{font-size:13px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
 .card .purpose{font-size:1.02rem;color:var(--text);font-weight:500;margin-bottom:12px}
@@ -175,12 +175,12 @@ section{padding:80px 0}
   background:var(--bg);border:1px solid var(--border);border-radius:12px;
   padding:18px 12px;text-align:center;
 }
-.pillar .p-id{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--accent)}
+.pillar .p-id{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:var(--accent)}
 .pillar .p-t{font-size:12.5px;font-weight:600;color:var(--text);margin-top:4px;line-height:1.3}
 .stack-base{background:var(--surface2)}
 .stack-base .t{font-weight:800;letter-spacing:-.02em;font-size:1.1rem}
 .stack-base .s{font-size:13px;color:var(--muted);font-weight:400}
-.stack-base .p-id{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);font-weight:600}
+.stack-base .p-id{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12px;color:var(--accent);font-weight:600}
 .connector{text-align:center;color:var(--muted2);font-size:20px;line-height:1;margin:2px 0}
 .integration-note{
   max-width:64ch;margin:44px auto 0;text-align:center;color:var(--muted);font-size:1.02rem;
@@ -188,11 +188,11 @@ section{padding:80px 0}
 .integration-note b{color:var(--text);font-weight:600}
 
 /* ---------- Evidence (dark) ---------- */
-.evidence{background:var(--text);color:#f0ede8;position:relative;overflow:hidden}
+.evidence{background:var(--text);color:#f1eef3;position:relative;overflow:hidden}
 @media (prefers-color-scheme:dark){.evidence{background:var(--dark-panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}}
 .evidence::before{
   content:"";position:absolute;top:-30%;left:-10%;width:560px;height:560px;
-  background:radial-gradient(circle,rgba(232,93,74,.16),transparent 70%);filter:blur(10px);
+  background:radial-gradient(circle,rgba(232,103,63,.16),transparent 70%);filter:blur(10px);
 }
 .evidence .eyebrow{color:var(--accent)}
 .evidence h2{color:#fff;font-weight:800;letter-spacing:-.035em;font-size:clamp(1.9rem,4vw,2.8rem);margin:14px 0 18px;line-height:1.1}
@@ -204,11 +204,11 @@ section{padding:80px 0}
   background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);
   border-radius:var(--card-radius);padding:28px 26px;transition:.3s;
 }
-.ev-card:hover{background:rgba(255,255,255,.06);border-color:rgba(232,93,74,.4);transform:translateY(-3px)}
-.ev-card .num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.08em}
+.ev-card:hover{background:rgba(255,255,255,.06);border-color:rgba(232,103,63,.4);transform:translateY(-3px)}
+.ev-card .num{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.08em}
 .ev-card h4{color:#fff;font-size:1.18rem;font-weight:700;letter-spacing:-.02em;margin:10px 0 9px}
 .ev-card p{color:#b8b0a8;font-size:.95rem}
-.ev-card .tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);margin-top:14px;display:block}
+.ev-card .tag{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;color:var(--accent);margin-top:14px;display:block}
 
 /* ---------- Areas of Focus ---------- */
 .aof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -218,10 +218,10 @@ section{padding:80px 0}
   padding:24px 24px;transition:.28s;
 }
 .aof:hover{border-color:color-mix(in srgb,var(--accent) 35%,var(--border));transform:translateY(-3px);box-shadow:var(--shadow)}
-.aof .n{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:var(--accent)}
+.aof .n{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:13px;font-weight:600;color:var(--accent)}
 .aof h4{font-size:1.08rem;font-weight:700;letter-spacing:-.02em;margin:4px 0 8px}
 .aof p{font-size:.9rem;color:var(--muted)}
-.aof .maps{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted2);margin-top:12px}
+.aof .maps{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;color:var(--muted2);margin-top:12px}
 
 /* ---------- CTA ---------- */
 .cta-card{
@@ -247,6 +247,11 @@ footer{border-top:1px solid var(--border);padding:44px 0 40px;margin-top:20px}
 /* ---------- Scroll reveal ---------- */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
+
+/* selfdriven.institute: shares the selfdriven.healthcare type and radius */
+:root{--card-radius:10px}
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif}
 </style>
 </head>
 <body>

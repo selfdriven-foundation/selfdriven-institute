@@ -12,37 +12,37 @@ permalink: /frameworks
 <link rel="apple-touch-icon" href="/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png" />
 <title>Progressive Self-Actuation Framework — selfdriven Actuate</title>
 <meta name="description" content="The selfdriven Progressive Self-Actuation Framework — understanding community context with skillzeb.io's universal skill set and the 5W1H method, plus the full library of selfdriven organisational and collaborative frameworks.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #f5f2ed;
-  --surface: #edeae3;
-  --surface2: #e5e1d8;
-  --border: #ddd8ce;
-  --text: #1a1410;
-  --muted: #6b5f52;
-  --muted2: #9e9085;
-  --accent: #c8442f;
-  --accent-dim: rgba(200,68,47,0.10);
-  --accent-strong: rgba(200,68,47,0.18);
+  --bg: #ffffff;
+  --surface: #f6f5f7;
+  --surface2: #eeecef;
+  --border: #e6e3e7;
+  --text: #24202a;
+  --muted: #625c65;
+  --muted2: #8d8690;
+  --accent: #de5a31;
+  --accent-dim: rgba(222,90,49,0.10);
+  --accent-strong: rgba(222,90,49,0.18);
   --card-radius: 20px;
   --shadow: 0 2px 16px rgba(0,0,0,0.07);
-  --ink: #1a1410;
+  --ink: #24202a;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0a0a0a;
-    --surface: #161616;
-    --surface2: #1e1e1e;
-    --border: #2a2a2a;
-    --text: #f0ede8;
-    --muted: #b0a89e;
-    --muted2: #7a7268;
-    --accent: #e85d4a;
-    --accent-dim: rgba(232,93,74,0.12);
-    --accent-strong: rgba(232,93,74,0.20);
+    --bg: #141217;
+    --surface: #1c1a20;
+    --surface2: #24212a;
+    --border: #2e2a33;
+    --text: #f1eef3;
+    --muted: #b3acb7;
+    --muted2: #7f7884;
+    --accent: #e8673f;
+    --accent-dim: rgba(232,103,63,0.12);
+    --accent-strong: rgba(232,103,63,0.20);
     --shadow: 0 2px 16px rgba(0,0,0,0.4);
-    --ink: #141414;
+    --ink: #1f1c23;
   }
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -50,7 +50,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -75,12 +75,12 @@ nav {
   transition: background .3s, border-color .3s, backdrop-filter .3s;
 }
 nav.scrolled {
-  background: rgba(245,242,237,0.82);
+  background: rgba(255,255,255,0.82);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
 @media (prefers-color-scheme: dark) {
-  nav.scrolled { background: rgba(10,10,10,0.82); }
+  nav.scrolled { background: rgba(20,18,23,0.82); }
 }
 .nav-inner { max-width: 1180px; margin: 0 auto; padding: 0 32px; width: 100%;
   display: flex; align-items: center; justify-content: space-between; }
@@ -167,18 +167,18 @@ section.block { padding: 96px 0; }
 @media (max-width: 820px){ .challenge-grid { grid-template-columns: 1fr; } }
 
 /* 5W1H (dark inverted) */
-.offer { background: var(--ink); color: #f0ede8; }
-@media (prefers-color-scheme: light){ .offer { background: #1a1410; } }
+.offer { background: var(--ink); color: #f1eef3; }
+@media (prefers-color-scheme: light){ .offer { background: #24202a; } }
 .offer .eyebrow { color: var(--accent); }
 .offer h2 { color: #fff; }
-.offer .sec-head p { color: #b8b0a6; }
+.offer .sec-head p { color: #b3acb7; }
 .offer-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
 .offer-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10);
   border-radius: var(--card-radius); padding: 32px; transition: border-color .25s, background .25s; }
-.offer-card:hover { border-color: var(--accent); background: rgba(232,93,74,0.06); }
-.offer-card .num { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent); font-weight: 500; }
+.offer-card:hover { border-color: var(--accent); background: rgba(232,103,63,0.06); }
+.offer-card .num { font-family: ui-monospace,'SFMono-Regular',Menlo,Consolas, monospace; font-size: 13px; color: var(--accent); font-weight: 500; }
 .offer-card h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.02em; margin: 12px 0 10px; color: #fff; }
-.offer-card p { font-size: 15px; color: #b8b0a6; line-height: 1.65; }
+.offer-card p { font-size: 15px; color: #b3acb7; line-height: 1.65; }
 @media (max-width: 900px){ .offer-grid { grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 600px){ .offer-grid { grid-template-columns: 1fr; } }
 
@@ -187,7 +187,7 @@ section.block { padding: 96px 0; }
 .area { background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
   padding: 24px 22px; transition: transform .2s, box-shadow .2s, border-color .2s; }
 .area:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
-.area .badge { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+.area .badge { font-family: ui-monospace,'SFMono-Regular',Menlo,Consolas, monospace; font-size: 12px; font-weight: 700;
   color: var(--accent); }
 .area h4 { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; margin: 10px 0 7px; }
 .area p { font-size: 13px; color: var(--muted); line-height: 1.5; }
@@ -235,6 +235,11 @@ footer { border-top: 1px solid var(--border); padding: 56px 0 40px; background: 
 /* reveal */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s, transform .6s; }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* selfdriven.institute: shares the selfdriven.healthcare type and radius */
+:root{--card-radius:10px}
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif}
 </style>
 </head>
 <body>
