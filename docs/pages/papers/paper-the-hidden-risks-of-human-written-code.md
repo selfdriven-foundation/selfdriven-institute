@@ -11,10 +11,24 @@ Why human software development may become a growing organisational risk in the a
 
 Position paper · 10 October 2026 · About 3,050 words · [Download the paper as Markdown](https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/papers/the-hidden-risks-of-human-written-code.md)
 
+<div class="podcasts" style="margin: 0 0 30px;">
+<p class="podcast-tag" style="margin: 0 0 4px;">Podcasts</p>
+<p class="podcast-title" style="margin: 16px 0 8px;">Human Code Is a Structural Security Risk</p>
 <audio controls preload="none" style="width: 100%;">
   <source src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/podcasts/Human_Code_Is_a_Structural_Security_Risk.m4a" type="audio/mp4">
   Your browser does not support the audio element. <a href="https://github.com/selfdriven-foundation/selfdriven-institute/blob/main/resources/podcasts/Human_Code_Is_a_Structural_Security_Risk.m4a">Listen to the podcast</a>.
 </audio>
+<p class="podcast-title" style="margin: 16px 0 8px;">Why Software Trust Requires Proof, Not Authorship</p>
+<audio controls preload="none" style="width: 100%;">
+  <source src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/podcasts/Why_Software_Trust_Requires_Proof_Not_Authorship.m4a" type="audio/mp4">
+  Your browser does not support the audio element. <a href="https://github.com/selfdriven-foundation/selfdriven-institute/blob/main/resources/podcasts/Why_Software_Trust_Requires_Proof_Not_Authorship.m4a">Listen to the podcast</a>.
+</audio>
+<p class="podcast-title" style="margin: 16px 0 8px;">Stop Trusting Human-Written Code</p>
+<audio controls preload="none" style="width: 100%;">
+  <source src="https://raw.githubusercontent.com/selfdriven-foundation/selfdriven-institute/main/resources/podcasts/Stop_Trusting_Human_Written_Code.m4a" type="audio/mp4">
+  Your browser does not support the audio element. <a href="https://github.com/selfdriven-foundation/selfdriven-institute/blob/main/resources/podcasts/Stop_Trusting_Human_Written_Code.m4a">Listen to the podcast</a>.
+</audio>
+</div>
 
 > **Central thesis:** For decades, humans have been trusted to write software, with machines used to validate and execute it. As autonomous coding systems advance, this assumption deserves reconsideration.
 
