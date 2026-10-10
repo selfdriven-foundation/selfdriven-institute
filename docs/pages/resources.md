@@ -7,6 +7,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 
 ## Papers
 
+- [The Hidden Risks of Human-Written Code](/paper/the-hidden-risks-of-human-written-code)
 - [From generating answers to making decisions](https://selfdriven.ai/research/decision-ai-from-generation-to-action)
 - [From Zero to One Proof](/paper/zero-to-proof)
 - [Conducting Scores](/paper/conducting-scores)
