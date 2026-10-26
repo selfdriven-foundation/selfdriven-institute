@@ -1,0 +1,18 @@
+{
+    "name": "selfdriven-institute-podcasts-deploy",
+    "version": "1.0.0",
+    "scripts": {
+        "deploy": "node deploy.js"
+    },
+    "dependencies": {
+        "@aws-sdk/client-acm":          "^3.600.0",
+        "@aws-sdk/client-apigatewayv2": "^3.600.0",
+        "@aws-sdk/client-iam":          "^3.600.0",
+        "@aws-sdk/client-lambda":       "^3.600.0",
+        "@aws-sdk/client-route-53":     "^3.600.0",
+        "archiver":                     "^7.0.1",
+        "entityos":                     "^2.2.14",
+        "lodash":                       "^4.17.21",
+        "prompt-sync":                  "^4.2.0"
+    }
+}

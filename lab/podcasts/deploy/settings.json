@@ -1,0 +1,32 @@
+{
+    "infrastructure": {
+        "aws": {
+            "access": { "id": "prompt", "secret": "prompt" }
+        }
+    },
+    "deploy": {
+        "region":             "ap-southeast-2",
+        "lambdaFolder":       "../lambda",
+        "lambdaZipName":      "selfdriven-institute-podcasts-lambda.zip",
+        "functionName":       "selfdriven-institute-podcasts",
+        "roleName":           "selfdriven-institute-podcasts-lambda-role",
+        "apiName":            "selfdriven-institute-podcasts-api",
+        "customDomain":       "podcasts.selfdriven.institute",
+        "route53Zone":        "selfdriven.institute",
+        "memorySize":         512,
+        "timeout":            20,
+        "acmPollMaxAttempts": 40,
+        "acmPollIntervalMs":  15000
+    },
+    "podcasts": {
+        "github": {
+            "owner":  "selfdriven-foundation",
+            "repo":   "selfdriven-institute",
+            "branch": "main",
+            "path":   "resources/podcasts",
+            "token":  "prompt"
+        },
+        "cacheSeconds": 600,
+        "chunkBytes":   3670016
+    }
+}

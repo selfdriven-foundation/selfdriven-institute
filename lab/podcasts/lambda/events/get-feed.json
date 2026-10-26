@@ -1,0 +1,6 @@
+{
+    "version": "2.0",
+    "rawPath": "/feed.xml",
+    "headers": {},
+    "requestContext": { "http": { "method": "GET", "path": "/feed.xml" } }
+}

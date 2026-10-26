@@ -1,0 +1,18 @@
+{
+    "name": "selfdriven-institute-podcasts-lambda",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": { "node": ">=22.x" },
+    "dependencies": {
+        "entityos": "^2.2.14",
+        "lodash":   "^4.17.21"
+    },
+    "devDependencies": {
+        "lambda-local": "^2.2.0"
+    },
+    "scripts": {
+        "invoke:get":   "lambda-local -l index.js -h handler -e events/get-root.json",
+        "invoke:feed":  "lambda-local -l index.js -h handler -e events/get-feed.json",
+        "invoke:audio": "lambda-local -l index.js -h handler -e events/get-audio-range.json"
+    }
+}
