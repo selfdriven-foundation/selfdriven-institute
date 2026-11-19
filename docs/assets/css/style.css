@@ -273,6 +273,59 @@ img{max-width:100%}
 
 [hidden]{display:none!important}
 
+/* ═══ shared extras (proven on .finance / .systems / .space / .id / .insure) ═══ */
+
+/* Stats: word values stay on one line; step down when the words are long */
+.stat-num{white-space:nowrap}
+.stats.words .stat-num{font-size:clamp(1.45rem,2.1vw,2.2rem)}
+
+/* Source link at the foot of a dark layer card */
+.layer-link{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:12px;color:var(--orange-on-dark);text-decoration:none;border:1px solid rgba(240,128,92,.35);border-radius:6px;padding:6px 10px;overflow-wrap:anywhere}
+.layer-link:hover{color:#ffffff;border-color:var(--orange-on-dark);background:rgba(240,128,92,.12)}
+
+/* Two-column variant of the dark layers panel */
+.layer-list.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.layer-list.two .layer-link{margin-top:14px}
+
+/* Plain (non-link) cards in scope lists */
+.scope-list li.plain{padding:20px 22px}
+.scope-list li.plain:hover{border-color:var(--line);background:var(--paper)}
+.scope-group.accent .scope-tag{color:var(--orange)}
+.scope-group.accent .scope-head h3 em{font-style:normal;color:var(--orange)}
+.scope-head p+p{margin-top:14px}
+.link-row .scope-num{margin-bottom:6px}
+
+/* Tiles that link through to their own page */
+.discipline h3 a{text-decoration:none;color:inherit}
+.discipline h3 a:hover{color:var(--orange-hover)}
+.discipline .text-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:15px;text-decoration:underline;text-decoration-color:var(--orange)}
+
+/* Content pages: no-TOC variant, code blocks, checklists, lead paragraph, link cards inside prose */
+.page-grid.no-toc{grid-template-columns:minmax(0,1fr)}
+.prose pre{margin:24px 0 28px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.6}
+.prose pre code{background:none;padding:0;font-size:inherit}
+.prose div.highlighter-rouge{margin:0}
+.prose blockquote strong{font-weight:600;color:var(--orange)}
+.prose .checklist{list-style:none;padding-left:0}
+.prose .checklist li{padding-left:30px;position:relative}
+.prose .checklist li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border:2px solid var(--orange);border-radius:4px}
+.prose .lead{font-size:19px;color:var(--muted)}
+.prose .scope-list{padding:0;margin:20px 0 40px}
+.prose .scope-list li{margin:0}
+.prose .scope-list li::marker{content:none}
+.prose .link-row{text-decoration:none}
+
+/* Footer quote (optional, full-width italic line) */
+.footer-quote{flex-basis:100%;font-size:13px;font-style:italic;color:var(--footer-fg);opacity:.6;margin:0}
+
+@media(max-width:1100px){
+	.stats.words .stat-num{white-space:normal;overflow-wrap:anywhere}
+}
+@media(max-width:760px){
+	.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:40px 0}
+	.layer-list.two{grid-template-columns:1fr}
+}
+
 /* ═══ selfdriven.institute additions ═══════════════════════════════ */
 
 /* Legacy token names, so content written for the old selfdriven.css
@@ -362,3 +415,7 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
 	.sd-share-card{padding:24px 20px}
 }
 .scope-head p+p{margin-top:14px}
+
+/* Formal verification page: proof-checker core in the hero panel */
+.fv-core{fill:var(--panel);stroke:#ffffff;stroke-width:1.5;stroke-opacity:.5}
+.fv-domain{fill:#ffffff;font-family:var(--font-mono);font-size:13px}

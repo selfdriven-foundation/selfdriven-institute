@@ -40,6 +40,7 @@ description: "selfdriven Institute — resources for governance frameworks for a
 - [Universal Basic Services](/research/areas-of-focus/universal-basic-services/)
 - [Finance - e.g. What is money?](/research/areas-of-focus/finance/)
 - [Service as Verifiable Software](/research/service-as-verifiable-software)
+- [Formal Verification](/research/formal-verification)
 - [AI, SWIFT & The Coming Trust Crisis](/research/financial-systems/swift)
 - [UK Parliament Hearing on AI Risks, Impact, and Regulation](/resources/uk-parliament-hearing-on-ai-risks-impact-and-regulation)
 - [System Leverage](https://selfdriven.ai/research/system-leverage)
