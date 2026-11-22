@@ -1,0 +1,1431 @@
+---
+layout: null
+title: Lean for beginners
+permalink: /resources/lean-for-beginners
+---
+
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8" />
+	<title>Lean for beginners — selfdriven Institute</title>
+	<meta name="description" content="An interactive beginner's guide to Lean, the programming language and proof assistant: read a theorem, step through real proofs, pick tactics and set up Lean." />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:title" content="Lean for beginners — selfdriven Institute" />
+	<meta property="og:description" content="Learn Lean one goal at a time: read a theorem, step through proofs in a simulated infoview and try tactics yourself." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+/* selfdriven.institute — shares the selfdriven.healthcare look: split hero, stats strip, tile grid, dark layers panel, orange banner, ink footer */
+:root{
+	--paper:#ffffff;
+	--surface:#f6f5f7;
+	--ink:#24202a;
+	--muted:#625c65;
+	--line:#e6e3e7;
+	--orange:#de5a31;
+	--orange-hover:#b53e1a;
+	--panel:#222025;
+	--panel-hover:#302b35;
+	--button-bg:#24202a;
+	--button-fg:#ffffff;
+	--footer-bg:#24202a;
+	--footer-fg:#e3dfe7;
+	--on-orange:#201922;
+	--tile-dark:#27232e;
+	--tile-green:#286647;
+	--tile-lilac:#b8a8f0;
+	--orange-on-dark:#f0805c;
+	--font-mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+	--font-display:'Space Grotesk','Helvetica Neue',Arial,sans-serif;
+	--font-body:'DM Sans','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+	:root:not([data-theme="light"]){
+		--paper:#141217;--surface:#1c1a20;--ink:#f1eef3;--muted:#b3acb7;--line:#2e2a33;
+		--orange:#e8673f;--orange-hover:#f08a68;--panel:#1f1c23;--panel-hover:#2a2630;
+		--button-bg:#f1eef3;--button-fg:#141217;--footer-bg:#0c0b0e;--footer-fg:#d9d4dd;
+		color-scheme:dark;
+	}
+}
+:root[data-theme="dark"]{
+	--paper:#141217;--surface:#1c1a20;--ink:#f1eef3;--muted:#b3acb7;--line:#2e2a33;
+	--orange:#e8673f;--orange-hover:#f08a68;--panel:#1f1c23;--panel-hover:#2a2630;
+	--button-bg:#f1eef3;--button-fg:#141217;--footer-bg:#0c0b0e;--footer-fg:#d9d4dd;
+	color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--font-body)}
+a{color:inherit;text-underline-offset:5px}
+a:hover{color:var(--orange-hover)}
+a:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.08;letter-spacing:-.045em;text-wrap:balance}
+h1{font-size:clamp(3rem,5.6vw,5.8rem);margin:22px 0}
+h1 span,h2 span{color:var(--orange)}
+h2{font-size:clamp(2rem,3.3vw,3.4rem);margin:0 0 22px}
+h3{font-size:1.35rem}
+p{margin:0 0 24px}
+img{max-width:100%}
+.arrow-icon{display:inline-block;width:1.15em;height:1.15em;flex:0 0 auto;vertical-align:-.15em;overflow:visible}
+
+/* Skip link */
+.skip{position:absolute;left:20px;top:-70px;z-index:5;background:var(--paper);color:var(--ink);padding:12px}
+.skip:focus{top:10px}
+
+/* Header */
+.header{max-width:1440px;margin:auto;padding:30px 5%;display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line)}
+.logo img{width:214px;max-width:100%;height:auto;display:block}
+.nav{display:flex;gap:30px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+
+/* Main */
+.main-content{max-width:1440px;margin:auto;padding:55px 5% 70px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;margin-bottom:16px;text-transform:uppercase}
+.intro{font-size:19px;line-height:1.65;color:var(--muted);max-width:34em}
+.text-link{font-weight:500}
+
+/* Buttons */
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:52px;max-width:100%;background:var(--button-bg);color:var(--button-fg);padding:16px 23px;border-radius:6px;text-decoration:none;font-weight:600;transition:background .2s,color .2s}
+.button:hover{background:var(--orange);color:#fff}
+.button .arrow-icon{width:20px;height:20px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center}
+.hero-copy{min-width:0}
+.hero-copy>.text-link{display:block;margin-top:18px;font-size:14px}
+.hero-media{min-width:0}
+.hero-art{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:470px;background:var(--panel);color:#fff;border-radius:12px;overflow:hidden;text-decoration:none;isolation:isolate}
+.hero-art:hover{color:#fff;background:var(--panel-hover)}
+.hero-art .ward{position:absolute;inset:0;z-index:0;display:block}
+.hero-art .ward svg{width:100%;height:100%;display:block}
+.hero-photo{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease}
+.hero-art:hover .hero-photo{transform:scale(1.03)}
+.hero-art::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(18,16,20,.55) 0%,rgba(18,16,20,0) 28%,rgba(18,16,20,0) 62%,rgba(18,16,20,.78) 100%);pointer-events:none}
+.art-label,.art-foot{position:relative;z-index:3}
+.art-label{font-size:12px;letter-spacing:.15em;padding:25px 28px 0}
+.art-foot{padding:20px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:14px}
+.credit{font-size:12px;color:var(--muted);margin:10px 2px 0}
+.credit a{text-underline-offset:3px}
+
+/* Ward monitor drawing (shown behind the photo, and in its place when the photo cannot load) */
+.trace{fill:none;stroke:var(--orange);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.trace-glow{fill:none;stroke:var(--orange);stroke-width:10;opacity:.18;stroke-linejoin:round}
+.grid-line{stroke:#ffffff;opacity:.06}
+.readout{fill:#ffffff;font-family:var(--font-display)}
+.readout-label{fill:#ffffff;opacity:.55;font-family:var(--font-body);font-size:13px;letter-spacing:.14em}
+.pulse{fill:var(--orange);animation:pulse 1.6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.8)}}
+
+/* Values strip */
+.values{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;margin:60px 0;font-family:var(--font-display);font-size:clamp(1rem,1.8vw,1.6rem);font-weight:600;letter-spacing:-.02em}
+
+/* Section heading */
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
+.section-heading h2{margin-bottom:0}
+.section-heading>*{min-width:0}
+.section-note{color:var(--muted);max-width:30em;margin:0}
+
+/* Discipline tiles */
+.discipline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.discipline{min-width:0}
+.discipline-art{height:300px;overflow:hidden;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:28px}
+.discipline-art svg{width:100%;height:100%;max-width:100%;display:block}
+.tile-dark{background:var(--tile-dark)}
+.tile-green{background:var(--tile-green)}
+.tile-lilac{background:var(--tile-lilac)}
+.discipline h3{margin:22px 0 8px}
+.discipline p{font-size:15px;color:var(--muted);margin:0}
+.roles{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.roles li{font-size:13px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.svg-label{font-family:var(--font-body);font-size:13px;letter-spacing:.14em}
+.svg-title{font-family:var(--font-display);font-size:30px;font-weight:600;letter-spacing:-.5px}
+.svg-tick{font-family:var(--font-body);font-size:13px}
+
+/* Scope: protocols, services, tools */
+.scope{margin-top:90px}
+.scope-group{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:40px;border-top:1px solid var(--line);padding:38px 0;scroll-margin-top:20px}
+.scope-group:last-of-type{border-bottom:1px solid var(--line)}
+.scope-tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.scope-head h3{font-size:clamp(1.5rem,2.2vw,2rem);margin:12px 0 14px}
+.scope-head p{color:var(--muted);margin:0;max-width:26em}
+.scope-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.scope-list li{border:1px solid var(--line);border-radius:7px;padding:20px 22px;background:var(--paper);transition:border-color .2s,background .2s}
+.scope-list li:hover{border-color:var(--orange);background:var(--surface)}
+.scope-list h4{font-size:1.1rem;letter-spacing:-.02em;margin:0 0 8px}
+.scope-list p{font-size:14px;color:var(--muted);margin:0}
+.scope-list a{font-weight:500}
+
+/* Banner */
+.custom-banner{margin-top:80px;padding:50px;background:var(--orange);border-radius:10px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;color:var(--on-orange)}
+.custom-banner>*{min-width:0}
+.custom-banner h2{margin-bottom:0}
+.custom-banner p:not(.eyebrow){font-size:19px;max-width:420px}
+.button.light{background:#ffffff;color:#24202a}
+.button.light:hover{background:#24202a;color:#ffffff}
+
+/* Why now statement */
+.statement{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:60px;align-items:end;margin:0 0 90px}
+.statement h2{font-size:clamp(2.1rem,3.8vw,3.9rem);margin:0}
+.statement h2 em{font-style:normal;color:var(--orange)}
+.statement-side p{color:var(--muted);font-size:17px}
+.statement-side .boundary{font-family:var(--font-display);font-weight:600;font-size:1.3rem;letter-spacing:-.02em;color:var(--ink);border-top:1px solid var(--line);padding-top:18px;margin-bottom:18px}
+.statement-side .text-link{font-size:15px;text-decoration:underline;display:inline-flex;align-items:center;gap:6px}
+
+/* Trust -> Intelligence -> Robotics -> Coordination */
+.layers{margin-top:90px;background:var(--panel);color:#ffffff;border-radius:12px;padding:50px}
+.layers-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:40px}
+.layers-head h2{margin:0}
+.layers-head h2 span{color:var(--orange-on-dark)}
+.layers-head p{color:rgba(255,255,255,.72);font-size:17px;margin:0;max-width:32em}
+.layers .eyebrow{color:rgba(255,255,255,.72)}
+.layer-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.layer{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;min-width:0}
+.layer-step{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-on-dark)}
+.layer h3{color:#ffffff;margin:14px 0 10px;font-size:1.3rem}
+.layer p{color:rgba(255,255,255,.72);font-size:15px;margin:0 0 14px}
+.layer ul{margin:0;padding-left:18px;color:#ffffff;font-size:14px}
+.layer li{margin-bottom:6px}
+.layer li::marker{color:var(--orange-on-dark)}
+
+/* Opportunity & resources hub */
+.hub{margin-top:90px}
+.link-list li{padding:0}
+.link-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:20px 22px;height:100%;text-decoration:none}
+.link-row strong{display:block;font-family:var(--font-display);font-size:1.1rem;letter-spacing:-.02em;font-weight:600;margin-bottom:6px;line-height:1.2}
+.link-row small{display:block;font-size:14px;color:var(--muted);line-height:1.55}
+.link-row .arrow-icon{margin-top:2px;color:var(--orange)}
+.link-row:hover{color:var(--ink)}
+.scope-list li.podcast{padding:20px 22px;background:var(--surface)}
+.podcast-tag{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin:0 0 8px}
+.podcast-title{font-family:var(--font-display);font-size:1.1rem;font-weight:600;letter-spacing:-.02em;margin:0 0 4px}
+.podcast-note{font-size:14px;color:var(--muted);margin:0 0 14px}
+.podcast audio{width:100%;height:40px;display:block}
+
+/* Footer */
+.footer{background:var(--footer-bg);color:#fff;padding:50px 5% 36px;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.footer a{display:block;color:var(--footer-fg);font-size:14px;text-decoration:none;margin-bottom:9px}
+.footer a:hover{color:#fff}
+.footer-left{max-width:30em}
+.footer-left img{width:170px;height:auto;display:block}
+.footer-left p{color:var(--footer-fg);opacity:.7;font-size:13px;margin:14px 0 0}
+.footer-cols{display:flex;gap:56px;flex-wrap:wrap}
+.footer-head{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--footer-fg);opacity:.6;margin:0 0 14px}
+.footer-line{flex-basis:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin:10px 0 0;font-family:var(--font-display);font-size:14px;color:var(--footer-fg);opacity:.75}
+
+/* Content pages */
+.page-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:64px;align-items:start}
+.crumb{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 18px;color:var(--muted)}
+.crumb a{text-decoration:none;color:var(--orange)}
+.prose{max-width:780px;min-width:0;font-size:17px;line-height:1.7}
+.prose h1{font-size:clamp(2.1rem,3.8vw,3.5rem);margin:0 0 30px}
+.prose h1 em{font-style:normal;color:var(--orange)}
+.prose h1+p{font-size:19px;color:var(--muted)}
+.prose h2{font-size:clamp(1.6rem,2.4vw,2.2rem);margin:56px 0 18px;padding-top:30px;border-top:1px solid var(--line);scroll-margin-top:24px}
+.prose h3{font-size:1.3rem;letter-spacing:-.03em;margin:36px 0 12px;scroll-margin-top:24px}
+.prose h4{font-size:1.05rem;letter-spacing:-.02em;margin:28px 0 8px}
+.prose p{margin:0 0 18px}
+.prose ul,.prose ol{padding-left:22px;margin:0 0 20px}
+.prose li{margin:6px 0}
+.prose li>ul,.prose li>ol{margin:6px 0 0}
+.prose li::marker{color:var(--orange)}
+.prose a{text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px}
+.prose strong{font-weight:700}
+.prose hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+.prose blockquote{margin:30px 0;padding:24px 28px;background:var(--surface);border-radius:8px;font-family:var(--font-display);font-size:1.2rem;letter-spacing:-.02em}
+.prose blockquote p{margin:0}
+.prose code{font-family:var(--font-mono);font-size:.9em;background:var(--surface);padding:2px 6px;border-radius:4px}
+.prose table{display:block;width:max-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:24px 0 28px;font-size:15px;font-variant-numeric:tabular-nums}
+.prose th,.prose td{padding:11px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.prose th{font-family:var(--font-display);font-weight:600;background:var(--surface);letter-spacing:-.01em}
+.prose audio{width:100%}
+.toc{position:sticky;top:28px;border-left:1px solid var(--line);padding-left:20px;font-size:14px}
+.toc-label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.toc ol{list-style:none;padding:0;margin:0}
+.toc li{margin:0 0 10px;line-height:1.4}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--ink)}
+.page-back{margin:60px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:15px}
+.page-back a{text-decoration:underline}
+
+@media(max-width:1100px){
+	.layer-list{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}
+	.page-grid{grid-template-columns:minmax(0,1fr)}
+	.toc{display:none}
+}
+@media(max-width:960px){
+	.scope-group{grid-template-columns:1fr;gap:22px}
+}
+@media(max-width:760px){
+	.header{padding:22px 6%;align-items:flex-start;flex-direction:column;gap:16px}
+	.logo img{width:176px}
+	.nav{gap:6px 22px}
+	.nav a{min-height:44px}
+	.main-content{padding:32px 6% 45px}
+	.hero{grid-template-columns:1fr;gap:32px}
+	.hero-art{min-height:340px}
+	.button{padding:15px 20px;gap:16px}
+	.values{display:grid;grid-template-columns:1fr 1fr;margin:40px 0;padding:20px 0;gap:10px}
+	.section-heading{display:block}
+	.section-heading .section-note{margin-top:14px}
+	.discipline-grid{grid-template-columns:1fr;gap:34px}
+	.discipline-art{height:260px}
+	.scope{margin-top:60px}
+	.scope-list{grid-template-columns:1fr}
+	.custom-banner{grid-template-columns:1fr;padding:30px;gap:15px;margin-top:50px}
+	.footer{padding:40px 6% 30px}
+	.footer-cols{gap:32px}
+	.statement{grid-template-columns:1fr;gap:24px;margin-bottom:60px}
+	.layers{padding:30px 22px;margin-top:60px}
+	.layers-head{grid-template-columns:1fr;gap:16px}
+	.layer-list{grid-template-columns:1fr}
+	.hub{margin-top:60px}
+	.prose{font-size:16px}
+	.prose h1+p{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){
+	html{scroll-behavior:auto}
+	*{transition:none!important;animation:none!important}
+}
+
+[hidden]{display:none!important}
+
+/* ═══ shared extras (proven on .finance / .systems / .space / .id / .insure) ═══ */
+
+/* Stats: word values stay on one line; step down when the words are long */
+.stat-num{white-space:nowrap}
+.stats.words .stat-num{font-size:clamp(1.45rem,2.1vw,2.2rem)}
+
+/* Source link at the foot of a dark layer card */
+.layer-link{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:12px;color:var(--orange-on-dark);text-decoration:none;border:1px solid rgba(240,128,92,.35);border-radius:6px;padding:6px 10px;overflow-wrap:anywhere}
+.layer-link:hover{color:#ffffff;border-color:var(--orange-on-dark);background:rgba(240,128,92,.12)}
+
+/* Two-column variant of the dark layers panel */
+.layer-list.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.layer-list.two .layer-link{margin-top:14px}
+
+/* Plain (non-link) cards in scope lists */
+.scope-list li.plain{padding:20px 22px}
+.scope-list li.plain:hover{border-color:var(--line);background:var(--paper)}
+.scope-group.accent .scope-tag{color:var(--orange)}
+.scope-group.accent .scope-head h3 em{font-style:normal;color:var(--orange)}
+.scope-head p+p{margin-top:14px}
+.link-row .scope-num{margin-bottom:6px}
+
+/* Tiles that link through to their own page */
+.discipline h3 a{text-decoration:none;color:inherit}
+.discipline h3 a:hover{color:var(--orange-hover)}
+.discipline .text-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:15px;text-decoration:underline;text-decoration-color:var(--orange)}
+
+/* Content pages: no-TOC variant, code blocks, checklists, lead paragraph, link cards inside prose */
+.page-grid.no-toc{grid-template-columns:minmax(0,1fr)}
+.prose pre{margin:24px 0 28px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.6}
+.prose pre code{background:none;padding:0;font-size:inherit}
+.prose div.highlighter-rouge{margin:0}
+.prose blockquote strong{font-weight:600;color:var(--orange)}
+.prose .checklist{list-style:none;padding-left:0}
+.prose .checklist li{padding-left:30px;position:relative}
+.prose .checklist li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border:2px solid var(--orange);border-radius:4px}
+.prose .lead{font-size:19px;color:var(--muted)}
+.prose .scope-list{padding:0;margin:20px 0 40px}
+.prose .scope-list li{margin:0}
+.prose .scope-list li::marker{content:none}
+.prose .link-row{text-decoration:none}
+
+/* Footer quote (optional, full-width italic line) */
+.footer-quote{flex-basis:100%;font-size:13px;font-style:italic;color:var(--footer-fg);opacity:.6;margin:0}
+
+@media(max-width:1100px){
+	.stats.words .stat-num{white-space:normal;overflow-wrap:anywhere}
+}
+@media(max-width:760px){
+	.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:40px 0}
+	.layer-list.two{grid-template-columns:1fr}
+}
+
+/* ═══ selfdriven.institute additions ═══════════════════════════════ */
+
+/* Legacy token names, so content written for the old selfdriven.css
+   (share card, inline styles in markdown pages) picks up this palette */
+:root{
+	--bg:var(--paper);--text:var(--ink);--border:var(--line);--accent:var(--orange);
+	--surface2:#eeecef;--muted2:#8d8690;
+	--accent-dim:rgba(222,90,49,.10);--accent-strong:rgba(222,90,49,.18);
+	--card-radius:10px;--shadow:0 2px 16px rgba(36,32,42,.07);
+	--font:var(--font-body);--mono:var(--font-mono);
+}
+@media (prefers-color-scheme:dark){
+	:root:not([data-theme="light"]){
+		--surface2:#24212a;--muted2:#7f7884;
+		--accent-dim:rgba(232,103,63,.14);--accent-strong:rgba(232,103,63,.22);
+		--shadow:0 2px 16px rgba(0,0,0,.4);
+	}
+}
+:root[data-theme="dark"]{
+	--surface2:#24212a;--muted2:#7f7884;
+	--accent-dim:rgba(232,103,63,.14);--accent-strong:rgba(232,103,63,.22);
+	--shadow:0 2px 16px rgba(0,0,0,.4);
+}
+
+h1 em,h2 em{font-style:normal;color:var(--orange)}
+.hero-copy .intro{max-width:36em}
+
+/* Stats strip (sits where healthcare has its values strip) */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;margin:60px 0}
+.stat{min-width:0}
+.stat-num{font-family:var(--font-display);font-size:clamp(1.7rem,2.6vw,2.5rem);font-weight:600;letter-spacing:-.045em;line-height:1;color:var(--orange)}
+.stat-label{font-size:14px;line-height:1.5;color:var(--muted);margin:12px 0 0}
+
+/* Statement followed directly by its tiles */
+.statement.tight{margin-bottom:56px}
+
+/* Hero panel: witnessed key-event log */
+.kel-link{stroke:#ffffff;stroke-width:2;opacity:.35}
+.kel-node{fill:var(--panel);stroke:#ffffff;stroke-width:2;opacity:.9}
+.kel-node.anchored{fill:#ffffff;stroke:none}
+.kel-node.latest{fill:var(--orange);stroke:none}
+.kel-tag{fill:#ffffff;opacity:.7;font-family:var(--font-mono);font-size:12px}
+.witness{fill:none;stroke:#ffffff;stroke-width:1.5;opacity:.55}
+.witness.signed{stroke:var(--orange);opacity:1}
+.receipt{stroke:var(--orange);stroke-width:1.5;stroke-dasharray:3 5;opacity:.75;fill:none}
+
+/* Numbered items inside scope lists (trust stack, areas of focus) */
+.scope-num{display:block;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--orange);margin:0 0 8px}
+.scope-list code{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--orange);border:1px solid var(--line);border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:3px}
+.scope-list.single{grid-template-columns:1fr}
+.scope-list{align-content:start}
+
+/* Orange banner action */
+.custom-banner .button{margin-top:4px}
+.custom-banner .banner-copy p{margin-bottom:22px}
+
+/* Content-page prev / next */
+.prose .crumb+h2{margin-top:0;padding-top:0;border-top:0}
+.page-nav{display:flex;justify-content:space-between;gap:16px;margin:60px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:15px}
+.page-nav a{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:4px}
+
+/* Share card (resources and paper pages) */
+.sd-share-card{position:relative;overflow:hidden;max-width:580px;width:100%;margin:40px 0 0;padding:28px 30px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-family:var(--font-body)}
+.sd-share-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange)}
+.sd-share-card .sd-share-eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin:0 0 8px}
+.sd-share-card .sd-share-title{font-family:var(--font-display);font-size:1.25rem;font-weight:600;letter-spacing:-.03em;line-height:1.25;color:var(--ink);margin:0 0 6px}
+.sd-share-card .sd-share-subtitle{font-size:14px;color:var(--muted);margin:0 0 20px;line-height:1.6}
+.sd-share-card .sd-share-url-row{display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px 8px 8px 16px;margin:16px 0 18px}
+.sd-share-card .sd-share-url-text{flex:1;min-width:0;font-family:var(--font-mono);font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sd-share-card .sd-copy-btn{flex-shrink:0;background:var(--button-bg);color:var(--button-fg);border:0;border-radius:6px;padding:9px 16px;font:600 13px/1 var(--font-body);cursor:pointer;transition:background .2s,color .2s}
+.sd-share-card .sd-copy-btn:hover{background:var(--orange);color:#fff}
+.sd-share-card .sd-copy-btn.copied{background:var(--tile-green);color:#fff}
+.sd-share-card .sd-share-label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.sd-share-card .sd-social-row{display:flex;flex-wrap:wrap;gap:8px}
+.prose .sd-share-card a.sd-social-btn,.sd-social-btn{display:inline-flex;align-items:center;gap:7px;min-height:40px;border:1px solid var(--line);border-radius:6px;padding:8px 14px;font:500 13px/1 var(--font-body);color:var(--ink);background:var(--paper);text-decoration:none;transition:border-color .2s,color .2s}
+.prose .sd-share-card a.sd-social-btn:hover,.sd-social-btn:hover{border-color:var(--orange);color:var(--orange-hover)}
+.sd-social-btn svg{width:16px;height:16px;flex-shrink:0;fill:currentColor}
+.sd-toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);opacity:0;z-index:9999;pointer-events:none;background:var(--button-bg);color:var(--button-fg);font:500 13px/1 var(--font-body);border-radius:6px;padding:12px 20px;box-shadow:0 4px 24px rgba(0,0,0,.18);transition:transform .3s,opacity .3s}
+.sd-toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+@media(max-width:900px){
+	.stats{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}
+}
+@media(max-width:760px){
+	.stats{margin:40px 0;padding:24px 0;gap:22px}
+	.statement.tight{margin-bottom:40px}
+	.sd-share-card{padding:24px 20px}
+}
+.scope-head p+p{margin-top:14px}
+
+/* Formal verification page: proof-checker core in the hero panel */
+.fv-core{fill:var(--panel);stroke:#ffffff;stroke-width:1.5;stroke-opacity:.5}
+.fv-domain{fill:#ffffff;font-family:var(--font-mono);font-size:13px}
+
+
+/* ═══ Lean beginner's guide additions ═══════════════════════════════ */
+/* Layout idea: the institute page anatomy, with four interactive pieces
+   (theorem decoder, infoview stepper, tactic puzzles, command console)
+   slotted between the tiles and the getting-started panel. */
+:root{
+	--ok:#1f6b45;--ok-bg:#e7f3ec;--bad:#a8321d;--bad-bg:#fbeae5;
+	--code-dark:#17151a;
+}
+@media (prefers-color-scheme:dark){
+	:root:not([data-theme="light"]){--ok:#7fd3a4;--ok-bg:#16291f;--bad:#ff9b84;--bad-bg:#2e1a16;}
+}
+:root[data-theme="dark"]{--ok:#7fd3a4;--ok-bg:#16291f;--bad:#ff9b84;--bad-bg:#2e1a16;}
+
+.logo img{width:214px;height:auto}
+.lg-inline{font-family:var(--font-mono);font-size:.88em;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+.stat-label .lg-inline{font-size:.92em}
+.lg-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button{font-family:inherit}
+button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+.lg-section{margin-top:90px;scroll-margin-top:20px}
+.layers,.scope{scroll-margin-top:20px}
+.disciplines{scroll-margin-top:20px}
+
+/* Theorem decoder */
+.lg-decoder{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px;align-items:stretch}
+.lg-statement{display:flex;flex-wrap:wrap;align-content:center;gap:10px 8px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px 24px;font-family:var(--font-mono);font-size:clamp(15px,1.5vw,19px)}
+.lg-tok{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:6px 11px;min-height:44px;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
+.lg-tok:hover{border-color:var(--orange)}
+.lg-tok[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+.lg-explain{border:1px solid var(--line);border-radius:8px;padding:24px 26px;min-width:0}
+.lg-explain .lg-explain-tok{font-family:var(--font-mono);font-size:1.25rem;font-weight:600;color:var(--ink);margin:0 0 12px;overflow-wrap:anywhere}
+.lg-explain p{color:var(--muted);margin:0 0 14px}
+.lg-explain p:last-child{margin-bottom:0}
+.lg-type{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink)}
+.lg-type kbd{font-family:var(--font-mono);font-size:13px;background:var(--surface);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:2px 7px}
+
+.lg-map-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:40px;margin-top:48px;padding-top:38px;border-top:1px solid var(--line)}
+.lg-map-head h3{font-size:clamp(1.5rem,2.2vw,2rem);margin:0 0 14px}
+.lg-map-head p{color:var(--muted);margin:0;max-width:26em}
+.lg-map{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lg-map-row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1.2fr);gap:16px;padding:12px 20px;border-top:1px solid var(--line);font-size:15px}
+.lg-map-row:first-child{border-top:0}
+.lg-map-row code{font-family:var(--font-mono);font-size:14px;color:var(--orange);font-weight:600}
+.lg-map-row span:last-child{color:var(--muted)}
+.lg-map-top{background:var(--surface);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lg-map-top span:last-child{color:var(--muted)}
+
+/* Infoview stepper (dark in both modes) */
+.lg-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.lg-tab{min-height:44px;padding:10px 16px;border-radius:6px;border:1px solid rgba(255,255,255,.28);background:transparent;color:rgba(255,255,255,.82);font:600 14px/1.2 var(--font-body);cursor:pointer}
+.lg-tab:hover{border-color:var(--orange-on-dark);color:#fff}
+.lg-tab[aria-selected="true"]{background:#fff;border-color:#fff;color:#24202a}
+.lg-stage{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}
+.lg-editor,.lg-goals,.lg-console{background:var(--code-dark);border:1px solid rgba(255,255,255,.12);border-radius:8px;min-width:0;color:#fff}
+.lg-pane-head{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:46px;padding:6px 8px 6px 16px;border-bottom:1px solid rgba(255,255,255,.12);font:700 12px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.lg-pane-head span:last-child:not(:first-child){padding-right:8px}
+.lg-lines{padding:10px 0;overflow-x:auto;font-family:var(--font-mono);font-size:14px;line-height:1.55}
+.lg-line{display:block;min-width:100%;width:max-content;text-align:left;font:inherit;line-height:inherit;color:rgba(255,255,255,.85);background:none;border:0;border-left:3px solid transparent;padding:5px 16px 5px 13px;white-space:pre;cursor:pointer}
+.lg-line:hover{background:rgba(255,255,255,.05)}
+.lg-line.ahead{color:rgba(255,255,255,.4)}
+.lg-line.current{background:rgba(240,128,92,.16);border-left-color:var(--orange-on-dark);color:#fff}
+.lg-goals-body{padding:14px 16px 18px;font-family:var(--font-mono);font-size:14px;line-height:1.6;overflow-x:auto}
+.lg-goal+.lg-goal{margin-top:14px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.2)}
+.lg-case{display:block;color:var(--orange-on-dark);font-size:12px;letter-spacing:.06em;margin-bottom:4px}
+.lg-hyp{display:block;color:rgba(255,255,255,.75);white-space:pre}
+.lg-target{display:block;color:#fff;font-weight:600;white-space:pre}
+.lg-done{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-size:1.25rem;font-weight:600;letter-spacing:-.02em;color:#fff;padding:6px 0}
+.lg-done svg{flex:0 0 auto}
+.lg-explain-dark{margin:20px 0 0;font-size:16px;line-height:1.6;color:rgba(255,255,255,.85);max-width:62em;min-height:3.2em}
+.lg-explain-dark code{font-family:var(--font-mono);font-size:.9em;color:#fff;background:rgba(255,255,255,.1);border-radius:4px;padding:1px 5px}
+.lg-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px}
+.lg-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:6px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font:600 14px/1 var(--font-body);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.lg-btn:hover{border-color:#fff}
+.lg-btn.primary{background:#fff;color:#24202a;border-color:#fff}
+.lg-btn.primary:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+.lg-btn:disabled{opacity:.38;cursor:default}
+.lg-btn:disabled:hover{border-color:rgba(255,255,255,.3)}
+.lg-btn.primary:disabled:hover{background:#fff;color:#24202a;border-color:#fff}
+.lg-step-count{margin-left:auto;font:600 14px/1 var(--font-display);letter-spacing:-.01em;color:rgba(255,255,255,.7)}
+.lg-mini{min-height:34px;padding:6px 12px;border-radius:6px;border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;font:600 12px/1 var(--font-body);letter-spacing:.02em;text-transform:none;cursor:pointer}
+.lg-mini:hover{border-color:var(--orange-on-dark)}
+.lg-mini.light{border-color:var(--line);color:var(--ink)}
+.lg-mini.light:hover{border-color:var(--orange)}
+
+/* Puzzles */
+.lg-progress{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:0 0 20px;font:600 15px/1 var(--font-display);letter-spacing:-.01em}
+.lg-bar{flex:1 1 160px;max-width:320px;height:8px;border-radius:4px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.lg-bar span{display:block;height:100%;width:0;background:var(--orange);transition:width .3s}
+.lg-puzzles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.lg-puzzle{display:flex;flex-direction:column;gap:14px;min-width:0;border:1px solid var(--line);border-radius:8px;padding:24px;background:var(--paper);transition:border-color .2s}
+.lg-puzzle.solved{border-color:var(--ok)}
+.lg-puzzle-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.lg-puzzle h3{margin:0;font-size:1.2rem}
+.lg-puzzle-num{font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--orange);white-space:nowrap}
+.lg-puzzle-num.ok{color:var(--ok)}
+.lg-code{margin:0;font-family:var(--font-mono);font-size:14px;line-height:1.6;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;white-space:pre}
+.lg-code .added{color:var(--orange);font-weight:600}
+.lg-goalbox{font-family:var(--font-mono);font-size:14px;line-height:1.6;background:var(--panel);color:#fff;border-radius:6px;padding:12px 14px;overflow-x:auto}
+.lg-goalbox .lg-hyp{color:rgba(255,255,255,.72)}
+.lg-goalbox .lg-done{font-size:1.05rem}
+.lg-ask{font-size:14px;font-weight:600;margin:0}
+.lg-options{display:flex;flex-wrap:wrap;gap:8px}
+.lg-opt{min-height:44px;padding:8px 14px;border-radius:6px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-family:var(--font-mono);font-size:14px;cursor:pointer;transition:border-color .15s,background .15s}
+.lg-opt:hover{border-color:var(--orange)}
+.lg-opt.right{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
+.lg-opt.wrong{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
+.lg-feedback{margin:0;font-size:15px;line-height:1.55;min-height:3.1em;color:var(--muted)}
+.lg-feedback strong{font-weight:700}
+.lg-feedback.ok strong{color:var(--ok)}
+.lg-feedback.bad strong{color:var(--bad)}
+
+/* Command console */
+.lg-eval{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.lg-cmds{display:grid;gap:8px}
+.lg-cmd{display:block;width:100%;text-align:left;min-height:48px;padding:12px 16px;border-radius:7px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-family:var(--font-mono);font-size:14px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;cursor:pointer;transition:border-color .15s,background .15s}
+.lg-cmd:hover{border-color:var(--orange)}
+.lg-cmd[aria-pressed="true"]{border-color:var(--orange);background:var(--surface);box-shadow:inset 3px 0 0 var(--orange)}
+.lg-console{position:sticky;top:20px}
+.lg-console-body{padding:18px 18px 22px;font-family:var(--font-mono);font-size:14px;line-height:1.6;overflow-x:auto}
+.lg-console-src{display:block;color:rgba(255,255,255,.6);white-space:pre-wrap}
+.lg-console-out{display:block;margin-top:14px;font-size:1.2rem;font-weight:600;color:#fff;white-space:pre-wrap;overflow-wrap:anywhere}
+.lg-console-note{margin:18px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,.75)}
+
+/* Tactic cheat sheet */
+.lg-filter{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px}
+.lg-chips{display:flex;flex-wrap:wrap;gap:8px}
+.lg-chip{min-height:44px;padding:8px 14px;border-radius:6px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 14px/1 var(--font-body);cursor:pointer}
+.lg-chip:hover{border-color:var(--orange)}
+.lg-chip[aria-pressed="true"]{background:var(--button-bg);border-color:var(--button-bg);color:var(--button-fg)}
+.lg-search-wrap{flex:0 1 260px}
+.lg-search{width:100%;min-height:44px;padding:8px 14px;border-radius:6px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:15px var(--font-body)}
+.lg-search::placeholder{color:var(--muted)}
+.lg-count{font-size:14px;color:var(--muted);margin:0 0 14px}
+.lg-tactics{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.lg-tactic{display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid var(--line);border-radius:7px;padding:20px 22px;background:var(--paper)}
+.lg-tactic-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.lg-tactic h3{margin:0;font-family:var(--font-mono);font-size:1.1rem;letter-spacing:0}
+.lg-tags{display:flex;gap:6px;flex-wrap:wrap}
+.lg-tag{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.lg-tag.mathlib{color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px;letter-spacing:.1em}
+.lg-tactic p{margin:0;font-size:14px;color:var(--muted)}
+.lg-tactic .lg-code{font-size:13px;padding:10px 12px;margin-top:auto}
+.lg-empty{grid-column:1/-1;border:1px dashed var(--line);border-radius:7px;padding:22px;color:var(--muted)}
+
+/* Getting started extras */
+.lg-copyline{display:flex;align-items:center;gap:8px;margin-top:4px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:6px 6px 6px 12px;min-width:0}
+.lg-copyline code{flex:1;min-width:0;font-family:var(--font-mono);font-size:12.5px;color:#fff;overflow-x:auto;white-space:nowrap;padding:4px 0}
+.lg-terminal{margin-top:36px;padding-top:26px;border-top:1px solid rgba(255,255,255,.2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:24px;align-items:center}
+.lg-terminal p{margin:0;color:rgba(255,255,255,.72);font-size:15px}
+.layers .layer-link{margin-top:2px}
+.lg-puzzle .lg-code{white-space:pre-wrap;overflow-wrap:anywhere}
+.layer .lg-copyline code{white-space:normal;overflow-wrap:anywhere}
+
+@media(max-width:1100px){
+	.lg-tactics{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:960px){
+	.lg-decoder,.lg-stage,.lg-eval,.lg-map-wrap{grid-template-columns:1fr}
+	.lg-map-wrap{gap:22px}
+	.lg-console{position:static}
+	.lg-puzzles{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+	.logo img{width:176px}
+	.lg-section{margin-top:60px}
+	.lg-statement{padding:18px 16px;gap:8px 6px}
+	.lg-explain{padding:20px}
+	.lg-map-row{grid-template-columns:1fr 1fr;gap:4px 14px;padding:12px 16px}
+	.lg-map-row code{grid-column:1/-1}
+	.lg-map-top span:first-child{display:none}
+	.lg-lines,.lg-goals-body{font-size:13px}
+	.lg-line{white-space:pre-wrap;width:auto;overflow-wrap:anywhere;padding-left:13px;text-indent:0}
+	.lg-console{order:-1;position:sticky;top:0;z-index:2;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+	.lg-console-body{padding:14px 16px 16px}
+	.lg-console-out{margin-top:8px}
+	.lg-console-note{margin-top:12px;padding-top:10px;font-size:14px}
+	.lg-step-count{margin-left:0;flex-basis:100%;order:-1}
+	.lg-puzzle{padding:20px 18px}
+	.lg-tactics{grid-template-columns:1fr}
+	.lg-search-wrap{flex:1 1 100%}
+	.lg-terminal{grid-template-columns:1fr;gap:12px}
+}
+
+	</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+	<header class="header">
+		<div class="logo">
+			<a href="https://www.selfdriven.institute"><img src="data:image/png;base64,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" alt="selfdriven institute" width="540" height="92"></a>
+		</div>
+		<nav class="nav" aria-label="Main navigation">
+			<a href="#basics">Basics</a>
+			<a href="#infoview">Infoview</a>
+			<a href="#practice">Practice</a>
+			<a href="#tactics">Tactics</a>
+			<a href="#start">Start</a>
+			<a href="https://www.selfdriven.institute/research/formal-verification">Formal verification</a>
+		</nav>
+	</header>
+
+	<main class="main-content" id="main">
+
+		<section class="hero" id="top">
+			<div class="hero-copy">
+				<p class="eyebrow">selfdriven · Institute · Beginner's guide</p>
+				<h1>Learn Lean one <em>goal</em> at a time<span>.</span></h1>
+				<p class="intro">Lean is a programming language and proof assistant. You write a claim, then a proof, and Lean checks every step. This guide shows you how to read Lean, step through real proofs and try tactics yourself, with nothing to install.</p>
+				<a class="button" href="#infoview">Step through a proof <span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></span></a>
+				<a class="text-link" href="#start">Or skip to setting up Lean</a>
+			</div>
+			<div class="hero-media">
+				<a class="hero-art" href="#infoview">
+					<span class="ward" aria-hidden="true">
+						<svg viewBox="0 0 600 470" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
+							<rect width="600" height="470" style="fill:var(--panel)"/>
+							<line class="grid-line" x1="0" y1="0" x2="0" y2="470"/><line class="grid-line" x1="30" y1="0" x2="30" y2="470"/><line class="grid-line" x1="60" y1="0" x2="60" y2="470"/><line class="grid-line" x1="90" y1="0" x2="90" y2="470"/><line class="grid-line" x1="120" y1="0" x2="120" y2="470"/><line class="grid-line" x1="150" y1="0" x2="150" y2="470"/><line class="grid-line" x1="180" y1="0" x2="180" y2="470"/><line class="grid-line" x1="210" y1="0" x2="210" y2="470"/><line class="grid-line" x1="240" y1="0" x2="240" y2="470"/><line class="grid-line" x1="270" y1="0" x2="270" y2="470"/><line class="grid-line" x1="300" y1="0" x2="300" y2="470"/><line class="grid-line" x1="330" y1="0" x2="330" y2="470"/><line class="grid-line" x1="360" y1="0" x2="360" y2="470"/><line class="grid-line" x1="390" y1="0" x2="390" y2="470"/><line class="grid-line" x1="420" y1="0" x2="420" y2="470"/><line class="grid-line" x1="450" y1="0" x2="450" y2="470"/><line class="grid-line" x1="480" y1="0" x2="480" y2="470"/><line class="grid-line" x1="510" y1="0" x2="510" y2="470"/><line class="grid-line" x1="540" y1="0" x2="540" y2="470"/><line class="grid-line" x1="570" y1="0" x2="570" y2="470"/><line class="grid-line" x1="600" y1="0" x2="600" y2="470"/><line class="grid-line" x1="0" y1="0" x2="600" y2="0"/><line class="grid-line" x1="0" y1="30" x2="600" y2="30"/><line class="grid-line" x1="0" y1="60" x2="600" y2="60"/><line class="grid-line" x1="0" y1="90" x2="600" y2="90"/><line class="grid-line" x1="0" y1="120" x2="600" y2="120"/><line class="grid-line" x1="0" y1="150" x2="600" y2="150"/><line class="grid-line" x1="0" y1="180" x2="600" y2="180"/><line class="grid-line" x1="0" y1="210" x2="600" y2="210"/><line class="grid-line" x1="0" y1="240" x2="600" y2="240"/><line class="grid-line" x1="0" y1="270" x2="600" y2="270"/><line class="grid-line" x1="0" y1="300" x2="600" y2="300"/><line class="grid-line" x1="0" y1="330" x2="600" y2="330"/><line class="grid-line" x1="0" y1="360" x2="600" y2="360"/><line class="grid-line" x1="0" y1="390" x2="600" y2="390"/><line class="grid-line" x1="0" y1="420" x2="600" y2="420"/><line class="grid-line" x1="0" y1="450" x2="600" y2="450"/>
+							<text class="readout-label" x="110" y="118">TACTICS</text>
+							<text class="readout" x="110" y="160" font-size="44" font-weight="600">5</text>
+							<text class="readout-label" x="250" y="118">OPEN GOALS</text>
+							<text class="readout" x="250" y="160" font-size="44" font-weight="600">0</text>
+							<text class="readout-label" x="410" y="118">SORRY</text>
+							<text class="readout" x="410" y="160" font-size="44" font-weight="600">0</text>
+
+							<!-- the theorem: one goal, split by constructor, closed on both branches -->
+							<rect class="receipt" x="96" y="178" width="408" height="124" rx="14"/>
+							<text class="kel-tag" x="114" y="199">⊢ p ∧ q → q ∧ p</text>
+
+							<path class="kel-link" d="M136,247 L206,247 L276,247 L356,222 L446,247 M276,247 L356,272 L446,247"/>
+							<path class="trace-glow" d="M136,247 L206,247 L276,247 L356,222 L446,247 M276,247 L356,272 L446,247"/>
+							<path class="trace" d="M136,247 L206,247 L276,247 L356,222 L446,247 M276,247 L356,272 L446,247"/>
+							<circle class="kel-node" cx="136" cy="247" r="8"/>
+							<circle class="kel-node anchored" cx="206" cy="247" r="6"/>
+							<circle class="kel-node anchored" cx="276" cy="247" r="6"/>
+							<circle class="kel-node anchored" cx="356" cy="222" r="6"/>
+							<circle class="kel-node anchored" cx="356" cy="272" r="6"/>
+							<circle class="kel-node latest" cx="446" cy="247" r="8"/>
+							<text class="kel-tag" x="136" y="276" text-anchor="middle">intro</text>
+							<text class="kel-tag" x="206" y="232" text-anchor="middle">obtain</text>
+							<text class="kel-tag" x="276" y="276" text-anchor="middle">constructor</text>
+							<text class="kel-tag" x="356" y="207" text-anchor="middle">exact hq</text>
+							<text class="kel-tag" x="356" y="294" text-anchor="middle">exact hp</text>
+							<text class="kel-tag" x="446" y="230" text-anchor="middle">no goals</text>
+
+							<!-- the kernel re-checks the finished proof -->
+							<path class="receipt" d="M446,256 V333 H410"/>
+							<rect class="fv-core" x="190" y="316" width="220" height="34" rx="8"/>
+							<circle class="pulse" cx="210" cy="333" r="4.5"/>
+							<text class="fv-domain" x="224" y="337.5">selfdriven.institute</text>
+						</svg>
+					</span>
+					<span class="art-label">SELFDRIVEN / INSTITUTE</span>
+					<span class="art-foot">Five tactics take one goal to none. <span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></span></span>
+				</a>
+			</div>
+		</section>
+
+		<div class="stats">
+			<div class="stat"><div class="stat-num">v4.36</div><p class="stat-label">The latest stable Lean release, published 16 November 2026</p></div>
+			<div class="stat"><div class="stat-num">296k</div><p class="stat-label">Theorems in Mathlib, the community library of formalised mathematics</p></div>
+			<div class="stat"><div class="stat-num">13M</div><p class="stat-label">Lines of Lean in the first complete computer-checked proof of Fermat's Last Theorem, released September 2026</p></div>
+			<div class="stat"><div class="stat-num">3</div><p class="stat-label">Standard axioms that proof rests on, with no <code class="lg-inline">sorry</code> and no added axioms</p></div>
+		</div>
+
+		<section class="statement tight" id="premise" aria-labelledby="premise-title">
+			<div class="statement-main">
+				<p class="eyebrow">The premise</p>
+				<h2 id="premise-title">In Lean, a proof is code the computer <em>checks</em><span>.</span></h2>
+			</div>
+			<div class="statement-side">
+				<p>Tests show code worked for the inputs someone tried. In Lean you state a claim that must hold for every input, then write a proof. A small trusted kernel checks each step, so a gap in the reasoning can't slip through.</p>
+				<p>The same language runs programs. AWS uses it to model Cedar, its authorisation policy language, and prove its security properties. Mathematicians use it to check research proofs.</p>
+				<p class="boundary">Lean checks the proof. You still choose the claim.</p>
+				<a class="text-link" href="#read">Learn to read a theorem <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+			</div>
+		</section>
+
+		<section class="disciplines" id="basics" aria-label="The three things you do in Lean">
+			<div class="discipline-grid">
+				<article class="discipline">
+					<div class="discipline-art tile-dark">
+						<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The number 21 goes into a function called double and comes out as 42, ending in a check">
+							<text class="svg-title" x="0" y="34" fill="#ffffff">Programs</text>
+							<text class="svg-label" x="0" y="60" fill="#ffffff" opacity=".6">DEF · #EVAL · RUN</text>
+							<rect x="1" y="114" width="56" height="44" rx="8" fill="none" stroke="#ffffff" stroke-width="2"/>
+							<text x="29" y="142" fill="#ffffff" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="17">21</text>
+							<path d="M62,136 H96 M89,129 l7,7 l-7,7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+							<rect x="102" y="106" width="108" height="60" rx="8" fill="#ffffff"/>
+							<text x="156" y="132" fill="#27232e" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="16" font-weight="600">double</text>
+							<text x="156" y="152" fill="#27232e" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" opacity=".7">2 * n</text>
+							<path d="M216,136 H250 M243,129 l7,7 l-7,7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+							<text x="256" y="145" fill="#ffffff" font-family="ui-monospace,Menlo,monospace" font-size="26" font-weight="600">42</text>
+							<circle cx="330" cy="136" r="22" style="fill:var(--orange)"/>
+							<path d="M320,136 l7,7 l13,-14" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<text class="svg-tick" x="0" y="214" fill="#ffffff">Input</text>
+							<text class="svg-tick" x="156" y="214" fill="#ffffff" text-anchor="middle">Function</text>
+							<text class="svg-tick" x="360" y="214" fill="#ffffff" text-anchor="end">Output</text>
+						</svg>
+					</div>
+					<h3>Write programs</h3>
+					<p>Lean is a functional language. You define functions with <code class="lg-inline">def</code>, run them with <code class="lg-inline">#eval</code> and compile them to native code.</p>
+					<ul class="roles"><li>def</li><li>#eval</li><li>lake build</li></ul>
+				</article>
+				<article class="discipline">
+					<div class="discipline-art tile-green">
+						<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The claim p and q implies q and p, drawn as two boxes joined by an arrow, ending in a check">
+							<text class="svg-title" x="0" y="34" fill="#ffffff">Claims</text>
+							<text class="svg-label" x="0" y="60" fill="#ffffff" opacity=".6">PROP · THEOREM · ∀ ∃</text>
+							<rect x="1" y="114" width="108" height="44" rx="10" fill="none" stroke="#ffffff" stroke-width="2"/>
+							<text x="55" y="142" fill="#ffffff" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="17">p ∧ q</text>
+							<path d="M118,136 H170 M162,128 l8,8 l-8,8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<text x="144" y="122" fill="#ffffff" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="14" opacity=".7">→</text>
+							<rect x="180" y="114" width="108" height="44" rx="10" fill="#ffffff"/>
+							<text x="234" y="142" fill="#286647" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="17" font-weight="600">q ∧ p</text>
+							<circle cx="330" cy="136" r="22" style="fill:var(--orange)"/>
+							<path d="M320,136 l7,7 l13,-14" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<text class="svg-tick" x="0" y="214" fill="#ffffff">Assume</text>
+							<text class="svg-tick" x="144" y="214" fill="#ffffff" text-anchor="middle">Implies</text>
+							<text class="svg-tick" x="360" y="214" fill="#ffffff" text-anchor="end">Conclude</text>
+						</svg>
+					</div>
+					<h3>State claims</h3>
+					<p>A claim is a type in <code class="lg-inline">Prop</code>. A <code class="lg-inline">theorem</code> gives it a name and a statement, such as p ∧ q → q ∧ p.</p>
+					<ul class="roles"><li>Prop</li><li>theorem</li><li>∀ and ∃</li></ul>
+				</article>
+				<article class="discipline">
+					<div class="discipline-art tile-lilac">
+						<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A stack of three goals shrinks to two, then one, then none, ending in a check">
+							<text class="svg-title" x="0" y="34" fill="#24202a">Proofs</text>
+							<text class="svg-label" x="0" y="60" fill="#24202a" opacity=".6">GOALS UNTIL NO GOALS</text>
+							<rect x="1" y="114" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="1" y="134" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="1" y="154" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="80" y="134" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="80" y="154" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="159" y="154" width="52" height="14" rx="3" fill="#24202a"/>
+							<rect x="238" y="154" width="52" height="14" rx="3" fill="none" stroke="#24202a" stroke-width="2" stroke-dasharray="4 4"/>
+							<path d="M58,161 H74 M137,161 H153 M216,161 H232" stroke="#24202a" stroke-width="2" stroke-linecap="round"/>
+							<circle cx="330" cy="136" r="22" style="fill:var(--orange)"/>
+							<path d="M320,136 l7,7 l13,-14" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<text class="svg-tick" x="0" y="214" fill="#24202a">3 goals</text>
+							<text class="svg-tick" x="185" y="214" fill="#24202a" text-anchor="middle">1 goal</text>
+							<text class="svg-tick" x="360" y="214" fill="#24202a" text-anchor="end">No goals</text>
+						</svg>
+					</div>
+					<h3>Prove them</h3>
+					<p>Tactics change the goal one step at a time until none are left. The kernel then checks the finished proof again.</p>
+					<ul class="roles"><li>tactic</li><li>goal</li><li>kernel</li></ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="lg-section" id="read" aria-labelledby="read-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Read Lean</p><h2 id="read-title">Tap each part of a theorem<span>.</span></h2></div>
+				<p class="section-note">Every theorem has the same shape: a name, what it talks about, a colon, the claim, then the proof. Tap a part to see what it means.</p>
+			</div>
+			<div class="lg-decoder">
+				<div class="lg-statement" id="decoder-tokens" role="group" aria-label="Parts of the theorem my_and_swap"></div>
+				<div class="lg-explain" id="decoder-explain" aria-live="polite"></div>
+			</div>
+
+			<div class="lg-map-wrap">
+				<div class="lg-map-head">
+					<h3>Logic and programs line up.</h3>
+					<p>This match is called the Curry–Howard correspondence. It's why one language can run code and check proofs.</p>
+				</div>
+				<div class="lg-map" role="table" aria-label="Logic compared with Lean code">
+					<div class="lg-map-row lg-map-top" role="row"><span role="columnheader">Write</span><span role="columnheader">As logic</span><span role="columnheader">As code</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">P : Prop</code><span role="cell">A claim</span><span role="cell">A type</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">h : P</code><span role="cell">A proof of the claim</span><span role="cell">A value of that type</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">A → B</code><span role="cell">A implies B</span><span role="cell">A function from A to B</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">A ∧ B</code><span role="cell">A and B</span><span role="cell">A pair of proofs</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">A ∨ B</code><span role="cell">A or B</span><span role="cell">One proof, tagged left or right</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">∀ x, P x</code><span role="cell">For every x, P x</span><span role="cell">A function that takes any x</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">∃ x, P x</code><span role="cell">Some x has P x</span><span role="cell">A pair: a witness and its proof</span></div>
+					<div class="lg-map-row" role="row"><code role="cell">False</code><span role="cell">Impossible</span><span role="cell">A type with no values</span></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="layers lg-infoview" id="infoview" aria-labelledby="infoview-title">
+			<div class="layers-head">
+				<div><p class="eyebrow">The infoview</p><h2 id="infoview-title">Watch the goal <span>change</span>.</h2></div>
+				<p>In the editor, Lean's infoview shows what you know and what's left to prove after every line. Step through two real proofs. Tap any line to jump to it.</p>
+			</div>
+			<div class="lg-tabs" role="tablist" aria-label="Choose a proof">
+				<button class="lg-tab" role="tab" id="tab-swap" aria-controls="stepper" aria-selected="true" data-proof="swap">Swap an ∧</button>
+				<button class="lg-tab" role="tab" id="tab-ind" aria-controls="stepper" aria-selected="false" data-proof="ind">Induction: 0 + n = n</button>
+			</div>
+			<div class="lg-stage" id="stepper" role="tabpanel" aria-labelledby="tab-swap">
+				<div class="lg-editor">
+					<div class="lg-pane-head"><span>Editor</span><button class="lg-mini" type="button" id="copy-proof">Copy proof</button></div>
+					<div class="lg-lines" id="proof-lines"></div>
+				</div>
+				<div class="lg-goals">
+					<div class="lg-pane-head"><span>Infoview</span><span id="goal-count">1 goal</span></div>
+					<div class="lg-goals-body" id="goal-body"></div>
+				</div>
+			</div>
+			<p class="lg-explain-dark" id="step-note" aria-live="polite"></p>
+			<div class="lg-controls">
+				<button class="lg-btn" type="button" id="step-back">Back</button>
+				<button class="lg-btn primary" type="button" id="step-next">Next step</button>
+				<button class="lg-btn" type="button" id="step-reset">Start again</button>
+				<span class="lg-step-count" id="step-count">Step 1 of 6</span>
+			</div>
+		</section>
+
+		<section class="lg-section" id="practice" aria-labelledby="practice-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Your turn</p><h2 id="practice-title">Pick the next tactic<span>.</span></h2></div>
+				<p class="section-note">Each puzzle shows the goal Lean is waiting on. Choose a tactic and see how Lean responds. Replies are written in plain words; Lean's own messages are terser.</p>
+			</div>
+			<div class="lg-progress" aria-live="polite">
+				<span id="progress-text">Solved 0 of 4</span>
+				<span class="lg-bar" aria-hidden="true"><span id="progress-fill"></span></span>
+				<button class="lg-mini light" type="button" id="progress-reset">Reset puzzles</button>
+			</div>
+			<div class="lg-puzzles" id="puzzles"></div>
+		</section>
+
+		<section class="lg-section" id="commands" aria-labelledby="commands-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Commands</p><h2 id="commands-title">Ask Lean what things are<span>.</span></h2></div>
+				<p class="section-note"><code class="lg-inline">#eval</code> runs an expression. <code class="lg-inline">#check</code> shows its type. Tap a command to see what Lean prints.</p>
+			</div>
+			<div class="lg-eval">
+				<div class="lg-cmds" id="cmd-list" role="group" aria-label="Commands to run"></div>
+				<div class="lg-console">
+					<div class="lg-pane-head"><span>Infoview</span><span>Output</span></div>
+					<div class="lg-console-body" id="cmd-out" aria-live="polite"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="lg-section" id="tactics" aria-labelledby="tactics-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Cheat sheet</p><h2 id="tactics-title">The tactics you'll use first<span>.</span></h2></div>
+				<p class="section-note">Filter by what you're trying to do. Tactics marked Mathlib need <code class="lg-inline">import Mathlib</code>; the rest are built into Lean.</p>
+			</div>
+			<div class="lg-filter">
+				<div class="lg-chips" id="tactic-filters" role="group" aria-label="Filter tactics by purpose"></div>
+				<label class="lg-search-wrap" for="tactic-search"><span class="lg-sr">Search tactics</span>
+					<input class="lg-search" id="tactic-search" type="search" placeholder="Search tactics" autocomplete="off">
+				</label>
+			</div>
+			<p class="lg-count" id="tactic-count" aria-live="polite"></p>
+			<ul class="lg-tactics" id="tactic-list"></ul>
+		</section>
+
+		<section class="layers" id="start" aria-labelledby="start-title">
+			<div class="layers-head">
+				<div><p class="eyebrow">Getting started</p><h2 id="start-title">From the browser to your own <span>project</span>.</h2></div>
+				<p>Try everything on this page in the browser first. When you want more, install the editor tools. They manage Lean versions for you, so each project gets the version it needs.</p>
+			</div>
+			<ol class="layer-list">
+				<li class="layer">
+					<span class="layer-step">01 · Browser</span>
+					<h3>Try it live</h3>
+					<p>Open the Lean playground, paste a proof from this page and watch the infoview update as you type.</p>
+					<a class="layer-link" href="https://live.lean-lang.org">live.lean-lang.org <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+				</li>
+				<li class="layer">
+					<span class="layer-step">02 · Editor</span>
+					<h3>Install VS Code and Lean 4</h3>
+					<p>The recommended setup is VS Code with the Lean 4 extension. Its setup guide installs elan, Lean's version manager.</p>
+					<a class="layer-link" href="https://lean-lang.org/install/">lean-lang.org/install <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+				</li>
+				<li class="layer">
+					<span class="layer-step">03 · Project</span>
+					<h3>Create a project</h3>
+					<p>Lake is Lean's build tool. For maths, create a Mathlib project from the ∀ menu in VS Code instead.</p>
+					<div class="lg-copyline"><code id="lake-cmd">lake new hello &amp;&amp; cd hello &amp;&amp; lake build</code><button class="lg-mini" type="button" data-copy="lake-cmd">Copy</button></div>
+				</li>
+				<li class="layer">
+					<span class="layer-step">04 · Practise</span>
+					<h3>Play the Natural Number Game</h3>
+					<p>Build addition and multiplication from scratch, one level at a time, with hints along the way. It's the classic first step into proving.</p>
+					<a class="layer-link" href="https://adam.math.hhu.de">adam.math.hhu.de <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+				</li>
+			</ol>
+			<div class="lg-terminal">
+				<p>Prefer a terminal on Linux or macOS? Install elan directly, then open a new terminal:</p>
+				<div class="lg-copyline"><code id="elan-cmd">curl https://elan.lean-lang.org/elan-init.sh -sSf | sh</code><button class="lg-mini" type="button" data-copy="elan-cmd">Copy</button></div>
+			</div>
+		</section>
+
+		<section class="scope hub" id="learn" aria-labelledby="learn-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Keep going</p><h2 id="learn-title">Where to learn next<span>.</span></h2></div>
+				<p class="section-note">Free official and community resources, in roughly the order a beginner meets them.</p>
+			</div>
+			<div class="scope-group">
+				<div class="scope-head">
+					<span class="scope-tag">Read</span>
+					<h3>Books that come with Lean.</h3>
+					<p>Each is free online and written for people new to Lean.</p>
+				</div>
+				<ul class="scope-list link-list">
+					<li><a class="link-row" href="https://lean-lang.org/theorem_proving_in_lean4/"><span><span class="scope-num">Proofs</span><strong>Theorem Proving in Lean 4</strong><small>Logic, tactics and dependent types from first principles.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://lean-lang.org/functional_programming_in_lean/"><span><span class="scope-num">Programs</span><strong>Functional Programming in Lean</strong><small>Lean as a programming language: types, structures, monads and IO.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://leanprover-community.github.io/mathematics_in_lean/"><span><span class="scope-num">Mathematics</span><strong>Mathematics in Lean</strong><small>Proving real mathematics with Mathlib.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://lean-lang.org/doc/reference/latest/"><span><span class="scope-num">Reference</span><strong>Lean language reference</strong><small>The full manual, including every built-in tactic.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+				</ul>
+			</div>
+			<div class="scope-group">
+				<div class="scope-head">
+					<span class="scope-tag">Search and ask</span>
+					<h3>When you're stuck.</h3>
+					<p>Most beginner questions have been asked before. These find the answer, or the lemma, fastest.</p>
+				</div>
+				<ul class="scope-list link-list">
+					<li><a class="link-row" href="https://loogle.lean-lang.org/"><span><span class="scope-num">Search</span><strong>Loogle</strong><small>Find lemmas in Mathlib and core by name or by the shape of their statement.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://leanprover-community.github.io/mathlib4_docs/"><span><span class="scope-num">Browse</span><strong>Mathlib documentation</strong><small>Every definition and theorem, with links to the source.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://leanprover.zulipchat.com/"><span><span class="scope-num">Ask</span><strong>Lean Zulip</strong><small>The community chat, with a channel for new members.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://adam.math.hhu.de"><span><span class="scope-num">Play</span><strong>Lean Game Server</strong><small>The Natural Number Game and other puzzle courses in the browser.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+				</ul>
+			</div>
+			<div class="scope-group accent">
+				<div class="scope-head">
+					<span class="scope-tag">In the world</span>
+					<h3>What Lean is <em>used</em> for.</h3>
+					<p>From research mathematics to production security, and the Institute's own work on verified systems.</p>
+				</div>
+				<ul class="scope-list link-list">
+					<li><a class="link-row" href="https://www.anthropic.com/news/formalizing-fermats-last-theorem"><span><span class="scope-num">Mathematics · 2026</span><strong>Fermat's Last Theorem</strong><small>Claude agents wrote a 13-million-line Lean proof in 11 days, resting only on Lean's three standard axioms.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://lean-lang.org/use-cases/cedar/"><span><span class="scope-num">Security · AWS</span><strong>Cedar</strong><small>AWS models its authorisation policy language in Lean and proves security properties alongside the Rust code.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://leanprover-community.github.io/"><span><span class="scope-num">Library</span><strong>Mathlib</strong><small>About 296,000 theorems across algebra, analysis, topology, probability and more.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+					<li><a class="link-row" href="https://www.selfdriven.institute/research/formal-verification"><span><span class="scope-num">selfdriven.institute</span><strong>Formal verification</strong><small>Why provable identity, governance and AI orchestration matter for selfdriven systems.</small></span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="custom-banner" id="connect">
+			<div><p class="eyebrow">selfdriven Foundation · Build</p><h2>Open the playground and close your first goal.</h2></div>
+			<div class="banner-copy"><p>Paste my_and_swap from this page, delete a line and watch the infoview tell you what's missing.</p><a class="button light" href="https://live.lean-lang.org">Open the Lean playground <span><svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></span></a></div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-left">
+			<a href="https://selfdriven.foundation"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTk1IiBoZWlnaHQ9IjQzIiB2aWV3Qm94PSIwIDAgMTk1IDQzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNDguMDgyMyAzNC4zMjU0QzQzLjMxMDEgMzQuMzI1NCA0MC44NTE3IDMxLjU0MTYgNDAuMTI4NyAyOS4zMDAxTDQzLjE2NTUgMjcuNzgxN0M0My41OTk0IDI5LjI2NCA0NS4yOTg1IDMxLjEwNzggNDguMTU0NiAzMS4xMDc4QzUwLjYxMyAzMS4xMDc4IDUyLjAyMjkgMzAuMTMxNyA1Mi4wMjI5IDI4Ljc1NzlDNTIuMDIyOSAyNy42NzMzIDUxLjI2MzcgMjYuODc3OSA0OS42NzMgMjYuNTUyNUw0Ni4wNTc3IDI1Ljg2NTZDNDMuMTY1NSAyNS4yODcyIDQxLjE0MSAyMy42MjQyIDQxLjE0MSAyMC41ODczQzQxLjE0MSAxNy4zNjk3IDQ0LjA2OTMgMTUuMDU2IDQ4LjIyNjkgMTUuMDU2QzUyLjg1NDUgMTUuMDU2IDU0Ljg3OSAxNy42NTkgNTUuNTI5OCAxOS42NDc0TDUyLjUyOTEgMjEuMDkzNUM1Mi4yMzk5IDE5LjcxOTcgNTAuNzU3NiAxOC4yMDEyIDQ4LjE5MDggMTguMjAxMkM0NS45ODU0IDE4LjIwMTIgNDQuNjQ3OCAxOS4yMTM1IDQ0LjY0NzggMjAuNTE1QzQ0LjY0NzggMjEuNzA4MSA0NS41MTU0IDIyLjM1ODggNDYuODUzMSAyMi42MTE5TDUwLjY0OTEgMjMuMzcxMUM1My45NzUyIDI0LjAyMTggNTUuNzEwNSAyNi4wODI1IDU1LjcxMDUgMjguNjQ5NEM1NS43MTA1IDMyLjAxMTYgNTIuNzA5OCAzNC4zMjU0IDQ4LjA4MjMgMzQuMzI1NFpNNjYuMzI3NiAzNC4zMjU0QzYwLjYxNTQgMzQuMzI1NCA1Ni44OTE3IDMwLjEzMTcgNTYuODkxNyAyNC43MDg3QzU2Ljg5MTcgMTkuMjEzNSA2MC42NTE2IDE1LjA1NiA2Ni4yOTE0IDE1LjA1NkM3MS43NTA1IDE1LjA1NiA3NS4xODUgMTkuMzU4MSA3NS4xODUgMjQuMjc0OVYyNS45NzQxSDYwLjU0MzFDNjEuMDEzMSAyOS41MTcxIDYzLjM5OTIgMzEuMDcxNiA2Ni4zMjc2IDMxLjA3MTZDNjkuMjkyMSAzMS4wNzE2IDcxLjIwODIgMjkuMjY0IDcxLjc4NjYgMjcuNjM3MUw3NC41NzA0IDI5LjExOTRDNzMuNzc1IDMxLjE4MDEgNzEuMjQ0MyAzNC4zMjU0IDY2LjMyNzYgMzQuMzI1NFpNNjAuNjUxNiAyMi45MzczSDcxLjQyNTFDNzEuMzg5IDIwLjYyMzUgNjkuNDM2NyAxOC4yMzc0IDY2LjI1NTMgMTguMjM3NEM2My41MDc3IDE4LjIzNzQgNjEuMjY2MiAxOS44NjQzIDYwLjY1MTYgMjIuOTM3M1pNNzcuNTMyNyAzNFY3LjI0Njk3SDgxLjE0NzlWMzRINzcuNTMyN1pNODYuMjA5MyAzNFYxOC41OTg5SDgzLjAyNzlWMTUuMzgxM0g4Ni4yODE2VjcuMjQ2OTdIOTMuNjU2OFYxMC41MDA3SDg5Ljg2MDdWMTUuMzgxM0g5NC41NjA2VjE4LjU5ODlIODkuODYwN1YzNEg4Ni4yMDkzWk0xMDQuMzIzIDM0LjMyNTRDOTkuMjI1MiAzNC4zMjU0IDk1LjIxMjIgMzAuNzEwMSA5NS4yMTIyIDI0LjY3MjZDOTUuMjEyMiAxOS4xMDUxIDk5LjE1MjkgMTUuMDU2IDEwNC4zMjMgMTUuMDU2QzEwNi45MjYgMTUuMDU2IDEwOS40MiAxNi4yNDkgMTEwLjUwNSAxNy44Mzk3VjcuMjQ2OTdIMTE0LjEyVjM0SDExMC41MDVWMzEuNjUwMUMxMDkuMzQ4IDMzLjIwNDYgMTA2Ljc4MSAzNC4zMjU0IDEwNC4zMjMgMzQuMzI1NFpNOTguODYzNiAyNC42NzI2Qzk4Ljg2MzYgMjguMTQzMyAxMDEuMTA1IDMwLjk5OTMgMTA0LjcyIDMwLjk5OTNDMTA4LjMzNiAzMC45OTkzIDExMC41NzcgMjguMTQzMyAxMTAuNTc3IDI0LjY3MjZDMTEwLjU3NyAyMS4yNzQyIDEwOC4zMzYgMTguNDE4MiAxMDQuNzIgMTguNDE4MkMxMDEuMTA1IDE4LjQxODIgOTguODYzNiAyMS4yMzgxIDk4Ljg2MzYgMjQuNjcyNlpNMTE4LjA4NiAzNFYxNS4zODEzSDEyMS43MDFWMTguNzA3NEwxMjguNzUxIDE0Ljk4MzdWMTguODg4MkwxMjEuNzAxIDIyLjM5NVYzNEgxMTguMDg2Wk0xMzEuMDM0IDM0VjE1LjM4MTNIMTM0LjY0OVYzNEgxMzEuMDM0Wk0xMzAuMjAzIDkuNjY5MkMxMzAuMjAzIDguMTUwNzggMTMxLjMyMyA3LjAzMDA1IDEzMi44NDIgNy4wMzAwNUMxMzQuMzYgNy4wMzAwNSAxMzUuNDgxIDguMTUwNzggMTM1LjQ4MSA5LjY2OTJDMTM1LjQ4MSAxMS4xNTE1IDEzNC4zNiAxMi4zMDg0IDEzMi44NDIgMTIuMzA4NEMxMzEuMzIzIDEyLjMwODQgMTMwLjIwMyAxMS4xNTE1IDEzMC4yMDMgOS42NjkyWk0xNDMuOTYzIDM0TDEzNi41MTYgMTUuMzgxM0gxNDAuNDU3TDE0NS45ODggMjkuNzcwMUwxNTEuMjY2IDE1LjM4MTNIMTU1LjI0M0wxNDcuODY4IDM0SDE0My45NjNaTTE2NC40MjcgMzQuMzI1NEMxNTguNzE1IDM0LjMyNTQgMTU0Ljk5MSAzMC4xMzE3IDE1NC45OTEgMjQuNzA4N0MxNTQuOTkxIDE5LjIxMzUgMTU4Ljc1MSAxNS4wNTYgMTY0LjM5MSAxNS4wNTZDMTY5Ljg1IDE1LjA1NiAxNzMuMjg1IDE5LjM1ODEgMTczLjI4NSAyNC4yNzQ5VjI1Ljk3NDFIMTU4LjY0M0MxNTkuMTEzIDI5LjUxNzEgMTYxLjQ5OSAzMS4wNzE2IDE2NC40MjcgMzEuMDcxNkMxNjcuMzkyIDMxLjA3MTYgMTY5LjMwOCAyOS4yNjQgMTY5Ljg4NiAyNy42MzcxTDE3Mi42NyAyOS4xMTk0QzE3MS44NzUgMzEuMTgwMSAxNjkuMzQ0IDM0LjMyNTQgMTY0LjQyNyAzNC4zMjU0Wk0xNTguNzUxIDIyLjkzNzNIMTY5LjUyNUMxNjkuNDg5IDIwLjYyMzUgMTY3LjUzNiAxOC4yMzc0IDE2NC4zNTUgMTguMjM3NEMxNjEuNjA3IDE4LjIzNzQgMTU5LjM2NiAxOS44NjQzIDE1OC43NTEgMjIuOTM3M1pNMTc1Ljk5NCAzNFYxNS4zODEzSDE3OS42MDlWMTcuNjk1MUMxODAuNTg1IDE2LjE0MDUgMTgyLjQyOSAxNS4wNTYgMTg0Ljk2IDE1LjA1NkMxODkuMDgxIDE1LjA1NiAxOTEuOTczIDE4LjEyODkgMTkxLjk3MyAyMi4xNDE5VjM0SDE4OC4zNThWMjMuMDA5NkMxODguMzU4IDIwLjExNzMgMTg2LjQ0MiAxOC40NTQzIDE4My45ODQgMTguNDU0M0MxODEuNDg5IDE4LjQ1NDMgMTc5LjYwOSAyMC4yNjIgMTc5LjYwOSAyMy4wMDk2VjM0SDE3NS45OTRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMTQuNzEzNEwxMS4xODIxIDMuNTMxMjVWMTQuNzEzNEwwIDI1Ljg5NTVWMTQuNzEzNFpNMTEuMzUwMyAzNC4xMzQ0SDBMMjIuNDQ4MyAxMS42ODYxVjIzLjAzNjRMMTEuMzUwMyAzNC4xMzQ0Wk0xOS45MjU4IDM0LjA1MDZMMzAuOTM5OCAyMy4wMzY2VjM0LjA1MDZIMTkuOTI1OFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="selfdriven" width="170" height="37"></a>
+			<p>An independent research institute of the selfdriven Foundation, building the evidence and capability for sovereign digital trust in the age of autonomous AI.</p>
+		</div>
+		<div class="footer-cols">
+			<div class="footer-col">
+				<p class="footer-head">This guide</p>
+				<a href="#basics">Basics</a>
+				<a href="#infoview">Infoview</a>
+				<a href="#practice">Practice</a>
+				<a href="#tactics">Tactics</a>
+				<a href="#start">Getting started</a>
+			</div>
+			<div class="footer-col">
+				<p class="footer-head">Research</p>
+				<a href="https://www.selfdriven.institute/research/formal-verification">Formal verification</a>
+				<a href="https://www.selfdriven.institute/resources">Resources</a>
+				<a href="https://www.selfdriven.institute/resources#papers">Papers</a>
+				<a href="https://www.selfdriven.institute/resources#frameworks">Frameworks</a>
+			</div>
+			<div class="footer-col">
+				<p class="footer-head">Connect</p>
+				<a href="mailto:hello@selfdriven.foundation">hello@selfdriven.foundation</a>
+				<a href="https://github.com/selfdriven-foundation/selfdriven-institute">GitHub</a>
+				<a href="https://selfdriven.foundation">selfdriven.foundation</a>
+				<a href="https://selfdriven.id">selfdriven.id identity &amp; trust</a>
+			</div>
+		</div>
+		<p class="footer-line">selfdriven.institute · Lean for beginners · © 2026 selfdriven Foundation</p>
+	</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- helpers ---------- */
+var KEY = 'lean-guide:';
+function load(k){ try { var v = localStorage.getItem(KEY + k); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
+function save(k, v){ try { localStorage.setItem(KEY + k, JSON.stringify(v)); } catch (e) {} }
+function $(id){ return document.getElementById(id); }
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function btn(cls, text){ var b = el('button', cls, text); b.type = 'button'; return b; }
+
+var CHECK = '<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="13" fill="#e8673f"/><path d="M7.5,13.2 l3.6,3.6 l7.4,-7.6" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+function renderGoals(box, goals){
+	box.textContent = '';
+	if (!goals.length){
+		var d = el('div', 'lg-done'); d.innerHTML = CHECK;
+		d.appendChild(document.createTextNode('No goals'));
+		box.appendChild(d); return;
+	}
+	goals.forEach(function(g){
+		var w = el('div', 'lg-goal');
+		if (g.c) w.appendChild(el('span', 'lg-case', 'case ' + g.c));
+		(g.h || []).forEach(function(h){ w.appendChild(el('span', 'lg-hyp', h)); });
+		w.appendChild(el('span', 'lg-target', '⊢ ' + g.g));
+		box.appendChild(w);
+	});
+}
+
+function selectText(node){
+	try { var r = document.createRange(); r.selectNodeContents(node); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
+}
+function copyText(text, button, node){
+	var label = button.textContent;
+	function done(msg){ button.textContent = msg; setTimeout(function(){ button.textContent = label; }, 1800); }
+	function fail(){ if (node) selectText(node); done(node ? 'Selected, copy it' : 'Copy failed'); }
+	try {
+		if (!navigator.clipboard) { fail(); return; }
+		navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, fail);
+	} catch (e) { fail(); }
+}
+
+/* ---------- 1. theorem decoder ---------- */
+var TOKENS = [
+	{ t: 'theorem', k: 'Keyword', d: ['Starts a named claim that you are about to prove.', 'Use example for a claim you don’t need to name, and def for definitions and programs.'] },
+	{ t: 'my_and_swap', k: 'Name', d: ['The theorem’s name. Once it’s proved, other proofs can use it, the way code calls a function.', 'The my_ prefix keeps it clear of names Lean’s library already uses.'] },
+	{ t: '(p q : Prop)', k: 'Arguments', d: ['p and q stand for any propositions: statements that might be true or false.', 'The proof has to work for every choice of p and q, not just one.'] },
+	{ t: ':', k: 'Has type', d: ['Read the colon as “has type”. Everything after it, up to :=, is the claim.', 'In Lean the claim is itself a type, and a proof is a value of that type.'] },
+	{ t: 'p ∧ q', k: 'Assumption', d: ['“p and q”. To have it, you need a proof of p and a proof of q.'], type: ['\\and', '∧'] },
+	{ t: '→', k: 'Implies', d: ['“Implies”. A proof of A → B turns any proof of A into a proof of B, which makes it a function.'], type: ['\\to', '→'] },
+	{ t: 'q ∧ p', k: 'Conclusion', d: ['“q and p”: the same two facts, swapped. This is what the proof must deliver.'] },
+	{ t: ':= by', k: 'Proof', d: [':= starts the proof. by switches to tactic mode, where you build it one step at a time and watch the goal change.', 'The infoview section below steps through this exact proof.'] }
+];
+var decoderSel = 0;
+function renderDecoder(){
+	var wrap = $('decoder-tokens'), out = $('decoder-explain');
+	wrap.textContent = '';
+	TOKENS.forEach(function(tok, i){
+		var b = btn('lg-tok', tok.t);
+		b.setAttribute('aria-pressed', i === decoderSel ? 'true' : 'false');
+		b.addEventListener('click', function(){ decoderSel = i; renderDecoder(); wrap.children[i].focus(); });
+		wrap.appendChild(b);
+	});
+	var tok = TOKENS[decoderSel];
+	out.textContent = '';
+	out.appendChild(el('span', 'scope-num', tok.k));
+	out.appendChild(el('p', 'lg-explain-tok', tok.t));
+	tok.d.forEach(function(p){ out.appendChild(el('p', null, p)); });
+	if (tok.type){
+		var t = el('p', 'lg-type');
+		t.appendChild(document.createTextNode('In the editor, type'));
+		t.appendChild(el('kbd', null, tok.type[0]));
+		t.appendChild(document.createTextNode('and it becomes ' + tok.type[1]));
+		out.appendChild(t);
+	}
+}
+
+/* ---------- 2. infoview stepper ---------- */
+var SWAP_H = ['p q : Prop', 'hp : p', 'hq : q'];
+var IND_H = ['k : Nat', 'ih : 0 + k = k'];
+var PROOFS = {
+	swap: {
+		lines: [
+			'theorem my_and_swap (p q : Prop) : p ∧ q → q ∧ p := by',
+			'  intro h',
+			'  obtain ⟨hp, hq⟩ := h',
+			'  constructor',
+			'  · exact hq',
+			'  · exact hp'
+		],
+		steps: [
+			{ hl: [0], goals: [{ h: ['p q : Prop'], g: 'p ∧ q → q ∧ p' }], n: 'Before any tactic runs there is one goal. The lines above the ⊢ are what you have. The line after it is what you must prove.' },
+			{ hl: [1], goals: [{ h: ['p q : Prop', 'h : p ∧ q'], g: 'q ∧ p' }], n: '<code>intro h</code> assumes the left side of the → and names it h. The goal is now just the right side.' },
+			{ hl: [2], goals: [{ h: SWAP_H, g: 'q ∧ p' }], n: '<code>obtain</code> takes the pair apart. h becomes two facts: hp proves p and hq proves q.' },
+			{ hl: [3], goals: [{ c: 'left', h: SWAP_H, g: 'q' }, { c: 'right', h: SWAP_H, g: 'p' }], n: '<code>constructor</code> splits q ∧ p into two goals, one for each side. The infoview labels them left and right.' },
+			{ hl: [4], goals: [{ c: 'right', h: SWAP_H, g: 'p' }], n: 'The · focuses on the first goal. <code>exact hq</code> closes it, because hq is exactly a proof of q.' },
+			{ hl: [5], goals: [], n: '<code>exact hp</code> closes the last goal. No goals means the proof is complete, and Lean accepts the theorem.' }
+		]
+	},
+	ind: {
+		lines: [
+			'theorem my_zero_add (n : Nat) : 0 + n = n := by',
+			'  induction n with',
+			'  | zero => rfl',
+			'  | succ k ih =>',
+			'    rw [← Nat.add_assoc]',
+			'    rw [ih]'
+		],
+		steps: [
+			{ hl: [0], goals: [{ h: ['n : Nat'], g: '0 + n = n' }], n: 'Lean defines addition by counting down its second number. So n + 0 = n holds by definition, but 0 + n = n needs a proof that covers every n.' },
+			{ hl: [1], goals: [{ c: 'zero', h: [], g: '0 + 0 = 0' }, { c: 'succ', h: IND_H, g: '0 + (k + 1) = k + 1' }], n: '<code>induction</code> splits the claim into a base case for 0 and a step case. In the step you may assume ih, the claim for k, and must prove it for k + 1. The names k and ih come from the <code>| succ k ih</code> line.' },
+			{ hl: [2], goals: [{ c: 'succ', h: IND_H, g: '0 + (k + 1) = k + 1' }], n: 'The base case 0 + 0 = 0 holds by computation, so <code>rfl</code> closes it. One goal is left.' },
+			{ hl: [3, 4], goals: [{ c: 'succ', h: IND_H, g: '0 + k + 1 = k + 1' }], n: 'In the step case, rewriting right to left with <code>Nat.add_assoc</code> regroups 0 + (k + 1) as 0 + k + 1. Now the left side contains 0 + k, which ih can replace.' },
+			{ hl: [5], goals: [], n: '<code>rw [ih]</code> replaces 0 + k with k. Both sides now read k + 1, so rw closes the goal with rfl automatically.' }
+		]
+	}
+};
+var cur = 'swap', step = 0;
+
+function stepForLine(p, i){
+	for (var s = 0; s < p.steps.length; s++){ if (p.steps[s].hl.indexOf(i) > -1) return s; }
+	return 0;
+}
+function renderStepper(){
+	var p = PROOFS[cur], s = p.steps[step], lines = $('proof-lines');
+	var hi = Math.max.apply(null, s.hl);
+	lines.textContent = '';
+	p.lines.forEach(function(t, i){
+		var b = btn('lg-line', t);
+		if (s.hl.indexOf(i) > -1){ b.classList.add('current'); b.setAttribute('aria-current', 'step'); }
+		else if (i > hi) b.classList.add('ahead');
+		b.setAttribute('aria-label', 'Line ' + (i + 1) + ': ' + t.trim());
+		b.addEventListener('click', function(){ step = stepForLine(p, i); renderStepper(); lines.children[i].focus(); });
+		lines.appendChild(b);
+	});
+	renderGoals($('goal-body'), s.goals);
+	$('goal-count').textContent = s.goals.length ? (s.goals.length + (s.goals.length === 1 ? ' goal' : ' goals')) : 'Complete';
+	$('step-note').innerHTML = s.n;
+	$('step-count').textContent = 'Step ' + (step + 1) + ' of ' + p.steps.length;
+	$('step-back').disabled = step === 0;
+	$('step-next').disabled = step === p.steps.length - 1;
+}
+function selectProof(key, focus){
+	cur = key; step = 0;
+	Array.prototype.forEach.call(document.querySelectorAll('.lg-tab'), function(t){
+		var on = t.getAttribute('data-proof') === key;
+		t.setAttribute('aria-selected', on ? 'true' : 'false');
+		t.tabIndex = on ? 0 : -1;
+		if (on){ $('stepper').setAttribute('aria-labelledby', t.id); if (focus) t.focus(); }
+	});
+	renderStepper();
+}
+function go(delta){
+	var n = PROOFS[cur].steps.length;
+	var next = Math.max(0, Math.min(n - 1, step + delta));
+	if (next === step) return;
+	step = next; renderStepper();
+	if (step === n - 1 && document.activeElement === $('step-next')) $('step-reset').focus();
+	if (step === 0 && document.activeElement === $('step-back')) $('step-next').focus();
+}
+
+/* ---------- 3. puzzles ---------- */
+var PUZZLES = [
+	{ title: 'Take the left half', code: 'example (p q : Prop) : p ∧ q → p := by', stages: [
+		{ h: ['p q : Prop'], g: 'p ∧ q → p', o: [
+			['exact h', 0, 'Nothing is called h yet. A name only exists once you introduce it.'],
+			['intro h', 1, 'The assumption p ∧ q is now called h, and the goal is p.'],
+			['constructor', 0, 'constructor builds an ∧, but this goal is an →. Introduce the assumption first.']
+		] },
+		{ h: ['p q : Prop', 'h : p ∧ q'], g: 'p', o: [
+			['exact h', 0, 'Type mismatch: h proves p ∧ q, but the goal is p.'],
+			['exact h.2', 0, 'h.2 is the right half of h. It proves q, not p.'],
+			['exact h.1', 1, 'h.1 is the left half of the pair: a proof of p.']
+		] }
+	] },
+	{ title: 'Check a sum', code: 'example : 2 + 2 = 4 := by', stages: [
+		{ h: [], g: '2 + 2 = 4', o: [
+			['intro h', 0, 'There is nothing to introduce. intro works on goals shaped like → or ∀.'],
+			['decide', 1, 'decide evaluates the claim. 2 + 2 computes to 4, so it is true.'],
+			['rfl', 1, 'Both sides compute to the same number, so rfl works. Many goals have more than one proof.']
+		] }
+	] },
+	{ title: 'For every a and b', code: 'example (a b : Nat) : a + b = b + a := by', stages: [
+		{ h: ['a b : Nat'], g: 'a + b = b + a', o: [
+			['rfl', 0, 'rfl fails. For unknown a and b, the two sides don’t compute to the same expression.'],
+			['omega', 1, 'omega decides linear arithmetic over Nat and Int, so it proves this for every a and b.'],
+			['exact Nat.add_comm a b', 1, 'Nat.add_comm is the library lemma for exactly this. exact? can find lemmas like it for you.']
+		] }
+	] },
+	{ title: 'Show one exists', code: 'example : ∃ n : Nat, n + 3 = 5 := by', stages: [
+		{ h: [], g: '∃ n, n + 3 = 5', o: [
+			['intro n', 0, 'intro is for → and ∀. To prove ∃ you supply a witness instead.'],
+			['exact ⟨3, rfl⟩', 0, 'With n = 3 the claim becomes 3 + 3 = 5, which is false, so rfl fails.'],
+			['exact ⟨2, rfl⟩', 1, 'A proof of ∃ is a pair: the witness 2, and rfl to show 2 + 3 = 5.']
+		] }
+	] }
+];
+var pstate = [];
+function freshState(){ return { stage: 0, used: [], solved: false, marks: Object.create(null) }; }
+function solvedState(P){
+	return { stage: P.stages.length - 1, solved: true, restored: true, marks: Object.create(null),
+		used: P.stages.map(function(s){ return s.o.filter(function(o){ return o[1]; })[0][0]; }) };
+}
+function initPuzzleState(){
+	var saved = load('solved') || [];
+	pstate = PUZZLES.map(function(P, i){ return saved.indexOf(i) > -1 ? solvedState(P) : freshState(); });
+}
+function setFb(node, cls, lead, msg){
+	node.className = 'lg-feedback ' + cls;
+	node.textContent = '';
+	node.appendChild(el('strong', null, lead));
+	node.appendChild(document.createTextNode(msg));
+}
+function buildPuzzles(){
+	var root = $('puzzles');
+	root.textContent = '';
+	PUZZLES.forEach(function(P, i){
+		var card = el('article', 'lg-puzzle');
+		card.setAttribute('aria-labelledby', 'pz-' + i);
+		var top = el('div', 'lg-puzzle-top');
+		var h = el('h3', null, P.title); h.id = 'pz-' + i;
+		var num = el('span', 'lg-puzzle-num');
+		top.appendChild(h); top.appendChild(num); card.appendChild(top);
+		var code = el('pre', 'lg-code'); card.appendChild(code);
+		var goal = el('div', 'lg-goalbox'); goal.setAttribute('role', 'region'); goal.setAttribute('aria-label', 'Current goal for ' + P.title); card.appendChild(goal);
+		var ask = el('p', 'lg-ask'); card.appendChild(ask);
+		var opts = el('div', 'lg-options'); opts.setAttribute('role', 'group'); opts.setAttribute('aria-label', 'Tactics to try'); card.appendChild(opts);
+		var fb = el('p', 'lg-feedback'); fb.setAttribute('aria-live', 'polite'); card.appendChild(fb);
+		root.appendChild(card);
+		P.dom = { card: card, num: num, code: code, goal: goal, ask: ask, opts: opts, fb: fb };
+		drawPuzzle(i, false);
+	});
+	updateProgress();
+}
+function drawPuzzle(i, keepFb){
+	var P = PUZZLES[i], S = pstate[i], D = P.dom, stage = P.stages[S.stage];
+	D.code.textContent = '';
+	D.code.appendChild(document.createTextNode(P.code));
+	S.used.forEach(function(t){ D.code.appendChild(document.createTextNode('\n  ')); D.code.appendChild(el('span', 'added', t)); });
+	renderGoals(D.goal, S.solved ? [] : [{ h: stage.h, g: stage.g }]);
+	D.card.classList.toggle('solved', S.solved);
+	D.num.textContent = S.solved ? 'Solved' : 'Puzzle 0' + (i + 1);
+	D.num.classList.toggle('ok', S.solved);
+	if (S.solved) D.ask.textContent = 'Try the other tactics to see what Lean would say.';
+	else if (P.stages.length > 1) D.ask.textContent = 'Step ' + (S.stage + 1) + ' of ' + P.stages.length + '. Choose the next tactic.';
+	else D.ask.textContent = 'Choose a tactic.';
+	D.opts.textContent = '';
+	stage.o.forEach(function(o){
+		var b = btn('lg-opt', o[0]);
+		if (S.marks[o[0]]) b.classList.add(S.marks[o[0]]);
+		b.addEventListener('click', function(){ choose(i, o, b); });
+		D.opts.appendChild(b);
+	});
+	if (!keepFb){
+		D.fb.className = 'lg-feedback';
+		D.fb.textContent = (S.solved && S.restored) ? 'Solved earlier. Reset the puzzles to try it again.' : '';
+	}
+}
+function choose(i, o, b){
+	var P = PUZZLES[i], S = pstate[i], D = P.dom;
+	if (!o[1]){ S.marks[o[0]] = 'wrong'; b.classList.add('wrong'); setFb(D.fb, 'bad', 'Not quite. ', o[2]); return; }
+	S.marks[o[0]] = 'right'; b.classList.add('right');
+	if (S.solved){ setFb(D.fb, 'ok', S.used.indexOf(o[0]) > -1 ? 'Solved. ' : 'Also works. ', o[2]); return; }
+	S.used.push(o[0]);
+	var lead;
+	if (S.stage < P.stages.length - 1){ S.stage++; S.marks = Object.create(null); lead = 'Yes. '; }
+	else { S.solved = true; S.restored = false; lead = 'Solved. '; }
+	drawPuzzle(i, true);
+	setFb(D.fb, 'ok', lead, o[2]);
+	var first = D.opts.querySelector('button');
+	if (first) first.focus();
+	if (S.solved){ persistSolved(); updateProgress(); }
+}
+function persistSolved(){
+	var ids = []; pstate.forEach(function(s, i){ if (s.solved) ids.push(i); });
+	save('solved', ids);
+}
+function updateProgress(){
+	var n = pstate.filter(function(s){ return s.solved; }).length;
+	$('progress-text').textContent = n === PUZZLES.length ? 'Solved ' + n + ' of ' + n + '. Every goal closed.' : 'Solved ' + n + ' of ' + PUZZLES.length;
+	$('progress-fill').style.width = Math.round(n / PUZZLES.length * 100) + '%';
+}
+
+/* ---------- 4. commands ---------- */
+var CMDS = [
+	{ s: '#eval 2 + 3', o: '5', n: '#eval computes a value and prints it.' },
+	{ s: '#eval "Hello, " ++ "Lean"', o: '"Hello, Lean"', n: '++ joins two strings. The same operator joins lists.' },
+	{ s: '#eval [1, 2, 3].map (· * 10)', o: '[10, 20, 30]', n: '(· * 10) is shorthand for fun x => x * 10, applied to each item in the list.' },
+	{ s: 'def double (n : Nat) : Nat := 2 * n\n#eval double 21', o: '42', n: 'def defines a function. Once it’s defined, #eval can run it.' },
+	{ s: '#check 42', o: '42 : Nat', n: 'A bare number is a Nat, a natural number: 0, 1, 2 and so on.' },
+	{ s: '#check 1 + 1 = 2', o: '1 + 1 = 2 : Prop', n: 'A claim is a value too, and its type is Prop. #check doesn’t prove it; it only says what kind of thing it is.' },
+	{ s: '#check Nat.add_comm', o: 'Nat.add_comm (n m : Nat) : n + m = m + n', n: 'A theorem’s type is the statement it proves. This is the lemma that solves puzzle 03.' }
+];
+var cmdSel = 0;
+function renderCmds(){
+	var list = $('cmd-list');
+	list.textContent = '';
+	CMDS.forEach(function(c, i){
+		var b = btn('lg-cmd', c.s);
+		b.setAttribute('aria-pressed', i === cmdSel ? 'true' : 'false');
+		b.addEventListener('click', function(){ cmdSel = i; renderCmds(); list.children[i].focus(); });
+		list.appendChild(b);
+	});
+	var c = CMDS[cmdSel], out = $('cmd-out');
+	out.textContent = '';
+	out.appendChild(el('span', 'lg-console-src', c.s));
+	out.appendChild(el('span', 'lg-console-out', c.o));
+	out.appendChild(el('p', 'lg-console-note', c.n));
+}
+
+/* ---------- 5. tactic cheat sheet ---------- */
+var CATS = [['all', 'All'], ['start', 'Start'], ['split', 'Split'], ['close', 'Close'], ['rewrite', 'Rewrite'], ['auto', 'Automate']];
+var CAT_NAME = {}; CATS.forEach(function(c){ CAT_NAME[c[0]] = c[1]; });
+var TACTICS = [
+	{ n: 'intro', c: 'start', d: 'Moves an assumption from an → or ∀ goal into your hypotheses and names it.', e: 'intro h' },
+	{ n: 'apply', c: 'start', d: 'Works backwards: uses a lemma whose conclusion matches the goal, leaving its premises as new goals.', e: 'apply Nat.le_of_lt' },
+	{ n: 'constructor', c: 'split', d: 'Splits a goal like A ∧ B or A ↔ B into one goal for each part.', e: 'constructor' },
+	{ n: 'obtain', c: 'split', d: 'Takes apart a hypothesis that is a pair or an ∃, naming each piece.', e: 'obtain ⟨x, hx⟩ := h' },
+	{ n: 'cases', c: 'split', d: 'Splits on the forms a value can take, such as each side of an ∨.', e: 'cases h with\n| inl hp => …\n| inr hq => …' },
+	{ n: 'induction', c: 'split', d: 'Proves a claim for every natural number, list or tree from a base case and a step.', e: 'induction n with\n| zero => …\n| succ k ih => …' },
+	{ n: 'exact', c: 'close', d: 'Closes the goal with a term whose type matches it exactly.', e: 'exact h.1' },
+	{ n: 'rfl', c: 'close', d: 'Closes a goal a = b when both sides are equal by definition or computation.', e: 'rfl' },
+	{ n: 'decide', c: 'close', d: 'Proves a claim by evaluating it, when it is decidable and small enough to compute.', e: 'decide' },
+	{ n: 'sorry', c: 'close', d: 'A placeholder that lets an unfinished proof compile, with a warning. A finished proof has none.', e: 'sorry' },
+	{ n: 'rw', c: 'rewrite', d: 'Rewrites with an equation, replacing its left side with its right side. Add ← to rewrite the other way.', e: 'rw [h, ← Nat.add_assoc]' },
+	{ n: 'simp', c: 'rewrite', d: 'Simplifies the goal with a large set of lemmas tagged @[simp]. Add your own in brackets.', e: 'simp [h]' },
+	{ n: 'omega', c: 'auto', d: 'Decides linear arithmetic over Nat and Int: +, −, ≤, < and multiplying by constants.', e: 'omega' },
+	{ n: 'grind', c: 'auto', d: 'SMT-style automation that combines equalities, case splits and arithmetic, and still produces an ordinary proof.', e: 'grind' },
+	{ n: 'exact?', c: 'auto', d: 'Searches the library for a lemma that closes the goal and suggests the line to paste.', e: 'exact?' },
+	{ n: 'linarith', c: 'auto', m: 1, d: 'Proves linear inequalities that follow from your hypotheses, over ordered fields such as ℚ and ℝ.', e: 'linarith' },
+	{ n: 'norm_num', c: 'auto', m: 1, d: 'Proves numeric facts such as 37 * 3 = 111 or 7 ≠ 0.', e: 'norm_num' },
+	{ n: 'ring', c: 'auto', m: 1, d: 'Proves equations that hold in every commutative ring, such as (a + b)^2 = a^2 + 2*a*b + b^2.', e: 'ring' }
+];
+var tacCat = 'all', tacQuery = '';
+function renderChips(){
+	var wrap = $('tactic-filters');
+	wrap.textContent = '';
+	CATS.forEach(function(c){
+		var b = btn('lg-chip', c[1]);
+		b.setAttribute('aria-pressed', c[0] === tacCat ? 'true' : 'false');
+		b.addEventListener('click', function(){ tacCat = c[0]; renderChips(); renderTactics(); wrap.querySelector('[aria-pressed="true"]').focus(); });
+		wrap.appendChild(b);
+	});
+}
+function renderTactics(){
+	var list = $('tactic-list'), q = tacQuery.trim().toLowerCase();
+	var shown = TACTICS.filter(function(t){
+		if (tacCat !== 'all' && t.c !== tacCat) return false;
+		if (!q) return true;
+		return (t.n + ' ' + t.d + ' ' + t.e + (t.m ? ' mathlib' : '')).toLowerCase().indexOf(q) > -1;
+	});
+	list.textContent = '';
+	shown.forEach(function(t){
+		var li = el('li', 'lg-tactic');
+		var top = el('div', 'lg-tactic-top');
+		top.appendChild(el('h3', null, t.n));
+		var tags = el('div', 'lg-tags');
+		tags.appendChild(el('span', 'lg-tag', CAT_NAME[t.c]));
+		if (t.m) tags.appendChild(el('span', 'lg-tag mathlib', 'Mathlib'));
+		top.appendChild(tags);
+		li.appendChild(top);
+		li.appendChild(el('p', null, t.d));
+		li.appendChild(el('pre', 'lg-code', t.e));
+		list.appendChild(li);
+	});
+	if (!shown.length){
+		var empty = el('li', 'lg-empty', 'No tactic matches “' + tacQuery.trim() + '”' + (tacCat !== 'all' ? ' in ' + CAT_NAME[tacCat] : '') + '. Try a shorter word or choose All.');
+		list.appendChild(empty);
+	}
+	$('tactic-count').textContent = shown.length === TACTICS.length ? 'Showing all ' + TACTICS.length + ' tactics' : 'Showing ' + shown.length + ' of ' + TACTICS.length + ' tactics';
+}
+
+/* ---------- wire up ---------- */
+renderDecoder();
+
+Array.prototype.forEach.call(document.querySelectorAll('.lg-tab'), function(t){
+	t.addEventListener('click', function(){ selectProof(t.getAttribute('data-proof'), false); });
+});
+document.querySelector('.lg-tabs').addEventListener('keydown', function(e){
+	if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+	e.preventDefault();
+	selectProof(cur === 'swap' ? 'ind' : 'swap', true);
+});
+$('step-next').addEventListener('click', function(){ go(1); });
+$('step-back').addEventListener('click', function(){ go(-1); });
+$('step-reset').addEventListener('click', function(){ step = 0; renderStepper(); $('step-next').focus(); });
+$('copy-proof').addEventListener('click', function(e){ copyText(PROOFS[cur].lines.join('\n'), e.currentTarget, $('proof-lines')); });
+$('stepper').addEventListener('keydown', function(e){
+	if (e.key === 'ArrowDown' || e.key === 'ArrowRight'){ e.preventDefault(); go(1); var c = $('proof-lines').querySelector('.current'); if (c) c.focus(); }
+	if (e.key === 'ArrowUp' || e.key === 'ArrowLeft'){ e.preventDefault(); go(-1); var c2 = $('proof-lines').querySelector('.current'); if (c2) c2.focus(); }
+});
+selectProof('swap', false);
+
+initPuzzleState();
+buildPuzzles();
+$('progress-reset').addEventListener('click', function(){
+	save('solved', []);
+	initPuzzleState();
+	buildPuzzles();
+});
+
+renderCmds();
+renderChips();
+renderTactics();
+$('tactic-search').addEventListener('input', function(e){ tacQuery = e.target.value; renderTactics(); });
+
+Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function(b){
+	b.addEventListener('click', function(){ var node = $(b.getAttribute('data-copy')); copyText(node.textContent, b, node); });
+});
+})();
+
+</script>
+</body>
+</html>
