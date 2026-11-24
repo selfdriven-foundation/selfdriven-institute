@@ -46,6 +46,8 @@ body.playing{padding-bottom:150px}
 .player-ctrls button:focus-visible{outline:3px solid var(--orange-on-dark);outline-offset:2px}
 .player-ctrls .player-main{background:var(--orange)}
 .player-ctrls .player-main:hover{background:var(--orange-hover)}
+.player-ctrls .player-close{margin-left:4px;color:rgba(255,255,255,.72)}
+.player-ctrls .player-close:hover{color:#ffffff}
 .player-rate{width:auto!important;padding:0 10px;font:600 13px/1 var(--font-mono)}
 .player-bottom{display:flex;align-items:center;gap:12px;margin-top:10px;font:12px/1 var(--font-mono);color:rgba(255,255,255,.72)}
 .player-bottom input{flex:1;min-width:0;accent-color:var(--orange-on-dark)}
@@ -61,5 +63,8 @@ body.playing{padding-bottom:150px}
 
 /* Sort control, under the search box */
 .ep-sort{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:14px;font-weight:600}
-.ep-sort select{flex:1;min-width:0;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:500 15px/1.2 var(--font-body);cursor:pointer}
+.ep-select{position:relative;flex:1;min-width:0;display:flex}
+.ep-sort select{flex:1;min-width:0;min-height:44px;padding:0 44px 0 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:500 15px/1.2 var(--font-body);cursor:pointer;-webkit-appearance:none;appearance:none}
+.ep-sort select:hover{border-color:var(--orange)}
+.ep-select svg{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--orange);pointer-events:none}
 .ep-sort select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}

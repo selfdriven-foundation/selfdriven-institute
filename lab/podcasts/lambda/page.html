@@ -79,7 +79,7 @@
 					<h3>Search the library.</h3>
 					<p>Filter by any word in an episode title.</p>
 					<label class="ep-search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="q" type="search" placeholder="Search episodes" autocomplete="off" aria-label="Search episodes"></label>
-					<label class="ep-sort"><span>Sort</span><select id="sort" aria-label="Sort episodes"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select></label>
+					<label class="ep-sort"><span>Sort</span><span class="ep-select"><select id="sort" aria-label="Sort episodes"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></label>
 					<p class="ep-count" id="count" aria-live="polite"></p>
 				</div>
 				<ul class="scope-list" id="list"></ul>
@@ -142,6 +142,7 @@
 				<button class="player-main" id="pPlay" aria-label="Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg></button>
 				<button class="player-skip" id="pFwd" aria-label="Forward 30 seconds"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></button>
 				<button class="player-rate" id="pRate" aria-label="Playback speed">1×</button>
+				<button class="player-close" id="pClose" aria-label="Close player"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
 			</div>
 		</div>
 		<div class="player-bottom">
@@ -252,6 +253,18 @@ $('pPlay').onclick = () => current && (audio.paused ? audio.play() : audio.pause
 $('pBack').onclick = () => { audio.currentTime = Math.max(0, audio.currentTime - 15); };
 $('pFwd').onclick = () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); };
 $('pRate').onclick = () => { const r = RATES[(RATES.indexOf(audio.playbackRate) + 1) % RATES.length] || 1; audio.playbackRate = r; store('sdp.rate', r); };
+$('pClose').onclick = () => {
+	audio.pause();
+	save();
+	audio.removeAttribute('src'); audio.load();
+	current = null;
+	$('player').hidden = true;
+	document.body.classList.remove('playing');
+	history.replaceState(null, '', location.pathname + location.search);
+	if ('mediaSession' in navigator) navigator.mediaSession.metadata = null;
+	render();
+};
+document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && !$('player').hidden && !ev.target.closest('input, select')) $('pClose').click(); });
 $('pSeek').oninput = (ev) => { if (audio.duration) audio.currentTime = ev.target.value / 1000 * audio.duration; };
 $('copyFeed').addEventListener('click', (ev) => {
 	const url = ev.currentTarget.dataset.feed;
