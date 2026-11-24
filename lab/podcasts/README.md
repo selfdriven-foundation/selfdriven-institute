@@ -20,7 +20,6 @@ podcasts/
 ```
 
 ## Deploy
-
 ```
 cd lambda && npm install --omit=dev
 cd ../deploy && npm install && node deploy.js
