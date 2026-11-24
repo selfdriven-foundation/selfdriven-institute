@@ -1,0 +1,6 @@
+{
+    "version": "2.0",
+    "rawPath": "/audio/Focus_Is_the_New_Capital.m4a",
+    "headers": { "range": "bytes=0-1023" },
+    "requestContext": { "http": { "method": "GET", "path": "/audio/Focus_Is_the_New_Capital.m4a" } }
+}

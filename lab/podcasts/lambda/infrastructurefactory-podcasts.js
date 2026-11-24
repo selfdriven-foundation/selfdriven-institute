@@ -10,7 +10,9 @@
         GET  /episodes.json     util-aws-podcasts-episodes-serve
         GET  /audio/:file       util-aws-podcasts-audio-serve   (Range → 206 chunk, none → 302 to raw GitHub)
         HEAD /audio/:file       util-aws-podcasts-audio-serve
-        GET  /health, /robots.txt, /favicon.ico
+        GET  /assets/*              util-aws-podcasts-asset-serve   (files bundled in lambda/assets)
+        GET  /favicon.ico           302 → /assets/img/selfdriven-logo-round-blackcurrant-flamingo.png
+        GET  /health, /robots.txt
 
     Every route that needs the listing goes through util-aws-podcasts-listing-get,
     which caches in scope 'podcasts' across warm invocations and chains to param.next.
@@ -75,7 +77,16 @@ module.exports =
                 }
                 else if (rawPath === '/favicon.ico')
                 {
-                    entityos.invoke('util-end', { statusCode: 204, headers: {}, body: '' });
+                    entityos.invoke('util-end',
+                    {
+                        statusCode: 302,
+                        headers: { 'Location': '/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png', 'Cache-Control': 'public, max-age=86400' },
+                        body: ''
+                    });
+                }
+                else if (_.startsWith(rawPath, '/assets/'))
+                {
+                    entityos.invoke('util-aws-podcasts-asset-serve', { path: rawPath });
                 }
                 else if (rawPath === '/robots.txt')
                 {
@@ -158,10 +169,7 @@ module.exports =
                 .then(function (items)
                 {
                     const listing = entityos.invoke('util-aws-podcasts-listing-build', { items: items });
-                    entityos.set({ scope: 'podcasts', context: 'listing', value: listing });
-                    entityos.set({ scope: 'podcasts', context: 'listingAt', value: Date.now() });
-                    console.log('[podcasts] Listing refreshed: ' + listing.episodes.length + ' episodes, ' + listing.extras.length + ' extras');
-                    entityos.invoke(next);
+                    entityos.invoke('util-aws-podcasts-listing-dates-get', { listing: listing, previous: cached, next: next });
                 })
                 .catch(function (err)
                 {
@@ -253,6 +261,127 @@ module.exports =
             }
         });
 
+        // ── 3a. Episode dates (GraphQL, needs a token) ──────────────
+        //
+        // The contents API has no dates. One GraphQL query per 100 files asks for the
+        // latest commit touching each file — for audio that is the commit that added it.
+        // GraphQL rejects anonymous calls, so with no token the listing stays undated
+        // and the page offers A–Z only. If the query fails, dates from the previous
+        // listing are carried over so a GitHub hiccup doesn't reshuffle the page.
+
+        entityos.add(
+        {
+            name: 'util-aws-podcasts-listing-dates-get',
+            code: function (param)
+            {
+                const podcasts = entityos.invoke('util-aws-podcasts-get-settings');
+                const listing = _.get(param, 'listing');
+                const previous = _.get(param, 'previous');
+                const next = _.get(param, 'next');
+
+                const carryOver = function ()
+                {
+                    const previousDates = _.fromPairs(_.map(_.get(previous, 'episodes', []), function (episode) { return [episode.file, episode.date]; }));
+                    _.each(listing.episodes, function (episode) { episode.date = previousDates[episode.file] || null; });
+                };
+
+                if (!podcasts.token)
+                {
+                    carryOver();
+                    entityos.invoke('util-aws-podcasts-listing-save', { listing: listing, next: next });
+                    return;
+                }
+
+                const chunks = _.chunk(listing.episodes, 100);
+                const dates = {};
+
+                const queryChunk = function (chunk)
+                {
+                    const variableDefs = _.map(chunk, function (episode, index) { return '$p' + index + ': String!'; }).join(', ');
+                    const fields = _.map(chunk, function (episode, index)
+                    {
+                        return 'f' + index + ': history(first: 1, path: $p' + index + ') { nodes { committedDate } }';
+                    }).join('\n');
+
+                    const variables = { owner: podcasts.owner, name: podcasts.repo, expr: podcasts.branch };
+                    _.each(chunk, function (episode, index) { variables['p' + index] = podcasts.path + '/' + episode.file; });
+
+                    const query = 'query($owner: String!, $name: String!, $expr: String!, ' + variableDefs + ') {\n'
+                        + '  repository(owner: $owner, name: $name) { object(expression: $expr) { ... on Commit {\n' + fields + '\n  } } }\n}';
+
+                    return fetch('https://api.github.com/graphql',
+                    {
+                        method: 'POST',
+                        headers:
+                        {
+                            'authorization': 'Bearer ' + podcasts.token,
+                            'content-type':  'application/json',
+                            'user-agent':    'podcasts.selfdriven.institute'
+                        },
+                        body: JSON.stringify({ query: query, variables: variables })
+                    })
+                    .then(function (response)
+                    {
+                        if (!response.ok) { throw new Error('GraphQL HTTP ' + response.status); }
+                        return response.json();
+                    })
+                    .then(function (result)
+                    {
+                        if (!_.isEmpty(result.errors)) { throw new Error('GraphQL: ' + _.get(result, 'errors[0].message')); }
+
+                        const commit = _.get(result, 'data.repository.object', {});
+                        _.each(chunk, function (episode, index)
+                        {
+                            dates[episode.file] = _.get(commit, 'f' + index + '.nodes[0].committedDate', null);
+                        });
+                    });
+                };
+
+                _.reduce(chunks, function (chain, chunk)
+                {
+                    return chain.then(function () { return queryChunk(chunk); });
+                }, Promise.resolve())
+                .then(function ()
+                {
+                    _.each(listing.episodes, function (episode) { episode.date = dates[episode.file] || null; });
+                    console.log('[podcasts] Dates fetched for ' + _.size(_.pickBy(dates)) + ' episodes');
+                    entityos.invoke('util-aws-podcasts-listing-save', { listing: listing, next: next });
+                })
+                .catch(function (err)
+                {
+                    console.error('[podcasts] Dates error (carrying over previous):', err.message);
+                    carryOver();
+                    entityos.invoke('util-aws-podcasts-listing-save', { listing: listing, next: next });
+                });
+            }
+        });
+
+        entityos.add(
+        {
+            name: 'util-aws-podcasts-listing-save',
+            code: function (param)
+            {
+                const listing = _.get(param, 'listing');
+                const byTitle = function (a, b) { return a.title.localeCompare(b.title, 'en', { sensitivity: 'base' }); };
+
+                // Newest first; undated episodes go last, A–Z
+                listing.episodes.sort(function (a, b)
+                {
+                    if (a.date && b.date && a.date !== b.date) { return a.date < b.date ? 1 : -1; }
+                    if (a.date && !b.date) { return -1; }
+                    if (!a.date && b.date) { return 1; }
+                    return byTitle(a, b);
+                });
+
+                listing.dated = _.some(listing.episodes, 'date');
+
+                entityos.set({ scope: 'podcasts', context: 'listing', value: listing });
+                entityos.set({ scope: 'podcasts', context: 'listingAt', value: Date.now() });
+                console.log('[podcasts] Listing refreshed: ' + listing.episodes.length + ' episodes, ' + listing.extras.length + ' extras, dated: ' + listing.dated);
+                entityos.invoke(_.get(param, 'next'));
+            }
+        });
+
         // ── 4. Listing utilities ────────────────────────────────────
 
         entityos.add(
@@ -310,6 +439,7 @@ module.exports =
                 return {
                     slug:       episode.slug,
                     title:      episode.title,
+                    date:       episode.date || null,
                     size:       episode.size,
                     type:       episode.type,
                     audio:      '/audio/' + encodeURIComponent(episode.file),
@@ -363,18 +493,102 @@ module.exports =
                 {
                     episodes:  _.map(listing.episodes, function (episode) { return entityos.invoke('util-aws-podcasts-episode-public', { episode: episode }); }),
                     extras:    listing.extras,
+                    dated:     !!listing.dated,
                     fetchedAt: listing.fetchedAt
                 };
 
                 const repoURL = 'https://github.com/' + podcasts.owner + '/' + podcasts.repo + '/tree/' + podcasts.branch + '/' + podcasts.path;
+                const libraryBytes = _.sumBy(listing.episodes, 'size');
 
                 // split/join rather than replace() so '$' in data is never treated as a pattern
                 const body = htmlPage
                     .split('{{DATA}}').join(JSON.stringify(data).replace(/</g, '\\u003c'))
                     .split('{{REPO_URL}}').join(entityos.invoke('util-aws-podcasts-escape', { text: repoURL }))
+                    .split('{{FEED_URL}}').join(entityos.invoke('util-aws-podcasts-escape', { text: podcasts.siteURL + '/feed.xml' }))
+                    .split('{{COUNT}}').join(String(listing.episodes.length))
+                    .split('{{LIBRARY_GB}}').join((libraryBytes / 1e9).toFixed(1))
+                    .split('{{YEAR}}').join(listing.fetchedAt.substring(0, 4))
                     .split('{{UPDATED}}').join(listing.fetchedAt.substring(0, 16).replace('T', ' '));
 
                 entityos.invoke('util-end', entityos.invoke('util-response-html', { body: body, status: 200 }));
+            }
+        });
+
+        // ── 5a. Static assets (logo, favicon, stylesheets) ──────────
+        //
+        // Everything under lambda/assets is read once per container and served from
+        // scope. Only files that exist there can be requested, so no path tricks.
+
+        entityos.add(
+        {
+            name: 'util-aws-podcasts-asset-serve',
+            code: function (param)
+            {
+                let assets = entityos.get({ scope: 'podcasts', context: 'assets' });
+
+                if (assets == undefined)
+                {
+                    assets = {};
+                    const root = path.join(__dirname, 'assets');
+                    const types =
+                    {
+                        css: 'text/css; charset=utf-8', js: 'text/javascript; charset=utf-8',
+                        svg: 'image/svg+xml', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg',
+                        webp: 'image/webp', ico: 'image/x-icon', woff2: 'font/woff2'
+                    };
+                    const textTypes = ['css', 'js', 'svg'];
+
+                    const walk = function (dir)
+                    {
+                        _.each(fs.readdirSync(dir, { withFileTypes: true }), function (entry)
+                        {
+                            const full = path.join(dir, entry.name);
+                            if (entry.isDirectory()) { walk(full); return; }
+
+                            const ext = _.toLower(path.extname(entry.name).substring(1));
+                            if (types[ext] == undefined) { return; }
+
+                            const key = '/assets/' + path.relative(root, full).split(path.sep).join('/');
+                            const isText = _.includes(textTypes, ext);
+                            assets[key] =
+                            {
+                                type:   types[ext],
+                                base64: !isText,
+                                body:   isText ? fs.readFileSync(full, 'utf8') : fs.readFileSync(full).toString('base64')
+                            };
+                        });
+                    };
+
+                    try { walk(root); }
+                    catch (err) { console.error('[podcasts] assets folder error:', err.message); }
+
+                    entityos.set({ scope: 'podcasts', context: 'assets', value: assets });
+                }
+
+                let requested;
+                try { requested = decodeURIComponent(_.get(param, 'path', '')); }
+                catch (err) { requested = undefined; }
+
+                const asset = requested ? assets[requested] : undefined;
+
+                if (asset == undefined)
+                {
+                    entityos.invoke('util-end', entityos.invoke('util-response-text', { body: 'Not found', status: 404 }));
+                    return;
+                }
+
+                entityos.invoke('util-end',
+                {
+                    statusCode: 200,
+                    isBase64Encoded: asset.base64,
+                    headers:
+                    {
+                        'Content-Type':           asset.type,
+                        'Cache-Control':          'public, max-age=86400',
+                        'X-Content-Type-Options': 'nosniff'
+                    },
+                    body: asset.body
+                });
             }
         });
 
@@ -396,6 +610,7 @@ module.exports =
                     return '    <item>\n'
                         + '      <title>' + esc(episode.title) + '</title>\n'
                         + '      <guid isPermaLink="false">' + esc(episode.slug) + '</guid>\n'
+                        + (episode.date ? '      <pubDate>' + new Date(episode.date).toUTCString() + '</pubDate>\n' : '')
                         + '      <link>' + esc(podcasts.siteURL + '/#' + encodeURIComponent(episode.slug)) + '</link>\n'
                         + '      <enclosure url="' + esc(entityos.invoke('util-aws-podcasts-url-raw', { name: episode.file })) + '" length="' + episode.size + '" type="' + enclosureType + '"/>\n'
                         + (episode.art ? '      <itunes:image href="' + esc(episode.art) + '"/>\n' : '')
