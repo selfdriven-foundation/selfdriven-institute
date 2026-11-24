@@ -45,6 +45,7 @@ exports.handler = async function (event)
                         token:  process.env.GITHUB_TOKEN || ''
                     },
                     siteURL:      process.env.SITE_URL      || 'https://podcasts.selfdriven.institute',
+                    artworkURL:   process.env.ARTWORK_URL   || '',
                     chunkBytes:   process.env.CHUNK_BYTES   || 3670016,
                     cacheSeconds: process.env.CACHE_SECONDS || 600
                 }

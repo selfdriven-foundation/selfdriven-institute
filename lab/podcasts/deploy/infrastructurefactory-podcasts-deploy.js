@@ -101,7 +101,8 @@ module.exports =
                         REPO_PATH:     _.get(settings, 'podcasts.github.path', 'resources/podcasts'),
                         GITHUB_TOKEN:  _.get(settings, 'podcasts.github.token', ''),
                         CACHE_SECONDS: String(_.get(settings, 'podcasts.cacheSeconds', 600)),
-                        CHUNK_BYTES:   String(_.get(settings, 'podcasts.chunkBytes', 3670016))
+                        CHUNK_BYTES:   String(_.get(settings, 'podcasts.chunkBytes', 3670016)),
+                        ARTWORK_URL:   _.get(settings, 'podcasts.artworkURL', '')
                     }
                 };
             }

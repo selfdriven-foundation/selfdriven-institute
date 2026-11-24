@@ -45,9 +45,7 @@ module.exports =
                     path:         _.get(settings, 'podcasts.github.path', 'resources/podcasts'),
                     token:        _.get(settings, 'podcasts.github.token', ''),
                     siteURL:      _.trimEnd(_.get(settings, 'podcasts.siteURL', 'https://podcasts.selfdriven.institute'), '/'),
-                    // Show cover for Apple Podcasts: square JPG/PNG, 1400–3000 px, RGB, no transparency.
-                    // Give each new version a new filename; Apple may skip an image whose URL hasn't changed.
-                    artworkURL:   _.get(settings, 'podcasts.artworkURL', 'https://www.selfdriven.institute/assets/img/selfdriven-institute-podcasts-cover-3000.jpg'),
+                    artworkURL:   _.get(settings, 'podcasts.artworkURL', ''),
                     chunkBytes:   _.toNumber(_.get(settings, 'podcasts.chunkBytes', 3670016)),
                     cacheSeconds: _.toNumber(_.get(settings, 'podcasts.cacheSeconds', 600))
                 };

@@ -26,6 +26,7 @@
             "path":   "resources/podcasts",
             "token":  "prompt"
         },
+        "artworkURL":   "https://www.selfdriven.institute/assets/img/selfdriven-institute-podcasts-cover-3000.jpg",
         "cacheSeconds": 600,
         "chunkBytes":   3670016
     }
