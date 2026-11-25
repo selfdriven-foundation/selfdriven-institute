@@ -11,7 +11,7 @@
         GET  /audio/:file       util-aws-podcasts-audio-serve   (Range → 206 chunk, none → 302 to raw GitHub)
         HEAD /audio/:file       util-aws-podcasts-audio-serve
         GET  /assets/*              util-aws-podcasts-asset-serve   (files bundled in lambda/assets)
-        GET  /favicon.ico           302 → /assets/img/selfdriven-logo-round-blackcurrant-flamingo.png
+        GET  /favicon.ico           302 → /assets/img/selfdriven-institute-podcasts-favicon.ico
         GET  /health, /robots.txt
 
     Every route that needs the listing goes through util-aws-podcasts-listing-get,
@@ -81,7 +81,7 @@ module.exports =
                     entityos.invoke('util-end',
                     {
                         statusCode: 302,
-                        headers: { 'Location': '/assets/img/selfdriven-logo-round-blackcurrant-flamingo.png', 'Cache-Control': 'public, max-age=86400' },
+                        headers: { 'Location': '/assets/img/selfdriven-institute-podcasts-favicon.ico', 'Cache-Control': 'public, max-age=86400' },
                         body: ''
                     });
                 }

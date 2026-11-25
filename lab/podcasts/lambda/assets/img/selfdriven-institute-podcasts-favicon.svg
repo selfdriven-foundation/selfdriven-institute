@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>selfdriven.institute Podcasts</title>
+  <rect width="512" height="512" rx="112" fill="#420633"/>
+  <g transform="translate(65.32 409.60) scale(0.43886 -0.43886)">
+    <path fill="#efefe5" d="M66 0V700H354Q420 700 470.5 673.5Q521 647 549.5 599.0Q578 551 578 485V471Q578 406 548.5 357.5Q519 309 468.5 282.5Q418 256 354 256H198V0ZM198 376H341Q388 376 417.0 402.0Q446 428 446 473V483Q446 528 417.0 554.0Q388 580 341 580H198Z"/>
+    <path fill="#de5a31" transform="translate(559.0 0)" d="M150 -14Q109 -14 81.5 12.5Q54 39 54 81Q54 123 81.5 149.5Q109 176 150 176Q190 176 217.0 149.5Q244 123 244 81Q244 39 217.0 12.5Q190 -14 150 -14Z"/>
+  </g>
+</svg>
